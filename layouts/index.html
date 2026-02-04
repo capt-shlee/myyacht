@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta name="generator" content="Hugo 0.134.3">
+    {{ partial "head.html" . }}
+    <style>
+        .hero {
+            min-height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Floating Reservation Button (Home Only) -->
+    <div class="floating-btn-wrapper reveal active">
+        <a href="https://booking.naver.com/booking/12/bizes/901328" target="_blank" class="floating-btn">
+            <span>Book Now</span>
+        </a>
+    </div>
+
+    <!-- Header -->
+    <header id="main-header">
+        <div class="container nav-container">
+            <a href="#home" class="logo">MY YACHT</a>
+
+            <nav class="main-nav">
+                <ul class="nav-list" id="nav-list">
+                    <li><a href="#tour" class="nav-link">Private Tour</a></li>
+                    <li><a href="#community" class="nav-link">Reviews</a></li>
+                    <li><a href="#club" class="nav-link">Sailing Club</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li><a href="/posts/" class="nav-link" style="color:var(--color-accent)">Captain's Log</a></li>
+                </ul>
+            </nav>
+
+            <div class="mobile-toggle" id="mobile-toggle">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero -->
+        <section id="home" class="hero">
+            <div class="hero-bg"></div>
+            <div class="hero-content">
+                <span class="hero-badge">The Master Mariner</span>
+                <h1>프랑스 듀포 요트와 함께하는<br><span class="text-accent">제부도 프리미엄 요트 투어</span></h1>
+                <p>20년 무사고 1급 해기사 선장이 직접 운항하며<br>바다 위에서의 완벽한 신뢰와 감동을 선사합니다.</p>
+                <!-- Call for Reservation -->
+                <a href="tel:050714507890" class="btn-primary">Call for Reservation</a>
+            </div>
+        </section>
+
+        <!-- Service Split -->
+        <section id="tour">
+            <div class="text-center spacer-y reveal">
+                <span class="section-tag">Premium Collection</span>
+                <h2>당신을 위한 두 가지 여정</h2>
+            </div>
+
+            <!-- Daytime: Image Left, Content Right -->
+            <div class="split-layout reveal">
+                <div class="split-visual">
+                    <img src="/images/IMG_0754.jpg" alt="제부도 주간 요트 투어" loading="lazy">
+                </div>
+                <div class="split-content">
+                    <span class="section-tag">Daytime Sailing</span>
+                    <h3>제부도 데이타임 세일링</h3>
+                    <p>
+                        쏟아지는 햇살 아래, 바람을 가르는 듀포 요트의<br>
+                        다이내믹한 세일링 퍼포먼스를 온몸으로 느껴보세요.
+                    </p>
+                    <ul class="check-list">
+                        <li><span><strong>Ocean View</strong> 서해의 푸른 파노라마</span></li>
+                        <li><span><strong>Activity</strong> 갈매기 피딩 & 낚시 체험</span></li>
+                        <li><span><strong>Photo Point</strong> 인생 사진을 위한 완벽한 배경</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Sunset: Image Right, Content Left -->
+            <div class="split-layout reverse reveal">
+                <div class="split-visual">
+                    <img src="/images/IMG_0753.jpg" alt="제부도 선셋 요트 투어" loading="lazy">
+                </div>
+                <div class="split-content">
+                    <span class="section-tag">Sunset Luxury</span>
+                    <h3>제부도 골든 선셋 투어</h3>
+                    <p>
+                        영화의 한 장면 같은 붉은 노을 속으로,<br>
+                        마스터 마리너의 섬세한 조타와 함께 빠져듭니다.
+                    </p>
+                    <ul class="check-list">
+                        <li><span><strong>Romantic</strong> 프라이빗한 감동의 시간</span></li>
+                        <li><span><strong>Professional</strong> 1급 해기사의 노하우</span></li>
+                        <li><span><strong>Atmosphere</strong> 샴페인 골드빛 럭셔리 휴식</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reviews -->
+        <section id="community" class="spacer-y text-center">
+            <div class="container" style="overflow:hidden">
+                <span class="section-tag">Client Voices</span>
+                <h2 class="mb-2">신뢰가 빚어낸 항해 기록</h2>
+                <div class="review-wrapper">
+                    <div class="review-track">
+                        <div class="review-item">
+                            <p class="review-text">"1급 해기사 선장님의 전문적인 항해 실력 덕분에 가족 모두 편안한 시간을 보냈습니다."</p>
+                            <div class="review-meta">Family Trip</div>
+                        </div>
+                        <div class="review-item">
+                            <p class="review-text">"최고의 낙조 스팟! 프로포즈 성공의 일등공신이셨습니다."</p>
+                            <div class="review-meta">Sunset Proposal</div>
+                        </div>
+                        <div class="review-item">
+                            <p class="review-text">"바다에 대해 깊이 있는 설명을 들을 수 있어 좋았습니다."</p>
+                            <div class="review-meta">Sailing Class</div>
+                        </div>
+                        <div class="review-item">
+                            <p class="review-text">"회사 워크샵으로 방문했는데 직원들 만족도가 최상입니다."</p>
+                            <div class="review-meta">Corporate Workshop</div>
+                        </div>
+                        <div class="review-item">
+                            <p class="review-text">"선장님의 카리스마와 친절함이 인상적이었습니다."</p>
+                            <div class="review-meta">Private Party</div>
+                        </div>
+                        <!-- Clones -->
+                        <div class="review-item">
+                            <p class="review-text">"1급 해기사 선장님의 전문적인 항해 실력 덕분에 가족 모두 편안한 시간을 보냈습니다."</p>
+                            <div class="review-meta">Family Trip</div>
+                        </div>
+                        <div class="review-item">
+                            <p class="review-text">"최고의 낙조 스팟! 프로포즈 성공의 일등공신이셨습니다."</p>
+                            <div class="review-meta">Sunset Proposal</div>
+                        </div>
+                        <div class="review-item">
+                            <p class="review-text">"바다에 대해 깊이 있는 설명을 들을 수 있어 좋았습니다."</p>
+                            <div class="review-meta">Sailing Class</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Club -->
+        <section id="club" class="spacer-y" style="position:relative; overflow:hidden;">
+            <div
+                style="position:absolute; inset:0; opacity:0.1; background:url('/images/KakaoTalk_20230701_202340224_01.jpg') center/cover no-repeat; filter: grayscale(100%);">
+            </div>
+
+            <div class="container text-center" style="position:relative; z-index:2;">
+                <span class="section-tag">Sailing Education</span>
+                <h2>Master Mariner 세일링 클럽</h2>
+                <p style="max-width:700px; margin:0 auto; opacity:0.8; font-weight:300;">
+                    바람을 읽고 파도를 넘는 항해의 본질.<br>
+                    1급 해기사의 노하우를 전수받는 특별한 기회.
+                </p>
+                <div class="club-cards">
+                    <div class="card-item reveal">
+                        <i style="font-size:2rem; color:var(--color-accent); display:block; margin-bottom:20px;">⚓</i>
+                        <h3>Seamanship</h3>
+                        <p style="font-size:0.9rem; opacity:0.7;">실전 장비 운용 및<br>안전 항해 매뉴얼</p>
+                    </div>
+                    <div class="card-item reveal" style="transition-delay:.2s">
+                        <i style="font-size:2rem; color:var(--color-accent); display:block; margin-bottom:20px;">🧭</i>
+                        <h3>Navigation</h3>
+                        <p style="font-size:0.9rem; opacity:0.7;">바람과 조류를 읽는<br>정밀 항해 기법</p>
+                    </div>
+                    <div class="card-item reveal" style="transition-delay:.4s">
+                        <i style="font-size:2rem; color:var(--color-accent); display:block; margin-bottom:20px;">♛</i>
+                        <h3>Mastery</h3>
+                        <p style="font-size:0.9rem; opacity:0.7;">프리미엄 요팅 문화와<br>해양 리더의 마인드셋</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" style="background:#0A192F;">
+            <div class="contact-section reveal" style="display:flex; flex-wrap:wrap;">
+                <div class="contact-body" style="flex:1; padding:80px 40px; min-width:300px;">
+                    <span class="section-tag">Visit & Contact</span>
+                    <h2>오시는 길</h2>
+                    <div style="margin-top:40px;">
+                        <p
+                            style="color:var(--color-accent); text-transform:uppercase; letter-spacing:0.1em; font-size:0.8rem;">
+                            Address</p>
+                        <p style="opacity:0.8; margin-bottom:30px;">경기도 화성시 서신면 해안길 477 (제부 마리나)</p>
+
+                        <p
+                            style="color:var(--color-accent); text-transform:uppercase; letter-spacing:0.1em; font-size:0.8rem;">
+                            Reservation</p>
+                        <p style="font-size:2rem; font-family:var(--font-head); margin-bottom:30px;"><a
+                                href="tel:050714507890">0507-1450-7890</a></p>
+
+                        <p style="opacity:0.6; font-size:0.9rem;">
+                            capt.shlee@gmail.com<br>
+                            Business License: 350-14-02104 | Rep: Lee Sung Hee
+                        </p>
+                    </div>
+                </div>
+                <div class="map-wrapper" style="flex:1; min-height:500px;">
+                    <iframe src="https://maps.google.com/maps?q=마이요트+제부도&t=&z=16&ie=UTF8&iwloc=B&output=embed"
+                        width="100%" height="100%" style="border:0;" allowfullscreen loading="lazy"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer style="background:#0A192F; border-top:1px solid rgba(255,255,255,0.05); padding:30px 0; text-align:center;">
+        <div class="container">
+            <span class="logo" style="font-size:1.2rem;">MY YACHT</span>
+            <p style="font-size:0.8rem; opacity:0.5; margin-top:20px;">
+                © 2026 MY YACHT. All Rights Reserved.<br>
+                Certified by Master Mariner
+            </p>
+            <div class="footer-icons" style="margin-top:30px; display:flex; justify-content:center; gap:30px;">
+                <!-- Instagram Icon -->
+                <a href="https://www.instagram.com/my_yacht_kr" target="_blank" aria-label="Instagram">
+                    <svg viewBox="0 0 24 24">
+                        <path
+                            d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm10 4.2c.66 0 1.2.54 1.2 1.2 0 .66-.54 1.2-1.2 1.2-.66 0-1.2-.54-1.2-1.2 0-.66.54-1.2 1.2-1.2zM12 7c2.76 0 5 2.24 5 5s-2.24 5-5 5-5-2.24-5-5 2.24-5 5-5zm0 2c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z" />
+                    </svg>
+                </a>
+                <!-- YouTube Icon -->
+                <a href="https://www.youtube.com/@my_yacht" target="_blank" aria-label="YouTube">
+                    <svg viewBox="0 0 24 24">
+                        <path
+                            d="M21.58 7.18c-.23-.86-.91-1.54-1.77-1.77C18.25 5 12 5 12 5s-6.25 0-7.81.41c-.86.23-1.54.91-1.77 1.77C2 8.75 2 12 2 12s0 3.25.41 4.82c.23.86.91 1.54 1.77 1.77C5.75 19 12 19 12 19s6.25 0 7.81-.41c.86-.23 1.54-.91 1.77-1.77C22 15.25 22 12 22 12s0-3.25-.41-4.82zM10 15V9l5.2 3-5.2 3z" />
+                    </svg>
+                </a>
+                <!-- Blog Icon (Pen / Edit) -->
+                <a href="https://blog.naver.com/capt_lima" target="_blank" aria-label="Blog">
+                    <svg viewBox="0 0 24 24">
+                        <path
+                            d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("active");
+                }
+            });
+        }, { threshold: 0.1 });
+        document.querySelectorAll(".reveal").forEach(el => observer.observe(el));
+
+        const mobileToggle = document.getElementById("mobile-toggle");
+        const navList = document.getElementById("nav-list");
+        mobileToggle.addEventListener("click", () => {
+            const isFlex = navList.style.display === 'flex';
+            if (isFlex) {
+                navList.style.display = 'none';
+                document.body.style.overflow = '';
+            } else {
+                navList.style.display = 'flex';
+                navList.style.flexDirection = 'column';
+                navList.style.position = 'fixed';
+                navList.style.top = '0';
+                navList.style.left = '0';
+                navList.style.width = '100%';
+                navList.style.height = '100vh';
+                navList.style.background = '#0A192F';
+                navList.style.zIndex = '999';
+                navList.style.justifyContent = 'center';
+                navList.style.alignItems = 'center';
+                document.body.style.overflow = 'hidden';
+            }
+        });
+        document.querySelectorAll(".nav-link").forEach(link => {
+            link.addEventListener("click", () => {
+                navList.style = '';
+                document.body.style.overflow = '';
+            });
+        });
+    </script>
+</body>
+
+</html>

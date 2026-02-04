@@ -1,0 +1,46 @@
+baseURL = 'https://myyacht.kr/'
+languageCode = 'ko-kr'
+title = 'MyYacht - 제부도 요트 투어 No.1'
+theme = 'PaperMod'
+
+[params]
+  defaultTheme = 'dark'
+  description = "제부도 프리미엄 요트 투어 No.1, 프랑스 듀포 요트와 20년 무사고 1급 해기사 선장의 고품격 세일링. 서해안 낙조의 감동, 프라이빗 선셋 투어와 세일링 교육까지."
+  keywords = ["제부도요트", "요트투어", "세일링클럽", "요트교육", "myyacht", "마이요트", "서울 근교 데이트", "프라이빗 요트 투어", "제부도 가볼만한 곳"]
+
+  [params.assets]
+    disableHLJS = false
+
+  [[params.socialIcons]]
+    name = "blog"
+    url = "https://blog.naver.com/capt_lima"
+  [[params.socialIcons]]
+    name = "instagram"
+    url = "https://www.instagram.com/my_yacht_kr"
+  [[params.socialIcons]]
+    name = "youtube"
+    url = "https://www.youtube.com/@my_yacht"
+
+  [params.verification]
+    google = 'vk9uVz5A_U-0jsZt_TCrZrVQNmoT8HVy77HTr4HPlzg'
+
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 10
+  [[menu.main]]
+    identifier = "posts"
+    name = "Captain's Log"
+    url = "/posts/"
+    weight = 20
+
+[sitemap]
+  changefreq = "weekly"
+  priority = 0.5
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

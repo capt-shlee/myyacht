@@ -2,32 +2,42 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>MyYacht - 제부도 요트 투어 No.1</title>
-    <link>http://localhost:1313/</link>
+    <link>https://myyacht.kr/</link>
     <description>Recent content on MyYacht - 제부도 요트 투어 No.1</description>
     <generator>Hugo -- 0.155.1</generator>
     <language>ko-kr</language>
     <lastBuildDate>Thu, 05 Feb 2026 12:00:00 +0900</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://myyacht.kr/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>5만원으로 요트 야간 투시 카메라(Night Vision) 만들기</title>
-      <link>http://localhost:1313/posts/night-vision-diy/</link>
+      <link>https://myyacht.kr/posts/night-vision-diy/</link>
       <pubDate>Thu, 05 Feb 2026 12:00:00 +0900</pubDate>
-      <guid>http://localhost:1313/posts/night-vision-diy/</guid>
+      <guid>https://myyacht.kr/posts/night-vision-diy/</guid>
       <description>고가의 해상용 FLIR 장비 없이, 알리익스프레스 가성비 CCTV와 태블릿으로 칠흑 같은 바다에서 야간 항해 안전 확보하기.</description>
     </item>
     <item>
       <title>내 요트의 두뇌, OpenPlotter와 MacArthur HAT 구축기</title>
-      <link>http://localhost:1313/posts/openplotter-macarthur-hat/</link>
+      <link>https://myyacht.kr/posts/openplotter-macarthur-hat/</link>
       <pubDate>Thu, 05 Feb 2026 12:00:00 +0900</pubDate>
-      <guid>http://localhost:1313/posts/openplotter-macarthur-hat/</guid>
+      <guid>https://myyacht.kr/posts/openplotter-macarthur-hat/</guid>
       <description>상용 플로터의 제약에서 벗어나다. 라즈베리 파이와 MacArthur HAT을 이용해 NMEA 2000, AIS, Signal K를 통합한 나만의 통합 항해 시스템 구축 가이드.</description>
     </item>
     <item>
       <title>항해를 시작하며</title>
-      <link>http://localhost:1313/posts/welcome/</link>
+      <link>https://myyacht.kr/posts/welcome/</link>
       <pubDate>Thu, 05 Feb 2026 12:00:00 +0900</pubDate>
-      <guid>http://localhost:1313/posts/welcome/</guid>
+      <guid>https://myyacht.kr/posts/welcome/</guid>
       <description>2026년, 마이요트의 새로운 항해가 시작됩니다. 1급 해기사 선장의 다이어리.</description>
+    </item>
+    <item>
+      <title>요트용 가성비 야간 투시 카메라(IP Camera) 설치 및 설정기</title>
+      <link>https://myyacht.kr/posts/2026-02-05-night-cam/</link>
+      <pubDate>Wed, 04 Feb 2026 11:30:00 +0900</pubDate>
+      <guid>https://myyacht.kr/posts/2026-02-05-night-cam/</guid>
+      <description>&lt;p&gt;#야간카메라 #야간투시카메라 #요트카메라&lt;/p&gt;
+&lt;p&gt;현업(상선)에선 당직 교대 시 &lt;strong&gt;15분 전 교대가 원칙&lt;/strong&gt;입니다. 후임자의 눈이 어둠에 적응할 시간을 주는 것이고, 당직 교대 체크리스트에도 명시되어 있습니다.&lt;/p&gt;
+&lt;p&gt;상선을 탈 때는 솔직히 그물 같은 건 신경을 안 쓰고 다니니 야간에 레이더만 잘 보고 다니면 됐는데, 지금은 요트를 타니 통발 줄도 신경 써야 하는 입장이라 야간이나 박명 시에는 신경이 곤두서더라고요. 더군다나 노안으로 밤눈은 점점 어두워지기도 하고요.&lt;/p&gt;
+&lt;p&gt;항상 그렇지만 &lt;strong&gt;마린용 제품은 우리가 원하는 가격에 0이 한두 개 더 붙습니다.&lt;/strong&gt; 고가의 FLIR 제품이나 메이커 제품을 알아보니 엄두가 안 나길래 포기했습니다.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -1,2 +1,8 @@
 <meta name="naver-site-verification" content="bffb5f33e21815cedf873eb24a4886cac44f5fb1" />
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Noto+Serif+KR:wght@400;700&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+<link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Noto+Serif+KR:wght@400;700&family=Outfit:wght@400;700&display=swap"
+    rel="stylesheet">
+
+{{- if .Params.tags }}
+<meta name="keywords" content="{{ delimit .Params.tags " , " }}" />
+{{- end }}

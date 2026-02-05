@@ -2,12 +2,62 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://myyacht.kr/posts/night-vision-diy/</loc>
-    <lastmod>2026-02-05T12:00:00+09:00</lastmod>
+    <loc>https://myyacht.kr/posts/km110f-shunt/</loc>
+    <lastmod>2026-02-05T14:30:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://myyacht.kr/tags/batterymonitor/</loc>
+    <lastmod>2026-02-05T14:30:00+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://myyacht.kr/tags/diy/</loc>
+    <lastmod>2026-02-05T14:30:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://myyacht.kr/tags/km110f/</loc>
+    <lastmod>2026-02-05T14:30:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://myyacht.kr/</loc>
+    <lastmod>2026-02-05T14:30:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://myyacht.kr/tags/openplotter/</loc>
+    <lastmod>2026-02-05T14:30:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://myyacht.kr/posts/</loc>
+    <lastmod>2026-02-05T14:30:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://myyacht.kr/tags/python/</loc>
+    <lastmod>2026-02-05T14:30:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://myyacht.kr/tags/signalk/</loc>
+    <lastmod>2026-02-05T14:30:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://myyacht.kr/tags/</loc>
+    <lastmod>2026-02-05T14:30:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://myyacht.kr/tags/wifi-hacking/</loc>
+    <lastmod>2026-02-05T14:30:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://myyacht.kr/posts/night-vision-diy/</loc>
     <lastmod>2026-02-05T12:00:00+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -27,22 +77,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://myyacht.kr/</loc>
-    <lastmod>2026-02-05T12:00:00+09:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://myyacht.kr/tags/nightvision/</loc>
-    <lastmod>2026-02-05T12:00:00+09:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://myyacht.kr/tags/openplotter/</loc>
-    <lastmod>2026-02-05T12:00:00+09:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://myyacht.kr/posts/</loc>
     <lastmod>2026-02-05T12:00:00+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -53,11 +88,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://myyacht.kr/tags/safety/</loc>
-    <lastmod>2026-02-05T12:00:00+09:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://myyacht.kr/tags/</loc>
     <lastmod>2026-02-05T12:00:00+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

@@ -6,8 +6,15 @@
     <description>Recent content in DIY on MyYacht - 제부도 요트 투어 No.1</description>
     <generator>Hugo -- 0.155.1</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Thu, 05 Feb 2026 12:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 05 Feb 2026 14:30:00 +0900</lastBuildDate>
     <atom:link href="https://myyacht.kr/tags/diy/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>4만원으로 배터리 모니터링 시스템 구축하기 (KM110F WiFi 해킹 &#43; OpenPlotter)</title>
+      <link>https://myyacht.kr/posts/km110f-shunt/</link>
+      <pubDate>Thu, 05 Feb 2026 14:30:00 +0900</pubDate>
+      <guid>https://myyacht.kr/posts/km110f-shunt/</guid>
+      <description>Victron SmartShunt가 부럽지 않다. 전용 앱에 갇힌 KM110F를 제미나이(Gemini)와 함께 해킹하여 와이파이 신호를 가로채고 OpenPlotter로 통합한 삽질과 승리의 기록.</description>
+    </item>
     <item>
       <title>5만원으로 요트 야간 투시 카메라(Night Vision) 만들기</title>
       <link>https://myyacht.kr/posts/night-vision-diy/</link>

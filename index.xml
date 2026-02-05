@@ -2,18 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>MyYacht - 제부도 요트 투어 No.1</title>
-    <link>https://myyacht.kr/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on MyYacht - 제부도 요트 투어 No.1</description>
     <generator>Hugo -- 0.155.1</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Wed, 04 Feb 2026 18:00:00 +0900</lastBuildDate>
-    <atom:link href="https://myyacht.kr/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 05 Feb 2026 12:00:00 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>제부도 요트 투어 - 첫 번째 기록</title>
-      <link>https://myyacht.kr/posts/sample-log/</link>
-      <pubDate>Wed, 04 Feb 2026 18:00:00 +0900</pubDate>
-      <guid>https://myyacht.kr/posts/sample-log/</guid>
-      <description>Obsidian에서 작성하는 요트 투어 일지입니다.</description>
+      <title>5만원으로 요트 야간 투시 카메라(Night Vision) 만들기</title>
+      <link>http://localhost:1313/posts/night-vision-diy/</link>
+      <pubDate>Thu, 05 Feb 2026 12:00:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/night-vision-diy/</guid>
+      <description>고가의 해상용 FLIR 장비 없이, 알리익스프레스 가성비 CCTV와 태블릿으로 칠흑 같은 바다에서 야간 항해 안전 확보하기.</description>
+    </item>
+    <item>
+      <title>내 요트의 두뇌, OpenPlotter와 MacArthur HAT 구축기</title>
+      <link>http://localhost:1313/posts/openplotter-macarthur-hat/</link>
+      <pubDate>Thu, 05 Feb 2026 12:00:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/openplotter-macarthur-hat/</guid>
+      <description>상용 플로터의 제약에서 벗어나다. 라즈베리 파이와 MacArthur HAT을 이용해 NMEA 2000, AIS, Signal K를 통합한 나만의 통합 항해 시스템 구축 가이드.</description>
+    </item>
+    <item>
+      <title>항해를 시작하며</title>
+      <link>http://localhost:1313/posts/welcome/</link>
+      <pubDate>Thu, 05 Feb 2026 12:00:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/welcome/</guid>
+      <description>2026년, 마이요트의 새로운 항해가 시작됩니다. 1급 해기사 선장의 다이어리.</description>
     </item>
   </channel>
 </rss>

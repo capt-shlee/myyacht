@@ -16,8 +16,12 @@ theme = 'PaperMod'
       label = "comment"
       theme = "github-dark"
 
+  comments = true
+
   [params.assets]
     disableHLJS = false
+
+  comments = true
 
   [[params.socialIcons]]
     name = "blog"

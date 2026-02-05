@@ -284,6 +284,27 @@
                 document.body.style.overflow = '';
             });
         });
+
+        // Auto-Hide Floating Button near Footer
+        const floatBtn = document.querySelector('.floating-btn-wrapper');
+        const footer = document.querySelector('footer');
+
+        if (floatBtn && footer) {
+            window.addEventListener('scroll', () => {
+                const footerRect = footer.getBoundingClientRect();
+                const windowHeight = window.innerHeight;
+                // If footer approaches viewport (button overlap zone), hide button
+                if (footerRect.top < windowHeight + 50) {
+                    floatBtn.style.opacity = '0';
+                    floatBtn.style.pointerEvents = 'none';
+                    floatBtn.style.transform = 'translateY(20px)';
+                } else {
+                    floatBtn.style.opacity = '1';
+                    floatBtn.style.pointerEvents = 'auto';
+                    floatBtn.style.transform = 'translateY(0)';
+                }
+            });
+        }
     </script>
 </body>
 

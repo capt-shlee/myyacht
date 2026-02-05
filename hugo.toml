@@ -5,23 +5,18 @@ title = 'MyYacht - 제부도 요트 투어 No.1'
 theme = 'PaperMod'
 
 [params]
+  comments = true
   defaultTheme = 'dark'
   description = "제부도 프리미엄 요트 투어 No.1, 프랑스 듀포 요트와 20년 무사고 1급 해기사 선장의 고품격 세일링. 서해안 낙조의 감동, 프라이빗 선셋 투어와 세일링 교육까지."
   keywords = ["제부도요트", "요트투어", "세일링클럽", "요트교육", "myyacht", "마이요트", "서울 근교 데이트", "프라이빗 요트 투어", "제부도 가볼만한 곳"]
 
-  [params.comments]
-    [params.comments.utterances]
+  [params.commentsConfig]
+    [params.commentsConfig.utterances]
       repo = "capt-shlee/myyacht"
       issueTerm = "pathname"
       label = "comment"
       theme = "github-dark"
 
-  comments = true
-
-  [params.assets]
-    disableHLJS = false
-
-  comments = true
 
   [[params.socialIcons]]
     name = "blog"

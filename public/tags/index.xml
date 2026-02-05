@@ -2,101 +2,101 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on MyYacht - 제부도 요트 투어 No.1</title>
-    <link>https://myyacht.kr/tags/</link>
+    <link>http://localhost:1313/tags/</link>
     <description>Recent content in Tags on MyYacht - 제부도 요트 투어 No.1</description>
     <generator>Hugo -- 0.155.1</generator>
     <language>ko-kr</language>
     <lastBuildDate>Thu, 05 Feb 2026 14:30:00 +0900</lastBuildDate>
-    <atom:link href="https://myyacht.kr/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>BatteryMonitor</title>
-      <link>https://myyacht.kr/tags/batterymonitor/</link>
+      <link>http://localhost:1313/tags/batterymonitor/</link>
       <pubDate>Thu, 05 Feb 2026 14:30:00 +0900</pubDate>
-      <guid>https://myyacht.kr/tags/batterymonitor/</guid>
+      <guid>http://localhost:1313/tags/batterymonitor/</guid>
       <description></description>
     </item>
     <item>
       <title>DIY</title>
-      <link>https://myyacht.kr/tags/diy/</link>
+      <link>http://localhost:1313/tags/diy/</link>
       <pubDate>Thu, 05 Feb 2026 14:30:00 +0900</pubDate>
-      <guid>https://myyacht.kr/tags/diy/</guid>
+      <guid>http://localhost:1313/tags/diy/</guid>
       <description></description>
     </item>
     <item>
       <title>KM110F</title>
-      <link>https://myyacht.kr/tags/km110f/</link>
+      <link>http://localhost:1313/tags/km110f/</link>
       <pubDate>Thu, 05 Feb 2026 14:30:00 +0900</pubDate>
-      <guid>https://myyacht.kr/tags/km110f/</guid>
+      <guid>http://localhost:1313/tags/km110f/</guid>
       <description></description>
     </item>
     <item>
       <title>OpenPlotter</title>
-      <link>https://myyacht.kr/tags/openplotter/</link>
+      <link>http://localhost:1313/tags/openplotter/</link>
       <pubDate>Thu, 05 Feb 2026 14:30:00 +0900</pubDate>
-      <guid>https://myyacht.kr/tags/openplotter/</guid>
+      <guid>http://localhost:1313/tags/openplotter/</guid>
       <description></description>
     </item>
     <item>
       <title>Python</title>
-      <link>https://myyacht.kr/tags/python/</link>
+      <link>http://localhost:1313/tags/python/</link>
       <pubDate>Thu, 05 Feb 2026 14:30:00 +0900</pubDate>
-      <guid>https://myyacht.kr/tags/python/</guid>
+      <guid>http://localhost:1313/tags/python/</guid>
       <description></description>
     </item>
     <item>
       <title>SignalK</title>
-      <link>https://myyacht.kr/tags/signalk/</link>
+      <link>http://localhost:1313/tags/signalk/</link>
       <pubDate>Thu, 05 Feb 2026 14:30:00 +0900</pubDate>
-      <guid>https://myyacht.kr/tags/signalk/</guid>
+      <guid>http://localhost:1313/tags/signalk/</guid>
       <description></description>
     </item>
     <item>
       <title>WiFi Hacking</title>
-      <link>https://myyacht.kr/tags/wifi-hacking/</link>
+      <link>http://localhost:1313/tags/wifi-hacking/</link>
       <pubDate>Thu, 05 Feb 2026 14:30:00 +0900</pubDate>
-      <guid>https://myyacht.kr/tags/wifi-hacking/</guid>
+      <guid>http://localhost:1313/tags/wifi-hacking/</guid>
       <description></description>
     </item>
     <item>
       <title>Electronics</title>
-      <link>https://myyacht.kr/tags/electronics/</link>
+      <link>http://localhost:1313/tags/electronics/</link>
       <pubDate>Thu, 05 Feb 2026 12:00:00 +0900</pubDate>
-      <guid>https://myyacht.kr/tags/electronics/</guid>
+      <guid>http://localhost:1313/tags/electronics/</guid>
       <description></description>
     </item>
     <item>
       <title>MacArthur HAT</title>
-      <link>https://myyacht.kr/tags/macarthur-hat/</link>
+      <link>http://localhost:1313/tags/macarthur-hat/</link>
       <pubDate>Thu, 05 Feb 2026 12:00:00 +0900</pubDate>
-      <guid>https://myyacht.kr/tags/macarthur-hat/</guid>
+      <guid>http://localhost:1313/tags/macarthur-hat/</guid>
       <description></description>
     </item>
     <item>
       <title>MarineElectronics</title>
-      <link>https://myyacht.kr/tags/marineelectronics/</link>
+      <link>http://localhost:1313/tags/marineelectronics/</link>
       <pubDate>Thu, 05 Feb 2026 12:00:00 +0900</pubDate>
-      <guid>https://myyacht.kr/tags/marineelectronics/</guid>
+      <guid>http://localhost:1313/tags/marineelectronics/</guid>
       <description></description>
     </item>
     <item>
       <title>NightVision</title>
-      <link>https://myyacht.kr/tags/nightvision/</link>
+      <link>http://localhost:1313/tags/nightvision/</link>
       <pubDate>Thu, 05 Feb 2026 12:00:00 +0900</pubDate>
-      <guid>https://myyacht.kr/tags/nightvision/</guid>
+      <guid>http://localhost:1313/tags/nightvision/</guid>
       <description></description>
     </item>
     <item>
       <title>RaspberryPi</title>
-      <link>https://myyacht.kr/tags/raspberrypi/</link>
+      <link>http://localhost:1313/tags/raspberrypi/</link>
       <pubDate>Thu, 05 Feb 2026 12:00:00 +0900</pubDate>
-      <guid>https://myyacht.kr/tags/raspberrypi/</guid>
+      <guid>http://localhost:1313/tags/raspberrypi/</guid>
       <description></description>
     </item>
     <item>
       <title>Safety</title>
-      <link>https://myyacht.kr/tags/safety/</link>
+      <link>http://localhost:1313/tags/safety/</link>
       <pubDate>Thu, 05 Feb 2026 12:00:00 +0900</pubDate>
-      <guid>https://myyacht.kr/tags/safety/</guid>
+      <guid>http://localhost:1313/tags/safety/</guid>
       <description></description>
     </item>
   </channel>

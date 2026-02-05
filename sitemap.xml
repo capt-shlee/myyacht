@@ -2,77 +2,118 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/posts/night-vision-diy/</loc>
+    <loc>https://myyacht.kr/posts/night-vision-diy/</loc>
     <lastmod>2026-02-05T12:00:00+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/diy/</loc>
+    <loc>https://myyacht.kr/tags/diy/</loc>
     <lastmod>2026-02-05T12:00:00+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/electronics/</loc>
+    <loc>https://myyacht.kr/tags/electronics/</loc>
     <lastmod>2026-02-05T12:00:00+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/macarthur-hat/</loc>
+    <loc>https://myyacht.kr/tags/macarthur-hat/</loc>
     <lastmod>2026-02-05T12:00:00+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/marineelectronics/</loc>
+    <loc>https://myyacht.kr/tags/marineelectronics/</loc>
     <lastmod>2026-02-05T12:00:00+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://myyacht.kr/</loc>
     <lastmod>2026-02-05T12:00:00+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/nightvision/</loc>
+    <loc>https://myyacht.kr/tags/nightvision/</loc>
     <lastmod>2026-02-05T12:00:00+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/openplotter/</loc>
+    <loc>https://myyacht.kr/tags/openplotter/</loc>
     <lastmod>2026-02-05T12:00:00+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>https://myyacht.kr/posts/</loc>
     <lastmod>2026-02-05T12:00:00+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/raspberrypi/</loc>
+    <loc>https://myyacht.kr/tags/raspberrypi/</loc>
     <lastmod>2026-02-05T12:00:00+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/safety/</loc>
+    <loc>https://myyacht.kr/tags/safety/</loc>
     <lastmod>2026-02-05T12:00:00+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://myyacht.kr/tags/</loc>
     <lastmod>2026-02-05T12:00:00+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/posts/openplotter-macarthur-hat/</loc>
+    <loc>https://myyacht.kr/posts/openplotter-macarthur-hat/</loc>
     <lastmod>2026-02-05T12:00:00+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/posts/welcome/</loc>
+    <loc>https://myyacht.kr/posts/welcome/</loc>
     <lastmod>2026-02-05T12:00:00+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://myyacht.kr/categories/</loc>
+    <lastmod>2026-02-04T11:30:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://myyacht.kr/categories/diy/</loc>
+    <lastmod>2026-02-04T11:30:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://myyacht.kr/categories/electronics/</loc>
+    <lastmod>2026-02-04T11:30:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://myyacht.kr/tags/ip%EC%B9%B4%EB%A9%94%EB%9D%BC/</loc>
+    <lastmod>2026-02-04T11:30:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://myyacht.kr/tags/%EA%B0%80%EC%84%B1%EB%B9%84/</loc>
+    <lastmod>2026-02-04T11:30:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://myyacht.kr/tags/%EC%95%88%EC%A0%84/</loc>
+    <lastmod>2026-02-04T11:30:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://myyacht.kr/tags/%EC%95%8C%EB%A6%AC%EC%9D%B5%EC%8A%A4%ED%94%84%EB%A0%88%EC%8A%A4/</loc>
+    <lastmod>2026-02-04T11:30:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://myyacht.kr/tags/%EC%95%BC%EA%B0%84%ED%95%AD%ED%95%B4/</loc>
+    <lastmod>2026-02-04T11:30:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://myyacht.kr/posts/2026-02-05-night-cam/</loc>
+    <lastmod>2026-02-04T11:30:00+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>

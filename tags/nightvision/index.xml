@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>NightVision on MyYacht - No.1 제부도 요트 투어</title>
-    <link>http://localhost:1313/tags/nightvision/</link>
+    <link>https://myyacht.kr/tags/nightvision/</link>
     <description>Recent content in NightVision on MyYacht - No.1 제부도 요트 투어</description>
     <generator>Hugo -- 0.155.1</generator>
     <language>ko-kr</language>
     <lastBuildDate>Thu, 05 Feb 2026 12:00:00 +0900</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/nightvision/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://myyacht.kr/tags/nightvision/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>5만원으로 요트 야간 투시 카메라(Night Vision) 만들기</title>
-      <link>http://localhost:1313/posts/night-vision-diy/</link>
+      <link>https://myyacht.kr/posts/night-vision-diy/</link>
       <pubDate>Thu, 05 Feb 2026 12:00:00 +0900</pubDate>
-      <guid>http://localhost:1313/posts/night-vision-diy/</guid>
+      <guid>https://myyacht.kr/posts/night-vision-diy/</guid>
       <description>고가의 해상용 FLIR 장비 없이, 알리익스프레스 가성비 CCTV와 태블릿으로 칠흑 같은 바다에서 야간 항해 안전 확보하기.</description>
     </item>
   </channel>

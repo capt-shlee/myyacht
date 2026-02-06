@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Categories on MyYacht - No.1 제부도 요트 투어</title>
-    <link>http://localhost:1313/categories/</link>
+    <link>https://myyacht.kr/categories/</link>
     <description>Recent content in Categories on MyYacht - No.1 제부도 요트 투어</description>
     <generator>Hugo -- 0.155.1</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Fri, 06 Feb 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 06 Feb 2026 09:00:00 +0900</lastBuildDate>
+    <atom:link href="https://myyacht.kr/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Sailing Knowledge</title>
-      <link>http://localhost:1313/categories/sailing-knowledge/</link>
-      <pubDate>Fri, 06 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/categories/sailing-knowledge/</guid>
+      <link>https://myyacht.kr/categories/sailing-knowledge/</link>
+      <pubDate>Fri, 06 Feb 2026 09:00:00 +0900</pubDate>
+      <guid>https://myyacht.kr/categories/sailing-knowledge/</guid>
       <description></description>
     </item>
     <item>
       <title>Yachting Tips</title>
-      <link>http://localhost:1313/categories/yachting-tips/</link>
+      <link>https://myyacht.kr/categories/yachting-tips/</link>
       <pubDate>Thu, 05 Feb 2026 18:00:00 +0900</pubDate>
-      <guid>http://localhost:1313/categories/yachting-tips/</guid>
+      <guid>https://myyacht.kr/categories/yachting-tips/</guid>
       <description></description>
     </item>
   </channel>

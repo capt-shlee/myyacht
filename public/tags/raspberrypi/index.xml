@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>RaspberryPi on MyYacht - No.1 제부도 요트 투어</title>
-    <link>http://localhost:1313/tags/raspberrypi/</link>
+    <link>https://myyacht.kr/tags/raspberrypi/</link>
     <description>Recent content in RaspberryPi on MyYacht - No.1 제부도 요트 투어</description>
     <generator>Hugo -- 0.155.1</generator>
     <language>ko-kr</language>
     <lastBuildDate>Thu, 05 Feb 2026 12:00:00 +0900</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/raspberrypi/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://myyacht.kr/tags/raspberrypi/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>내 요트의 두뇌, OpenPlotter와 MacArthur HAT 구축기</title>
-      <link>http://localhost:1313/posts/openplotter-macarthur-hat/</link>
+      <link>https://myyacht.kr/posts/openplotter-macarthur-hat/</link>
       <pubDate>Thu, 05 Feb 2026 12:00:00 +0900</pubDate>
-      <guid>http://localhost:1313/posts/openplotter-macarthur-hat/</guid>
+      <guid>https://myyacht.kr/posts/openplotter-macarthur-hat/</guid>
       <description>상용 플로터의 제약에서 벗어나다. 라즈베리 파이와 MacArthur HAT을 이용해 NMEA 2000, AIS, Signal K를 통합한 나만의 통합 항해 시스템 구축 가이드.</description>
     </item>
   </channel>

@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>요트운항 on MyYacht - No.1 제부도 요트 투어</title>
-    <link>http://localhost:1313/tags/%EC%9A%94%ED%8A%B8%EC%9A%B4%ED%95%AD/</link>
+    <link>https://myyacht.kr/tags/%EC%9A%94%ED%8A%B8%EC%9A%B4%ED%95%AD/</link>
     <description>Recent content in 요트운항 on MyYacht - No.1 제부도 요트 투어</description>
     <generator>Hugo -- 0.155.1</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Fri, 06 Feb 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/%EC%9A%94%ED%8A%B8%EC%9A%B4%ED%95%AD/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 06 Feb 2026 09:00:00 +0900</lastBuildDate>
+    <atom:link href="https://myyacht.kr/tags/%EC%9A%94%ED%8A%B8%EC%9A%B4%ED%95%AD/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>해도의 기본 수준면과 심볼: 안전 항해를 위한 수심 독해법</title>
-      <link>http://localhost:1313/posts/chart-datum/</link>
-      <pubDate>Fri, 06 Feb 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/chart-datum/</guid>
+      <link>https://myyacht.kr/posts/chart-datum/</link>
+      <pubDate>Fri, 06 Feb 2026 09:00:00 +0900</pubDate>
+      <guid>https://myyacht.kr/posts/chart-datum/</guid>
       <description>해도에 표시된 수심, 믿어도 될까요? 1급 해기사가 알려주는 Chart Datum의 의미와 조석표 활용, 그리고 UKC 설정 노하우.</description>
     </item>
     <item>
       <title>요트의 앵커링 팁: 1급 항해사가 전하는 안전한 정박 노하우</title>
-      <link>http://localhost:1313/posts/yacht-anchoring/</link>
+      <link>https://myyacht.kr/posts/yacht-anchoring/</link>
       <pubDate>Thu, 05 Feb 2026 18:00:00 +0900</pubDate>
-      <guid>http://localhost:1313/posts/yacht-anchoring/</guid>
+      <guid>https://myyacht.kr/posts/yacht-anchoring/</guid>
       <description>대형 상선의 앵커링 원리를 요트에 접목하여, 어떤 상황에서도 안심할 수 있는 정박법과 전자해도 활용 팁을 소개합니다.</description>
     </item>
   </channel>

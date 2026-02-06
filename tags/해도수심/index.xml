@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>해도수심 on MyYacht - No.1 제부도 요트 투어</title>
+    <link>http://localhost:1313/tags/%ED%95%B4%EB%8F%84%EC%88%98%EC%8B%AC/</link>
+    <description>Recent content in 해도수심 on MyYacht - No.1 제부도 요트 투어</description>
+    <generator>Hugo -- 0.155.1</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Fri, 06 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/%ED%95%B4%EB%8F%84%EC%88%98%EC%8B%AC/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>해도의 기본 수준면과 심볼: 안전 항해를 위한 수심 독해법</title>
+      <link>http://localhost:1313/posts/chart-datum/</link>
+      <pubDate>Fri, 06 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/chart-datum/</guid>
+      <description>해도에 표시된 수심, 믿어도 될까요? 1급 해기사가 알려주는 Chart Datum의 의미와 조석표 활용, 그리고 UKC 설정 노하우.</description>
+    </item>
+  </channel>
+</rss>

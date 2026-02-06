@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>플로터 on MyYacht - No.1 제부도 요트 투어</title>
+    <link>http://localhost:1313/tags/%ED%94%8C%EB%A1%9C%ED%84%B0/</link>
+    <description>Recent content in 플로터 on MyYacht - No.1 제부도 요트 투어</description>
+    <generator>Hugo -- 0.155.1</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Fri, 06 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/%ED%94%8C%EB%A1%9C%ED%84%B0/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>해도의 기본 수준면 (Chart Datum): 네비오닉스 설정의 중요성</title>
+      <link>http://localhost:1313/posts/chart-datum/</link>
+      <pubDate>Fri, 06 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/chart-datum/</guid>
+      <description>네비오닉스나 플로터의 설정을 함부로 변경하면 위험할 수 있습니다. 1급 해기사가 알려주는 해도 수심의 기준과 안전 설정법.</description>
+    </item>
+  </channel>
+</rss>

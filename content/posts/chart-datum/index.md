@@ -1,6 +1,6 @@
 ---
 title: "해도의 기본 수준면과 심볼: 안전 항해를 위한 수심 독해법"
-date: 2026-02-06T18:56:10+09:00
+date: 2026-02-06T09:00:00+09:00
 description: "해도에 표시된 수심, 믿어도 될까요? 1급 해기사가 알려주는 Chart Datum의 의미와 조석표 활용, 그리고 UKC 설정 노하우."
 categories: ["Sailing Knowledge"]
 tags: ["해도수심", "Chart Datum", "Tide Table", "UKC", "Safety Contour", "요트운항"]

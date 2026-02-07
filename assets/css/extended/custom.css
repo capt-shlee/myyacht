@@ -619,6 +619,25 @@ iframe {
 .post-entry {
     background: rgba(10, 25, 47, 0.5);
     backdrop-filter: blur(10px);
+    position: relative;
+    overflow: hidden;
+    min-height: auto;
+    /* Let content dictate height */
+    display: flex;
+    flex-direction: row;
+    /* Horizontal layout */
+    align-items: center;
+    /* Center vertically */
+    gap: 20px;
+    /* Space between image and text */
+    height: 160px;
+    /* Fixed unified height */
+}
+
+.entry-header {
+    position: relative;
+    z-index: 20;
+    /* Title above summary */
 }
 
 .post-entry:hover {
@@ -627,14 +646,90 @@ iframe {
     box-shadow: var(--shadow-gold);
 }
 
-/* Post Styles */
-.post-entry {
-    background: rgba(10, 25, 47, 0.5);
-    backdrop-filter: blur(10px);
+/* Summary Hover Effect */
+/* Summary Hover Effect */
+.entry-content {
+    display: none;
+    /* Hide summary by default */
+    position: absolute;
+    top: 60px;
+    /* Start below the title area */
+    left: 140px;
+    /* Offset to not cover thumbnail */
+    width: calc(100% - 140px);
+    /* Fill remaining width */
+    height: auto;
+    max-height: 50px;
+    /* Reduced to force 2 lines */
+    /* Limit height */
+    padding: 5px 15px;
+    /* Reduced vertical padding */
+    /* Compact padding */
+    background: transparent;
+    /* Remove solid background */
+    color: var(--color-white);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 10;
+
+    /* Standardized Text */
+    font-size: 0.9rem;
+    line-height: 1.4;
+    text-align: left;
+
+    /* Line Clamp to prevent overflow */
+    display: -webkit-box;
+    -webkit-line-clamp: 2 !important;
+    /* Force 2 lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
-.post-entry:hover {
-    border-color: var(--color-accent) !important;
-    transform: translateY(-5px);
-    box-shadow: var(--shadow-gold);
+
+
+/* Reset all inner styles for summary consistency */
+.entry-content * {
+    font-size: inherit !important;
+    line-height: inherit !important;
+    color: inherit !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: transparent !important;
+    border: none !important;
+    font-weight: normal !important;
+    display: inline;
+    /* Keep text flow */
+}
+
+.post-entry:hover .entry-content {
+    display: block;
+    opacity: 1;
+}
+
+/* Single Post Styling */
+.post-single .post-title {
+    font-size: 2rem;
+    /* Reduced title size */
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.post-content {
+    font-size: 1.05rem;
+    /* Standardized font size */
+    line-height: 1.7;
+    /* Comfortable line height */
+    color: var(--color-text-body);
+}
+
+.post-content h1,
+.post-content h2,
+.post-content h3 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: var(--color-white);
+}
+
+.post-content p {
+    margin-bottom: 20px;
 }

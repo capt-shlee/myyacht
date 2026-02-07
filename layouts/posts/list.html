@@ -15,7 +15,7 @@
             <div class="post-list" style="max-width: 800px; margin: 0 auto;">
                 {{- range .Pages }}
                 <article class="post-entry"
-                    style="margin-bottom: 20px; padding: 20px; border: 1px solid var(--color-border); border-radius: 2px; transition: transform 0.3s ease; display:flex; gap:20px; align-items:center;">
+                    style="margin-bottom: 20px; padding: 20px; border: 1px solid var(--color-border); border-radius: 2px; transition: transform 0.3s ease;">
                     {{ $image := .Params.cover.image }}
                     {{ if $image }}
                     {{ with .Resources.GetMatch $image }}
@@ -41,13 +41,10 @@
                             <span title='{{ .Date.Format "2006-01-02 15:04:05 MST" }}'>
                                 <i class="fas fa-calendar-alt"></i> {{ .Date.Format "2006.01.02" }}
                             </span>
-                            <span>
-                                <i class="fas fa-clock"></i> 읽는 시간 {{ .ReadingTime }}분
-                            </span>
                         </footer>
                     </div>
                     <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"
-                        style="position: absolute; inset: 0;"></a>
+                        style="position: absolute; inset: 0; z-index: 20;"></a>
                 </article>
                 {{- end }}
             </div>

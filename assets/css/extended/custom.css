@@ -733,3 +733,27 @@ iframe {
 .post-content p {
     margin-bottom: 20px;
 }
+
+/* Mobile Optimizations */
+@media(max-width: 768px) {
+    /* Hide Summary in List View */
+    .entry-content {
+        display: none !important;
+    }
+
+    /* Resize Titles */
+    .entry-header h2 {
+        font-size: 1.3rem !important; /* List View Title */
+    }
+
+    .post-title {
+        font-size: 1.6rem !important; /* Single Post Title */
+    }
+    
+    /* Adjust Post Entry Height if needed since summary is gone */
+    .post-entry {
+        height: auto !important;
+        min-height: 100px;
+        padding: 10px 0;
+    }
+}

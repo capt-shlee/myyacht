@@ -2,164 +2,185 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on MyYacht - No.1 제부도 요트 투어</title>
-    <link>https://myyacht.kr/tags/</link>
+    <link>http://localhost:11621/tags/</link>
     <description>Recent content in Tags on MyYacht - No.1 제부도 요트 투어</description>
     <generator>Hugo -- 0.155.1</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Fri, 06 Feb 2026 09:00:00 +0900</lastBuildDate>
-    <atom:link href="https://myyacht.kr/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 07 Feb 2026 15:58:00 +0900</lastBuildDate>
+    <atom:link href="http://localhost:11621/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Chart Datum</title>
-      <link>https://myyacht.kr/tags/chart-datum/</link>
-      <pubDate>Fri, 06 Feb 2026 09:00:00 +0900</pubDate>
-      <guid>https://myyacht.kr/tags/chart-datum/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Safety Contour</title>
-      <link>https://myyacht.kr/tags/safety-contour/</link>
-      <pubDate>Fri, 06 Feb 2026 09:00:00 +0900</pubDate>
-      <guid>https://myyacht.kr/tags/safety-contour/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Tide Table</title>
-      <link>https://myyacht.kr/tags/tide-table/</link>
-      <pubDate>Fri, 06 Feb 2026 09:00:00 +0900</pubDate>
-      <guid>https://myyacht.kr/tags/tide-table/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>UKC</title>
-      <link>https://myyacht.kr/tags/ukc/</link>
-      <pubDate>Fri, 06 Feb 2026 09:00:00 +0900</pubDate>
-      <guid>https://myyacht.kr/tags/ukc/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>요트운항</title>
-      <link>https://myyacht.kr/tags/%EC%9A%94%ED%8A%B8%EC%9A%B4%ED%95%AD/</link>
-      <pubDate>Fri, 06 Feb 2026 09:00:00 +0900</pubDate>
-      <guid>https://myyacht.kr/tags/%EC%9A%94%ED%8A%B8%EC%9A%B4%ED%95%AD/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>해도수심</title>
-      <link>https://myyacht.kr/tags/%ED%95%B4%EB%8F%84%EC%88%98%EC%8B%AC/</link>
-      <pubDate>Fri, 06 Feb 2026 09:00:00 +0900</pubDate>
-      <guid>https://myyacht.kr/tags/%ED%95%B4%EB%8F%84%EC%88%98%EC%8B%AC/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>DIY</title>
-      <link>https://myyacht.kr/tags/diy/</link>
-      <pubDate>Thu, 05 Feb 2026 18:00:00 +0900</pubDate>
-      <guid>https://myyacht.kr/tags/diy/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>안전항해</title>
-      <link>https://myyacht.kr/tags/%EC%95%88%EC%A0%84%ED%95%AD%ED%95%B4/</link>
-      <pubDate>Thu, 05 Feb 2026 18:00:00 +0900</pubDate>
-      <guid>https://myyacht.kr/tags/%EC%95%88%EC%A0%84%ED%95%AD%ED%95%B4/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>앵커링</title>
-      <link>https://myyacht.kr/tags/%EC%95%B5%EC%BB%A4%EB%A7%81/</link>
-      <pubDate>Thu, 05 Feb 2026 18:00:00 +0900</pubDate>
-      <guid>https://myyacht.kr/tags/%EC%95%B5%EC%BB%A4%EB%A7%81/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>전자해도</title>
-      <link>https://myyacht.kr/tags/%EC%A0%84%EC%9E%90%ED%95%B4%EB%8F%84/</link>
-      <pubDate>Thu, 05 Feb 2026 18:00:00 +0900</pubDate>
-      <guid>https://myyacht.kr/tags/%EC%A0%84%EC%9E%90%ED%95%B4%EB%8F%84/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>BatteryMonitor</title>
-      <link>https://myyacht.kr/tags/batterymonitor/</link>
-      <pubDate>Thu, 05 Feb 2026 14:30:00 +0900</pubDate>
-      <guid>https://myyacht.kr/tags/batterymonitor/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>KM110F</title>
-      <link>https://myyacht.kr/tags/km110f/</link>
-      <pubDate>Thu, 05 Feb 2026 14:30:00 +0900</pubDate>
-      <guid>https://myyacht.kr/tags/km110f/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>OpenPlotter</title>
-      <link>https://myyacht.kr/tags/openplotter/</link>
-      <pubDate>Thu, 05 Feb 2026 14:30:00 +0900</pubDate>
-      <guid>https://myyacht.kr/tags/openplotter/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Python</title>
-      <link>https://myyacht.kr/tags/python/</link>
-      <pubDate>Thu, 05 Feb 2026 14:30:00 +0900</pubDate>
-      <guid>https://myyacht.kr/tags/python/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>SignalK</title>
-      <link>https://myyacht.kr/tags/signalk/</link>
-      <pubDate>Thu, 05 Feb 2026 14:30:00 +0900</pubDate>
-      <guid>https://myyacht.kr/tags/signalk/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>WiFi Hacking</title>
-      <link>https://myyacht.kr/tags/wifi-hacking/</link>
-      <pubDate>Thu, 05 Feb 2026 14:30:00 +0900</pubDate>
-      <guid>https://myyacht.kr/tags/wifi-hacking/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Electronics</title>
-      <link>https://myyacht.kr/tags/electronics/</link>
-      <pubDate>Thu, 05 Feb 2026 12:00:00 +0900</pubDate>
-      <guid>https://myyacht.kr/tags/electronics/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>MacArthur HAT</title>
-      <link>https://myyacht.kr/tags/macarthur-hat/</link>
-      <pubDate>Thu, 05 Feb 2026 12:00:00 +0900</pubDate>
-      <guid>https://myyacht.kr/tags/macarthur-hat/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>MarineElectronics</title>
-      <link>https://myyacht.kr/tags/marineelectronics/</link>
-      <pubDate>Thu, 05 Feb 2026 12:00:00 +0900</pubDate>
-      <guid>https://myyacht.kr/tags/marineelectronics/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>NightVision</title>
-      <link>https://myyacht.kr/tags/nightvision/</link>
-      <pubDate>Thu, 05 Feb 2026 12:00:00 +0900</pubDate>
-      <guid>https://myyacht.kr/tags/nightvision/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>RaspberryPi</title>
-      <link>https://myyacht.kr/tags/raspberrypi/</link>
-      <pubDate>Thu, 05 Feb 2026 12:00:00 +0900</pubDate>
-      <guid>https://myyacht.kr/tags/raspberrypi/</guid>
+      <title>Mooring</title>
+      <link>http://localhost:11621/tags/mooring/</link>
+      <pubDate>Sat, 07 Feb 2026 15:58:00 +0900</pubDate>
+      <guid>http://localhost:11621/tags/mooring/</guid>
       <description></description>
     </item>
     <item>
       <title>Safety</title>
-      <link>https://myyacht.kr/tags/safety/</link>
+      <link>http://localhost:11621/tags/safety/</link>
+      <pubDate>Sat, 07 Feb 2026 15:58:00 +0900</pubDate>
+      <guid>http://localhost:11621/tags/safety/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Seamanship</title>
+      <link>http://localhost:11621/tags/seamanship/</link>
+      <pubDate>Sat, 07 Feb 2026 15:58:00 +0900</pubDate>
+      <guid>http://localhost:11621/tags/seamanship/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Yachting Tips</title>
+      <link>http://localhost:11621/tags/yachting-tips/</link>
+      <pubDate>Sat, 07 Feb 2026 15:58:00 +0900</pubDate>
+      <guid>http://localhost:11621/tags/yachting-tips/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Chart Datum</title>
+      <link>http://localhost:11621/tags/chart-datum/</link>
+      <pubDate>Fri, 06 Feb 2026 09:00:00 +0900</pubDate>
+      <guid>http://localhost:11621/tags/chart-datum/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Safety Contour</title>
+      <link>http://localhost:11621/tags/safety-contour/</link>
+      <pubDate>Fri, 06 Feb 2026 09:00:00 +0900</pubDate>
+      <guid>http://localhost:11621/tags/safety-contour/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tide Table</title>
+      <link>http://localhost:11621/tags/tide-table/</link>
+      <pubDate>Fri, 06 Feb 2026 09:00:00 +0900</pubDate>
+      <guid>http://localhost:11621/tags/tide-table/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>UKC</title>
+      <link>http://localhost:11621/tags/ukc/</link>
+      <pubDate>Fri, 06 Feb 2026 09:00:00 +0900</pubDate>
+      <guid>http://localhost:11621/tags/ukc/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>요트운항</title>
+      <link>http://localhost:11621/tags/%EC%9A%94%ED%8A%B8%EC%9A%B4%ED%95%AD/</link>
+      <pubDate>Fri, 06 Feb 2026 09:00:00 +0900</pubDate>
+      <guid>http://localhost:11621/tags/%EC%9A%94%ED%8A%B8%EC%9A%B4%ED%95%AD/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>해도수심</title>
+      <link>http://localhost:11621/tags/%ED%95%B4%EB%8F%84%EC%88%98%EC%8B%AC/</link>
+      <pubDate>Fri, 06 Feb 2026 09:00:00 +0900</pubDate>
+      <guid>http://localhost:11621/tags/%ED%95%B4%EB%8F%84%EC%88%98%EC%8B%AC/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>DIY</title>
+      <link>http://localhost:11621/tags/diy/</link>
+      <pubDate>Thu, 05 Feb 2026 18:00:00 +0900</pubDate>
+      <guid>http://localhost:11621/tags/diy/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>안전항해</title>
+      <link>http://localhost:11621/tags/%EC%95%88%EC%A0%84%ED%95%AD%ED%95%B4/</link>
+      <pubDate>Thu, 05 Feb 2026 18:00:00 +0900</pubDate>
+      <guid>http://localhost:11621/tags/%EC%95%88%EC%A0%84%ED%95%AD%ED%95%B4/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>앵커링</title>
+      <link>http://localhost:11621/tags/%EC%95%B5%EC%BB%A4%EB%A7%81/</link>
+      <pubDate>Thu, 05 Feb 2026 18:00:00 +0900</pubDate>
+      <guid>http://localhost:11621/tags/%EC%95%B5%EC%BB%A4%EB%A7%81/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>전자해도</title>
+      <link>http://localhost:11621/tags/%EC%A0%84%EC%9E%90%ED%95%B4%EB%8F%84/</link>
+      <pubDate>Thu, 05 Feb 2026 18:00:00 +0900</pubDate>
+      <guid>http://localhost:11621/tags/%EC%A0%84%EC%9E%90%ED%95%B4%EB%8F%84/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>BatteryMonitor</title>
+      <link>http://localhost:11621/tags/batterymonitor/</link>
+      <pubDate>Thu, 05 Feb 2026 14:30:00 +0900</pubDate>
+      <guid>http://localhost:11621/tags/batterymonitor/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>KM110F</title>
+      <link>http://localhost:11621/tags/km110f/</link>
+      <pubDate>Thu, 05 Feb 2026 14:30:00 +0900</pubDate>
+      <guid>http://localhost:11621/tags/km110f/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>OpenPlotter</title>
+      <link>http://localhost:11621/tags/openplotter/</link>
+      <pubDate>Thu, 05 Feb 2026 14:30:00 +0900</pubDate>
+      <guid>http://localhost:11621/tags/openplotter/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Python</title>
+      <link>http://localhost:11621/tags/python/</link>
+      <pubDate>Thu, 05 Feb 2026 14:30:00 +0900</pubDate>
+      <guid>http://localhost:11621/tags/python/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>SignalK</title>
+      <link>http://localhost:11621/tags/signalk/</link>
+      <pubDate>Thu, 05 Feb 2026 14:30:00 +0900</pubDate>
+      <guid>http://localhost:11621/tags/signalk/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>WiFi Hacking</title>
+      <link>http://localhost:11621/tags/wifi-hacking/</link>
+      <pubDate>Thu, 05 Feb 2026 14:30:00 +0900</pubDate>
+      <guid>http://localhost:11621/tags/wifi-hacking/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Electronics</title>
+      <link>http://localhost:11621/tags/electronics/</link>
       <pubDate>Thu, 05 Feb 2026 12:00:00 +0900</pubDate>
-      <guid>https://myyacht.kr/tags/safety/</guid>
+      <guid>http://localhost:11621/tags/electronics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>MacArthur HAT</title>
+      <link>http://localhost:11621/tags/macarthur-hat/</link>
+      <pubDate>Thu, 05 Feb 2026 12:00:00 +0900</pubDate>
+      <guid>http://localhost:11621/tags/macarthur-hat/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>MarineElectronics</title>
+      <link>http://localhost:11621/tags/marineelectronics/</link>
+      <pubDate>Thu, 05 Feb 2026 12:00:00 +0900</pubDate>
+      <guid>http://localhost:11621/tags/marineelectronics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>NightVision</title>
+      <link>http://localhost:11621/tags/nightvision/</link>
+      <pubDate>Thu, 05 Feb 2026 12:00:00 +0900</pubDate>
+      <guid>http://localhost:11621/tags/nightvision/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>RaspberryPi</title>
+      <link>http://localhost:11621/tags/raspberrypi/</link>
+      <pubDate>Thu, 05 Feb 2026 12:00:00 +0900</pubDate>
+      <guid>http://localhost:11621/tags/raspberrypi/</guid>
       <description></description>
     </item>
   </channel>

@@ -1,21 +1,21 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
+<meta name="robots" content="noindex, nofollow">
 <title>4만원으로 배터리 모니터링 시스템 구축하기 (KM110F WiFi 해킹 &#43; OpenPlotter) | MyYacht - No.1 제부도 요트 투어</title>
 <meta name="keywords" content="DIY, OpenPlotter, SignalK, BatteryMonitor, KM110F, WiFi Hacking, Python">
 <meta name="description" content="Victron SmartShunt가 부럽지 않다. 전용 앱에 갇힌 KM110F를 제미나이(Gemini)와 함께 해킹하여 와이파이 신호를 가로채고 OpenPlotter로 통합한 삽질과 승리의 기록.">
 <meta name="author" content="">
-<link rel="canonical" href="https://myyacht.kr/posts/km110f-shunt/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.1d800705324419c53c89ef60d4c36351c51167291a65642b905e901978a42bd1.css" integrity="sha256-HYAHBTJEGcU8ie9g1MNjUcURZykaZWQrkF6QGXikK9E=" rel="preload stylesheet" as="style">
-<link rel="icon" href="https://myyacht.kr/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://myyacht.kr/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://myyacht.kr/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://myyacht.kr/apple-touch-icon.png">
-<link rel="mask-icon" href="https://myyacht.kr/safari-pinned-tab.svg">
+<link rel="canonical" href="http://localhost:1087/posts/km110f-shunt/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.3eba657b774b8a78d274efea08a5d33abfc915dd3236c4a11c2a5b29e6902320.css" integrity="sha256-Prple3dLinjSdO/qCKXTOr/JFd0yNsShHCpbKeaQIyA=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1087/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1087/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1087/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1087/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1087/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="https://myyacht.kr/posts/km110f-shunt/">
+<link rel="alternate" hreflang="en" href="http://localhost:1087/posts/km110f-shunt/">
 <noscript>
     <style>
         #theme-toggle,
@@ -34,77 +34,10 @@
 <link
     href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Noto+Serif+KR:wght@400;700&family=Outfit:wght@400;700&display=swap"
     rel="stylesheet">
-<meta name="keywords" content="DIY , OpenPlotter , SignalK , BatteryMonitor , KM110F , WiFi Hacking , Python" /><meta property="og:url" content="https://myyacht.kr/posts/km110f-shunt/">
-  <meta property="og:site_name" content="MyYacht - No.1 제부도 요트 투어">
-  <meta property="og:title" content="4만원으로 배터리 모니터링 시스템 구축하기 (KM110F WiFi 해킹 &#43; OpenPlotter)">
-  <meta property="og:description" content="Victron SmartShunt가 부럽지 않다. 전용 앱에 갇힌 KM110F를 제미나이(Gemini)와 함께 해킹하여 와이파이 신호를 가로채고 OpenPlotter로 통합한 삽질과 승리의 기록.">
-  <meta property="og:locale" content="ko-kr">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2026-02-05T14:30:00+09:00">
-    <meta property="article:modified_time" content="2026-02-05T14:30:00+09:00">
-    <meta property="article:tag" content="DIY">
-    <meta property="article:tag" content="OpenPlotter">
-    <meta property="article:tag" content="SignalK">
-    <meta property="article:tag" content="BatteryMonitor">
-    <meta property="article:tag" content="KM110F">
-    <meta property="article:tag" content="WiFi Hacking">
-    <meta property="og:image" content="https://myyacht.kr/IMG_9608.jpg">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://myyacht.kr/IMG_9608.jpg">
-<meta name="twitter:title" content="4만원으로 배터리 모니터링 시스템 구축하기 (KM110F WiFi 해킹 &#43; OpenPlotter)">
-<meta name="twitter:description" content="Victron SmartShunt가 부럽지 않다. 전용 앱에 갇힌 KM110F를 제미나이(Gemini)와 함께 해킹하여 와이파이 신호를 가로채고 OpenPlotter로 통합한 삽질과 승리의 기록.">
+<meta name="keywords" content="DIY , OpenPlotter , SignalK , BatteryMonitor , KM110F , WiFi Hacking , Python" />
 
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position":  1 ,
-      "name": "Posts",
-      "item": "https://myyacht.kr/posts/"
-    }, 
-    {
-      "@type": "ListItem",
-      "position":  2 ,
-      "name": "4만원으로 배터리 모니터링 시스템 구축하기 (KM110F WiFi 해킹 + OpenPlotter)",
-      "item": "https://myyacht.kr/posts/km110f-shunt/"
-    }
-  ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "4만원으로 배터리 모니터링 시스템 구축하기 (KM110F WiFi 해킹 + OpenPlotter)",
-  "name": "4만원으로 배터리 모니터링 시스템 구축하기 (KM110F WiFi 해킹 \u002b OpenPlotter)",
-  "description": "Victron SmartShunt가 부럽지 않다. 전용 앱에 갇힌 KM110F를 제미나이(Gemini)와 함께 해킹하여 와이파이 신호를 가로채고 OpenPlotter로 통합한 삽질과 승리의 기록.",
-  "keywords": [
-    "DIY", "OpenPlotter", "SignalK", "BatteryMonitor", "KM110F", "WiFi Hacking", "Python"
-  ],
-  "articleBody": "#와이파이해킹 #제미나이 #파이썬 #오픈플로터 #가성비끝판왕\n“전용 앱만 써야 한다고? 그런 게 어디 있어!”\n▲ 가성비 끝판왕 KM110F\n알리익스프레스에서 4만 원 주고 산 KM110F 션트 모니터. 컬러 스크린도 예쁘고 가격도 착한데, 치명적인 단점이 있었습니다. 제조사에서 제공하는 전용 앱으로만 데이터를 볼 수 있다는 것. 라즈베리 파이(OpenPlotter)에 통합해서 차트 플로터랑 같이 보고 싶은데… 이대로 포기해야 할까요?\n그럴 리가요. 저에게는 든든한 항해사 **제미나이(Gemini)**가 있습니다.\n1. 작전 개시: 신호를 털어라 처음에는 RS485 유선 연결을 고민했지만, KM110F가 WiFi를 지원한다는 점에 주목했습니다. “앱으로 데이터를 보낸다면, 그 신호를 중간에서 가로챌 수 있지 않을까?”\n제미나이에게 물었습니다. “이 장비가 앱이랑 통신하는 패킷을 캡처해서 분석하고 싶어. 도와줘.”\n📡 와이파이 신호 분석 우리는 노트북으로 패킷 스니핑(Packet Sniffing)을 시도했습니다. 다행히 암호화되지 않은 UDP 브로드캐스트 패킷이 날아다니고 있더군요. 하지만 16진수로 된 외계어 같은 데이터 덩어리였습니다.\n2. 제미나이의 활약: 프로토콜 리버스 엔지니어링 캡처한 데이터를 제미나이에게 던져주자, 놀라운 일이 벌어졌습니다.\nGemini: “Captain, 패턴이 보입니다. 앞부분 헤더 0xAA 뒤에 4바이트가 전압(Voltage)이고, 그 뒤가 전류(Current) 값인 것 같네요. 체크섬 계산 방식은 이렇습니다…”\n제미나이는 금세 프로토콜을 파싱(Parsing)해 냈습니다. 단순한 숫자의 나열이 배터리 잔량, 전압, 전류, 전력량이라는 의미 있는 정보로 바뀌는 순간이었습니다.\n3. 파이썬(Python) 코드로 구현하기 이제 분석된 프로토콜을 바탕으로, 라즈베리 파이에서 돌아갈 파이썬 스크립트를 짰습니다.\nWiFi 수신: KM110F가 쏘는 UDP 패킷을 라즈베리 파이가 받아냅니다. 데이터 파싱: Hex 데이터를 사람이 읽을 수 있는 십진수로 변환합니다. Signal K 전송: 변환된 데이터를 OpenPlotter가 이해할 수 있는 Signal K 포맷(JSON)으로 쏴줍니다. # (제미나이가 짜준 코드의 핵심 부분) def parse_packet(data): voltage = int.from_bytes(data[4:6], byteorder='big') / 100.0 current = int.from_bytes(data[6:8], byteorder='big') / 100.0 # ... Signal K로 전송 ... 4. OpenPlotter 연동 완료 결과는 성공적이었습니다! 이제 4만 원짜리 션트 저항이 30만 원짜리 Victron 장비처럼 작동합니다.\n▲ OpenPlotter 대시보드에 뜬 KM110F 데이터. 전용 앱은 이제 안녕!\n💡 이 시스템의 장점 선 없는 자유: WiFi로 통신하니 거추장스러운 RS485 배선이 필요 없습니다. 완벽한 통합: Signal K를 통해 다른 항해 계기들과 데이터를 공유합니다. AI와의 협업: 코딩을 몰라도 제미나이와 함께라면 리버스 엔지니어링이 가능합니다. Captain’s Note: 기술의 닫힌 문을 여는 열쇠는 ‘호기심’, 그리고 ‘똑똑한 AI 파트너’입니다. 이제 제 배의 배터리는 제미나이와 제가 만든 코드로 24시간 감시됩니다.\nPS. 혹시 코드가 필요하신 분은 댓글 남겨주세요!\n",
-  "wordCount" : "332",
-  "inLanguage": "en",
-  "image":"https://myyacht.kr/IMG_9608.jpg","datePublished": "2026-02-05T14:30:00+09:00",
-  "dateModified": "2026-02-05T14:30:00+09:00",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://myyacht.kr/posts/km110f-shunt/"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "MyYacht - No.1 제부도 요트 투어",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://myyacht.kr/favicon.ico"
-    }
-  }
-}
-</script>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 <body class="single" id="top">
     <header id="main-header">
@@ -138,6 +71,9 @@
                     </h1>
                     <div class="post-meta" style="color: var(--color-accent); font-size: 0.9rem;">
                         February 5, 2026
+                        <span id="busuanzi_container_page_pv" style="margin-left: 10px;">
+                            <i class="far fa-eye"></i> <span id="busuanzi_value_page_pv">...</span> Views
+                        </span>
                     </div>
                     <div style="width: 50px; height: 1px; background: var(--color-accent); margin: 30px auto;"></div>
                 </header>

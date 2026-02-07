@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>앵커링 on MyYacht - No.1 제부도 요트 투어</title>
-    <link>https://myyacht.kr/tags/%EC%95%B5%EC%BB%A4%EB%A7%81/</link>
+    <link>http://localhost:11621/tags/%EC%95%B5%EC%BB%A4%EB%A7%81/</link>
     <description>Recent content in 앵커링 on MyYacht - No.1 제부도 요트 투어</description>
     <generator>Hugo -- 0.155.1</generator>
     <language>ko-kr</language>
     <lastBuildDate>Thu, 05 Feb 2026 18:00:00 +0900</lastBuildDate>
-    <atom:link href="https://myyacht.kr/tags/%EC%95%B5%EC%BB%A4%EB%A7%81/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:11621/tags/%EC%95%B5%EC%BB%A4%EB%A7%81/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>요트의 앵커링 팁: 1급 항해사가 전하는 안전한 정박 노하우</title>
-      <link>https://myyacht.kr/posts/yacht-anchoring/</link>
+      <link>http://localhost:11621/posts/yacht-anchoring/</link>
       <pubDate>Thu, 05 Feb 2026 18:00:00 +0900</pubDate>
-      <guid>https://myyacht.kr/posts/yacht-anchoring/</guid>
+      <guid>http://localhost:11621/posts/yacht-anchoring/</guid>
       <description>대형 상선의 앵커링 원리를 요트에 접목하여, 어떤 상황에서도 안심할 수 있는 정박법과 전자해도 활용 팁을 소개합니다.</description>
     </item>
   </channel>

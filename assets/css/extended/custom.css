@@ -616,28 +616,25 @@ iframe {
 }
 
 /* Post Styles */
+/* Post Styles */
 .post-entry {
     background: rgba(10, 25, 47, 0.5);
     backdrop-filter: blur(10px);
     position: relative;
     overflow: hidden;
-    min-height: auto;
-    /* Let content dictate height */
+    min-height: 120px;
+    height: auto;
+    /* Allow expansion */
     display: flex;
     flex-direction: row;
-    /* Horizontal layout */
     align-items: center;
-    /* Center vertically */
-    gap: 20px;
-    /* Space between image and text */
-    height: 160px;
-    /* Fixed unified height */
+    /* keep centered vertically for thumbnail, content wrapper will stretch */
+    gap: 15px;
 }
 
 .entry-header {
     position: relative;
     z-index: 20;
-    /* Title above summary */
 }
 
 .post-entry:hover {
@@ -646,46 +643,32 @@ iframe {
     box-shadow: var(--shadow-gold);
 }
 
-/* Summary Hover Effect */
-/* Summary Hover Effect */
+/* Summary - Always Visible (2 lines) on Desktop */
 .entry-content {
-    display: none;
-    /* Hide summary by default */
-    position: absolute;
-    top: 60px;
-    /* Start below the title area */
-    left: 140px;
-    /* Offset to not cover thumbnail */
-    width: calc(100% - 140px);
-    /* Fill remaining width */
-    height: auto;
-    max-height: 50px;
-    /* Reduced to force 2 lines */
-    /* Limit height */
-    padding: 5px 15px;
-    /* Reduced vertical padding */
-    /* Compact padding */
-    background: transparent;
-    /* Remove solid background */
-    color: var(--color-white);
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    z-index: 10;
-
-    /* Standardized Text */
-    font-size: 0.9rem;
-    line-height: 1.4;
-    text-align: left;
-
-    /* Line Clamp to prevent overflow */
     display: -webkit-box;
-    -webkit-line-clamp: 2 !important;
-    /* Force 2 lines */
+    -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
+
+    position: relative;
+    width: 100%;
+
+    /* Visible by default */
+    opacity: 1;
+    max-height: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    /* Styling */
+    color: var(--color-white);
+    font-size: 0.9rem;
+    line-height: 1.5;
+    text-align: left;
 }
 
-
+.post-entry:hover .entry-content {
+    /* No change on hover needed */
+}
 
 /* Reset all inner styles for summary consistency */
 .entry-content * {
@@ -698,12 +681,6 @@ iframe {
     border: none !important;
     font-weight: normal !important;
     display: inline;
-    /* Keep text flow */
-}
-
-.post-entry:hover .entry-content {
-    display: block;
-    opacity: 1;
 }
 
 /* Single Post Styling */
@@ -736,6 +713,7 @@ iframe {
 
 /* Mobile Optimizations */
 @media(max-width: 768px) {
+
     /* Hide Summary in List View */
     .entry-content {
         display: none !important;
@@ -743,13 +721,15 @@ iframe {
 
     /* Resize Titles */
     .entry-header h2 {
-        font-size: 1.3rem !important; /* List View Title */
+        font-size: 1.3rem !important;
+        /* List View Title */
     }
 
     .post-title {
-        font-size: 1.6rem !important; /* Single Post Title */
+        font-size: 1.6rem !important;
+        /* Single Post Title */
     }
-    
+
     /* Adjust Post Entry Height if needed since summary is gone */
     .post-entry {
         height: auto !important;

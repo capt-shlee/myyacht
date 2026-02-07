@@ -9,6 +9,12 @@ theme = 'PaperMod'
   defaultTheme = 'dark'
   description = "No.1 제부도 프리미엄 요트 투어, 프랑스 듀포 요트와 20년 무사고 1급 해기사 선장의 고품격 세일링. 서해안 낙조의 감동, 프라이빗 선셋 투어와 세일링 교육까지."
   keywords = ["제부도요트", "요트투어", "세일링클럽", "요트교육", "myyacht", "마이요트", "서울 근교 데이트", "프라이빗 요트 투어", "제부도 가볼만한 곳"]
+  
+  [params.assets]
+    favicon = "/favicon.png"
+    favicon16x16 = "/favicon.png"
+    favicon32x32 = "/favicon.png"
+    apple_touch_icon = "/favicon.png"
 
   [params.commentsConfig]
     [params.commentsConfig.utterances]

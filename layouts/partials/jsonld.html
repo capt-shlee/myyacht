@@ -1,0 +1,75 @@
+{{- if .IsHome -}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "MyYacht 제부도 요트 투어",
+  "image": "{{ "images/hero-bg.JPEG" | absURL }}",
+  "@id": "{{ .Permalink }}",
+  "url": "{{ .Permalink }}",
+  "telephone": "0507-1450-7890",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "경기도 화성시 서신면 해안길 477 (제부 마리나)",
+    "addressLocality": "Hwaseong-si",
+    "addressRegion": "Gyeonggi-do",
+    "postalCode": "18554",
+    "addressCountry": "KR"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 37.1759,
+    "longitude": 126.6666
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday"
+    ],
+    "opens": "09:00",
+    "closes": "23:00"
+  },
+  "description": "1급 해기사 선장이 직접 운항하는 제부도 프리미엄 요트 투어 & 세일링 체험"
+}
+</script>
+{{- end -}}
+
+{{- if (and .IsPage (eq .Section "posts")) -}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "headline": "{{ .Title }}",
+  "description": "{{ .Description | default .Summary }}",
+  "image": [
+    {{- $images := .Resources.ByType "image" -}}
+    {{- range $i, $e := $images -}}
+        {{- if $i }},{{ end -}}
+        "{{ $e.Permalink }}"
+    {{- end -}}
+   ],
+  "datePublished": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
+  "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}",
+  "author": {
+    "@type": "Person",
+    "name": "Captain Lee (Master Mariner)"
+  },
+  "keywords": "Yacht DIY, OpenPlotter, Volvo Penta, Marine Electronics, Sailing",
+  "publisher": {
+    "@type": "Organization",
+    "name": "MyYacht",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ "favicon.png" | absURL }}"
+    }
+  }
+}
+</script>
+{{- end -}}

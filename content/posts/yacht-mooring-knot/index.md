@@ -1,13 +1,15 @@
 ---
-title: "요트의 Mooring Knot: 클리트 매듭의 정석과 리딩 포스트"
+title: "요트 계류 매듭(Cleat Hitch)의 정석: 1급 해기사의 클리트 체결과 라인 정리"
 date: 2026-02-07T15:58:00+09:00
 draft: false
 summary: "안전한 정박을 위한 클리트 매듭(Cleat Hitch)의 모든 것. 리딩 포스트 개념부터 270도 턴의 중요성, 그리고 깔끔한 라인 정리까지 1급 해기사의 노하우를 공개합니다."
-tags: ["Yachting Tips", "Safety", "Seamanship", "Mooring"]
+description: "1급 해기사가 알려주는 요트 계류 매듭(Mooring Knot)의 정석. 클리트 매듭(Cleat Hitch)의 정확한 체결법과 리딩 포스트(Leading Post), 안전한 라인 코일링 방법을 소개합니다."
+tags: ["Yachting Tips", "Safety", "Seamanship", "Mooring", "Cleat Hitch", "계류매듭", "요트매듭"]
 categories: ["Yachting Tips"]
+keywords: ["요트 매듭", "계류 매듭", "Mooring Knot", "Cleat Hitch", "클리트 매듭", "1급 해기사", "Seamanship", "라인 정리", "Flemish Coil"]
 cover:
   image: "How-to-Tie-a-Cleat-Hitch.jpg"
-  alt: "완벽하게 체결된 클리트 매듭 가이드"
+  alt: "완벽하게 체결된 클리트 매듭(Cleat Hitch)의 정석"
   relative: true
 ---
 
@@ -21,7 +23,7 @@ cover:
 
 많은 세일러들이 실수하는 부분이 바로 첫 번째 턴(Turn)과 마지막 잠금(Locking)입니다. 클리트에 라인을 감을 때, 정확한 각도와 순서를 지켜야만 안전을 담보할 수 있습니다.
 
-![클리트 매듭 묶는 법](How-to-Tie-a-Cleat-Hitch.jpg)
+![클리트 매듭(Cleat Hitch)의 올바른 체결 3단계: 베이스 감기부터 잠금까지](How-to-Tie-a-Cleat-Hitch.jpg)
 *▲ 클리트 매듭의 올바른 순서. 베이스를 감는 각도와 마지막 잠금(Lock)이 핵심입니다.*
 
 ### 핵심 포인트: 270도 턴과 응력 분산
@@ -31,7 +33,6 @@ cover:
 1. **270도 턴 (Round Turn)**: 클리트 베이스를 충분히 감아 마찰력을 확보하면서도, 라인끼리 씹히지 않는 최적의 각도가 바로 270도입니다.
     * *180도만 감으면?* 하중이 클리트의 한쪽 뿔(Horn)에만 집중되어 파손 위험이 있습니다.
     * *360도를 다 감으면?* 강한 장력 발생 시 라인이 꽉 끼어(Jam) 풀리지 않을 수 있습니다.
-
 2. **Cross & Lock**: 베이스를 감은 후에는 뿔(Horn) 위로 8자를 그리며 교차시키고, 마지막 고리(Locking Hitch)를 뒤집어 씌워 견고하게 고정합니다.
 
 ---
@@ -40,7 +41,7 @@ cover:
 
 초보자들이 흔히 범하는 실수가 있습니다. 바로 라인을 너무 많이 감거나, 엉성하게 묶어두는 것입니다.
 
-![잘못된 클리트 매듭](wrong%20knot.jfif)
+![잘못 체결된 클리트 매듭의 예: 180도 턴으로 인한 응력 집중](wrong%20knot.jfif)
 *▲ [잘못된 예] 잘 감긴듯 하지만 사실 180도턴입니다. 좌측 포스트에 응력이 집중됩니다.*
 
 매듭은 **'Simple is Best'**입니다. 너무 많이 칭칭 감아두면 오히려 풀기 어렵고 미관상으로도 좋지 않습니다. 교과서적인 8자 감기와 정확한 한 번의 잠금이면 충분합니다.
@@ -51,7 +52,7 @@ cover:
 
 매듭이 끝났다고 라인을 바닥에 널브러뜨려 놓으면 안 됩니다. 남은 라인(Tail)은 깔끔하게 정리해야 진정한 마무리가 됩니다.
 
-![라인 코일링](coilling.jfif)
+![데크 위에 깔끔하게 정리된 플레미시 코일(Flemish Coil) 라인 정리](coilling.jfif)
 *▲ 데크 위에 깔끔하게 정리된 라인 코일링 (Flemish Coil)*
 
 * **Flemish Coil (그림 참조)**: 남은 줄을 소용돌이 모양으로 평평하게 말아두는 방법입니다. 데크 위가 깔끔해지고 줄이 꼬이지 않아 다음 사용 시 편리합니다.
@@ -62,3 +63,10 @@ cover:
 ---
 
 *안전한 항해는 올바른 매듭에서 시작됩니다.*
+
+### 📚 함께 읽으면 좋은 글
+
+* **[요트 앵커링(Anchoring): 1급 해기사의 대형선 원리 적용과 실전 팁]({{< ref "/posts/yacht-anchoring" >}})**: 튼튼한 매듭은 안전한 정박의 시작입니다.
+* **[요트 항해 계획(Passage Planning): 1급 해기사의 A-P-E-M 원칙]({{< ref "/posts/passage-planning" >}})**: 출항 준비의 기초, 항해 계획부터 꼼꼼하게 챙겨보세요.
+
+**Bon Voyage!**

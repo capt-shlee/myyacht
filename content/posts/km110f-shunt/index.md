@@ -1,19 +1,23 @@
 ---
-title: "4만원으로 배터리 모니터링 시스템 구축하기 (KM110F WiFi 해킹 + OpenPlotter)"
+title: "4만원으로 요트 전력 관리 시스템 구축하기: KM110F 해킹 & OpenPlotter 연동"
 date: 2026-02-05T14:30:00+09:00
 summary: "Victron SmartShunt가 부럽지 않다. 전용 앱에 갇힌 KM110F를 제미나이(Gemini)와 함께 해킹하여 와이파이 신호를 가로채고 OpenPlotter로 통합한 삽질과 승리의 기록."
+description: "4만원대 가성비 배터리 모니터 KM110F를 해킹하여 OpenPlotter와 연동하는 DIY 가이드. 파이썬(Python)으로 WiFi 패킷을 분석하고 Signal K로 통합하여 요트 전력 관리 시스템을 구축하세요."
+categories: ["Marine Electronics"]
+tags: ["DIY", "OpenPlotter", "SignalK", "BatteryMonitor", "KM110F", "WiFi Hacking", "Python", "요트전력관리", "오픈소스항해"]
+keywords: ["KM110F 해킹", "요트 배터리 모니터", "OpenPlotter", "Signal K", "DIY 전력 관리", "오픈소스 항해 시스템"]
+draft: false
 cover:
     image: "IMG_9608.jpg"
-tags: ["DIY", "OpenPlotter", "SignalK", "BatteryMonitor", "KM110F", "WiFi Hacking", "Python"]
-draft: false
+    alt: "KM110F 션트와 배터리 연결 모습"
 ---
 
 **#와이파이해킹 #제미나이 #파이썬 #오픈플로터 #가성비끝판왕**
 
 > **"전용 앱만 써야 한다고? 그런 게 어디 있어!"**
 
-![KM110F 션트](product_image.jpg)
-*▲ 가성비 끝판왕 KM110F*
+![알리익스프레스 KM110F 배터리 션트 제품 이미지](product_image.jpg)
+*▲ 가성비 끝판왕 KM110F 션트 모니터*
 
 알리익스프레스에서 4만 원 주고 산 **KM110F** 션트 모니터.
 컬러 스크린도 예쁘고 가격도 착한데, 치명적인 단점이 있었습니다. 제조사에서 제공하는 **전용 앱**으로만 데이터를 볼 수 있다는 것.
@@ -72,14 +76,14 @@ def parse_packet(data):
 결과는 성공적이었습니다!
 이제 4만 원짜리 션트 저항이 30만 원짜리 Victron 장비처럼 작동합니다.
 
-![Signal K 대시보드](IMG_9613.jpg)
-*▲ OpenPlotter 대시보드에 뜬 KM110F 데이터. 전용 앱은 이제 안녕!*
+![OpenPlotter 대시보드에 표출된 KM110F 배터리 데이터](IMG_9613.jpg)
+*▲ Signal K 대시보드에 뜬 KM110F 데이터. 전용 앱은 이제 안녕!*
 
 ### 💡 이 시스템의 장점
 
 * **선 없는 자유**: WiFi로 통신하니 거추장스러운 RS485 배선이 필요 없습니다.
-* **완벽한 통합**: Signal K를 통해 다른 항해 계기들과 데이터를 공유합니다.
-* **AI와의 협업**: 코딩을 몰라도 제미나이와 함께라면 리버스 엔지니어링이 가능합니다.
+* **완벽한 통합**: **Signal K**를 통해 다른 항해 계기들과 데이터를 공유합니다.
+* **AI와의 협업**: 코딩을 몰라도 제미나이와 함께라면 **리버스 엔지니어링**이 가능합니다.
 
 ---
 
@@ -88,3 +92,12 @@ def parse_packet(data):
 이제 제 배의 배터리는 제미나이와 제가 만든 코드로 24시간 감시됩니다.
 
 *PS. 혹시 코드가 필요하신 분은 댓글 남겨주세요!*
+
+---
+
+### 📚 함께 읽으면 좋은 글
+
+* **[상용 플로터를 넘어서: OpenPlotter와 MacArthur HAT으로 나만의 통합 항해 시스템 만들기]({{< ref "/posts/openplotter-macarthur-hat" >}})**: 배터리 데이터까지 통합된 완벽한 항해 시스템을 만나보세요.
+* **[요트 항해 계획(Passage Planning): 1급 해기사의 A-P-E-M 원칙]({{< ref "/posts/passage-planning" >}})**: 안정적인 전력 관리 시스템은 장거리 항해의 필수 조건입니다.
+
+**Bon Voyage!**

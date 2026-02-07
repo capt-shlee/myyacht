@@ -2,20 +2,20 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>4만원으로 배터리 모니터링 시스템 구축하기 (KM110F WiFi 해킹 &#43; OpenPlotter) | MyYacht - No.1 제부도 요트 투어</title>
-<meta name="keywords" content="DIY, OpenPlotter, SignalK, BatteryMonitor, KM110F, WiFi Hacking, Python">
-<meta name="description" content="Victron SmartShunt가 부럽지 않다. 전용 앱에 갇힌 KM110F를 제미나이(Gemini)와 함께 해킹하여 와이파이 신호를 가로채고 OpenPlotter로 통합한 삽질과 승리의 기록.">
+<title>4만원으로 요트 전력 관리 시스템 구축하기: KM110F 해킹 &amp; OpenPlotter 연동 | MyYacht - No.1 제부도 요트 투어</title>
+<meta name="keywords" content="KM110F 해킹, 요트 배터리 모니터, OpenPlotter, Signal K, DIY 전력 관리, 오픈소스 항해 시스템">
+<meta name="description" content="4만원대 가성비 배터리 모니터 KM110F를 해킹하여 OpenPlotter와 연동하는 DIY 가이드. 파이썬(Python)으로 WiFi 패킷을 분석하고 Signal K로 통합하여 요트 전력 관리 시스템을 구축하세요.">
 <meta name="author" content="">
-<link rel="canonical" href="http://localhost:1087/posts/km110f-shunt/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.3eba657b774b8a78d274efea08a5d33abfc915dd3236c4a11c2a5b29e6902320.css" integrity="sha256-Prple3dLinjSdO/qCKXTOr/JFd0yNsShHCpbKeaQIyA=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1087/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1087/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1087/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:1087/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:1087/safari-pinned-tab.svg">
+<link rel="canonical" href="http://localhost:2617/posts/km110f-shunt/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.ab34df8a555605ebd226cedb3f452359119901d00f729a9866bf4e02ffab9a16.css" integrity="sha256-qzTfilVWBevSJs7bP0UjWRGZAdAPcpqYZr9OAv&#43;rmhY=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:2617/favicon.png">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:2617/favicon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:2617/favicon.png">
+<link rel="apple-touch-icon" href="http://localhost:2617/favicon.png">
+<link rel="mask-icon" href="http://localhost:2617/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1087/posts/km110f-shunt/">
+<link rel="alternate" hreflang="en" href="http://localhost:2617/posts/km110f-shunt/">
 <noscript>
     <style>
         #theme-toggle,
@@ -34,7 +34,7 @@
 <link
     href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Noto+Serif+KR:wght@400;700&family=Outfit:wght@400;700&display=swap"
     rel="stylesheet">
-<meta name="keywords" content="DIY , OpenPlotter , SignalK , BatteryMonitor , KM110F , WiFi Hacking , Python" />
+<meta name="keywords" content="DIY , OpenPlotter , SignalK , BatteryMonitor , KM110F , WiFi Hacking , Python , 요트전력관리 , 오픈소스항해" />
 
 
 <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
@@ -67,7 +67,7 @@
                             style="color: var(--color-accent);">Captain's Log</a>
                     </div>
                     <h1 class="post-title" style="color: var(--color-white); font-size: 2.5rem; margin-bottom: 20px;">
-                        4만원으로 배터리 모니터링 시스템 구축하기 (KM110F WiFi 해킹 &#43; OpenPlotter)
+                        4만원으로 요트 전력 관리 시스템 구축하기: KM110F 해킹 &amp; OpenPlotter 연동
                     </h1>
                     <div class="post-meta" style="color: var(--color-accent); font-size: 0.9rem;">
                         February 5, 2026
@@ -83,8 +83,8 @@
 <blockquote>
 <p><strong>&ldquo;전용 앱만 써야 한다고? 그런 게 어디 있어!&rdquo;</strong></p>
 </blockquote>
-<p><img alt="KM110F 션트" loading="lazy" src="/posts/km110f-shunt/product_image.jpg">
-<em>▲ 가성비 끝판왕 KM110F</em></p>
+<p><img alt="알리익스프레스 KM110F 배터리 션트 제품 이미지" loading="lazy" src="/posts/km110f-shunt/product_image.jpg">
+<em>▲ 가성비 끝판왕 KM110F 션트 모니터</em></p>
 <p>알리익스프레스에서 4만 원 주고 산 <strong>KM110F</strong> 션트 모니터.
 컬러 스크린도 예쁘고 가격도 착한데, 치명적인 단점이 있었습니다. 제조사에서 제공하는 <strong>전용 앱</strong>으로만 데이터를 볼 수 있다는 것.
 라즈베리 파이(OpenPlotter)에 통합해서 차트 플로터랑 같이 보고 싶은데&hellip; 이대로 포기해야 할까요?</p>
@@ -123,19 +123,26 @@
 <h2 id="4-openplotter-연동-완료">4. OpenPlotter 연동 완료</h2>
 <p>결과는 성공적이었습니다!
 이제 4만 원짜리 션트 저항이 30만 원짜리 Victron 장비처럼 작동합니다.</p>
-<p><img alt="Signal K 대시보드" loading="lazy" src="/posts/km110f-shunt/IMG_9613.jpg">
-<em>▲ OpenPlotter 대시보드에 뜬 KM110F 데이터. 전용 앱은 이제 안녕!</em></p>
+<p><img alt="OpenPlotter 대시보드에 표출된 KM110F 배터리 데이터" loading="lazy" src="/posts/km110f-shunt/IMG_9613.jpg">
+<em>▲ Signal K 대시보드에 뜬 KM110F 데이터. 전용 앱은 이제 안녕!</em></p>
 <h3 id="-이-시스템의-장점">💡 이 시스템의 장점</h3>
 <ul>
 <li><strong>선 없는 자유</strong>: WiFi로 통신하니 거추장스러운 RS485 배선이 필요 없습니다.</li>
-<li><strong>완벽한 통합</strong>: Signal K를 통해 다른 항해 계기들과 데이터를 공유합니다.</li>
-<li><strong>AI와의 협업</strong>: 코딩을 몰라도 제미나이와 함께라면 리버스 엔지니어링이 가능합니다.</li>
+<li><strong>완벽한 통합</strong>: <strong>Signal K</strong>를 통해 다른 항해 계기들과 데이터를 공유합니다.</li>
+<li><strong>AI와의 협업</strong>: 코딩을 몰라도 제미나이와 함께라면 <strong>리버스 엔지니어링</strong>이 가능합니다.</li>
 </ul>
 <hr>
 <p><strong>Captain&rsquo;s Note:</strong>
 기술의 닫힌 문을 여는 열쇠는 &lsquo;호기심&rsquo;, 그리고 &lsquo;똑똑한 AI 파트너&rsquo;입니다.
 이제 제 배의 배터리는 제미나이와 제가 만든 코드로 24시간 감시됩니다.</p>
 <p><em>PS. 혹시 코드가 필요하신 분은 댓글 남겨주세요!</em></p>
+<hr>
+<h3 id="-함께-읽으면-좋은-글">📚 함께 읽으면 좋은 글</h3>
+<ul>
+<li><strong><a href="http://localhost:2617/posts/openplotter-macarthur-hat/">상용 플로터를 넘어서: OpenPlotter와 MacArthur HAT으로 나만의 통합 항해 시스템 만들기</a></strong>: 배터리 데이터까지 통합된 완벽한 항해 시스템을 만나보세요.</li>
+<li><strong><a href="http://localhost:2617/posts/passage-planning/">요트 항해 계획(Passage Planning): 1급 해기사의 A-P-E-M 원칙</a></strong>: 안정적인 전력 관리 시스템은 장거리 항해의 필수 조건입니다.</li>
+</ul>
+<p><strong>Bon Voyage!</strong></p>
 
                 </div>
 

@@ -6,21 +6,28 @@
     <description>Recent content in Yachting Tips on MyYacht - No.1 제부도 요트 투어</description>
     <generator>Hugo -- 0.155.1</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sat, 07 Feb 2026 15:58:00 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 07 Feb 2026 18:00:00 +0900</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/yachting-tips/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>요트의 Mooring Knot: 클리트 매듭의 정석과 리딩 포스트</title>
+      <title>요트 항해 계획(Passage Planning): 1급 해기사의 A-P-E-M 원칙과 바다네비 활용법</title>
+      <link>http://localhost:1313/posts/passage-planning/</link>
+      <pubDate>Sat, 07 Feb 2026 18:00:00 +0900</pubDate>
+      <guid>http://localhost:1313/posts/passage-planning/</guid>
+      <description>자동차 여행에 비유하여 쉽게 풀어낸 요트 항해 계획 4단계 원칙(A-P-E-M). 싱가포르 해협 통과 경험을 바탕으로 한 1급 해기사의 실무 팁과 바다네비 앱 활용법을 소개합니다.</description>
+    </item>
+    <item>
+      <title>요트 계류 매듭(Cleat Hitch)의 정석: 1급 해기사의 클리트 체결과 라인 정리</title>
       <link>http://localhost:1313/posts/yacht-mooring-knot/</link>
       <pubDate>Sat, 07 Feb 2026 15:58:00 +0900</pubDate>
       <guid>http://localhost:1313/posts/yacht-mooring-knot/</guid>
-      <description>안전한 정박을 위한 클리트 매듭(Cleat Hitch)의 모든 것. 리딩 포스트 개념부터 270도 턴의 중요성, 그리고 깔끔한 라인 정리까지 1급 해기사의 노하우를 공개합니다.</description>
+      <description>1급 해기사가 알려주는 요트 계류 매듭(Mooring Knot)의 정석. 클리트 매듭(Cleat Hitch)의 정확한 체결법과 리딩 포스트(Leading Post), 안전한 라인 코일링 방법을 소개합니다.</description>
     </item>
     <item>
-      <title>요트의 앵커링 팁: 1급 항해사가 전하는 안전한 정박 노하우</title>
+      <title>요트 앵커링(Anchoring): 1급 해기사의 대형선 원리 적용과 실전 팁</title>
       <link>http://localhost:1313/posts/yacht-anchoring/</link>
       <pubDate>Thu, 05 Feb 2026 18:00:00 +0900</pubDate>
       <guid>http://localhost:1313/posts/yacht-anchoring/</guid>
-      <description>대형 상선의 앵커링 원리를 요트에 접목하여, 어떤 상황에서도 안심할 수 있는 정박법과 전자해도 활용 팁을 소개합니다.</description>
+      <description>1급 해기사가 알려주는 안전한 요트 앵커링(정박) 노하우. 대형 상선(Merchant Ship)의 앵커링 원리를 요트에 적용하는 5단계 절차와 전자해도를 이용한 앵커링 감시법(Swing Circle)을 소개합니다.</description>
     </item>
   </channel>
 </rss>

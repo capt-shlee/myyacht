@@ -1,14 +1,18 @@
 ---
-title: "내 요트의 두뇌, OpenPlotter와 MacArthur HAT 구축기"
+title: "상용 플로터를 넘어서: OpenPlotter와 MacArthur HAT으로 나만의 통합 항해 시스템 만들기"
 date: 2026-02-05T12:00:00+09:00
 summary: "상용 플로터의 제약에서 벗어나다. 라즈베리 파이와 MacArthur HAT을 이용해 NMEA 2000, AIS, Signal K를 통합한 나만의 통합 항해 시스템 구축 가이드."
+description: "라즈베리 파이 기반의 오픈소스 항해 시스템 OpenPlotter와 MacArthur HAT 구축 가이드. 고가의 상용 플로터를 대체하는 DIY 통합 계기판, AIS 수신, 앵커 감시 기능 구현 노하우를 공개합니다."
+categories: ["Marine Electronics"]
+tags: ["OpenPlotter", "MacArthur HAT", "RaspberryPi", "MarineElectronics", "DIY", "SignalK", "NMEA2000", "AIS", "스마트요트"]
+keywords: ["OpenPlotter 설치", "MacArthur HAT", "라즈베리파이 요트", "Signal K", "통합 항해 시스템", "DIY 차트 플로터", "AIS 수신"]
+draft: false
 cover:
     image: "IMG_9453.JPG"
-tags: ["OpenPlotter", "MacArthur HAT", "RaspberryPi", "MarineElectronics", "DIY"]
-draft: false
+    alt: "라즈베리 파이와 MacArthur HAT으로 구축된 오픈플로터 시스템"
 ---
 
-# #OpenPlotter #MacArthurHAT #스마트요트
+**#OpenPlotter #MacArthurHAT #스마트요트 #DIY항해장비**
 
 > **"항해 장비는 비쌀수록 좋을까요? 아니요, 내 배에 딱 맞아야 좋은 겁니다."**
 
@@ -26,7 +30,7 @@ draft: false
 
 * **비용 절감**: 수백만 원 장비의 기능을 20~30만 원대로 구현
 * **통합**: 구형 NMEA 0183 장비와 신형 NMEA 2000 장비를 하나로 묶음
-* **확장성**: Signal K 서버를 통해 어떤 디바이스(폰, 태블릿, PC)에서도 데이터 확인 가능
+* **확장성**: **Signal K** 서버를 통해 어떤 디바이스(폰, 태블릿, PC)에서도 데이터 확인 가능
 
 ---
 
@@ -35,7 +39,7 @@ draft: false
 라즈베리 파이만으로는 부족합니다. 바다라는 거친 환경에서 12V 전원을 안정적으로 받고, 각종 선박용 통신 규격을 처리해 줄 **인터페이스**가 필요하죠.
 그 정점에 있는 것이 바로 **MacArthur HAT**입니다. (OpenMarine 프로젝트의 역작이죠)
 
-![MacArthur HAT System Diagram](diagram.png)
+![MacArthur HAT 시스템 구성 다이어그램](diagram.png)
 *▲ 시스템 구성도. MacArthur HAT이 모든 신호의 '허브' 역할을 합니다.*
 
 ### 실제 사용해보니 좋은 점
@@ -53,12 +57,12 @@ draft: false
 
 현재 제 배에서 실제로 돌아가고 있는 기능들입니다.
 
-![설치 및 연결](IMG_9458.JPG)
+![MacArthur HAT 설치 및 배선 연결 모습](IMG_9458.JPG)
 *▲ 실제 구축된 시스템의 모습. MacArthur HAT이 모든 신호의 '허브' 역할을 합니다.*
 
 ### ① 통합 계기판 (Instrument Panel)
 
-조타석에 있는 낡은 풍향/풍속계 정보를 받아와서, 살롱에 있는 대형 모니터와 제 아이패드에 예쁜 그래픽으로 띄워줍니다. (Signal K Dashboard 활용)
+조타석에 있는 낡은 풍향/풍속계 정보를 받아와서, 살롱에 있는 대형 모니터와 제 아이패드에 예쁜 그래픽으로 띄워줍니다. (**Signal K Dashboard** 활용)
 
 ### ② 앵커 감시 (Anchor Watch)
 
@@ -68,7 +72,7 @@ draft: false
 
 출항부터 입항까지의 경로, 속도, 날씨가 자동으로 DB에 저장됩니다. 나중에 "아, 그때 거기 파도가 어땠지?" 하고 복기하기 완벽합니다.
 
-![작동 화면](IMG_9498.JPG)
+![라즈베리 파이와 모니터 결합 후면 모습](IMG_9498.JPG)
 *▲ 모니터뒤 라즈베리파이와 연결되어 적층된 모습.*
 
 ### ④ 미래 확장 기능 (Possible Features)
@@ -87,11 +91,15 @@ draft: false
 * **라즈베리 파이 4 추천**: 5도 좋지만, 4를 써도 충분합니다. MacArthur HAT은 파이 5와 완벽 호환됩니다만 발열이나 전력소모는 4가 좋습니다.
 * **케이스는 방열 잘 되는 것으로**: 닫힌 공간(차트 테이블 안)에 두면 꽤 뜨거워집니다. 저는 별도의 팬이 달린 케이스를 씁니다.
 * **백업은 필수**: 세팅이 완벽하다 싶으면 SD카드를 통째로 백업해 두세요. 바다 위에서 시스템이 먹통 되면 백업본만이 살길입니다.
+* **라즈베리 파이 4 추천**: 5도 좋지만, 4를 써도 충분합니다. MacArthur HAT은 파이 5와 완벽 호환됩니다만 발열이나 전력소모는 4가 좋습니다.
+* **케이스는 방열 잘 되는 것으로**: 닫힌 공간(차트 테이블 안)에 두면 꽤 뜨거워집니다. 저는 별도의 팬이 달린 케이스를 씁니다.
+* **백업은 필수**: 세팅이 완벽하다 싶으면 SD카드를 통째로 백업해 두세요. 바다 위에서 시스템이 먹통 되면 백업본만이 살길입니다.
 
 ---
 
-**마치며**
-처음엔 "이게 과연 바다에서 버틸까?" 의심했지만, 지금은 없어서는 안 될 제1 항해사가 되었습니다.
-내 배를 가장 스마트하게 만드는 방법, OpenPlotter에 도전해 보세요.
+### 📚 함께 읽으면 좋은 글
+
+* **[4만원으로 요트 전력 관리 시스템 구축하기: KM110F 해킹 & OpenPlotter 연동]({{< ref "/posts/km110f-shunt" >}})**: 오픈플로터의 확장성을 보여주는 생생한 DIY 사례입니다.
+* **[요트 항해 계획(Passage Planning): 1급 해기사의 A-P-E-M 원칙]({{< ref "/posts/passage-planning" >}})**: 완벽한 시스템과 철저한 계획이 만나면 항해가 즐거워집니다.
 
 **Bon Voyage!**

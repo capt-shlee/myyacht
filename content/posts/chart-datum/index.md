@@ -1,15 +1,16 @@
 ---
-title: "해도의 기본 수준면과 심볼: 안전 항해를 위한 수심 독해법"
+title: "해도의 기본수준면(Chart Datum): 1급 해기사가 알려주는 안전 수심 독해법"
 date: 2026-02-06T09:00:00+09:00
-description: "해도에 표시된 수심, 믿어도 될까요? 1급 해기사가 알려주는 Chart Datum의 의미와 조석표 활용, 그리고 UKC 설정 노하우."
+description: "해도에 표시된 수심을 100% 믿어도 될까요? 1급 해기사가 알려주는 Chart Datum(기본수준면)의 의미와 조석표 활용, 그리고 요트 안전을 위한 UKC 설정 노하우를 공개합니다."
 categories: ["Sailing Knowledge"]
-tags: ["해도수심", "Chart Datum", "Tide Table", "UKC", "Safety Contour", "요트운항"]
+tags: ["해도수심", "Chart Datum", "Tide Table", "UKC", "Safety Contour", "요트운항", "기본수준면", "항해술"]
+keywords: ["기본수준면", "Chart Datum", "해도 수심 읽는 법", "조석표 계산", "UKC 설정", "요트 안전 항해", "1급 해기사"]
 math: true
 draft: false
 author: "Captain Lima"
 cover:
   image: "chart_datum.png"
-  alt: "전자해도 수심 표시"
+  alt: "해상 지도의 수심 기준이 되는 기본수준면(Chart Datum)과 조석 변화를 나타낸 다이어그램"
   caption: "해도의 기준이 되는 기본수준면(Chart Datum) 개념도"
 ---
 
@@ -24,13 +25,11 @@ cover:
 
 전자해도(Chart Plotter)나 종이 해도를 보면 숫자들이 빼곡히 적혀 있습니다. 이 숫자들은 **'바다의 깊이'**를 의미하지만, 단순히 지금 이 순간의 깊이를 말하는 것은 아닙니다.
 
-* 해도 수심 5m: "여기는 **아무리 물이 많이 빠져도 최소 5m**는 확보됩니다."
-
-<br>
-
-<!-- ![해도 수심 예시](chart_depth.png) (이미지 생성 취소됨) -->
+* **해도 수심 5m**: "여기는 **아무리 물이 많이 빠져도 최소 5m**는 확보됩니다."
 
 즉, 해도상의 수심은 항해자가 안심할 수 있는 **'최소한의 깊이'**를 약속하는 숫자입니다.
+
+---
 
 ## 2. 기본수준면 (약최저저조면 / Lowest Astronomical Tide)
 
@@ -39,9 +38,11 @@ cover:
 바다는 달과 태양의 인력으로 끊임없이 밀물(만조)과 썰물(간조)을 반복합니다.
 해도를 제작할 때는 **가장 물이 많이 빠졌을 때(최저 조위)**를 기준으로 0m를 잡습니다. 이를 **약최저저조면(Approximate Lowest Low Water)** 또는 **L.A.T**라고 부릅니다.
 
-![기본수준면(Chart Datum) 다이어그램](chart_datum.png)
+![기본수준면(Chart Datum) 다이어그램: 만조와 간조, 해도 수심의 관계를 설명하는 도표](chart_datum.png)
 
 > **정의**: 천문학적으로 예측 가능한 가장 낮은 평균 조위면. 이 이하로 수심이 낮아질 확률은 별로 없습니다. (서해안은 1년에 10일정도는 낮아지는듯 해요)
+
+---
 
 ## 3. 조석표(Tide Table) 더해서 읽는 법
 
@@ -50,15 +51,13 @@ cover:
 
 > **실제 수심 = 해도 수심(Chart Depth) + 현재 조고(Height of Tide)**
 
-<br>
-
-<!-- ![조석표와 수심 계산](tide_calc.png) (이미지 생성 취소됨) -->
-
 * **해도 수심**: 5m (해도에 적힌 숫자)
 * **현재 조고**: +2m (조석표나 전자해도의 Tide 정보)
 * **실제 수심**: 7m
 
 따라서 만조 때에는 해도에 '1m'라고 적힌 얕은 곳도 실제로는 3~5m 이상의 깊이가 되어 안전하게 지나갈 수 있는 것이죠.
+
+---
 
 ## 4. 내 요트의 흘수(Draught) 알아내기
 
@@ -68,7 +67,9 @@ cover:
 * **확인 방법**: 요트의 스펙(Spec) 문서를 확인하거나, 마리나에서 배를 상가했을 때 킬의 하단부터 수면 라인(LWL)까지를 직접 줄자로 재보는 것이 가장 정확합니다.
 * **보통의 30-40피트 요트**: 약 1.8m ~ 2.2m
 
-![요트 흘수(Draught) 측정](yacht_draught.png)
+![세일 요트의 킬(Keel)과 흘수(Draught)를 설명하는 측정 이미지](yacht_draught.png)
+
+---
 
 ## 5. UKC (Under Keel Clearance) 설정하기
 
@@ -82,6 +83,8 @@ cover:
 > * 평온한 내항: 흘수의 10% 이상 (약 0.2m~0.5m)
 > * 파도가 있는 외해: 흘수의 20%~50% 이상
 
+---
+
 ## 6. Safety Contour 설정하기 (전자해도 팁)
 
 마지막으로, 전자해도(Navionics 등)에서 **Safety Contour(안전 등심선)**를 설정해야 합니다.
@@ -89,7 +92,7 @@ cover:
 
 > **Safety Contour = 내 배의 흘수 + 안전 여유(UKC)**
 
-![전자해도 Safety Contour 설정 화면](safety_contour.png)
+![전자해도상에서 안전 등심선(Safety Contour)을 설정하고 위험 구역을 표시하는 화면](safety_contour.png)
 
 * 예: 흘수 2.0m + 여유 1.0m = **3m**
 * **설정**: 전자해도 메뉴에서 `Safety Depth` 또는 `Safety Contour`를 **3m** (또는 5m)로 설정하세요.
@@ -101,4 +104,9 @@ cover:
 바다는 아는 만큼 안전하고, 안전한 만큼 즐겁습니다.
 오늘도 기본을 지키는 항해 되시기 바랍니다.
 
-**Bon Voyage~**
+### 📚 함께 읽으면 좋은 글
+
+* **[요트 항해 계획(Passage Planning): 1급 해기사의 A-P-E-M 원칙]({{< ref "/posts/passage-planning" >}})**: 정확한 수심 독해는 항해 계획의 기초입니다.
+* **[요트 앵커링(Anchoring): 1급 해기사의 대형선 원리 적용과 실전 팁]({{< ref "/posts/yacht-anchoring" >}})**: 안전한 정박을 위해 기본수준면 이해는 필수입니다.
+
+**Bon Voyage!**

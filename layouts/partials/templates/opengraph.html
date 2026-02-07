@@ -1,0 +1,51 @@
+<meta property="og:site_name" content="MyYacht 제부도 요트 투어" />
+<meta property="og:locale" content="ko_KR" />
+
+{{- /* Title Logic */ -}}
+{{- $title := "" -}}
+{{- if .IsHome -}}
+{{- $title = site.Title -}}
+{{- else -}}
+{{- $title = printf "%s | MyYacht" .Title -}}
+{{- end -}}
+<meta property="og:title" content="{{ $title }}" />
+
+{{- /* Description Logic */ -}}
+{{- $desc := "" -}}
+{{- if .Description -}}
+{{- $desc = .Description -}}
+{{- else if .Summary -}}
+{{- $desc = .Summary -}}
+{{- else -}}
+{{- $desc = site.Params.description -}}
+{{- end -}}
+<meta property="og:description" content="{{ $desc | plainify | htmlUnescape | truncate 150 }}" />
+
+{{- /* URL Logic (Absolute) */ -}}
+<meta property="og:url" content="{{ .Permalink }}" />
+
+{{- /* Image Logic */ -}}
+{{- $ogImage := "https://myyacht.kr/images/og-main.jpg" -}}
+
+{{- if .Params.cover.image -}}
+{{- if (findRE "^http" .Params.cover.image) -}}
+{{- $ogImage = .Params.cover.image -}}
+{{- else -}}
+{{- /* Try to get the image resource to get absolute permalink */ -}}
+{{- with .Resources.GetMatch .Params.cover.image -}}
+{{- $ogImage = .Permalink -}}
+{{- else -}}
+{{- /* Fallback: construct absolute URL manually */ -}}
+{{- $ogImage = printf "%s%s" .Permalink .Params.cover.image -}}
+{{- end -}}
+{{- end -}}
+{{- end -}}
+
+<meta property="og:image" content="{{ $ogImage }}" />
+<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}" />
+
+{{- /* Twitter Card Support */ -}}
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="{{ $title }}" />
+<meta name="twitter:description" content="{{ $desc | plainify | htmlUnescape | truncate 150 }}" />
+<meta name="twitter:image" content="{{ $ogImage }}" />

@@ -11,8 +11,22 @@
     </image>
     <generator>Hugo -- 0.155.1</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Sat, 07 Feb 2026 18:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 09 Feb 2026 16:40:00 +0900</lastBuildDate>
     <atom:link href="https://myyacht.kr/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Captain&#39;s Log</title>
+      <link>https://myyacht.kr/categories/captains-log/</link>
+      <pubDate>Mon, 09 Feb 2026 16:40:00 +0900</pubDate>
+      <guid>https://myyacht.kr/categories/captains-log/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sailing Knowledge</title>
+      <link>https://myyacht.kr/categories/sailing-knowledge/</link>
+      <pubDate>Mon, 09 Feb 2026 16:40:00 +0900</pubDate>
+      <guid>https://myyacht.kr/categories/sailing-knowledge/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Yachting Tips</title>
       <link>https://myyacht.kr/categories/yachting-tips/</link>
@@ -21,24 +35,10 @@
       <description></description>
     </item>
     <item>
-      <title>Sailing Knowledge</title>
-      <link>https://myyacht.kr/categories/sailing-knowledge/</link>
-      <pubDate>Fri, 06 Feb 2026 09:00:00 +0900</pubDate>
-      <guid>https://myyacht.kr/categories/sailing-knowledge/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Marine Electronics</title>
       <link>https://myyacht.kr/categories/marine-electronics/</link>
       <pubDate>Thu, 05 Feb 2026 14:30:00 +0900</pubDate>
       <guid>https://myyacht.kr/categories/marine-electronics/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Captain&#39;s Log</title>
-      <link>https://myyacht.kr/categories/captains-log/</link>
-      <pubDate>Thu, 05 Feb 2026 12:00:00 +0900</pubDate>
-      <guid>https://myyacht.kr/categories/captains-log/</guid>
       <description></description>
     </item>
   </channel>

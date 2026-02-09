@@ -3,31 +3,71 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://myyacht.kr/tags/1%EA%B8%89-%ED%95%B4%EA%B8%B0%EC%82%AC/</loc>
-    <lastmod>2026-02-07T18:00:00+09:00</lastmod>
+    <lastmod>2026-02-09T16:40:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://myyacht.kr/categories/captains-log/</loc>
+    <lastmod>2026-02-09T16:40:00+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://myyacht.kr/categories/</loc>
-    <lastmod>2026-02-07T18:00:00+09:00</lastmod>
+    <lastmod>2026-02-09T16:40:00+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://myyacht.kr/</loc>
-    <lastmod>2026-02-07T18:00:00+09:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://myyacht.kr/tags/passage-planning/</loc>
-    <lastmod>2026-02-07T18:00:00+09:00</lastmod>
+    <lastmod>2026-02-09T16:40:00+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://myyacht.kr/posts/</loc>
-    <lastmod>2026-02-07T18:00:00+09:00</lastmod>
+    <lastmod>2026-02-09T16:40:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://myyacht.kr/categories/sailing-knowledge/</loc>
+    <lastmod>2026-02-09T16:40:00+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
     <loc>https://myyacht.kr/tags/</loc>
+    <lastmod>2026-02-09T16:40:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://myyacht.kr/tags/%EA%B2%AC%EC%8B%9C/</loc>
+    <lastmod>2026-02-09T16:40:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://myyacht.kr/posts/captain-sitting/</loc>
+    <lastmod>2026-02-09T16:40:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://myyacht.kr/tags/%EC%95%88%EC%A0%84%ED%95%AD%ED%95%B4/</loc>
+    <lastmod>2026-02-09T16:40:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://myyacht.kr/tags/%EC%9A%94%ED%8A%B8-%ED%95%AD%ED%95%B4/</loc>
+    <lastmod>2026-02-09T16:40:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://myyacht.kr/tags/%EC%A0%9C%EB%B6%80%EB%8F%84-%EC%9A%94%ED%8A%B8-%ED%88%AC%EC%96%B4/</loc>
+    <lastmod>2026-02-09T16:40:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://myyacht.kr/tags/%EC%B6%A9%EB%8F%8C-%EB%B0%A9%EC%A7%80/</loc>
+    <lastmod>2026-02-09T16:40:00+09:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://myyacht.kr/tags/passage-planning/</loc>
     <lastmod>2026-02-07T18:00:00+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -43,11 +83,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://myyacht.kr/tags/%EC%8B%B1%EA%B0%80%ED%8F%AC%EB%A5%B4-%ED%95%B4%ED%98%91/</loc>
-    <lastmod>2026-02-07T18:00:00+09:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://myyacht.kr/tags/%EC%95%88%EC%A0%84%ED%95%AD%ED%95%B4/</loc>
     <lastmod>2026-02-07T18:00:00+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -113,11 +148,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://myyacht.kr/tags/safety-contour/</loc>
-    <lastmod>2026-02-06T09:00:00+09:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://myyacht.kr/categories/sailing-knowledge/</loc>
     <lastmod>2026-02-06T09:00:00+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -243,11 +273,6 @@
     <priority>0.5</priority>
   </url><url>
     <loc>https://myyacht.kr/tags/ais/</loc>
-    <lastmod>2026-02-05T12:00:00+09:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
-    <loc>https://myyacht.kr/categories/captains-log/</loc>
     <lastmod>2026-02-05T12:00:00+09:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

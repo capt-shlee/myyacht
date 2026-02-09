@@ -28,7 +28,7 @@ cover:
 
 ---
 
-### 📚 추천하는 첫 읽길
+### 📚 추천하는 첫 읽기
 
 * **[요트 항해 계획(Passage Planning): 1급 해기사의 A-P-E-M 원칙]({{< ref "/posts/passage-planning" >}})**: 안전한 첫 출항을 위한 필수 가이드입니다.
 * **[요트 앵커링(Anchoring): 1급 해기사의 대형선 원리 적용과 실전 팁]({{< ref "/posts/yacht-anchoring" >}})**: 어떤 상황에서도 안심할 수 있는 정박 노하우를 배워보세요.

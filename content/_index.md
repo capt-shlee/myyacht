@@ -5,4 +5,5 @@ layout: "index"
 aliases:
     - /HOME
     - /my-YACHT-Tour
+    - /my-YACHT-Club
 ---

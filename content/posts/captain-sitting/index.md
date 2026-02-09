@@ -69,4 +69,11 @@ cover:
 
 안전하고 즐거운 항해 되시길 기원합니다.
 
+---
+
+### 📚 함께 읽으면 좋은 글
+
+* **[요트 항해 계획(Passage Planning): 1급 해기사의 A-P-E-M 원칙]({{< ref "/posts/passage-planning" >}})**: 안전한 운항은 철저한 관찰과 계획에서 시작됩니다.
+* **[요트 앵커링(Anchoring): 1급 해기사의 대형선 원리 적용과 실전 팁]({{< ref "/posts/yacht-anchoring" >}})**: 앵커링 중에도 방위 감시(Swing Circle)는 매우 중요합니다.
+
 **Bon Voyage!**

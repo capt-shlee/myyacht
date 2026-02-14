@@ -133,4 +133,9 @@ void loop() {
 
 마이요트 가족분들의 안전항해를 항상 기원합니다. 새해 복 많이 받으세요.
 
+### 📚 함께 읽으면 좋은 글
+
+* **[상용 플로터를 넘어서: OpenPlotter와 MacArthur HAT으로 나만의 통합 항해 시스템 만들기]({{< ref "/posts/openplotter-macarthur-hat" >}})**: 엔진 데이터와 배터리, AIS까지 모든 것을 통합하여 관리하는 법을 소개합니다.
+* **[4만원으로 요트 전력 관리 시스템 구축하기: KM110F 해킹 & OpenPlotter 연동]({{< ref "/posts/km110f-shunt" >}})**: 저렴한 비용으로 구축하는 또 다른 가성비 DIY 프로젝트입니다.
+
 **Bon Voyage!**

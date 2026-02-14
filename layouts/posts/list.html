@@ -24,7 +24,7 @@
                     <div class="entry-media-col"
                         style="flex-shrink:0; width:120px; display:flex; flex-direction:column; align-items:center; margin-right: 15px;">
                         <div class="entry-cover" style="width:100%; height:90px; overflow:hidden; border-radius:2px;">
-                            <img src="{{ $image }}" alt="{{ .Title }}"
+                            <img src="{{ $image }}" alt="{{ .Title | plainify }}"
                                 style="width:100%; height:100%; object-fit:cover;">
                         </div>
                     </div>
@@ -32,7 +32,8 @@
                     <div class="entry-wrapper" style="flex: 1; display: flex; flex-direction: column; gap: 10px;">
                         <header class="entry-header">
                             <h2 style="font-size: 1.35rem; margin-bottom: 0;">
-                                <a href="{{ .Permalink }}" style="color: var(--color-white);">{{ .Title }}</a>
+                                <a href="{{ .Permalink }}" style="color: var(--color-white);">{{ .Title | safeHTML
+                                    }}</a>
                             </h2>
                         </header>
                         <div class="entry-content"

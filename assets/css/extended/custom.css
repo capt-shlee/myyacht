@@ -707,6 +707,15 @@ iframe {
     color: var(--color-white);
 }
 
+/* Heading Hierarchy Fix: Main Title (2rem) >= H2 > H3 */
+.post-content h2 {
+    font-size: 1.8rem; /* Approx 29px */
+}
+
+.post-content h3 {
+    font-size: 1.5rem; /* Approx 24px */
+}
+
 .post-content p {
     margin-bottom: 20px;
 }

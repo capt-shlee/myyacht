@@ -1,5 +1,5 @@
 ---
-title: "요트 앵커링(Anchoring): 1급 해기사의 대형선 원리 적용과 실전 팁"
+title: "요트 앵커링(Anchoring):<br>1급 해기사의 대형선 원리 적용과 실전 팁"
 date: 2026-02-05T18:00:00+09:00
 description: "1급 해기사가 알려주는 안전한 요트 앵커링(정박) 노하우. 대형 상선(Merchant Ship)의 앵커링 원리를 요트에 적용하는 5단계 절차와 전자해도를 이용한 앵커링 감시법(Swing Circle)을 소개합니다."
 categories: ["Yachting Tips"]

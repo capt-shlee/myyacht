@@ -46,7 +46,7 @@
 {
   "@context": "https://schema.org",
   "@type": "TechArticle",
-  "headline": "{{ .Title }}",
+  "headline": "{{ .Title | plainify }}",
   "description": "{{ .Description | default .Summary }}",
   "image": [
     {{- $images := .Resources.ByType "image" -}}

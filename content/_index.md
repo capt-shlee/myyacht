@@ -11,9 +11,12 @@ keywords:
     - "강아지 요트 투어"
     - "한가족 요트 투어"
     - "제부도 요트"
+    - "요트"
+    - "제부도"
+    - "세일요트"
+    - "제부도 요트 체험"
+
 layout: "index"
 aliases:
-    - /HOME
-    - /my-YACHT-Tour
-    - /my-YACHT-Club
+    - /문의
 ---

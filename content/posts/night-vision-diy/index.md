@@ -2,7 +2,7 @@
 title: "5만원으로 요트 야간 투시경(Night Vision) 만들기: 가성비 DIY 끝판왕"
 date: 2026-02-05T12:00:00+09:00
 summary: "고가의 해상용 FLIR 장비 없이, 알리익스프레스 가성비 CCTV와 태블릿으로 칠흑 같은 바다에서 야간 항해 안전 확보하기."
-description: "5만원으로 구축하는 가성비 최강 요트 야간 투시경(Night Vision) DIY 가이드. 알리익스프레스 CCTV와 태블릿을 활용해 야간 항해의 안전을 높이는 방법을 소개합니다."
+description: "5만원으로 완성하는 요트 야간 투시경 DIY 가이드. 알리 CCTV와 태블릿을 활용해 밤바다 항해 안전을 획기적으로 높여보세요."
 tags: ["DIY", "Electronics", "NightVision", "Safety", "야간투시경", "요트장비", "안전항해"]
 categories: ["Marine Electronics"]
 keywords: ["야간 투시경", "Night Vision", "요트 DIY", "해상안전", "가성비 항해장비", "야간항해", "IP 카메라"]

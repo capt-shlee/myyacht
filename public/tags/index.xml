@@ -2,393 +2,428 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on MyYacht - No.1 제부도 요트 투어</title>
-    <link>http://localhost:1313/tags/</link>
+    <link>http://localhost:12509/tags/</link>
     <description>Recent content in Tags on MyYacht - No.1 제부도 요트 투어</description>
     <image>
       <title>MyYacht - No.1 제부도 요트 투어</title>
-      <url>http://localhost:1313/images/og-main.jpg</url>
-      <link>http://localhost:1313/images/og-main.jpg</link>
+      <url>http://localhost:12509/images/og-main.jpg</url>
+      <link>http://localhost:12509/images/og-main.jpg</link>
     </image>
     <generator>Hugo -- 0.155.1</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Mon, 09 Feb 2026 16:40:00 +0900</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 14 Feb 2026 17:00:00 +0900</lastBuildDate>
+    <atom:link href="http://localhost:12509/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>1급 해기사</title>
-      <link>http://localhost:1313/tags/1%EA%B8%89-%ED%95%B4%EA%B8%B0%EC%82%AC/</link>
-      <pubDate>Mon, 09 Feb 2026 16:40:00 +0900</pubDate>
-      <guid>http://localhost:1313/tags/1%EA%B8%89-%ED%95%B4%EA%B8%B0%EC%82%AC/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>견시</title>
-      <link>http://localhost:1313/tags/%EA%B2%AC%EC%8B%9C/</link>
-      <pubDate>Mon, 09 Feb 2026 16:40:00 +0900</pubDate>
-      <guid>http://localhost:1313/tags/%EA%B2%AC%EC%8B%9C/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>안전항해</title>
-      <link>http://localhost:1313/tags/%EC%95%88%EC%A0%84%ED%95%AD%ED%95%B4/</link>
-      <pubDate>Mon, 09 Feb 2026 16:40:00 +0900</pubDate>
-      <guid>http://localhost:1313/tags/%EC%95%88%EC%A0%84%ED%95%AD%ED%95%B4/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>요트 항해</title>
-      <link>http://localhost:1313/tags/%EC%9A%94%ED%8A%B8-%ED%95%AD%ED%95%B4/</link>
-      <pubDate>Mon, 09 Feb 2026 16:40:00 +0900</pubDate>
-      <guid>http://localhost:1313/tags/%EC%9A%94%ED%8A%B8-%ED%95%AD%ED%95%B4/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>제부도 요트 투어</title>
-      <link>http://localhost:1313/tags/%EC%A0%9C%EB%B6%80%EB%8F%84-%EC%9A%94%ED%8A%B8-%ED%88%AC%EC%96%B4/</link>
-      <pubDate>Mon, 09 Feb 2026 16:40:00 +0900</pubDate>
-      <guid>http://localhost:1313/tags/%EC%A0%9C%EB%B6%80%EB%8F%84-%EC%9A%94%ED%8A%B8-%ED%88%AC%EC%96%B4/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>충돌 방지</title>
-      <link>http://localhost:1313/tags/%EC%B6%A9%EB%8F%8C-%EB%B0%A9%EC%A7%80/</link>
-      <pubDate>Mon, 09 Feb 2026 16:40:00 +0900</pubDate>
-      <guid>http://localhost:1313/tags/%EC%B6%A9%EB%8F%8C-%EB%B0%A9%EC%A7%80/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Passage Planning</title>
-      <link>http://localhost:1313/tags/passage-planning/</link>
-      <pubDate>Sat, 07 Feb 2026 18:00:00 +0900</pubDate>
-      <guid>http://localhost:1313/tags/passage-planning/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>바다네비</title>
-      <link>http://localhost:1313/tags/%EB%B0%94%EB%8B%A4%EB%84%A4%EB%B9%84/</link>
-      <pubDate>Sat, 07 Feb 2026 18:00:00 +0900</pubDate>
-      <guid>http://localhost:1313/tags/%EB%B0%94%EB%8B%A4%EB%84%A4%EB%B9%84/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>싱가포르 해협</title>
-      <link>http://localhost:1313/tags/%EC%8B%B1%EA%B0%80%ED%8F%AC%EB%A5%B4-%ED%95%B4%ED%98%91/</link>
-      <pubDate>Sat, 07 Feb 2026 18:00:00 +0900</pubDate>
-      <guid>http://localhost:1313/tags/%EC%8B%B1%EA%B0%80%ED%8F%AC%EB%A5%B4-%ED%95%B4%ED%98%91/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>요트운항</title>
-      <link>http://localhost:1313/tags/%EC%9A%94%ED%8A%B8%EC%9A%B4%ED%95%AD/</link>
-      <pubDate>Sat, 07 Feb 2026 18:00:00 +0900</pubDate>
-      <guid>http://localhost:1313/tags/%EC%9A%94%ED%8A%B8%EC%9A%B4%ED%95%AD/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>항해계획</title>
-      <link>http://localhost:1313/tags/%ED%95%AD%ED%95%B4%EA%B3%84%ED%9A%8D/</link>
-      <pubDate>Sat, 07 Feb 2026 18:00:00 +0900</pubDate>
-      <guid>http://localhost:1313/tags/%ED%95%AD%ED%95%B4%EA%B3%84%ED%9A%8D/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Cleat Hitch</title>
-      <link>http://localhost:1313/tags/cleat-hitch/</link>
-      <pubDate>Sat, 07 Feb 2026 15:58:00 +0900</pubDate>
-      <guid>http://localhost:1313/tags/cleat-hitch/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Mooring</title>
-      <link>http://localhost:1313/tags/mooring/</link>
-      <pubDate>Sat, 07 Feb 2026 15:58:00 +0900</pubDate>
-      <guid>http://localhost:1313/tags/mooring/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Safety</title>
-      <link>http://localhost:1313/tags/safety/</link>
-      <pubDate>Sat, 07 Feb 2026 15:58:00 +0900</pubDate>
-      <guid>http://localhost:1313/tags/safety/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Seamanship</title>
-      <link>http://localhost:1313/tags/seamanship/</link>
-      <pubDate>Sat, 07 Feb 2026 15:58:00 +0900</pubDate>
-      <guid>http://localhost:1313/tags/seamanship/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Yachting Tips</title>
-      <link>http://localhost:1313/tags/yachting-tips/</link>
-      <pubDate>Sat, 07 Feb 2026 15:58:00 +0900</pubDate>
-      <guid>http://localhost:1313/tags/yachting-tips/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>계류매듭</title>
-      <link>http://localhost:1313/tags/%EA%B3%84%EB%A5%98%EB%A7%A4%EB%93%AD/</link>
-      <pubDate>Sat, 07 Feb 2026 15:58:00 +0900</pubDate>
-      <guid>http://localhost:1313/tags/%EA%B3%84%EB%A5%98%EB%A7%A4%EB%93%AD/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>요트매듭</title>
-      <link>http://localhost:1313/tags/%EC%9A%94%ED%8A%B8%EB%A7%A4%EB%93%AD/</link>
-      <pubDate>Sat, 07 Feb 2026 15:58:00 +0900</pubDate>
-      <guid>http://localhost:1313/tags/%EC%9A%94%ED%8A%B8%EB%A7%A4%EB%93%AD/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Chart Datum</title>
-      <link>http://localhost:1313/tags/chart-datum/</link>
-      <pubDate>Fri, 06 Feb 2026 09:00:00 +0900</pubDate>
-      <guid>http://localhost:1313/tags/chart-datum/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Safety Contour</title>
-      <link>http://localhost:1313/tags/safety-contour/</link>
-      <pubDate>Fri, 06 Feb 2026 09:00:00 +0900</pubDate>
-      <guid>http://localhost:1313/tags/safety-contour/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Tide Table</title>
-      <link>http://localhost:1313/tags/tide-table/</link>
-      <pubDate>Fri, 06 Feb 2026 09:00:00 +0900</pubDate>
-      <guid>http://localhost:1313/tags/tide-table/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>UKC</title>
-      <link>http://localhost:1313/tags/ukc/</link>
-      <pubDate>Fri, 06 Feb 2026 09:00:00 +0900</pubDate>
-      <guid>http://localhost:1313/tags/ukc/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>기본수준면</title>
-      <link>http://localhost:1313/tags/%EA%B8%B0%EB%B3%B8%EC%88%98%EC%A4%80%EB%A9%B4/</link>
-      <pubDate>Fri, 06 Feb 2026 09:00:00 +0900</pubDate>
-      <guid>http://localhost:1313/tags/%EA%B8%B0%EB%B3%B8%EC%88%98%EC%A4%80%EB%A9%B4/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>항해술</title>
-      <link>http://localhost:1313/tags/%ED%95%AD%ED%95%B4%EC%88%A0/</link>
-      <pubDate>Fri, 06 Feb 2026 09:00:00 +0900</pubDate>
-      <guid>http://localhost:1313/tags/%ED%95%AD%ED%95%B4%EC%88%A0/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>해도수심</title>
-      <link>http://localhost:1313/tags/%ED%95%B4%EB%8F%84%EC%88%98%EC%8B%AC/</link>
-      <pubDate>Fri, 06 Feb 2026 09:00:00 +0900</pubDate>
-      <guid>http://localhost:1313/tags/%ED%95%B4%EB%8F%84%EC%88%98%EC%8B%AC/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Anchoring</title>
-      <link>http://localhost:1313/tags/anchoring/</link>
-      <pubDate>Thu, 05 Feb 2026 18:00:00 +0900</pubDate>
-      <guid>http://localhost:1313/tags/anchoring/</guid>
+      <title>CANBus</title>
+      <link>http://localhost:12509/tags/canbus/</link>
+      <pubDate>Sat, 14 Feb 2026 17:00:00 +0900</pubDate>
+      <guid>http://localhost:12509/tags/canbus/</guid>
       <description></description>
     </item>
     <item>
       <title>DIY</title>
-      <link>http://localhost:1313/tags/diy/</link>
-      <pubDate>Thu, 05 Feb 2026 18:00:00 +0900</pubDate>
-      <guid>http://localhost:1313/tags/diy/</guid>
+      <link>http://localhost:12509/tags/diy/</link>
+      <pubDate>Sat, 14 Feb 2026 17:00:00 +0900</pubDate>
+      <guid>http://localhost:12509/tags/diy/</guid>
       <description></description>
     </item>
     <item>
-      <title>앵커링</title>
-      <link>http://localhost:1313/tags/%EC%95%B5%EC%BB%A4%EB%A7%81/</link>
-      <pubDate>Thu, 05 Feb 2026 18:00:00 +0900</pubDate>
-      <guid>http://localhost:1313/tags/%EC%95%B5%EC%BB%A4%EB%A7%81/</guid>
+      <title>EngineCheck</title>
+      <link>http://localhost:12509/tags/enginecheck/</link>
+      <pubDate>Sat, 14 Feb 2026 17:00:00 +0900</pubDate>
+      <guid>http://localhost:12509/tags/enginecheck/</guid>
       <description></description>
     </item>
     <item>
-      <title>전자해도</title>
-      <link>http://localhost:1313/tags/%EC%A0%84%EC%9E%90%ED%95%B4%EB%8F%84/</link>
-      <pubDate>Thu, 05 Feb 2026 18:00:00 +0900</pubDate>
-      <guid>http://localhost:1313/tags/%EC%A0%84%EC%9E%90%ED%95%B4%EB%8F%84/</guid>
+      <title>ESP32</title>
+      <link>http://localhost:12509/tags/esp32/</link>
+      <pubDate>Sat, 14 Feb 2026 17:00:00 +0900</pubDate>
+      <guid>http://localhost:12509/tags/esp32/</guid>
       <description></description>
     </item>
     <item>
-      <title>정박</title>
-      <link>http://localhost:1313/tags/%EC%A0%95%EB%B0%95/</link>
-      <pubDate>Thu, 05 Feb 2026 18:00:00 +0900</pubDate>
-      <guid>http://localhost:1313/tags/%EC%A0%95%EB%B0%95/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>BatteryMonitor</title>
-      <link>http://localhost:1313/tags/batterymonitor/</link>
-      <pubDate>Thu, 05 Feb 2026 14:30:00 +0900</pubDate>
-      <guid>http://localhost:1313/tags/batterymonitor/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>KM110F</title>
-      <link>http://localhost:1313/tags/km110f/</link>
-      <pubDate>Thu, 05 Feb 2026 14:30:00 +0900</pubDate>
-      <guid>http://localhost:1313/tags/km110f/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>OpenPlotter</title>
-      <link>http://localhost:1313/tags/openplotter/</link>
-      <pubDate>Thu, 05 Feb 2026 14:30:00 +0900</pubDate>
-      <guid>http://localhost:1313/tags/openplotter/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Python</title>
-      <link>http://localhost:1313/tags/python/</link>
-      <pubDate>Thu, 05 Feb 2026 14:30:00 +0900</pubDate>
-      <guid>http://localhost:1313/tags/python/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>SignalK</title>
-      <link>http://localhost:1313/tags/signalk/</link>
-      <pubDate>Thu, 05 Feb 2026 14:30:00 +0900</pubDate>
-      <guid>http://localhost:1313/tags/signalk/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>WiFi Hacking</title>
-      <link>http://localhost:1313/tags/wifi-hacking/</link>
-      <pubDate>Thu, 05 Feb 2026 14:30:00 +0900</pubDate>
-      <guid>http://localhost:1313/tags/wifi-hacking/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>오픈소스항해</title>
-      <link>http://localhost:1313/tags/%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4%ED%95%AD%ED%95%B4/</link>
-      <pubDate>Thu, 05 Feb 2026 14:30:00 +0900</pubDate>
-      <guid>http://localhost:1313/tags/%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4%ED%95%AD%ED%95%B4/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>요트전력관리</title>
-      <link>http://localhost:1313/tags/%EC%9A%94%ED%8A%B8%EC%A0%84%EB%A0%A5%EA%B4%80%EB%A6%AC/</link>
-      <pubDate>Thu, 05 Feb 2026 14:30:00 +0900</pubDate>
-      <guid>http://localhost:1313/tags/%EC%9A%94%ED%8A%B8%EC%A0%84%EB%A0%A5%EA%B4%80%EB%A6%AC/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>1급해기사</title>
-      <link>http://localhost:1313/tags/1%EA%B8%89%ED%95%B4%EA%B8%B0%EC%82%AC/</link>
-      <pubDate>Thu, 05 Feb 2026 12:00:00 +0900</pubDate>
-      <guid>http://localhost:1313/tags/1%EA%B8%89%ED%95%B4%EA%B8%B0%EC%82%AC/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>AIS</title>
-      <link>http://localhost:1313/tags/ais/</link>
-      <pubDate>Thu, 05 Feb 2026 12:00:00 +0900</pubDate>
-      <guid>http://localhost:1313/tags/ais/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Captain&#39;s Log</title>
-      <link>http://localhost:1313/tags/captains-log/</link>
-      <pubDate>Thu, 05 Feb 2026 12:00:00 +0900</pubDate>
-      <guid>http://localhost:1313/tags/captains-log/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Electronics</title>
-      <link>http://localhost:1313/tags/electronics/</link>
-      <pubDate>Thu, 05 Feb 2026 12:00:00 +0900</pubDate>
-      <guid>http://localhost:1313/tags/electronics/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>MacArthur HAT</title>
-      <link>http://localhost:1313/tags/macarthur-hat/</link>
-      <pubDate>Thu, 05 Feb 2026 12:00:00 +0900</pubDate>
-      <guid>http://localhost:1313/tags/macarthur-hat/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>MarineElectronics</title>
-      <link>http://localhost:1313/tags/marineelectronics/</link>
-      <pubDate>Thu, 05 Feb 2026 12:00:00 +0900</pubDate>
-      <guid>http://localhost:1313/tags/marineelectronics/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>NightVision</title>
-      <link>http://localhost:1313/tags/nightvision/</link>
-      <pubDate>Thu, 05 Feb 2026 12:00:00 +0900</pubDate>
-      <guid>http://localhost:1313/tags/nightvision/</guid>
+      <title>EVC</title>
+      <link>http://localhost:12509/tags/evc/</link>
+      <pubDate>Sat, 14 Feb 2026 17:00:00 +0900</pubDate>
+      <guid>http://localhost:12509/tags/evc/</guid>
       <description></description>
     </item>
     <item>
       <title>NMEA2000</title>
-      <link>http://localhost:1313/tags/nmea2000/</link>
+      <link>http://localhost:12509/tags/nmea2000/</link>
+      <pubDate>Sat, 14 Feb 2026 17:00:00 +0900</pubDate>
+      <guid>http://localhost:12509/tags/nmea2000/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>VolvoPenta</title>
+      <link>http://localhost:12509/tags/volvopenta/</link>
+      <pubDate>Sat, 14 Feb 2026 17:00:00 +0900</pubDate>
+      <guid>http://localhost:12509/tags/volvopenta/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>1급 해기사</title>
+      <link>http://localhost:12509/tags/1%EA%B8%89-%ED%95%B4%EA%B8%B0%EC%82%AC/</link>
+      <pubDate>Mon, 09 Feb 2026 16:40:00 +0900</pubDate>
+      <guid>http://localhost:12509/tags/1%EA%B8%89-%ED%95%B4%EA%B8%B0%EC%82%AC/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>견시</title>
+      <link>http://localhost:12509/tags/%EA%B2%AC%EC%8B%9C/</link>
+      <pubDate>Mon, 09 Feb 2026 16:40:00 +0900</pubDate>
+      <guid>http://localhost:12509/tags/%EA%B2%AC%EC%8B%9C/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>안전항해</title>
+      <link>http://localhost:12509/tags/%EC%95%88%EC%A0%84%ED%95%AD%ED%95%B4/</link>
+      <pubDate>Mon, 09 Feb 2026 16:40:00 +0900</pubDate>
+      <guid>http://localhost:12509/tags/%EC%95%88%EC%A0%84%ED%95%AD%ED%95%B4/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>요트 항해</title>
+      <link>http://localhost:12509/tags/%EC%9A%94%ED%8A%B8-%ED%95%AD%ED%95%B4/</link>
+      <pubDate>Mon, 09 Feb 2026 16:40:00 +0900</pubDate>
+      <guid>http://localhost:12509/tags/%EC%9A%94%ED%8A%B8-%ED%95%AD%ED%95%B4/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>제부도 요트 투어</title>
+      <link>http://localhost:12509/tags/%EC%A0%9C%EB%B6%80%EB%8F%84-%EC%9A%94%ED%8A%B8-%ED%88%AC%EC%96%B4/</link>
+      <pubDate>Mon, 09 Feb 2026 16:40:00 +0900</pubDate>
+      <guid>http://localhost:12509/tags/%EC%A0%9C%EB%B6%80%EB%8F%84-%EC%9A%94%ED%8A%B8-%ED%88%AC%EC%96%B4/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>충돌 방지</title>
+      <link>http://localhost:12509/tags/%EC%B6%A9%EB%8F%8C-%EB%B0%A9%EC%A7%80/</link>
+      <pubDate>Mon, 09 Feb 2026 16:40:00 +0900</pubDate>
+      <guid>http://localhost:12509/tags/%EC%B6%A9%EB%8F%8C-%EB%B0%A9%EC%A7%80/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Passage Planning</title>
+      <link>http://localhost:12509/tags/passage-planning/</link>
+      <pubDate>Sat, 07 Feb 2026 18:00:00 +0900</pubDate>
+      <guid>http://localhost:12509/tags/passage-planning/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>바다네비</title>
+      <link>http://localhost:12509/tags/%EB%B0%94%EB%8B%A4%EB%84%A4%EB%B9%84/</link>
+      <pubDate>Sat, 07 Feb 2026 18:00:00 +0900</pubDate>
+      <guid>http://localhost:12509/tags/%EB%B0%94%EB%8B%A4%EB%84%A4%EB%B9%84/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>싱가포르 해협</title>
+      <link>http://localhost:12509/tags/%EC%8B%B1%EA%B0%80%ED%8F%AC%EB%A5%B4-%ED%95%B4%ED%98%91/</link>
+      <pubDate>Sat, 07 Feb 2026 18:00:00 +0900</pubDate>
+      <guid>http://localhost:12509/tags/%EC%8B%B1%EA%B0%80%ED%8F%AC%EB%A5%B4-%ED%95%B4%ED%98%91/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>요트운항</title>
+      <link>http://localhost:12509/tags/%EC%9A%94%ED%8A%B8%EC%9A%B4%ED%95%AD/</link>
+      <pubDate>Sat, 07 Feb 2026 18:00:00 +0900</pubDate>
+      <guid>http://localhost:12509/tags/%EC%9A%94%ED%8A%B8%EC%9A%B4%ED%95%AD/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>항해계획</title>
+      <link>http://localhost:12509/tags/%ED%95%AD%ED%95%B4%EA%B3%84%ED%9A%8D/</link>
+      <pubDate>Sat, 07 Feb 2026 18:00:00 +0900</pubDate>
+      <guid>http://localhost:12509/tags/%ED%95%AD%ED%95%B4%EA%B3%84%ED%9A%8D/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Cleat Hitch</title>
+      <link>http://localhost:12509/tags/cleat-hitch/</link>
+      <pubDate>Sat, 07 Feb 2026 15:58:00 +0900</pubDate>
+      <guid>http://localhost:12509/tags/cleat-hitch/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mooring</title>
+      <link>http://localhost:12509/tags/mooring/</link>
+      <pubDate>Sat, 07 Feb 2026 15:58:00 +0900</pubDate>
+      <guid>http://localhost:12509/tags/mooring/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Safety</title>
+      <link>http://localhost:12509/tags/safety/</link>
+      <pubDate>Sat, 07 Feb 2026 15:58:00 +0900</pubDate>
+      <guid>http://localhost:12509/tags/safety/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Seamanship</title>
+      <link>http://localhost:12509/tags/seamanship/</link>
+      <pubDate>Sat, 07 Feb 2026 15:58:00 +0900</pubDate>
+      <guid>http://localhost:12509/tags/seamanship/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Yachting Tips</title>
+      <link>http://localhost:12509/tags/yachting-tips/</link>
+      <pubDate>Sat, 07 Feb 2026 15:58:00 +0900</pubDate>
+      <guid>http://localhost:12509/tags/yachting-tips/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>계류매듭</title>
+      <link>http://localhost:12509/tags/%EA%B3%84%EB%A5%98%EB%A7%A4%EB%93%AD/</link>
+      <pubDate>Sat, 07 Feb 2026 15:58:00 +0900</pubDate>
+      <guid>http://localhost:12509/tags/%EA%B3%84%EB%A5%98%EB%A7%A4%EB%93%AD/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>요트매듭</title>
+      <link>http://localhost:12509/tags/%EC%9A%94%ED%8A%B8%EB%A7%A4%EB%93%AD/</link>
+      <pubDate>Sat, 07 Feb 2026 15:58:00 +0900</pubDate>
+      <guid>http://localhost:12509/tags/%EC%9A%94%ED%8A%B8%EB%A7%A4%EB%93%AD/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Chart Datum</title>
+      <link>http://localhost:12509/tags/chart-datum/</link>
+      <pubDate>Fri, 06 Feb 2026 09:00:00 +0900</pubDate>
+      <guid>http://localhost:12509/tags/chart-datum/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Safety Contour</title>
+      <link>http://localhost:12509/tags/safety-contour/</link>
+      <pubDate>Fri, 06 Feb 2026 09:00:00 +0900</pubDate>
+      <guid>http://localhost:12509/tags/safety-contour/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tide Table</title>
+      <link>http://localhost:12509/tags/tide-table/</link>
+      <pubDate>Fri, 06 Feb 2026 09:00:00 +0900</pubDate>
+      <guid>http://localhost:12509/tags/tide-table/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>UKC</title>
+      <link>http://localhost:12509/tags/ukc/</link>
+      <pubDate>Fri, 06 Feb 2026 09:00:00 +0900</pubDate>
+      <guid>http://localhost:12509/tags/ukc/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>기본수준면</title>
+      <link>http://localhost:12509/tags/%EA%B8%B0%EB%B3%B8%EC%88%98%EC%A4%80%EB%A9%B4/</link>
+      <pubDate>Fri, 06 Feb 2026 09:00:00 +0900</pubDate>
+      <guid>http://localhost:12509/tags/%EA%B8%B0%EB%B3%B8%EC%88%98%EC%A4%80%EB%A9%B4/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>항해술</title>
+      <link>http://localhost:12509/tags/%ED%95%AD%ED%95%B4%EC%88%A0/</link>
+      <pubDate>Fri, 06 Feb 2026 09:00:00 +0900</pubDate>
+      <guid>http://localhost:12509/tags/%ED%95%AD%ED%95%B4%EC%88%A0/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>해도수심</title>
+      <link>http://localhost:12509/tags/%ED%95%B4%EB%8F%84%EC%88%98%EC%8B%AC/</link>
+      <pubDate>Fri, 06 Feb 2026 09:00:00 +0900</pubDate>
+      <guid>http://localhost:12509/tags/%ED%95%B4%EB%8F%84%EC%88%98%EC%8B%AC/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Anchoring</title>
+      <link>http://localhost:12509/tags/anchoring/</link>
+      <pubDate>Thu, 05 Feb 2026 18:00:00 +0900</pubDate>
+      <guid>http://localhost:12509/tags/anchoring/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>앵커링</title>
+      <link>http://localhost:12509/tags/%EC%95%B5%EC%BB%A4%EB%A7%81/</link>
+      <pubDate>Thu, 05 Feb 2026 18:00:00 +0900</pubDate>
+      <guid>http://localhost:12509/tags/%EC%95%B5%EC%BB%A4%EB%A7%81/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>전자해도</title>
+      <link>http://localhost:12509/tags/%EC%A0%84%EC%9E%90%ED%95%B4%EB%8F%84/</link>
+      <pubDate>Thu, 05 Feb 2026 18:00:00 +0900</pubDate>
+      <guid>http://localhost:12509/tags/%EC%A0%84%EC%9E%90%ED%95%B4%EB%8F%84/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>정박</title>
+      <link>http://localhost:12509/tags/%EC%A0%95%EB%B0%95/</link>
+      <pubDate>Thu, 05 Feb 2026 18:00:00 +0900</pubDate>
+      <guid>http://localhost:12509/tags/%EC%A0%95%EB%B0%95/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>BatteryMonitor</title>
+      <link>http://localhost:12509/tags/batterymonitor/</link>
+      <pubDate>Thu, 05 Feb 2026 14:30:00 +0900</pubDate>
+      <guid>http://localhost:12509/tags/batterymonitor/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>KM110F</title>
+      <link>http://localhost:12509/tags/km110f/</link>
+      <pubDate>Thu, 05 Feb 2026 14:30:00 +0900</pubDate>
+      <guid>http://localhost:12509/tags/km110f/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>OpenPlotter</title>
+      <link>http://localhost:12509/tags/openplotter/</link>
+      <pubDate>Thu, 05 Feb 2026 14:30:00 +0900</pubDate>
+      <guid>http://localhost:12509/tags/openplotter/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Python</title>
+      <link>http://localhost:12509/tags/python/</link>
+      <pubDate>Thu, 05 Feb 2026 14:30:00 +0900</pubDate>
+      <guid>http://localhost:12509/tags/python/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>SignalK</title>
+      <link>http://localhost:12509/tags/signalk/</link>
+      <pubDate>Thu, 05 Feb 2026 14:30:00 +0900</pubDate>
+      <guid>http://localhost:12509/tags/signalk/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>WiFi Hacking</title>
+      <link>http://localhost:12509/tags/wifi-hacking/</link>
+      <pubDate>Thu, 05 Feb 2026 14:30:00 +0900</pubDate>
+      <guid>http://localhost:12509/tags/wifi-hacking/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>오픈소스항해</title>
+      <link>http://localhost:12509/tags/%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4%ED%95%AD%ED%95%B4/</link>
+      <pubDate>Thu, 05 Feb 2026 14:30:00 +0900</pubDate>
+      <guid>http://localhost:12509/tags/%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4%ED%95%AD%ED%95%B4/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>요트전력관리</title>
+      <link>http://localhost:12509/tags/%EC%9A%94%ED%8A%B8%EC%A0%84%EB%A0%A5%EA%B4%80%EB%A6%AC/</link>
+      <pubDate>Thu, 05 Feb 2026 14:30:00 +0900</pubDate>
+      <guid>http://localhost:12509/tags/%EC%9A%94%ED%8A%B8%EC%A0%84%EB%A0%A5%EA%B4%80%EB%A6%AC/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>1급해기사</title>
+      <link>http://localhost:12509/tags/1%EA%B8%89%ED%95%B4%EA%B8%B0%EC%82%AC/</link>
       <pubDate>Thu, 05 Feb 2026 12:00:00 +0900</pubDate>
-      <guid>http://localhost:1313/tags/nmea2000/</guid>
+      <guid>http://localhost:12509/tags/1%EA%B8%89%ED%95%B4%EA%B8%B0%EC%82%AC/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>AIS</title>
+      <link>http://localhost:12509/tags/ais/</link>
+      <pubDate>Thu, 05 Feb 2026 12:00:00 +0900</pubDate>
+      <guid>http://localhost:12509/tags/ais/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Captain&#39;s Log</title>
+      <link>http://localhost:12509/tags/captains-log/</link>
+      <pubDate>Thu, 05 Feb 2026 12:00:00 +0900</pubDate>
+      <guid>http://localhost:12509/tags/captains-log/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Electronics</title>
+      <link>http://localhost:12509/tags/electronics/</link>
+      <pubDate>Thu, 05 Feb 2026 12:00:00 +0900</pubDate>
+      <guid>http://localhost:12509/tags/electronics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>MacArthur HAT</title>
+      <link>http://localhost:12509/tags/macarthur-hat/</link>
+      <pubDate>Thu, 05 Feb 2026 12:00:00 +0900</pubDate>
+      <guid>http://localhost:12509/tags/macarthur-hat/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>MarineElectronics</title>
+      <link>http://localhost:12509/tags/marineelectronics/</link>
+      <pubDate>Thu, 05 Feb 2026 12:00:00 +0900</pubDate>
+      <guid>http://localhost:12509/tags/marineelectronics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>NightVision</title>
+      <link>http://localhost:12509/tags/nightvision/</link>
+      <pubDate>Thu, 05 Feb 2026 12:00:00 +0900</pubDate>
+      <guid>http://localhost:12509/tags/nightvision/</guid>
       <description></description>
     </item>
     <item>
       <title>RaspberryPi</title>
-      <link>http://localhost:1313/tags/raspberrypi/</link>
+      <link>http://localhost:12509/tags/raspberrypi/</link>
       <pubDate>Thu, 05 Feb 2026 12:00:00 +0900</pubDate>
-      <guid>http://localhost:1313/tags/raspberrypi/</guid>
+      <guid>http://localhost:12509/tags/raspberrypi/</guid>
       <description></description>
     </item>
     <item>
       <title>마이요트</title>
-      <link>http://localhost:1313/tags/%EB%A7%88%EC%9D%B4%EC%9A%94%ED%8A%B8/</link>
+      <link>http://localhost:12509/tags/%EB%A7%88%EC%9D%B4%EC%9A%94%ED%8A%B8/</link>
       <pubDate>Thu, 05 Feb 2026 12:00:00 +0900</pubDate>
-      <guid>http://localhost:1313/tags/%EB%A7%88%EC%9D%B4%EC%9A%94%ED%8A%B8/</guid>
+      <guid>http://localhost:12509/tags/%EB%A7%88%EC%9D%B4%EC%9A%94%ED%8A%B8/</guid>
       <description></description>
     </item>
     <item>
       <title>스마트요트</title>
-      <link>http://localhost:1313/tags/%EC%8A%A4%EB%A7%88%ED%8A%B8%EC%9A%94%ED%8A%B8/</link>
+      <link>http://localhost:12509/tags/%EC%8A%A4%EB%A7%88%ED%8A%B8%EC%9A%94%ED%8A%B8/</link>
       <pubDate>Thu, 05 Feb 2026 12:00:00 +0900</pubDate>
-      <guid>http://localhost:1313/tags/%EC%8A%A4%EB%A7%88%ED%8A%B8%EC%9A%94%ED%8A%B8/</guid>
+      <guid>http://localhost:12509/tags/%EC%8A%A4%EB%A7%88%ED%8A%B8%EC%9A%94%ED%8A%B8/</guid>
       <description></description>
     </item>
     <item>
       <title>야간투시경</title>
-      <link>http://localhost:1313/tags/%EC%95%BC%EA%B0%84%ED%88%AC%EC%8B%9C%EA%B2%BD/</link>
+      <link>http://localhost:12509/tags/%EC%95%BC%EA%B0%84%ED%88%AC%EC%8B%9C%EA%B2%BD/</link>
       <pubDate>Thu, 05 Feb 2026 12:00:00 +0900</pubDate>
-      <guid>http://localhost:1313/tags/%EC%95%BC%EA%B0%84%ED%88%AC%EC%8B%9C%EA%B2%BD/</guid>
+      <guid>http://localhost:12509/tags/%EC%95%BC%EA%B0%84%ED%88%AC%EC%8B%9C%EA%B2%BD/</guid>
       <description></description>
     </item>
     <item>
       <title>요트</title>
-      <link>http://localhost:1313/tags/%EC%9A%94%ED%8A%B8/</link>
+      <link>http://localhost:12509/tags/%EC%9A%94%ED%8A%B8/</link>
       <pubDate>Thu, 05 Feb 2026 12:00:00 +0900</pubDate>
-      <guid>http://localhost:1313/tags/%EC%9A%94%ED%8A%B8/</guid>
+      <guid>http://localhost:12509/tags/%EC%9A%94%ED%8A%B8/</guid>
       <description></description>
     </item>
     <item>
       <title>요트장비</title>
-      <link>http://localhost:1313/tags/%EC%9A%94%ED%8A%B8%EC%9E%A5%EB%B9%84/</link>
+      <link>http://localhost:12509/tags/%EC%9A%94%ED%8A%B8%EC%9E%A5%EB%B9%84/</link>
       <pubDate>Thu, 05 Feb 2026 12:00:00 +0900</pubDate>
-      <guid>http://localhost:1313/tags/%EC%9A%94%ED%8A%B8%EC%9E%A5%EB%B9%84/</guid>
+      <guid>http://localhost:12509/tags/%EC%9A%94%ED%8A%B8%EC%9E%A5%EB%B9%84/</guid>
       <description></description>
     </item>
     <item>
       <title>제부도</title>
-      <link>http://localhost:1313/tags/%EC%A0%9C%EB%B6%80%EB%8F%84/</link>
+      <link>http://localhost:12509/tags/%EC%A0%9C%EB%B6%80%EB%8F%84/</link>
       <pubDate>Thu, 05 Feb 2026 12:00:00 +0900</pubDate>
-      <guid>http://localhost:1313/tags/%EC%A0%9C%EB%B6%80%EB%8F%84/</guid>
+      <guid>http://localhost:12509/tags/%EC%A0%9C%EB%B6%80%EB%8F%84/</guid>
       <description></description>
     </item>
     <item>
       <title>항해기록</title>
-      <link>http://localhost:1313/tags/%ED%95%AD%ED%95%B4%EA%B8%B0%EB%A1%9D/</link>
+      <link>http://localhost:12509/tags/%ED%95%AD%ED%95%B4%EA%B8%B0%EB%A1%9D/</link>
       <pubDate>Thu, 05 Feb 2026 12:00:00 +0900</pubDate>
-      <guid>http://localhost:1313/tags/%ED%95%AD%ED%95%B4%EA%B8%B0%EB%A1%9D/</guid>
+      <guid>http://localhost:12509/tags/%ED%95%AD%ED%95%B4%EA%B8%B0%EB%A1%9D/</guid>
       <description></description>
     </item>
   </channel>

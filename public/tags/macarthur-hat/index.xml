@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>MacArthur HAT on MyYacht - No.1 제부도 요트 투어</title>
-    <link>http://localhost:1313/tags/macarthur-hat/</link>
+    <link>http://localhost:12509/tags/macarthur-hat/</link>
     <description>Recent content in MacArthur HAT on MyYacht - No.1 제부도 요트 투어</description>
     <image>
       <title>MyYacht - No.1 제부도 요트 투어</title>
-      <url>http://localhost:1313/images/og-main.jpg</url>
-      <link>http://localhost:1313/images/og-main.jpg</link>
+      <url>http://localhost:12509/images/og-main.jpg</url>
+      <link>http://localhost:12509/images/og-main.jpg</link>
     </image>
     <generator>Hugo -- 0.155.1</generator>
     <language>ko-kr</language>
     <lastBuildDate>Thu, 05 Feb 2026 12:00:00 +0900</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/macarthur-hat/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:12509/tags/macarthur-hat/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>상용 플로터를 넘어서: OpenPlotter와 MacArthur HAT으로 나만의 통합 항해 시스템 만들기</title>
-      <link>http://localhost:1313/posts/openplotter-macarthur-hat/</link>
+      <link>http://localhost:12509/posts/openplotter-macarthur-hat/</link>
       <pubDate>Thu, 05 Feb 2026 12:00:00 +0900</pubDate>
-      <guid>http://localhost:1313/posts/openplotter-macarthur-hat/</guid>
-      <description>라즈베리 파이 기반의 오픈소스 항해 시스템 OpenPlotter와 MacArthur HAT 구축 가이드. 고가의 상용 플로터를 대체하는 DIY 통합 계기판, AIS 수신, 앵커 감시 기능 구현 노하우를 공개합니다.</description>
+      <guid>http://localhost:12509/posts/openplotter-macarthur-hat/</guid>
+      <description>라즈베리 파이 기반 OpenPlotter 구축 가이드. 고가 플로터 대신 AIS 수신, 앵커 감시 등 통합 항해 시스템을 직접 만드세요.</description>
     </item>
   </channel>
 </rss>

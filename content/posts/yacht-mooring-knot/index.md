@@ -4,9 +4,9 @@ date: 2026-02-07T15:58:00+09:00
 draft: false
 summary: "안전한 정박을 위한 클리트 매듭(Cleat Hitch)의 모든 것. 리딩 포스트 개념부터 270도 턴의 중요성, 그리고 깔끔한 라인 정리까지 1급 해기사의 노하우를 공개합니다."
 description: "1급 해기사가 알려주는 요트 계류 매듭의 정석. 클리트 매듭 체결법, 리딩 포스트 개념, 안전한 라인 정리 노하우를 소개합니다."
-tags: ["Yachting Tips", "Safety", "Seamanship", "Mooring", "Cleat Hitch", "계류매듭", "요트매듭"]
+tags: ["Yachting Tips", "Safety", "Seamanship", "Mooring", "Cleat Hitch", "계류매듭", "요트매듭", "제부도 요트", "제부도 요트투어", "요트체험"]
 categories: ["Yachting Tips"]
-keywords: ["요트 매듭", "계류 매듭", "Mooring Knot", "Cleat Hitch", "클리트 매듭", "1급 해기사", "Seamanship", "라인 정리", "Flemish Coil"]
+keywords: ["요트 매듭", "계류 매듭", "Mooring Knot", "Cleat Hitch", "클리트 매듭", "1급 해기사", "Seamanship", "라인 정리", "Flemish Coil", "제부도 요트", "제부도 요트투어", "요트체험"]
 cover:
   image: "How-to-Tie-a-Cleat-Hitch.jpg"
   alt: "완벽하게 체결된 클리트 매듭(Cleat Hitch)의 정석"

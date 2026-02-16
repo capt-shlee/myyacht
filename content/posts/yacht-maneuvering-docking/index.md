@@ -41,7 +41,7 @@ cover:
 
 ![요트 선미에서 본 프롭워크(Prop Walk)와 배수류 측압작용 원리](prop-walk.png)
 
-프로펠러가 회전하면 배를 앞으로 밀어내기도 하지만, 물의 밀도 차이와 날개 각도 때문에 <strong>선미를 옆으로 밀어내는 힘</strong>이 발생합니다. 또는 후진 수류가 선미의 우현을 때려서 선미를 좌측으로 이동시킵니다. 이를 <strong>프롭워크(Prop Walk)</strong> 또는 <strong>배수류 측압작용(Dischanging Current)</strong>이라고 합니다.
+프로펠러가 회전하면 배를 앞으로 밀어내기도 하지만, 물의 밀도 차이와 날개 각도 때문에 <strong>선미를 옆으로 밀어내는 힘</strong>이 발생합니다. 또는 후진 수류가 선미의 우현을 때려서 선미를 좌측으로 이동시킵니다. 이를 <strong>프롭워크(Prop Walk)</strong> 또는 <strong>배수류 측압작용(Discharging Current)</strong>이라고 합니다.
 
 - <strong>우회전 단추진기 선박 (Right-handed Prop)</strong>: 일반적으로 요트는 후진 기어를 넣었을 때 선미가 <strong>왼쪽(Port side)</strong>으로 밀리는 경향이 강합니다.
 - <strong>활용법</strong>: 이 힘을 역이용하면 좁은 공간에서 배를 옆으로 평행 이동시키거나 급회전할 수 있습니다.

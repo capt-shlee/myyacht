@@ -5,7 +5,11 @@ description: "가족과 떨어져 대양 위 336미터 원유선에서 보낸 �
 categories: ["Captain's Log"]
 tags: ["마이요트", "제부도요트", "상선일기", "명절에피소드", "VLCC", "선장의배려"]
 keywords: ["마이요트", "제부도요트", "상선 명절", "설날 풍경", "인도 새우 파티", "Captain Lima"]
-thumbnail: "featured.png"
+keywords: ["마이요트", "제부도요트", "상선 명절", "설날 풍경", "인도 새우 파티", "Captain Lima"]
+cover:
+  image: "featured.png"
+  alt: "336미터 VLCC 원유선의 명절 풍경"
+  caption: "거대한 VLCC 위에서 맞이한 특별한 명절의 추억"
 ---
 
 명절이 되면 모두가 고향으로 향하는 설레는 마음을 안고 길을 나섭니다. 하지만 저의 30대는 조금 달랐습니다. 가족의 품 대신, 끝을 알 수 없는 수평선을 마주하며 336미터에 달하는 거대한 원유선(VLCC) 위에서 명절을 맞이하곤 했죠.

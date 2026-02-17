@@ -1,5 +1,5 @@
 baseURL = 'https://myyacht.kr/'
-enableRobotsTXT = true
+enableRobotsTXT = false
 languageCode = 'ko-kr'
 title = 'MyYacht - No.1 제부도 요트 투어'
 theme = 'PaperMod'

@@ -1,5 +1,5 @@
 ---
-title: "요트 앵커링(Anchoring):<br>1급 해기사의 대형선 원리 적용과 실전 팁"
+title: "[제부도 요트] 안전한 앵커링(Anchoring): 1급 해기사의 대형선 원리 적용"
 date: 2026-02-05T18:00:00+09:00
 description: "1급 해기사가 전하는 안전한 요트 앵커링 노하우. 상선의 정박 원리를 요트에 적용하는 5단계 절차와 전자해도를 이용한 감시법을 소개합니다."
 categories: ["Yachting Tips"]
@@ -9,7 +9,7 @@ draft: false
 author: "Captain Lima"
 cover:
   image: "Gemini_Generated_Image_aq2z9iaq2z9iaq2z.png"
-  alt: "거친 바다 위에서도 요트를 안전하게 지켜주는 든든한 앵커와 체인"
+  alt: "제부도 요트 안전 정박 - 바다 위에서 요트를 지켜주는 든든한 앵커와 체인"
   caption: "거친 바다 위에서도 우리를 지켜주는 든든한 닻"
 ---
 

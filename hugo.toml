@@ -1,7 +1,7 @@
 baseURL = 'https://myyacht.kr/'
 enableRobotsTXT = false
 languageCode = 'ko-kr'
-title = 'MyYacht - No.1 제부도 요트 투어'
+title = '제부도 요트 투어 No.1 - 1급 해기사 선장의 마이요트'
 theme = 'PaperMod'
 
 [params]

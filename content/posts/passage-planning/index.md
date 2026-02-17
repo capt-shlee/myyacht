@@ -1,5 +1,5 @@
 ---
-title: "요트 항해 계획(Passage Planning): 1급 해기사의 A-P-E-M 원칙과 바다네비 활용법"
+title: "[제부도 요트] 항해 계획(Passage Planning): 1급 해기사의 실무 노하우"
 date: 2026-02-07T18:00:00+09:00
 description: "요트 항해 계획 4단계 원칙(A-P-E-M)을 자동차 여행에 비유해 쉽게 설명합니다. 1급 해기사의 실무 팁과 바다네비 앱 활용법을 확인하세요."
 categories: ["Yachting Tips"]
@@ -9,7 +9,7 @@ draft: false
 author: "Captain Lima"
 cover:
   image: "thumbnail.webp"
-  alt: "요트 항해 계획 수립을 위한 종이 해도와 디바이더, 삼각자 등 항해 도구"
+  alt: "제부도 요트 항해 계획 수립 - 종이 해도와 항해 도구를 활용한 정밀 계획"
   caption: "성공적인 항해는 철저한 계획에서 시작됩니다."
 ---
 

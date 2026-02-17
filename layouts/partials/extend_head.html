@@ -5,6 +5,16 @@
     href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Noto+Serif+KR:wght@400;700&family=Outfit:wght@400;700&display=swap"
     rel="stylesheet">
 
+<!-- Open Graph / Branding -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="{{ .Permalink }}" />
+<meta property="og:site_name" content="제부도 요트 투어 No.1 - 마이요트" />
+<meta property="og:title"
+    content="{{ if .IsHome }}제부도 요트 투어 No.1 - 1급 해기사 선장의 마이요트{{ else }}{{ .Title }} | 마이요트{{ end }}" />
+<meta property="og:description"
+    content="{{ with .Description }}{{ . }}{{ else }}20년 무사고 1급 해기사 선장의 제부도 프리미엄 요트 투어. 잊지 못할 선셋과 인생샷을 선사합니다.{{ end }}" />
+<meta property="og:image" content="{{ " images/og-main.jpg" | absURL }}" />
+
 {{- if .Params.tags }}
 <meta name="keywords" content="{{ delimit .Params.tags " , " }}" />
 {{- end }}

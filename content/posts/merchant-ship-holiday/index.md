@@ -52,8 +52,7 @@ cover:
 
 ---
 
-> [!TIP]
-> <strong>[함께 읽으면 좋은 글]</strong>
->
-> - [2026년 새로운 시작, 마이요트의 다짐](file:///c:/Users/capts/Desktop/myyacht/content/posts/newyear-greeting/index.md)
-> - [1급 해기사가 알려주는 안전한 요트 항해법](file:///c:/Users/capts/Desktop/myyacht/content/posts/passage-planning/index.md)
+### 📚 함께 읽으면 좋은 글
+
+* <strong>[2026년 새로운 시작, 마이요트의 다짐]({{< ref "/posts/newyear-greeting" >}})</strong>: 리마 선장이 전하는 새해 인사와 마이요트의 비전.
+* <strong>[1급 해기사가 알려주는 안전한 요트 항해법]({{< ref "/posts/passage-planning" >}})</strong>: 상선 사관의 노하우가 담긴 실전 항해 계획 수립 가이드.

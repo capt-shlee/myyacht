@@ -1,4 +1,3 @@
-<meta name="naver-site-verification" content="bffb5f33e21815cedf873eb24a4886cac44f5fb1" />
 <link rel="stylesheet" as="style" crossorigin
     href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -9,19 +8,7 @@
 
 <!-- Open Graph: Most tags are handled by themes/PaperMod/layouts/partials/templates/opengraph.html -->
 <!-- Overriding OG Image if specific logic needed, or ensuring no conflict -->
-
-{{- $keywords := "" -}}
-{{- if .Params.keywords -}}
-{{- $keywords = delimit .Params.keywords ", " -}}
-{{- else if .Params.tags -}}
-{{- $keywords = delimit .Params.tags ", " -}}
-{{- end -}}
-{{- if ne $keywords "" }}
-<meta name="keywords" content="{{ $keywords }}" />
-{{- end }}
+<meta property="og:image" content="{{ " images/og-main.jpg" | absURL }}" />
 
 <!-- Busuanzi Visitor Counter -->
 <script defer src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
-<!-- JSON-LD Structured Data -->
-{{ partial "jsonld.html" . }}

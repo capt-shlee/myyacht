@@ -42,6 +42,9 @@ theme = 'PaperMod'
   [params.verification]
     google = 'vk9uVz5A_U-0jsZt_TCrZrVQNmoT8HVy77HTr4HPlzg'
 
+  [params.analytics.naver]
+    SiteVerificationTag = "bffb5f33e21815cedf873eb24a4886cac44f5fb1"
+
 [menu]
   [[menu.main]]
     identifier = "home"

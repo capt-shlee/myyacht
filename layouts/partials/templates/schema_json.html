@@ -1,4 +1,4 @@
-{{- if .IsHome -}}
+{{ if .IsHome }}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -39,9 +39,43 @@
   "description": "1급 해기사 선장이 직접 운항하는 제부도 프리미엄 요트 투어 & 세일링 체험"
 }
 </script>
-{{- end -}}
+{{ else if (or .IsPage .IsSection) }}
+{{/* BreadcrumbList (From PaperMod) */}}
+{{- $url := replace .Parent.Permalink ( printf "%s" site.Home.Permalink) "" }}
+{{- $lang_url := strings.TrimPrefix ( printf "%s/" .Lang) $url }}
+{{- $bc_list := (split $lang_url "/")}}
+{{- $scratch := newScratch }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+  {{- range $index, $element := $bc_list }}
+    {{- $scratch.Add "path" (printf "%s/" $element ) | safeJS }}
+    {{- $bc_pg := site.GetPage ($scratch.Get "path") -}}
+    {{- if (and ($bc_pg) (gt (len . ) 0))}}
+    {{- if (and $index)}}, {{end }}
+    {
+      "@type": "ListItem",
+      "position": {{ add 1 $index  }},
+      "name": {{ $bc_pg.Name }},
+      "item": {{ $bc_pg.Permalink | safeHTML }}
+    }
+    {{- end }}
+  {{- end }}
+  {{- if (ge (len $bc_list) 2) }}, {{end }}
+    {
+      "@type": "ListItem",
+      "position": {{len $bc_list}},
+      "name": {{ .Name }},
+      "item": {{ .Permalink | safeHTML }}
+    }
+  ]
+}
+</script>
 
-{{- if (and .IsPage (eq .Section "posts")) -}}
+{{- if .IsPage }}
+{{/* BlogPosting (Custom Optimization) */}}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -89,4 +123,5 @@
   }
 }
 </script>
+{{- end }}
 {{- end -}}

@@ -3,8 +3,8 @@ title: "해도의 기본수준면(Chart Datum): 1급 해기사가 알려주는 �
 date: 2026-02-06T09:00:00+09:00
 description: "해도 수심의 기준, 기본수준면(Chart Datum) 완벽 이해. 1급 해기사가 조석표 활용법과 안전한 항해를 위한 UKC 설정 팁을 전합니다."
 categories: ["Sailing Knowledge"]
-tags: ["해도수심", "Chart Datum", "Tide Table", "UKC", "Safety Contour", "요트운항", "기본수준면", "항해술", "제부도 요트", "제부도 요트투어", "요트체험"]
-keywords: ["기본수준면", "Chart Datum", "해도 수심 읽는 법", "조석표 계산", "UKC 설정", "요트 안전 항해", "1급 해기사", "제부도 요트", "제부도 요트투어", "요트체험"]
+tags: ["해도수심", "UKC", "Safety Contour", "요트운항", "선장노하우", "제부도요트투어", "요트체험"]
+keywords: ["기본수준면", "Chart Datum", "해도 수심 읽는 법", "조석표 계산", "UKC 설정", "요트 안전 항해", "1급해기사", "제부도요트투어", "요트체험"]
 math: true
 draft: false
 author: "Captain Lima"

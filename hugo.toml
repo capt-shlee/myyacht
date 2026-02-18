@@ -12,6 +12,9 @@ theme = 'PaperMod'
   keywords = ["제부도요트", "요트투어", "세일링클럽", "요트교육", "myyacht", "마이요트", "서울 근교 데이트", "프라이빗 요트 투어", "제부도 가볼만한 곳", "제부도 요트 체험", "요트", "세일요트", "보트"]
   images = ["images/og-main.jpg"]
   
+  [params.schema]
+    disable = true
+
   [params.assets]
     favicon = "/favicon.png"
     favicon16x16 = "/favicon.png"

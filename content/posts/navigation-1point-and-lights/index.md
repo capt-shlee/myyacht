@@ -62,7 +62,7 @@ cover:
 | **기주등 (Masthead Light)** | **20 pt** | **225.0도** | 정선수 기준 양현 10pt씩 비춤 |
 | **선미등 (Stern Light)** | **12 pt** | **135.0도** | 정선미 기준 12pt씩 비춤 |
 
-<img src="images/yacht_nav_lights.webp" alt="야간 항해등 조사 각도" style="width: 100%; max-width: 800px; height: auto; display: block; margin: 20px auto;">
+![야간 항해등 조사 각도](images/yacht_nav_lights.webp)
 *▲ 정확한 각도로 빛을 발하고 있는 요트의 모습. 이 각도는 1포인트 단위의 합산으로 이루어져 360도를 빈틈없이 비추고 있습니다. 기주중일때와 범주중일때의 등화는 다릅니다.*
 
 ---

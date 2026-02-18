@@ -45,14 +45,19 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "TechArticle",
-  "headline": "{{ .Title | plainify }}",
-  "description": "{{ .Description | default .Summary }}",
+  "@type": "BlogPosting",
+  "headline": {{ .Title | plainify | jsonify }},
+  "description": {{ .Description | default .Summary | plainify | jsonify }},
   "image": [
     {{- $images := .Resources.ByType "image" -}}
     {{- range $i, $e := $images -}}
         {{- if $i }},{{ end -}}
         "{{ $e.Permalink }}"
+    {{- end -}}
+    {{- if not $images -}}
+        {{- with .Params.cover.image -}}
+            "{{ . | absURL }}"
+        {{- end -}}
     {{- end -}}
    ],
   "datePublished": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
@@ -61,7 +66,15 @@
     "@type": "Person",
     "name": "Captain Lee (Master Mariner)"
   },
-  "keywords": "Yacht DIY, OpenPlotter, Volvo Penta, Marine Electronics, Sailing",
+  {{- $keywords := "" -}}
+  {{- if .Params.keywords -}}
+    {{- $keywords = delimit .Params.keywords ", " -}}
+  {{- else if .Params.tags -}}
+    {{- $keywords = delimit .Params.tags ", " -}}
+  {{- end -}}
+  {{- if ne $keywords "" }}
+  "keywords": {{ $keywords | jsonify }},
+  {{- end }}
   "publisher": {
     "@type": "Organization",
     "name": "MyYacht",

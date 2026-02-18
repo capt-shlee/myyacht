@@ -14,15 +14,15 @@ cover:
 
 ## 환영합니다
 
-마이요트(MyYacht) 공식 블로그, <strong>Captain's Log</strong>에 오신 것을 환영합니다.
+마이요트(MyYacht) 공식 블로그, **Captain's Log**에 오신 것을 환영합니다.
 
 이곳은 제부도 앞바다의 계절 변화, 요트 세일링의 기술, 그리고 바다 위에서 만난 소중한 인연들의 이야기를 기록하는 공간입니다. 1급 해기사로서 제가 가진 지식과 경험이 여러분의 즐겁고 안전한 세일링에 도움이 되기를 바랍니다.
 
 ### 앞으로 다룰 이야기
 
-* <strong>Sailing Knowledge</strong>: 요트 운항의 기초와 1급 해기사만의 심화 기술
-* <strong>Logbook</strong>: 그날그날의 제부도 바다 날씨와 생생한 항해 기록
-* <strong>Gallery</strong>: 제부도의 숨겨진 비경과 넋을 잃게 하는 노울 사진
+* **Sailing Knowledge**: 요트 운항의 기초와 1급 해기사만의 심화 기술
+* **Logbook**: 그날그날의 제부도 바다 날씨와 생생한 항해 기록
+* **Gallery**: 제부도의 숨겨진 비경과 넋을 잃게 하는 노울 사진
 
 여러분의 항해가 언제나 안전하고 즐겁기를 바랍니다. 궁금한 점이 있다면 언제든 댓글로 소통해 주세요!
 
@@ -30,7 +30,7 @@ cover:
 
 ### 📚 추천하는 첫 읽기
 
-* <strong>[요트 항해 계획(Passage Planning): 1급 해기사의 A-P-E-M 원칙]({{< ref "/posts/passage-planning" >}})</strong>: 안전한 첫 출항을 위한 필수 가이드입니다.
-* <strong>[요트 앵커링(Anchoring): 1급 해기사의 대형선 원리 적용과 실전 팁]({{< ref "/posts/yacht-anchoring" >}})</strong>: 어떤 상황에서도 안심할 수 있는 정박 노하우를 배워보세요.
+* **[요트 항해 계획(Passage Planning): 1급 해기사의 A-P-E-M 원칙]({{< ref "/posts/passage-planning" >}})**: 안전한 첫 출항을 위한 필수 가이드입니다.
+* **[요트 앵커링(Anchoring): 1급 해기사의 대형선 원리 적용과 실전 팁]({{< ref "/posts/yacht-anchoring" >}})**: 어떤 상황에서도 안심할 수 있는 정박 노하우를 배워보세요.
 
-<strong>Bon Voyage!</strong>
+**Bon Voyage!**

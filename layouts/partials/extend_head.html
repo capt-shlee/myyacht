@@ -1,5 +1,6 @@
 <meta name="naver-site-verification" content="bffb5f33e21815cedf873eb24a4886cac44f5fb1" />
-<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css" />
+<link rel="stylesheet" as="style" crossorigin
+    href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link
@@ -16,8 +17,14 @@
     content="{{ with .Description }}{{ . }}{{ else }}20년 무사고 1급 해기사 선장의 제부도 프리미엄 요트 투어. 잊지 못할 선셋과 인생샷을 선사합니다.{{ end }}" />
 <meta property="og:image" content="{{ " images/og-main.jpg" | absURL }}" />
 
-{{- if .Params.tags }}
-<meta name="keywords" content="{{ delimit .Params.tags " , " }}" />
+{{- $keywords := "" -}}
+{{- if .Params.keywords -}}
+{{- $keywords = delimit .Params.keywords ", " -}}
+{{- else if .Params.tags -}}
+{{- $keywords = delimit .Params.tags ", " -}}
+{{- end -}}
+{{- if ne $keywords "" }}
+<meta name="keywords" content="{{ $keywords }}" />
 {{- end }}
 
 <!-- Busuanzi Visitor Counter -->

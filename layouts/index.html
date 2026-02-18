@@ -13,12 +13,36 @@
             display: flex;
             gap: 30px;
             animation: scroll 35s linear infinite;
-            /* 속도 약간 조정 (기존 40s에서 35s로) */
+            -webkit-animation: scroll 35s linear infinite;
             width: max-content;
+            will-change: transform;
         }
 
         .review-track:hover {
             animation-play-state: paused;
+            -webkit-animation-play-state: paused;
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+                -webkit-transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+                -webkit-transform: translateX(-50%);
+            }
+        }
+
+        @-webkit-keyframes scroll {
+            0% {
+                -webkit-transform: translateX(0);
+            }
+
+            100% {
+                -webkit-transform: translateX(-50%);
+            }
         }
 
         .review-item {

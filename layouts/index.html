@@ -9,32 +9,122 @@
             min-height: 100vh;
         }
 
-        .review-stars {
-            color: #FFD700;
-            margin-bottom: 15px;
-            font-size: 1.2rem;
-            letter-spacing: 2px;
+        .review-track {
+            display: flex;
+            gap: 30px;
+            animation: scroll 35s linear infinite;
+            /* 속도 약간 조정 (기존 40s에서 35s로) */
+            width: max-content;
+        }
+
+        .review-track:hover {
+            animation-play-state: paused;
         }
 
         .review-item {
             background: rgba(255, 255, 255, 0.03);
             backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            padding: 40px !important;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 0 !important;
             border-radius: 20px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            width: 350px;
+            /* 고정 너비로 정합성 유지 */
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .review-item:hover {
+            transform: translateY(-10px);
+            border-color: var(--color-accent);
+        }
+
+        .review-image {
+            width: 100%;
+            height: 220px;
+            /* 높이 약간 상향 */
+            overflow: hidden;
+        }
+
+        .review-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .review-item:hover .review-image img {
+            transform: scale(1.05);
+        }
+
+        .review-content {
+            padding: 30px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .review-stars {
+            color: #FFD700;
+            margin-bottom: 12px;
+            font-size: 1.1rem;
+            letter-spacing: 2px;
+        }
+
+        .review-text {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+
+        .review-meta-container {
+            display: flex;
+            flex-wrap: nowrap;
+            /* 한 줄 유지 시도 */
+            align-items: center;
+            gap: 10px;
+            margin-top: auto;
+            min-height: 40px;
+            /* 불필요한 높이 축소 */
+            padding-top: 15px;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
         }
 
         .verified-badge {
-            display: inline-block;
-            background: rgba(var(--color-accent-rgb), 0.1);
+            display: inline-flex;
+            align-items: center;
+            background: rgba(var(--color-accent-rgb), 0.15);
             color: var(--color-accent);
-            font-size: 0.75rem;
-            padding: 2px 8px;
+            font-size: 0.6rem;
+            /* 살짝 축소 */
+            padding: 2px 6px;
             border-radius: 4px;
-            margin-right: 10px;
             text-transform: uppercase;
-            letter-spacing: 1px;
-            font-weight: 700;
+            letter-spacing: 0.3px;
+            font-weight: 800;
+            white-space: nowrap;
+            border: 1px solid rgba(var(--color-accent-rgb), 0.2);
+            flex-shrink: 0;
+        }
+
+        .review-category {
+            font-size: 0.65rem;
+            /* 더 축소하여 한 줄 유도 */
+            color: #fff;
+            opacity: 0.5;
+            font-weight: 600;
+            white-space: nowrap;
+            /* 강제 한 줄 */
+            overflow: hidden;
+            text-overflow: ellipsis;
+            /* 넘칠 경우 줄임표 */
+            letter-spacing: 0.2px;
+        }
+
+        .review-wrapper:hover .review-track {
+            animation-play-state: paused;
         }
     </style>
 </head>
@@ -132,61 +222,119 @@
         <!-- Reviews -->
         <section id="community" class="spacer-y text-center">
             <div class="container" style="overflow:hidden">
-                <span class="section-tag">Client Voices</span>
-                <h2 class="mb-2">1급 해기사 선장의 제부도 요트 운항 기록 및 후기</h2>
+                <span class="section-tag">마이요트 후기</span>
+                <h2 class="mb-2">1급 해기사 선장의 제부도 요트 운항 기록</h2>
                 <div class="review-wrapper">
                     <div class="review-track">
                         <div class="review-item">
-                            <div class="review-stars">★★★★★</div>
-                            <p class="review-text">"1급 해기사 선장님의 전문적인 항해 실력 덕분에 가족 모두 편안한 시간을 보냈습니다."</p>
-                            <div class="review-meta"><span class="verified-badge">Master Mariner Verified</span> Family
-                                Trip</div>
+                            <div class="review-image"><img src="/images/reviews/r1.jpg" alt="Family Trip"></div>
+                            <div class="review-content">
+                                <div class="review-stars">★★★★★</div>
+                                <p class="review-text">"1급 해기사 선장님의 전문적인 항해 실력 덕분에 가족 모두 편안한 시간을 보냈습니다."</p>
+                                <div class="review-meta-container">
+                                    <span class="verified-badge">Master Mariner Verified</span>
+                                    <span class="review-category">Family Trip</span>
+                                </div>
+                            </div>
                         </div>
                         <div class="review-item">
-                            <div class="review-stars">★★★★★</div>
-                            <p class="review-text">"최고의 낙조 스팟! 프로포즈 성공의 일등공신이셨습니다."</p>
-                            <div class="review-meta"><span class="verified-badge">Master Mariner Verified</span> Sunset
-                                Proposal</div>
+                            <div class="review-image"><img src="/images/reviews/pet.jpg" alt="Pet Friendly"></div>
+                            <div class="review-content">
+                                <div class="review-stars">★★★★★</div>
+                                <p class="review-text">"우리 댕댕이가 너무 행복해 합니다. 애견 동반 요트 투어 중 최고예요!"</p>
+                                <div class="review-meta-container">
+                                    <span class="verified-badge">Master Mariner Verified</span>
+                                    <span class="review-category">Pet Friendly</span>
+                                </div>
+                            </div>
                         </div>
                         <div class="review-item">
-                            <div class="review-stars">★★★★★</div>
-                            <p class="review-text">"바다에 대해 깊이 있는 설명을 들을 수 있어 좋았습니다."</p>
-                            <div class="review-meta"><span class="verified-badge">Master Mariner Verified</span> Sailing
-                                Class</div>
+                            <div class="review-image"><img src="/images/reviews/proposal.jpg" alt="Sunset Proposal">
+                            </div>
+                            <div class="review-content">
+                                <div class="review-stars">★★★★★</div>
+                                <p class="review-text">"최고의 낙조 스팟! 프로포즈 성공의 일등공신이셨습니다."</p>
+                                <div class="review-meta-container">
+                                    <span class="verified-badge">Master Mariner Verified</span>
+                                    <span class="review-category">Sunset Proposal</span>
+                                </div>
+                            </div>
                         </div>
                         <div class="review-item">
-                            <div class="review-stars">★★★★★</div>
-                            <p class="review-text">"회사 워크샵으로 방문했는데 직원들 만족도가 최상입니다."</p>
-                            <div class="review-meta"><span class="verified-badge">Master Mariner Verified</span>
-                                Corporate Workshop</div>
+                            <div class="review-image"><img src="/images/reviews/r3.jpg" alt="Sailing Class"></div>
+                            <div class="review-content">
+                                <div class="review-stars">★★★★★</div>
+                                <p class="review-text">"바다에 대해 깊이 있는 설명을 들을 수 있어 좋았습니다."</p>
+                                <div class="review-meta-container">
+                                    <span class="verified-badge">Master Mariner Verified</span>
+                                    <span class="review-category">Sailing Class</span>
+                                </div>
+                            </div>
                         </div>
                         <div class="review-item">
-                            <div class="review-stars">★★★★★</div>
-                            <p class="review-text">"선장님의 카리스마와 친절함이 인상적이었습니다."</p>
-                            <div class="review-meta"><span class="verified-badge">Master Mariner Verified</span> Private
-                                Party</div>
-                        </div>
-                        <!-- Clones -->
-                        <div class="review-item">
-                            <div class="review-stars">★★★★★</div>
-                            <p class="review-text">"1급 해기사 선장님의 전문적인 항해 실력 덕분에 가족 모두 편안한 시간을 보냈습니다."</p>
-                            <div class="review-meta"><span class="verified-badge">Master Mariner Verified</span> Family
-                                Trip</div>
-                        </div>
-                        <div class="review-item">
-                            <div class="review-stars">★★★★★</div>
-                            <p class="review-text">"최고의 낙조 스팟! 프로포즈 성공의 일등공신이셨습니다."</p>
-                            <div class="review-meta"><span class="verified-badge">Master Mariner Verified</span> Sunset
-                                Proposal</div>
+                            <div class="review-image"><img src="/images/reviews/workshop.jpg" alt="Corporate Workshop">
+                            </div>
+                            <div class="review-content">
+                                <div class="review-stars">★★★★★</div>
+                                <p class="review-text">"회사 워크샵으로 방문했는데 직원들 만족도가 최상입니다."</p>
+                                <div class="review-meta-container">
+                                    <span class="verified-badge">Master Mariner Verified</span>
+                                    <span class="review-category">Corporate Workshop</span>
+                                </div>
+                            </div>
                         </div>
                         <div class="review-item">
-                            <div class="review-stars">★★★★★</div>
-                            <p class="review-text">"바다에 대해 깊이 있는 설명을 들을 수 있어 좋았습니다."</p>
-                            <div class="review-meta"><span class="verified-badge">Master Mariner Verified</span> Sailing
-                                Class</div>
+                            <div class="review-image"><img src="/images/reviews/r5.jpg" alt="Private Party"></div>
+                            <div class="review-content">
+                                <div class="review-stars">★★★★★</div>
+                                <p class="review-text">"선장님의 카리스마와 친절함이 인상적이었습니다."</p>
+                                <div class="review-meta-container">
+                                    <span class="verified-badge">Master Mariner Verified</span>
+                                    <span class="review-category">Private Party</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Clones (Hidden from Search Bots) -->
+                        <div class="review-item" aria-hidden="true" tabindex="-1">
+                            <div class="review-image"><img src="/images/reviews/r1.jpg" alt="Family Trip"
+                                    loading="lazy"></div>
+                            <div class="review-content">
+                                <div class="review-stars">★★★★★</div>
+                                <p class="review-text">"1급 해기사 선장님의 전문적인 항해 실력 덕분에 가족 모두 편안한 시간을 보냈습니다."</p>
+                                <div class="review-meta-container">
+                                    <span class="verified-badge">Master Mariner Verified</span>
+                                    <span class="review-category">Family Trip</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-item" aria-hidden="true" tabindex="-1">
+                            <div class="review-image"><img src="/images/reviews/pet.jpg" alt="Pet Friendly"
+                                    loading="lazy"></div>
+                            <div class="review-content">
+                                <div class="review-stars">★★★★★</div>
+                                <p class="review-text">"우리 댕댕이가 너무 행복해 합니다. 애견 동반 요트 투어 중 최고예요!"</p>
+                                <div class="review-meta-container">
+                                    <span class="verified-badge">Master Mariner Verified</span>
+                                    <span class="review-category">Pet Friendly</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-item" aria-hidden="true" tabindex="-1">
+                            <div class="review-image"><img src="/images/reviews/proposal.jpg" alt="Sunset Proposal"
+                                    loading="lazy">
+                            </div>
+                            <div class="review-content">
+                                <div class="review-stars">★★★★★</div>
+                                <p class="review-text">"최고의 낙조 스팟! 프로포즈 성공의 일등공신이셨습니다."</p>
+                                <div class="review-meta-container">
+                                    <span class="verified-badge">Master Mariner Verified</span>
+                                    <span class="review-category">Sunset Proposal</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </div>
             </div>
         </section>
 

@@ -7,7 +7,7 @@ description: "항해에서 쓰이는 1포인트(11.25도)의 의미와 항해등
 tags: ["제부도요트투어", "요트체험", "항해술", "항해등", "선장노하우"]
 keywords: ["1포인트", "항해등", "홍녹등", "현등", "기주등", "선미등", "11.25도", "32방위", "자이로 리피터", "제부도요트", "요트체험", "1급해기사"]
 cover:
-    image: "images/dark_ship_danger.png"
+    image: "images/dark_ship_danger.jpg"
     alt: "제부도 요트 마이요트 - 안개 속 항해등 없는 선박의 위험성 (Ghosy Ship)"
     relative: true
 ---
@@ -30,7 +30,7 @@ cover:
 
 이렇게 360도를 **32등분** 했을 때 나오는 하나의 각도, **11.25도** 를 우리는 **1포인트(1 Point)** 라고 부릅니다.
 
-![32등분 자이로 리피터](images/compass_32_points.png)
+![32등분 자이로 리피터](images/compass_32_points.jpg)
 *▲ 32등분 자이로 리피터*
 
 ### 🔍 2포인트(22.5도)와 익숙한 방위들
@@ -82,8 +82,8 @@ cover:
 
 ## 🛡️ 안전을 위한 마지막 점검
 
-<img src="images/dark_ship_danger.png" alt="어둠 속의 위험: 항해등 없는 선박" style="width: 100%; max-width: 800px; height: auto; display: block; margin: 15px auto;">
-*▲ 어두운 밤, 항해등을 켜지 않은 선박이 얼마나 위험한지 시각적으로 보여주는 장면입니다. (썸네일 최적화 크롭 완료)*
+![어둠 속의 위험: 항해등 없는 선박](images/dark_ship_danger.jpg)
+*▲ 어두운 밤, 항해등을 켜지 않은 선박이 얼마나 위험한지 시각적으로 보여주는 장면입니다.*
 
 항해등은 단순히 법규를 지키기 위한 수단이 아닙니다. 내가 다른 배에게 내가 어디로 가고 있는지, 내가 어떤 상태인지 알려주는 **나의 생명줄** 입니다.
 

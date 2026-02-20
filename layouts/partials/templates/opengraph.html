@@ -3,6 +3,7 @@
 
 {{- /* Title Logic */ -}}
 {{- $title := "" -}}
+{{- $siteURL := strings.TrimSuffix "/" (site.Params.siteURL | default site.BaseURL) -}}
 {{- if .IsHome -}}
 {{- $title = site.Title -}}
 {{- else -}}
@@ -22,21 +23,25 @@
 <meta property="og:description" content="{{ $desc | plainify | htmlUnescape | truncate 150 }}" />
 
 {{- /* URL Logic (Absolute) */ -}}
-<meta property="og:url" content="{{ .Permalink }}" />
+{{- $pageURL := printf "%s%s" $siteURL .RelPermalink -}}
+<meta property="og:url" content="{{ $pageURL }}" />
 
 {{- /* Image Logic */ -}}
-{{- $ogImage := "https://myyacht.kr/images/og-main.jpg" -}}
+{{- $ogImage := printf "%s/images/og-main.jpg" $siteURL -}}
 
 {{- if .Params.cover.image -}}
 {{- if (findRE "^http" .Params.cover.image) -}}
 {{- $ogImage = .Params.cover.image -}}
 {{- else -}}
-{{- /* Try to get the image resource to get absolute permalink */ -}}
+{{- /* Build absolute image URLs from siteURL to avoid localhost in deploy metadata */ -}}
 {{- with .Resources.GetMatch .Params.cover.image -}}
-{{- $ogImage = .Permalink -}}
+{{- $ogImage = printf "%s%s" $siteURL .RelPermalink -}}
 {{- else -}}
-{{- /* Fallback: construct absolute URL manually */ -}}
-{{- $ogImage = printf "%s%s" .Permalink .Params.cover.image -}}
+{{- if hasPrefix .Params.cover.image "/" -}}
+{{- $ogImage = printf "%s%s" $siteURL .Params.cover.image -}}
+{{- else -}}
+{{- $ogImage = printf "%s%s%s" $siteURL .RelPermalink .Params.cover.image -}}
+{{- end -}}
 {{- end -}}
 {{- end -}}
 {{- end -}}
@@ -44,8 +49,3 @@
 <meta property="og:image" content="{{ $ogImage }}" />
 <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}" />
 
-{{- /* Twitter Card Support */ -}}
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="{{ $title }}" />
-<meta name="twitter:description" content="{{ $desc | plainify | htmlUnescape | truncate 150 }}" />
-<meta name="twitter:image" content="{{ $ogImage }}" />

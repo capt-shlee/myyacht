@@ -1,0 +1,28 @@
+{{- $siteURL := strings.TrimSuffix "/" (site.Params.siteURL | default site.BaseURL) -}}
+{{- $title := .Title -}}
+{{- if .IsHome -}}
+  {{- $title = site.Title -}}
+{{- end -}}
+{{- $desc := .Description | default .Summary | default site.Params.description -}}
+{{- $image := printf "%s/images/og-main.jpg" $siteURL -}}
+
+{{- if .Params.cover.image -}}
+  {{- if (findRE "^http" .Params.cover.image) -}}
+    {{- $image = .Params.cover.image -}}
+  {{- else -}}
+    {{- with .Resources.GetMatch .Params.cover.image -}}
+      {{- $image = printf "%s%s" $siteURL .RelPermalink -}}
+    {{- else -}}
+      {{- if hasPrefix .Params.cover.image "/" -}}
+        {{- $image = printf "%s%s" $siteURL .Params.cover.image -}}
+      {{- else -}}
+        {{- $image = printf "%s%s%s" $siteURL .RelPermalink .Params.cover.image -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="{{ $title | plainify }}" />
+<meta name="twitter:description" content="{{ $desc | plainify | htmlUnescape | truncate 150 }}" />
+<meta name="twitter:image" content="{{ $image }}" />

@@ -1,12 +1,13 @@
+{{- $siteURL := strings.TrimSuffix "/" (site.Params.siteURL | default site.BaseURL) -}}
 {{ if .IsHome }}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "name": "MyYacht 제부도 요트 투어",
-  "image": "{{ "images/og-main.jpg" | absURL }}",
-  "@id": "{{ .Permalink }}",
-  "url": "{{ .Permalink }}",
+  "image": "{{ printf "%s/images/og-main.jpg" $siteURL }}",
+  "@id": "{{ printf "%s%s" $siteURL .RelPermalink }}",
+  "url": "{{ printf "%s%s" $siteURL .RelPermalink }}",
   "telephone": "0507-1450-7890",
   "priceRange": "$$",
   "address": {
@@ -59,7 +60,7 @@
       "@type": "ListItem",
       "position": {{ add 1 $index  }},
       "name": {{ $bc_pg.Name }},
-      "item": {{ $bc_pg.Permalink | safeHTML }}
+      "item": {{ printf "%s%s" $siteURL $bc_pg.RelPermalink | safeHTML }}
     }
     {{- end }}
   {{- end }}
@@ -68,7 +69,7 @@
       "@type": "ListItem",
       "position": {{len $bc_list}},
       "name": {{ .Name }},
-      "item": {{ .Permalink | safeHTML }}
+      "item": {{ printf "%s%s" $siteURL .RelPermalink | safeHTML }}
     }
   ]
 }
@@ -89,11 +90,11 @@
   "image": [
     {{- range $i, $e := $images -}}
         {{- if $i }},{{ end -}}
-        "{{ $e.Permalink }}"
+        "{{ printf "%s%s" $siteURL $e.RelPermalink }}"
     {{- end -}}
     {{- if not $images -}}
         {{- with $cover -}}
-            "{{ . | absURL }}"
+            "{{ printf "%s/%s" $siteURL (strings.TrimPrefix "/" .) }}"
         {{- end -}}
     {{- end -}}
    ],
@@ -118,7 +119,7 @@
     "name": "MyYacht",
     "logo": {
       "@type": "ImageObject",
-      "url": "{{ "favicon.png" | absURL }}"
+      "url": "{{ printf "%s/favicon.png" $siteURL }}"
     }
   }
 }

@@ -16,6 +16,8 @@
             -webkit-animation: scroll 35s linear infinite;
             width: max-content;
             will-change: transform;
+            transform: translate3d(0, 0, 0);
+            -webkit-transform: translate3d(0, 0, 0);
         }
 
         .review-track:hover {
@@ -48,6 +50,7 @@
         .review-item {
             background: rgba(255, 255, 255, 0.03);
             backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.1);
             padding: 0 !important;
             border-radius: 20px;
@@ -57,6 +60,8 @@
             width: 350px;
             /* 고정 너비로 정합성 유지 */
             transition: transform 0.3s ease, border-color 0.3s ease;
+            backface-visibility: hidden;
+            -webkit-backface-visibility: hidden;
         }
 
         .review-item:hover {
@@ -149,6 +154,26 @@
 
         .review-wrapper:hover .review-track {
             animation-play-state: paused;
+        }
+
+        @media (max-width: 768px) {
+            .review-track {
+                animation-duration: 50s;
+                -webkit-animation-duration: 50s;
+                gap: 20px;
+            }
+
+            .review-item {
+                width: 320px;
+            }
+        }
+
+        @supports (-webkit-touch-callout: none) {
+            .review-item {
+                backdrop-filter: none;
+                -webkit-backdrop-filter: none;
+                background: rgba(255, 255, 255, 0.06);
+            }
         }
     </style>
 </head>
@@ -353,6 +378,42 @@
                                 <div class="review-meta-container">
                                     <span class="verified-badge">Master Mariner Verified</span>
                                     <span class="review-category">Sunset Proposal</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-item" aria-hidden="true" tabindex="-1">
+                            <div class="review-image"><img src="/images/reviews/r3.jpg" alt="Sailing Class"
+                                    loading="lazy"></div>
+                            <div class="review-content">
+                                <div class="review-stars">★★★★★</div>
+                                <p class="review-text">"Detailed explanations and safe handling made this tour exceptional."</p>
+                                <div class="review-meta-container">
+                                    <span class="verified-badge">Master Mariner Verified</span>
+                                    <span class="review-category">Sailing Class</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-item" aria-hidden="true" tabindex="-1">
+                            <div class="review-image"><img src="/images/reviews/workshop.jpg" alt="Corporate Workshop"
+                                    loading="lazy"></div>
+                            <div class="review-content">
+                                <div class="review-stars">★★★★★</div>
+                                <p class="review-text">"Great team experience with smooth operation and strong hosting."</p>
+                                <div class="review-meta-container">
+                                    <span class="verified-badge">Master Mariner Verified</span>
+                                    <span class="review-category">Corporate Workshop</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-item" aria-hidden="true" tabindex="-1">
+                            <div class="review-image"><img src="/images/reviews/r5.jpg" alt="Private Party"
+                                    loading="lazy"></div>
+                            <div class="review-content">
+                                <div class="review-stars">★★★★★</div>
+                                <p class="review-text">"Professional captain care and a premium atmosphere from start to finish."</p>
+                                <div class="review-meta-container">
+                                    <span class="verified-badge">Master Mariner Verified</span>
+                                    <span class="review-category">Private Party</span>
                                 </div>
                             </div>
                         </div>

@@ -9,6 +9,34 @@
             min-height: 100vh;
         }
 
+        .hero-content {
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 28px 30px;
+            border: 1px solid rgba(212, 175, 55, 0.22);
+            border-radius: 18px;
+            background: linear-gradient(180deg, rgba(10, 25, 47, 0.36) 0%, rgba(10, 25, 47, 0.56) 100%);
+            backdrop-filter: blur(6px);
+            -webkit-backdrop-filter: blur(6px);
+            box-shadow: 0 18px 48px rgba(0, 0, 0, 0.24);
+        }
+
+        .hero-content .btn-primary {
+            box-shadow: 0 10px 26px rgba(212, 175, 55, 0.22);
+        }
+
+        .hero-call-alt {
+            margin-top: 12px;
+            font-size: 0.9rem;
+            opacity: 0.85;
+        }
+
+        .hero-call-alt a {
+            color: var(--color-accent);
+            text-decoration: underline;
+            text-underline-offset: 2px;
+        }
+
         .review-track {
             display: flex;
             gap: 30px;
@@ -18,6 +46,13 @@
             will-change: transform;
             transform: translate3d(0, 0, 0);
             -webkit-transform: translate3d(0, 0, 0);
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .review-track {
+                animation: none;
+                -webkit-animation: none;
+            }
         }
 
         .review-track:hover {
@@ -200,6 +235,15 @@
             max-width: 1120px;
             margin: 0 auto;
             padding: 0 20px;
+            position: relative;
+        }
+
+        .cred-wrap::before {
+            content: "";
+            position: absolute;
+            inset: -6px 14px;
+            background: radial-gradient(65% 120% at 50% 0%, rgba(212, 175, 55, 0.08), rgba(212, 175, 55, 0));
+            pointer-events: none;
         }
 
         .cred-kicker {
@@ -237,6 +281,31 @@
             box-shadow: inset 0 0 0 1px rgba(255, 234, 179, 0.08);
         }
 
+        @media (hover: hover) and (pointer: fine) {
+            .cred-pill {
+                transition: transform 0.25s ease, border-color 0.25s ease, background-color 0.25s ease;
+            }
+
+            .cred-pill:hover {
+                transform: translateY(-2px);
+                border-color: rgba(212, 175, 55, 0.82);
+                background: rgba(255, 255, 255, 0.05);
+            }
+        }
+
+        .review-source {
+            margin: -8px 0 24px;
+            font-size: 0.85rem;
+            opacity: 0.75;
+            letter-spacing: 0.01em;
+        }
+
+        .review-source a {
+            color: var(--color-accent);
+            text-decoration: underline;
+            text-underline-offset: 2px;
+        }
+
         @media (max-width: 1024px) {
             .cred-grid {
                 grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -246,6 +315,11 @@
         @media (max-width: 640px) {
             .cred-headline {
                 font-size: 1.2rem;
+            }
+
+            .hero-content {
+                padding: 24px 18px;
+                border-radius: 14px;
             }
 
             .cred-grid {
@@ -264,7 +338,8 @@
 <body>
     <!-- Floating Reservation Button (Home Only) -->
     <div class="floating-btn-wrapper reveal active">
-        <a href="https://m.place.naver.com/place/1673800591/home" target="_blank" class="floating-btn">
+        <a href="https://m.place.naver.com/place/1673800591/home" target="_blank" rel="noopener noreferrer"
+            class="floating-btn">
             <span>Book Now</span>
         </a>
     </div>
@@ -298,8 +373,12 @@
                 <span class="hero-badge">The Master Mariner</span>
                 <h1>프랑스 듀포 요트와 함께하는<br><span class="text-accent">제부도 프리미엄 요트 투어</span></h1>
                 <p>20년 무사고 1급 해기사 선장이 직접 운항하며<br>바다 위에서의 완벽한 신뢰와 감동을 선사합니다.</p>
-                <!-- Call for Reservation -->
-                <a href="tel:050714507890" class="btn-primary">Call for Reservation</a>
+                <!-- Primary CTA -->
+                <a href="https://m.place.naver.com/place/1673800591/home" target="_blank" rel="noopener noreferrer"
+                    class="btn-primary">Book Now</a>
+                <p class="hero-call-alt">
+                    또는 <a href="tel:050714507890">전화 예약 0507-1450-7890</a>
+                </p>
             </div>
         </section>
 
@@ -370,11 +449,10 @@
             <div class="container" style="overflow:hidden">
                 <span class="section-tag">마이요트 후기</span>
                 <h2 class="mb-2">1급 해기사 선장의 제부도 요트 운항 기록</h2>
-                <p style="margin: -8px 0 24px; font-size: 0.85rem; opacity: 0.75;">
+                <p class="review-source">
                     리뷰 출처:
                     <a href="https://m.place.naver.com/place/1673800591/home" target="_blank"
-                        rel="noopener noreferrer"
-                        style="color: var(--color-accent); text-decoration: underline; text-underline-offset: 2px;">
+                        rel="noopener noreferrer">
                         네이버 스마트플레이스
                     </a>
                 </p>
@@ -449,7 +527,7 @@
                             </div>
                         </div>
                         <div class="review-item">
-                            <div class="review-image"><img src="/images/reviews/cabin.jpg" alt="Clean Cabin"
+                            <div class="review-image"><img src="/images/reviews/cabin.jpg" alt="Guest Review Cabin"
                                     loading="lazy"></div>
                             <div class="review-content">
                                 <div class="review-stars">★★★★★</div>
@@ -503,7 +581,7 @@
                                     loading="lazy"></div>
                             <div class="review-content">
                                 <div class="review-stars">★★★★★</div>
-                                <p class="review-text">"Detailed explanations and safe handling made this tour exceptional."</p>
+                                <p class="review-text">"바다에 대해 깊이 있는 설명을 들을 수 있어 좋았습니다."</p>
                                 <div class="review-meta-container">
                                     <span class="verified-badge">Master Mariner Verified</span>
                                     <span class="review-category">Sailing Class</span>
@@ -515,7 +593,7 @@
                                     loading="lazy"></div>
                             <div class="review-content">
                                 <div class="review-stars">★★★★★</div>
-                                <p class="review-text">"Great team experience with smooth operation and strong hosting."</p>
+                                <p class="review-text">"회사 워크샵으로 방문했는데 직원들 만족도가 최상입니다."</p>
                                 <div class="review-meta-container">
                                     <span class="verified-badge">Master Mariner Verified</span>
                                     <span class="review-category">Corporate Workshop</span>
@@ -527,7 +605,7 @@
                                     loading="lazy"></div>
                             <div class="review-content">
                                 <div class="review-stars">★★★★★</div>
-                                <p class="review-text">"Professional captain care and a premium atmosphere from start to finish."</p>
+                                <p class="review-text">"선장님의 카리스마와 친절함이 인상적이었습니다."</p>
                                 <div class="review-meta-container">
                                     <span class="verified-badge">Master Mariner Verified</span>
                                     <span class="review-category">Private Party</span>
@@ -535,7 +613,7 @@
                             </div>
                         </div>
                         <div class="review-item" aria-hidden="true" tabindex="-1">
-                            <div class="review-image"><img src="/images/reviews/cabin.jpg" alt="Clean Cabin"
+                            <div class="review-image"><img src="/images/reviews/cabin.jpg" alt="Guest Review Cabin"
                                     loading="lazy"></div>
                             <div class="review-content">
                                 <div class="review-stars">★★★★★</div>

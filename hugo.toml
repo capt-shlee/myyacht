@@ -2,7 +2,7 @@ baseURL = 'https://myyacht.kr/'
 enableRobotsTXT = false
 cleanDestinationDir = true
 languageCode = 'ko-kr'
-title = '제부도 요트 투어 No.1 - 1급 해기사 선장의 마이요트'
+title = '제부도 프리미엄 요트 투어 | 마이요트 (MyYacht)'
 theme = 'PaperMod'
 
 [params]
@@ -10,8 +10,8 @@ theme = 'PaperMod'
   defaultTheme = 'dark'
   env = 'production'
   siteURL = "https://myyacht.kr"
-  description = "제부도 프리미엄 요트 투어! 1급 해기사 선장의 안전한 운항과 프랑스 듀포 요트의 품격. 선셋 투어부터 세일링 교육까지 감동을 선사합니다."
-  keywords = ["제부도요트", "요트투어", "세일링클럽", "요트교육", "myyacht", "마이요트", "서울 근교 데이트", "프라이빗 요트 투어", "제부도 가볼만한 곳", "제부도 요트 체험", "요트", "세일요트", "보트"]
+  description = "1급 해기사 선장이 직접 운항하는 제부도 프리미엄 요트 투어. 가족, 커플, 반려견과 함께 안전하고 특별한 세일링을 경험하세요."
+  keywords = ["제부도 요트", "제부도 요트투어", "요트 체험", "세일링", "선셋 요트투어", "프라이빗 요트", "마이요트", "myyacht"]
   images = ["images/og-main.jpg"]
   
   [params.schema]
@@ -73,3 +73,4 @@ theme = 'PaperMod'
 [minify]
   disableXML = true
   minifyOutput = true
+

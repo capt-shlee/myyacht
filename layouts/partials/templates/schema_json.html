@@ -1,10 +1,10 @@
-{{- $siteURL := strings.TrimSuffix "/" (site.Params.siteURL | default site.BaseURL) -}}
+﻿{{- $siteURL := strings.TrimSuffix "/" (site.Params.siteURL | default site.BaseURL) -}}
 {{ if .IsHome }}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  "name": "MyYacht 제부도 요트 투어",
+  "name": "MyYacht ?쒕????뷀듃 ?ъ뼱",
   "image": "{{ printf "%s/images/og-main.jpg" $siteURL }}",
   "@id": "{{ printf "%s%s" $siteURL .RelPermalink }}",
   "url": "{{ printf "%s%s" $siteURL .RelPermalink }}",
@@ -12,7 +12,7 @@
   "priceRange": "$$",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "경기도 화성시 서신면 해안길 477 (제부 마리나)",
+    "streetAddress": "寃쎄린???붿꽦???쒖떊硫??댁븞湲?477 (?쒕? 留덈━??",
     "addressLocality": "Hwaseong-si",
     "addressRegion": "Gyeonggi-do",
     "postalCode": "18554",
@@ -37,7 +37,7 @@
     "opens": "09:00",
     "closes": "23:00"
   },
-  "description": "1급 해기사 선장이 직접 운항하는 제부도 프리미엄 요트 투어 & 세일링 체험"
+  "description": "Premium yacht tours in Jebudo operated directly by a licensed master mariner."
 }
 </script>
 {{ else if (or .IsPage .IsSection) }}
@@ -126,3 +126,4 @@
 </script>
 {{- end }}
 {{- end -}}
+

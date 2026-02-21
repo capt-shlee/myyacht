@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Maintenance on 제부도 프리미엄 요트 투어 | 마이요트 (MyYacht)</title>
+    <link>https://myyacht.kr/categories/maintenance/</link>
+    <description>Recent content in Maintenance on 제부도 프리미엄 요트 투어 | 마이요트 (MyYacht)</description>
+    <image>
+      <title>제부도 프리미엄 요트 투어 | 마이요트 (MyYacht)</title>
+      <url>https://myyacht.kr/images/og-main.jpg</url>
+      <link>https://myyacht.kr/images/og-main.jpg</link>
+    </image>
+    <generator>Hugo -- 0.155.1</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Mon, 16 Feb 2026 00:15:00 +0900</lastBuildDate>
+    <atom:link href="https://myyacht.kr/categories/maintenance/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>볼보펜타 D2 엔진오일 가이드: API CK-4 오일 사용과 세일드라이브 매칭</title>
+      <link>https://myyacht.kr/posts/volvo-penta-d2-engine-oil-api-ck4/</link>
+      <pubDate>Mon, 16 Feb 2026 00:15:00 +0900</pubDate>
+      <guid>https://myyacht.kr/posts/volvo-penta-d2-engine-oil-api-ck4/</guid>
+      <description>볼보펜타 D2 엔진에 API CK-4 오일 사용 여부와 15W-40 점도 선택 기준을 1급 해기사 선장이 명확히 정리해 드립니다.</description>
+    </item>
+  </channel>
+</rss>

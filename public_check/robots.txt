@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /HOME
+Disallow: /my-YACHT-Tour
+Disallow: /my-YACHT-Club
+Disallow: /contact
+Sitemap: https://myyacht.kr/sitemap.xml

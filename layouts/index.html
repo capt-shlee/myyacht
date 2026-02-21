@@ -188,6 +188,76 @@
                 background: rgba(255, 255, 255, 0.06);
             }
         }
+
+        .cred-strip {
+            background: linear-gradient(180deg, rgba(10, 25, 47, 0.92) 0%, rgba(10, 25, 47, 0.98) 100%);
+            border-top: 1px solid rgba(192, 169, 126, 0.18);
+            border-bottom: 1px solid rgba(192, 169, 126, 0.18);
+            padding: 36px 0;
+        }
+
+        .cred-wrap {
+            max-width: 1120px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .cred-kicker {
+            color: var(--color-accent);
+            text-transform: uppercase;
+            letter-spacing: 0.18em;
+            font-size: 0.75rem;
+            margin-bottom: 14px;
+            opacity: 0.95;
+        }
+
+        .cred-headline {
+            color: #fff;
+            font-family: var(--font-head);
+            font-size: 1.55rem;
+            line-height: 1.3;
+            margin: 0 0 18px;
+        }
+
+        .cred-grid {
+            display: grid;
+            grid-template-columns: repeat(5, minmax(0, 1fr));
+            gap: 12px;
+        }
+
+        .cred-pill {
+            border: 1px solid rgba(212, 175, 55, 0.55);
+            background: rgba(255, 255, 255, 0.02);
+            color: #e6edf8;
+            border-radius: 999px;
+            text-align: center;
+            font-size: 0.85rem;
+            padding: 10px 12px;
+            white-space: nowrap;
+            box-shadow: inset 0 0 0 1px rgba(255, 234, 179, 0.08);
+        }
+
+        @media (max-width: 1024px) {
+            .cred-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 640px) {
+            .cred-headline {
+                font-size: 1.2rem;
+            }
+
+            .cred-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .cred-pill {
+                white-space: normal;
+                font-size: 0.8rem;
+                padding: 8px 10px;
+            }
+        }
     </style>
 </head>
 
@@ -230,6 +300,20 @@
                 <p>20년 무사고 1급 해기사 선장이 직접 운항하며<br>바다 위에서의 완벽한 신뢰와 감동을 선사합니다.</p>
                 <!-- Call for Reservation -->
                 <a href="tel:050714507890" class="btn-primary">Call for Reservation</a>
+            </div>
+        </section>
+
+        <section class="cred-strip" aria-label="선장 약력">
+            <div class="cred-wrap">
+                <p class="cred-kicker">Captain Credentials</p>
+                <h2 class="cred-headline">20년 무사고 운항을 증명하는 선장 이력</h2>
+                <div class="cred-grid">
+                    <div class="cred-pill">(전)SK 해운 선장</div>
+                    <div class="cred-pill">화성시 요트협회 전무</div>
+                    <div class="cred-pill">요트안전검사원</div>
+                    <div class="cred-pill">NAUI SCUBA 강사</div>
+                    <div class="cred-pill">(사)한국해양구조협회 특수구조대</div>
+                </div>
             </div>
         </section>
 
@@ -521,7 +605,8 @@
 
                         <p style="opacity:0.6; font-size:0.9rem;">
                             capt.shlee@gmail.com<br>
-                            Business License: 350-14-02104 | Rep: Lee Sung Hee
+                            Business License: 350-14-02104<br>
+                            Rep: Lee Sung Hee
                         </p>
                     </div>
                 </div>

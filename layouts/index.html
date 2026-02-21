@@ -21,6 +21,11 @@
         }
 
         .review-track:hover {
+            animation-play-state: running;
+            -webkit-animation-play-state: running;
+        }
+
+        .review-track:active {
             animation-play-state: paused;
             -webkit-animation-play-state: paused;
         }
@@ -153,7 +158,15 @@
         }
 
         .review-wrapper:hover .review-track {
-            animation-play-state: paused;
+            animation-play-state: running;
+        }
+
+        @media (hover: hover) and (pointer: fine) {
+            .review-track:hover,
+            .review-wrapper:hover .review-track {
+                animation-play-state: paused;
+                -webkit-animation-play-state: paused;
+            }
         }
 
         @media (max-width: 768px) {
@@ -586,6 +599,22 @@
                 document.body.style.overflow = '';
             });
         });
+
+        const reviewTrack = document.querySelector('.review-track');
+        if (reviewTrack) {
+            reviewTrack.addEventListener('touchstart', () => {
+                reviewTrack.style.animationPlayState = 'paused';
+                reviewTrack.style.webkitAnimationPlayState = 'paused';
+            }, { passive: true });
+
+            const resumeReviewTrack = () => {
+                reviewTrack.style.animationPlayState = 'running';
+                reviewTrack.style.webkitAnimationPlayState = 'running';
+            };
+
+            reviewTrack.addEventListener('touchend', resumeReviewTrack, { passive: true });
+            reviewTrack.addEventListener('touchcancel', resumeReviewTrack, { passive: true });
+        }
 
         // Auto-Hide Floating Button near Footer
         const floatBtn = document.querySelector('.floating-btn-wrapper');

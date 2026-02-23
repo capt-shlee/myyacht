@@ -5,6 +5,9 @@ languageCode = 'ko-kr'
 title = '제부도 프리미엄 요트 투어 | 마이요트 (MyYacht)'
 theme = 'PaperMod'
 
+[taxonomies]
+  category = "categories"
+
 [params]
   comments = true
   defaultTheme = 'dark'

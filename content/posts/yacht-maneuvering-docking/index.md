@@ -1,9 +1,8 @@
----
+﻿---
 title: "요트 접안 기술: 전심(Pivot Point)과 프롭워크를 활용한 1급 해기사의 조종법"
 date: 2026-02-16T23:35:00+09:00
 description: "1급 해기사가 전하는 요트 접안의 핵심. 전심 원리와 프롭워크, 3포인트 턴 기술 완벽 가이드."
 categories: ["Sailing Tips"]
-tags: ["요트운항", "전심", "프롭워크", "3포인트턴", "마이요트", "1급해기사", "제부도요트투어", "요트체험"]
 keywords: ["요트 접안", "요트 조종", "마이요트", "제부도요트투어", "전심", "Pivot Point", "프롭워크", "Prop Walk", "1급해기사", "제부도요트", "요트체험"]
 draft: false
 author: "Captain Lima"
@@ -90,3 +89,4 @@ cover:
 - **[상용 플로터를 넘어서: OpenPlotter와 MacArthur HAT으로 나만의 통합 항해 시스템 만들기]({{< ref "/posts/openplotter-macarthur-hat" >}})**: 전심과 항적을 실시간으로 확인하는 항해 시스템 구축기.
 
 **Bon Voyage!**
+

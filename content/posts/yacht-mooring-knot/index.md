@@ -1,10 +1,9 @@
----
+﻿---
 title: "[제부도 요트] 계류 매듭(Cleat Hitch)의 정석: 1급 해기사의 실전 노하우"
 date: 2026-02-07T15:58:00+09:00
 draft: false
 summary: "안전한 정박을 위한 클리트 매듭(Cleat Hitch)의 모든 것. 리딩 포스트 개념부터 270도 턴의 중요성, 그리고 깔끔한 라인 정리까지 1급 해기사의 노하우를 공개합니다."
 description: "1급 해기사가 알려주는 요트 계류 매듭의 정석. 클리트 매듭 체결법, 리딩 포스트 개념, 안전한 라인 정리 노하우를 소개합니다."
-tags: ["마이요트", "제부도요트", "계류매듭", "선장노하우", "안전항해", "제부도요트투어", "요트체험"]
 keywords: ["마이요트", "제부도요트", "요트 매듭", "계류 매듭", "Mooring Knot", "Cleat Hitch", "클리트 매듭", "1급해기사", "Seamanship", "라인 정리", "Flemish Coil", "제부도요트투어", "요트체험"]
 cover:
   image: "How-to-Tie-a-Cleat-Hitch.jpg"
@@ -69,3 +68,4 @@ cover:
 * **[요트 항해 계획(Passage Planning): 1급 해기사의 A-P-E-M 원칙]({{< ref "/posts/passage-planning" >}})**: 출항 준비의 기초, 항해 계획부터 꼼꼼하게 챙겨보세요.
 
 **Bon Voyage!**
+

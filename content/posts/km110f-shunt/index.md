@@ -1,10 +1,9 @@
----
+﻿---
 title: "4만원으로 요트 전력 관리 시스템 구축하기: KM110F 해킹 & OpenPlotter 연동"
 date: 2026-02-05T14:30:00+09:00
 summary: "Victron SmartShunt가 부럽지 않다. 전용 앱에 갇힌 KM110F를 제미나이(Gemini)와 함께 해킹하여 와이파이 신호를 가로채고 OpenPlotter로 통합한 삽질과 승리의 기록."
 description: "가성비 배터리 모니터 KM110F를 해킹해 OpenPlotter와 연동하는 법! WiFi 패킷 분석으로 나만의 전력 관리 시스템을 만드세요."
 categories: ["Marine Electronics", "DIY"]
-tags: ["오픈소스항해", "요트전력관리", "제부도요트투어", "요트체험"]
 keywords: ["KM110F 해킹", "요트 배터리 모니터", "OpenPlotter", "Signal K", "DIY 전력 관리", "오픈소스항해", "제부도요트투어", "요트체험"]
 draft: false
 cover:
@@ -102,3 +101,4 @@ def parse_packet(data):
 * **[요트 항해 계획(Passage Planning): 1급 해기사의 A-P-E-M 원칙]({{< ref "/posts/passage-planning" >}})**: 안정적인 전력 관리 시스템은 장거리 항해의 필수 조건입니다.
 
 **Bon Voyage!**
+

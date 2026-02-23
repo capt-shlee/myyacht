@@ -1,9 +1,8 @@
----
+﻿---
 title: "5만원으로 요트 야간 투시경(Night Vision) 만들기: 가성비 DIY 끝판왕"
 date: 2026-02-05T12:00:00+09:00
 summary: "고가의 해상용 FLIR 장비 없이, 알리익스프레스 가성비 CCTV와 태블릿으로 칠흑 같은 바다에서 야간 항해 안전 확보하기."
 description: "5만원으로 완성하는 요트 야간 투시경 DIY 가이드. 알리 CCTV와 태블릿을 활용해 밤바다 항해 안전을 획기적으로 높여보세요."
-tags: ["야간투시경", "안전항해", "제부도요트투어", "요트체험"]
 categories: ["Marine Electronics", "DIY"]
 keywords: ["야간투시경", "Night Vision", "요트 DIY", "해상안전", "가성비 항해장비", "야간항해", "IP 카메라", "제부도요트투어", "요트체험"]
 cover:
@@ -99,3 +98,4 @@ DVR(녹화기) 없이 태블릿으로 바로 보는 방법입니다.
 * **[상용 플로터를 넘어서: OpenPlotter와 MacArthur HAT으로 나만의 통합 항해 시스템 만들기]({{< ref "/posts/openplotter-macarthur-hat" >}})**: DIY 항해 장비의 끝판왕, 오픈플로터 구축기입니다.
 
 **Bon Voyage!**
+

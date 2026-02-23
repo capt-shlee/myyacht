@@ -1,9 +1,8 @@
----
+﻿---
 title: "선장이 하루 종일 의자에만 앉아 있는 소름 돋는 이유"
 date: 2026-02-09T16:40:00+09:00
 description: "선장이 의자에 앉아 있는 이유는 고도의 안전 기술입니다. 상대 방위 변화로 충돌을 방지하는 1급 해기사의 노하우를 공개합니다."
 categories: ["Sailing Knowledge", "Captain's Log"]
-tags: ["안전항해", "충돌방지", "견시", "1급해기사", "선장노하우", "제부도요트투어", "요트체험"]
 keywords: ["제부도 요트 투어", "요트 항해", "충돌 방지", "견시", "마이요트", "항해 기술", "제부도 요트", "요트체험"]
 draft: false
 author: "Captain Lima"
@@ -77,3 +76,4 @@ cover:
 * **[요트 앵커링(Anchoring): 1급 해기사의 대형선 원리 적용과 실전 팁]({{< ref "/posts/yacht-anchoring" >}})**: 앵커링 중에도 방위 감시(Swing Circle)는 매우 중요합니다.
 
 **Bon Voyage!**
+

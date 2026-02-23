@@ -1,9 +1,8 @@
----
+﻿---
 title: "[제부도 요트] 항해 계획(Passage Planning): 1급 해기사의 실무 노하우"
 date: 2026-02-07T18:00:00+09:00
 description: "요트 항해 계획 4단계 원칙(A-P-E-M)을 자동차 여행에 비유해 쉽게 설명합니다. 1급 해기사의 실무 팁과 바다네비 앱 활용법을 확인하세요."
 categories: ["Yachting Tips"]
-tags: ["마이요트", "제부도요트", "항해계획", "요트운항", "안전항해", "바다네비", "싱가포르해협", "1급해기사", "제부도요트투어", "요트체험"]
 keywords: ["마이요트", "제부도요트", "요트 항해 계획", "Passage Planning", "바다네비 앱", "싱가포르 해협", "1급해기사", "해양안전", "항해술", "제부도요트투어", "요트체험"]
 draft: false
 author: "Captain Lima"
@@ -62,3 +61,4 @@ cover:
 * **[내 요트의 두뇌, OpenPlotter와 MacArthur HAT 구축기]({{< ref "/posts/openplotter-macarthur-hat" >}})**: 똑똑한 항해 시스템으로 계획을 더 완벽하게 실행해보세요.
 
 **Bon Voyage!**
+

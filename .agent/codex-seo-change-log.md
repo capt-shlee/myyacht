@@ -92,23 +92,13 @@ $html | Select-String -SimpleMatch '?쒕','�','MyYacht 제부도 요트 투어
 
 ## 7) 실행 로그
 
-### 2026-02-22 (KST)
+### 2026-02-23 (KST)
 
-- 변경 유형: `운영(검색 정리)`
+- 변경 유형: `운영(검색 정리 및 태그 비활성화)`
 - 작업:
-  - 네이버 `검색제외요청`에 404 URL 8개 등록
-  - `/posts/` 외 개별 포스트 15개 색인요청 등록 (`welcome` 제외)
-  - `robots.txt` 재갱신/재제출 진행
-- 검색제외요청 URL:
-  - `https://myyacht.kr/tags/safety/`
-  - `https://myyacht.kr/tags/seamanship/`
-  - `https://myyacht.kr/tags/yachting-tips/`
-  - `https://myyacht.kr/tags/openplotter/`
-  - `https://myyacht.kr/tags/%EC%9A%94%ED%8A%B8/`
-  - `https://myyacht.kr/%20images/og-main.jpg`
-  - `https://myyacht.kr/IMG_9597.JPG`
-  - `https://myyacht.kr/IMG_9608.jpg`
+  - `hugo.toml`에서 `tags` taxonomy 비활성화 반영
+  - 에이전트 지침(`.agent`) 전수 업데이트: 모든 글에서 `tags` 필드 제거 규칙 적용
+  - 네이버 `검색제외요청`에 기존 인덱싱된 `/tags/` 경로 일부 등록 진행
 - 관찰 계획:
-  - 24h: 검색제외 처리 상태 반영 여부 확인
-  - 72h: 노출/진단 상태 재확인
-  - 7d: 순위 변동 추세 확인 후 추가 조치 결정
+  - 24h: 태그 페이지 제거에 따른 404 발생 현황 모니터링
+  - 72h: 색인 정리 상태 및 주요 키워드 순위 변동 확인

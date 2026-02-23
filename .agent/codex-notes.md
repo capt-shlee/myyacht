@@ -8,6 +8,7 @@
 - tags taxonomy 비활성화로 `/tags/*` 페이지 생성 중단.
 - `.agent`용 프롬프트 가이드 제공: 글 생성 시 `tags` 필드 제거.
 - 한글 파일 저장 시 UTF-8 인코딩 명시 규칙 추가.
+- 배포는 `scripts/safeship.ps1` 우선 사용(커밋/백업태그/푸시).
 
 ### Status Checks (Result = 404)
 - `https://myyacht.kr/HOME`
@@ -33,3 +34,4 @@
 - tags taxonomy 비활성화 후 기존 태그 URL들은 404로 처리됨.
 - 검색 제외 요청은 삭제된 URL(404/410/403) 기준으로 진행.
 - 한글 파일 저장/수정 시 반드시 `UTF-8` 인코딩을 명시. (예: `Set-Content -Encoding utf8`)
+- 배포 요청 시 `safeship.ps1`으로 롤백 태그를 자동 생성.

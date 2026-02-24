@@ -44,6 +44,63 @@
             text-underline-offset: 2px;
         }
 
+        .hero-description {
+            margin: 0;
+        }
+
+        .hero-mobile-break {
+            display: none;
+        }
+
+        .split-content>p {
+            margin-bottom: 14px;
+        }
+
+        .split-content .fare-chip {
+            margin: 0 0 14px;
+            padding: 10px 12px;
+            border: 1px solid rgba(212, 175, 55, 0.35);
+            border-radius: 12px;
+            background: rgba(10, 25, 47, 0.38);
+            box-shadow: inset 0 0 0 1px rgba(255, 234, 179, 0.08);
+            display: grid;
+            row-gap: 6px;
+        }
+
+        .split-content .fare-chip-label {
+            display: inline-block;
+            margin: 0;
+            color: var(--color-accent);
+            font-size: 0.7rem;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+            opacity: 0.95;
+        }
+
+        .split-content .fare-chip strong {
+            display: block;
+            margin: 0;
+            color: #f4f7ff;
+            font-size: 1.03rem;
+            line-height: 1.38;
+            letter-spacing: 0.01em;
+        }
+
+        .split-content .fare-chip .fare-chip-note {
+            margin: 0;
+            color: rgba(230, 237, 248, 0.76);
+            font-size: 0.84rem;
+            line-height: 1.5;
+        }
+
+        .split-content .fare-chip .fare-chip-note+.fare-chip-note {
+            margin-top: 2px;
+        }
+
+        .floating-btn span {
+            white-space: nowrap;
+        }
+
         .review-track {
             display: flex;
             gap: 30px;
@@ -341,6 +398,15 @@
                 box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
             }
 
+            .hero-description {
+                font-size: 1.05rem;
+                line-height: 1.58;
+            }
+
+            .hero-mobile-break {
+                display: block;
+            }
+
             .cred-grid {
                 grid-template-columns: repeat(2, minmax(0, 1fr));
             }
@@ -349,6 +415,25 @@
                 white-space: normal;
                 font-size: 0.8rem;
                 padding: 8px 10px;
+            }
+
+            .split-content>p {
+                margin-bottom: 12px;
+            }
+
+            .split-content .fare-chip {
+                margin: 0 0 10px;
+                padding: 9px 10px;
+                row-gap: 5px;
+            }
+
+            .split-content .fare-chip strong {
+                font-size: 0.93rem;
+            }
+
+            .split-content .fare-chip .fare-chip-note {
+                font-size: 0.78rem;
+                line-height: 1.48;
             }
         }
     </style>
@@ -359,7 +444,7 @@
     <div class="floating-btn-wrapper reveal active">
         <a href="https://m.place.naver.com/place/1673800591/home" target="_blank" rel="noopener noreferrer"
             class="floating-btn">
-            <span>Book Now</span>
+            <span>오늘 잔여타임 확인</span>
         </a>
     </div>
 
@@ -391,10 +476,10 @@
             <div class="hero-content">
                 <span class="hero-badge">The Master Mariner</span>
                 <h1>프랑스 듀포 요트와 함께하는<br><span class="text-accent">제부도 프리미엄 요트 투어</span></h1>
-                <p>20년 무사고 1급 해기사 선장이 직접 운항하며<br>바다 위에서의 완벽한 신뢰와 감동을 선사합니다.</p>
+                <p class="hero-description">20년 무사고 1급 해기사 선장이<br class="hero-mobile-break">직접 운항하며<br>바다 위에서의 완벽한 신뢰와<br class="hero-mobile-break">감동을 선사합니다.</p>
                 <!-- Primary CTA -->
                 <a href="https://m.place.naver.com/place/1673800591/home" target="_blank" rel="noopener noreferrer"
-                    class="btn-primary">Book Now</a>
+                    class="btn-primary">요금·예약 확인</a>
                 <p class="hero-call-alt">
                     또는 <a href="tel:050714507890">전화 예약 0507-1450-7890</a>
                 </p>
@@ -435,6 +520,12 @@
                         쏟아지는 햇살 아래, 바람을 가르는 듀포 요트의<br>
                         다이내믹한 세일링 퍼포먼스를 온몸으로 느껴보세요.
                     </p>
+                    <div class="fare-chip" aria-label="데이타임 요금 안내">
+                        <span class="fare-chip-label">Price Guide</span>
+                        <strong>4인까지 기본요금 120,000원</strong>
+                        <p class="fare-chip-note">1~4인 동일 요금 · 5인부터 1인 추가 30,000원</p>
+                        <p class="fare-chip-note">2인 이용도 기본요금이 적용됩니다.</p>
+                    </div>
                     <ul class="check-list">
                         <li><span><strong>Ocean View</strong> 서해의 푸른 파노라마</span></li>
                         <li><span><strong>Activity</strong> 갈매기 피딩 & 낚시 체험</span></li>
@@ -455,6 +546,12 @@
                         영화의 한 장면 같은 붉은 노을 속으로,<br>
                         마스터 마리너의 섬세한 조타와 함께 빠져듭니다.
                     </p>
+                    <div class="fare-chip" aria-label="골든 선셋 투어 요금 안내">
+                        <span class="fare-chip-label">Price Guide</span>
+                        <strong>4인까지 기본요금 200,000원</strong>
+                        <p class="fare-chip-note">운항 시간 1시간 30분 · 1~4인 동일 요금</p>
+                        <p class="fare-chip-note">5인부터 1인 추가 50,000원</p>
+                    </div>
                     <ul class="check-list">
                         <li><span><strong>Romantic</strong> 프라이빗한 감동의 시간</span></li>
                         <li><span><strong>Professional</strong> 1급 해기사의 노하우</span></li>

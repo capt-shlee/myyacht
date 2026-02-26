@@ -50,3 +50,12 @@
 - Verification:
   - `public/images/og-main.jpg` confirmed as `1200x630`
   - `seo-preflight.ps1` run passed after update
+
+### 2026-02-26 (KST) - categories 메타 설명/OG 설명 일치화
+
+- Change:
+  - updated `layouts/partials/templates/opengraph.html`
+  - aligned og description fallback logic with head meta description logic for term/taxonomy/list contexts
+- Verification:
+  - `public/categories/index.html` check: `meta description` == `og:description` (MATCH)
+  - `seo-preflight.ps1` run passed

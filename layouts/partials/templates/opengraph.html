@@ -13,12 +13,14 @@
 
 {{- /* Description Logic */ -}}
 {{- $desc := "" -}}
-{{- if .Description -}}
-{{- $desc = .Description -}}
-{{- else if .Summary -}}
-{{- $desc = .Summary -}}
+{{- with .Description -}}
+{{- $desc = . -}}
+{{- else -}}
+{{- if or $.IsPage $.IsSection (eq $.Kind `term`) (eq $.Kind `taxonomy`) -}}
+{{- $desc = $.Summary | default (printf "%s - %s" $.Title site.Title) -}}
 {{- else -}}
 {{- $desc = site.Params.description -}}
+{{- end -}}
 {{- end -}}
 <meta property="og:description" content="{{ $desc | plainify | htmlUnescape | truncate 150 }}" />
 

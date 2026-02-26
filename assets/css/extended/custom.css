@@ -623,7 +623,7 @@ iframe {
 
 /* Post Styles */
 /* Post Styles */
-.post-entry {
+.posts-list-custom .post-entry {
     background: rgba(10, 25, 47, 0.5);
     backdrop-filter: blur(10px);
     position: relative;
@@ -638,19 +638,27 @@ iframe {
     gap: 15px;
 }
 
-.entry-header {
+.posts-list-custom .entry-wrapper {
+    min-width: 0;
+}
+
+.posts-list-custom .entry-header {
     position: relative;
     z-index: 20;
 }
 
-.post-entry:hover {
+.posts-list-custom .entry-header h2 a {
+    overflow-wrap: anywhere;
+}
+
+.posts-list-custom .post-entry:hover {
     border-color: var(--color-accent) !important;
     transform: translateY(-5px);
     box-shadow: var(--shadow-gold);
 }
 
 /* Summary - Always Visible (2 lines) on Desktop */
-.entry-content {
+.posts-list-custom .entry-content {
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
@@ -672,12 +680,12 @@ iframe {
     text-align: left;
 }
 
-.post-entry:hover .entry-content {
+.posts-list-custom .post-entry:hover .entry-content {
     /* No change on hover needed */
 }
 
 /* Reset all inner styles for summary consistency */
-.entry-content * {
+.posts-list-custom .entry-content * {
     font-size: inherit !important;
     line-height: inherit !important;
     color: inherit !important;
@@ -738,12 +746,12 @@ iframe {
 @media(max-width: 768px) {
 
     /* Hide Summary in List View */
-    .entry-content {
+    .posts-list-custom .entry-content {
         display: none !important;
     }
 
     /* Resize Titles */
-    .entry-header h2 {
+    .posts-list-custom .entry-header h2 {
         font-size: 1.3rem !important;
         /* List View Title */
     }
@@ -763,7 +771,7 @@ iframe {
     }
 
     /* Adjust Post Entry Height if needed since summary is gone */
-    .post-entry {
+    .posts-list-custom .post-entry {
         height: auto !important;
         min-height: 100px;
         padding: 10px 0;

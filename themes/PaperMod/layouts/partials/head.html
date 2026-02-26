@@ -8,7 +8,20 @@
 {{- end }}
 
 {{- /* Title */}}
-<title>{{ if .IsHome }}{{ else }}{{ if .Title }}{{ .Title }} | {{ end }}{{ end }}{{ site.Title }}</title>
+{{- $pageTitle := site.Title -}}
+{{- if not .IsHome -}}
+{{- $preferredTitle := .Param "seoTitle" | default .Title -}}
+{{- if .IsPage -}}
+{{- if $preferredTitle -}}
+{{- $pageTitle = $preferredTitle -}}
+{{- end -}}
+{{- else -}}
+{{- if $preferredTitle -}}
+{{- $pageTitle = printf "%s | %s" $preferredTitle site.Title -}}
+{{- end -}}
+{{- end -}}
+{{- end -}}
+<title>{{ $pageTitle }}</title>
 
 {{- /* Meta */}}
 {{- if .IsHome }}
@@ -18,9 +31,17 @@
     {{- range $i, $e := .Params.keywords }}{{ if $i }}, {{ end }}{{ $e }}{{ end }} {{- else }}
     {{- range $i, $e := .Params.tags }}{{ if $i }}, {{ end }}{{ $e }}{{ end }} {{- end -}}">
 {{- end }}
-<meta name="description" content="{{- with .Description }}{{ . }}{{- else }}{{- if or .IsPage .IsSection (eq .Kind `term`) (eq .Kind `taxonomy`)}}
-    {{- .Summary | default (printf "%s - %s" .Title  site.Title) }}{{- else }}
-    {{- with site.Params.description }}{{ . }}{{- end }}{{- end }}{{- end -}}">
+{{- $metaDescription := "" -}}
+{{- if .Description -}}
+{{- $metaDescription = .Description -}}
+{{- else if .IsPage -}}
+{{- $metaDescription = .Summary | default (printf "%s - %s" .Title site.Title) -}}
+{{- else if or .IsSection (eq .Kind `term`) (eq .Kind `taxonomy`) -}}
+{{- $metaDescription = site.Params.description | default (printf "%s - %s" .Title site.Title) -}}
+{{- else -}}
+{{- $metaDescription = site.Params.description -}}
+{{- end -}}
+<meta name="description" content="{{- $metaDescription -}}">
 <meta name="author" content="{{ (partial "author.html" . ) }}">
 <link rel="canonical" href="{{ if .Params.canonicalURL -}} {{ trim .Params.canonicalURL " " }} {{- else -}} {{ .Permalink }} {{- end }}">
 {{- if site.Params.analytics.google.SiteVerificationTag }}

@@ -1,61 +1,51 @@
-{{ partial "head.html" . }}
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+{{ define "main" }}
+<div style="padding-top: 150px; min-height: 100vh;">
+    <div class="container">
+        <header class="page-header" style="text-align: center; margin-bottom: 60px;">
+            <span class="section-tag" style="display: block; margin-bottom: 10px;">Captain's Log</span>
+            <h1 style="color: var(--color-accent); font-size: 2.5rem;">항해 일지</h1>
+            <div style="width: 50px; height: 1px; background: var(--color-accent); margin: 20px auto;"></div>
+        </header>
 
-<body class="list" id="top">
-    {{ partial "header.html" . }}
-
-    <main class="main" style="padding-top: 150px; min-height: 100vh;">
-        <div class="container">
-            <header class="page-header" style="text-align: center; margin-bottom: 60px;">
-                <span class="section-tag" style="display: block; margin-bottom: 10px;">Captain's Log</span>
-                <h1 style="color: var(--color-accent); font-size: 2.5rem;">항해 일지</h1>
-                <div style="width: 50px; height: 1px; background: var(--color-accent); margin: 20px auto;"></div>
-            </header>
-
-            <div class="post-list" style="max-width: 800px; margin: 0 auto;">
-                {{- range .Pages }}
-                <article class="post-entry"
-                    style="display: flex; margin-bottom: 20px; padding: 15px; border: 1px solid var(--color-border); border-radius: 2px; transition: transform 0.3s ease;">
-                    {{ $image := .Params.cover.image }}
-                    {{ if $image }}
-                    {{ with .Resources.GetMatch $image }}
-                    {{ $image = .RelPermalink }}
-                    {{ end }}
-                    <div class="entry-media-col"
-                        style="flex-shrink:0; width:120px; display:flex; flex-direction:column; align-items:center; margin-right: 15px;">
-                        <div class="entry-cover" style="width:100%; height:90px; overflow:hidden; border-radius:2px;">
-                            <img src="{{ $image }}" alt="{{ .Title | plainify }}"
-                                style="width:100%; height:100%; object-fit:cover;">
-                        </div>
+        <div class="post-list" style="max-width: 800px; margin: 0 auto;">
+            {{- range .Pages }}
+            <article class="post-entry"
+                style="display: flex; margin-bottom: 20px; padding: 15px; border: 1px solid var(--color-border); border-radius: 2px; transition: transform 0.3s ease; position: relative;">
+                {{ $image := .Params.cover.image }}
+                {{ if $image }}
+                {{ with .Resources.GetMatch $image }}
+                {{ $image = .RelPermalink }}
+                {{ end }}
+                <div class="entry-media-col"
+                    style="flex-shrink:0; width:120px; display:flex; flex-direction:column; align-items:center; margin-right: 15px;">
+                    <div class="entry-cover" style="width:100%; height:90px; overflow:hidden; border-radius:2px;">
+                        <img src="{{ $image }}" alt="{{ .Title | plainify }}"
+                            style="width:100%; height:100%; object-fit:cover;">
                     </div>
-                    {{ end }}
-                    <div class="entry-wrapper" style="flex: 1; display: flex; flex-direction: column; gap: 10px;">
-                        <header class="entry-header">
-                            <h2 style="font-size: 1.35rem; margin-bottom: 0;">
-                                <a href="{{ .Permalink }}" style="color: var(--color-white);">{{ .Title | safeHTML
-                                    }}</a>
-                            </h2>
-                        </header>
-                        <div class="entry-content"
-                            style="color: var(--color-text-body); margin-bottom: 0; font-size:0.9rem; line-height: 1.5;">
-                            <p>{{ .Summary }}</p>
-                        </div>
-                        <footer class="entry-footer"
-                            style="font-size: 0.8rem; color: var(--color-accent); opacity: 0.8; display:flex; gap: 15px;">
-                            <span title='{{ .Date.Format "2006-01-02 15:04:05 MST" }}'>
-                                <i class="fas fa-calendar-alt"></i> {{ .Date.Format "2006.01.02" }}
-                            </span>
-                        </footer>
+                </div>
+                {{ end }}
+                <div class="entry-wrapper" style="flex: 1; display: flex; flex-direction: column; gap: 10px;">
+                    <header class="entry-header">
+                        <h2 style="font-size: 1.35rem; margin-bottom: 0;">
+                            <a href="{{ .Permalink }}" style="color: var(--color-white);">{{ .Title | safeHTML }}</a>
+                        </h2>
+                    </header>
+                    <div class="entry-content"
+                        style="color: var(--color-text-body); margin-bottom: 0; font-size:0.9rem; line-height: 1.5;">
+                        <p>{{ .Summary }}</p>
                     </div>
-                    <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"
-                        style="position: absolute; inset: 0; z-index: 20;"></a>
-                </article>
-                {{- end }}
-            </div>
+                    <footer class="entry-footer"
+                        style="font-size: 0.8rem; color: var(--color-accent); opacity: 0.8; display:flex; gap: 15px;">
+                        <span title='{{ .Date.Format "2006-01-02 15:04:05 MST" }}'>
+                            {{ .Date.Format "2006.01.02" }}
+                        </span>
+                    </footer>
+                </div>
+                <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"
+                    style="position: absolute; inset: 0; z-index: 20;"></a>
+            </article>
+            {{- end }}
         </div>
-    </main>
-
-    {{ partial "footer.html" . }}
-</body>
-
-</html>
+    </div>
+</div>
+{{ end }}

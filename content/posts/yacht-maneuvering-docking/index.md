@@ -1,7 +1,7 @@
 ﻿---
 title: "요트 접안 기술: 전심(Pivot Point)과 프롭워크를 활용한 1급 해기사의 조종법"
 date: 2026-02-16T23:35:00+09:00
-description: "1급 해기사가 전하는 요트 접안의 핵심. 전심 원리와 프롭워크, 3포인트 턴 기술 완벽 가이드."
+description: "1급 해기사가 전하는 요트 접안의 핵심 원리. 전심(Pivot Point), 프롭워크, 3포인트 턴을 실전 중심으로 정리한 완벽 가이드."
 categories: ["Sailing Tips"]
 keywords: ["요트 접안", "요트 조종", "마이요트", "제부도요트투어", "전심", "Pivot Point", "프롭워크", "Prop Walk", "1급해기사", "제부도요트", "요트체험"]
 draft: false

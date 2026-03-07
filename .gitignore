@@ -6,3 +6,11 @@ resources/_gen/
 # Operating System files
 .DS_Store
 Thumbs.db
+
+# Environment files (secrets)
+.env
+.env.*
+!.env.example
+
+# Local agent workspace
+.agent/

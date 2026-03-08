@@ -38,19 +38,19 @@
             <p class="tide-weather-title">출항 참고 날씨</p>
             <div class="tide-weather-grid">
                 <div class="tide-weather-item">
-                    <span class="tide-weather-icon" id="weather-summary-icon" aria-hidden="true">⛅</span>
+                    <span class="tide-weather-icon" aria-hidden="true">상</span>
                     <div class="tide-weather-copy"><span class="label">상태</span><strong id="weather-summary">-</strong></div>
                 </div>
                 <div class="tide-weather-item">
-                    <span class="tide-weather-icon" aria-hidden="true">🌡</span>
+                    <span class="tide-weather-icon" aria-hidden="true">온</span>
                     <div class="tide-weather-copy"><span class="label">기온</span><strong id="weather-temp">-</strong></div>
                 </div>
                 <div class="tide-weather-item">
-                    <span class="tide-weather-icon" aria-hidden="true">🌬</span>
+                    <span class="tide-weather-icon" aria-hidden="true">풍</span>
                     <div class="tide-weather-copy"><span class="label">바람</span><strong id="weather-wind">-</strong></div>
                 </div>
                 <div class="tide-weather-item">
-                    <span class="tide-weather-icon" aria-hidden="true">🌅</span>
+                    <span class="tide-weather-icon" aria-hidden="true">일</span>
                     <div class="tide-weather-copy"><span class="label">일출/일몰</span><strong id="weather-sun">-</strong></div>
                 </div>
             </div>
@@ -322,9 +322,12 @@
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        font-size: 0.95rem;
-        background: rgba(212, 175, 55, 0.16);
-        color: rgba(245, 232, 191, 0.98);
+        font-size: 0.74rem;
+        font-weight: 700;
+        letter-spacing: -0.01em;
+        border: 1px solid rgba(212, 175, 55, 0.35);
+        background: rgba(212, 175, 55, 0.08);
+        color: rgba(236, 224, 188, 0.95);
         flex: 0 0 auto;
     }
 
@@ -456,7 +459,6 @@
         const timelineTrackEl = document.getElementById('tide-timeline-track');
         const openInlineEl = document.getElementById('tide-open-inline');
         const footnoteEl = document.getElementById('tide-footnote');
-        const weatherSummaryIconEl = document.getElementById('weather-summary-icon');
         const weatherSummaryEl = document.getElementById('weather-summary');
         const weatherTempEl = document.getElementById('weather-temp');
         const weatherWindEl = document.getElementById('weather-wind');
@@ -583,18 +585,8 @@
             openInlineEl.textContent = ranges.join('  |  ');
         };
 
-        const pickWeatherIcon = (summary) => {
-            const text = String(summary || '');
-            if (text.includes('비')) return '🌧';
-            if (text.includes('눈')) return '❄';
-            if (text.includes('흐')) return '☁';
-            if (text.includes('맑') || text.includes('양호')) return '☀';
-            return '⛅';
-        };
-
         const renderWeather = (weather) => {
             if (!weather || typeof weather !== 'object') {
-                weatherSummaryIconEl.textContent = '⛅';
                 weatherSummaryEl.textContent = '-';
                 weatherTempEl.textContent = '-';
                 weatherWindEl.textContent = '-';
@@ -602,7 +594,6 @@
                 return;
             }
 
-            weatherSummaryIconEl.textContent = pickWeatherIcon(weather.summary);
             weatherSummaryEl.textContent = weather.summary || '정보 없음';
             weatherTempEl.textContent = Number.isFinite(weather.tempC) ? `${weather.tempC}°C` : '정보 없음';
             weatherWindEl.textContent = Number.isFinite(weather.windMs) ? `${weather.windMs} m/s` : '정보 없음';

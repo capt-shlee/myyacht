@@ -572,6 +572,70 @@
             return `${y}년 ${m}월 ${d}일`;
         };
 
+        const formatDuration = (minutes) => {
+            const safe = Math.max(0, Math.round(minutes));
+            const h = Math.floor(safe / 60);
+            const m = safe % 60;
+            if (h > 0 && m > 0) return `${h}시간 ${m}분`;
+            if (h > 0) return `${h}시간`;
+            return `${m}분`;
+        };
+
+        const buildTideStatus = (dateYmd, openWindows) => {
+            const mergedOpen = normalizeOpenWindows(openWindows);
+            const labelDate = formatDateLabel(dateYmd);
+            const totalOpenMin = mergedOpen.reduce((sum, r) => sum + (r.end - r.start), 0);
+            const isToday = dateYmd === getKstDate();
+
+            if (!isToday) {
+                if (totalOpenMin >= 1440) {
+                    return {
+                        state: 'open',
+                        badgeLabel: '종일 열림',
+                        summary: `${labelDate} 기준 바닷길 종일 열림`,
+                        mergedOpen
+                    };
+                }
+                if (totalOpenMin <= 0) {
+                    return {
+                        state: 'closed',
+                        badgeLabel: '종일 닫힘',
+                        summary: `${labelDate} 기준 바닷길 종일 닫힘`,
+                        mergedOpen
+                    };
+                }
+
+                return {
+                    state: 'open',
+                    badgeLabel: '일부 시간 열림',
+                    summary: `${labelDate} 기준 바닷길 일부 시간 열림 · 열림 ${mergedOpen.length}회 (총 ${formatDuration(totalOpenMin)})`,
+                    mergedOpen
+                };
+            }
+
+            const nowKst = new Date(new Date().toLocaleString('en-US', { timeZone: 'Asia/Seoul' }));
+            const nowMin = nowKst.getHours() * 60 + nowKst.getMinutes();
+            const isOpenNow = mergedOpen.some((r) => nowMin >= r.start && nowMin < r.end);
+
+            const nextEvents = [];
+            mergedOpen.forEach((r) => {
+                if (r.start > nowMin) nextEvents.push({ at: r.start, type: 'open' });
+                if (r.end > nowMin) nextEvents.push({ at: r.end, type: 'closed' });
+            });
+            nextEvents.sort((a, b) => a.at - b.at);
+
+            const nextText = nextEvents.length > 0
+                ? `다음 ${nextEvents[0].type === 'closed' ? '닫힘' : '열림'} ${minutesToHhmm(nextEvents[0].at)}`
+                : '다음 변경 없음';
+
+            return {
+                state: isOpenNow ? 'open' : 'closed',
+                badgeLabel: isOpenNow ? '현재 열림' : '현재 닫힘',
+                summary: `${labelDate} 기준 바닷길 ${isOpenNow ? '열림' : '닫힘'} · ${nextText}`,
+                mergedOpen
+            };
+        };
+
         const setStatus = (label, state) => {
             statusBadge.textContent = label;
             statusBadge.classList.remove('open', 'closed');
@@ -633,12 +697,13 @@
         };
 
         const renderOpenList = (openWindows) => {
-            if (!Array.isArray(openWindows) || openWindows.length === 0) {
+            const mergedOpen = normalizeOpenWindows(openWindows);
+            if (mergedOpen.length === 0) {
                 openInlineEl.textContent = '열림 구간 데이터가 없습니다.';
                 return;
             }
 
-            const ranges = openWindows.map((range) => `${range.start}~${range.end}`);
+            const ranges = mergedOpen.map((range) => `${minutesToHhmm(range.start)}~${minutesToHhmm(range.end)}`);
             openInlineEl.textContent = ranges.join('  |  ');
         };
 
@@ -675,14 +740,9 @@
                 if (!payload?.success || !payload?.seaRoad) throw new Error('Invalid payload');
 
                 const seaRoad = payload.seaRoad;
-                const isOpenNow = seaRoad.isOpenNow === true;
-                setStatus(isOpenNow ? '현재 열림' : '현재 닫힘', isOpenNow ? 'open' : 'closed');
-
-                const nextText = seaRoad.nextChangeAt
-                    ? `${isOpenNow ? '다음 닫힘' : '다음 열림'} ${seaRoad.nextChangeAt}`
-                    : '다음 변경 시각 확인 중';
-
-                summaryEl.textContent = `${formatDateLabel(dateYmd)} 기준 ${isOpenNow ? '바닷길 열림' : '바닷길 닫힘'} · ${nextText}`;
+                const dailyStatus = buildTideStatus(dateYmd, seaRoad.openWindows);
+                setStatus(dailyStatus.badgeLabel, dailyStatus.state);
+                summaryEl.textContent = dailyStatus.summary;
                 lastTimelineOpenWindows = seaRoad.openWindows || [];
                 lastTimelineDate = dateYmd;
                 renderTimeline(seaRoad.openWindows, dateYmd);

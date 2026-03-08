@@ -2,7 +2,7 @@
 <article class="post-single tide-page">
     <header class="post-header tide-page-header">
         <h1 class="post-title">제부도 바닷길 일정 보기</h1>
-        <p class="post-description">제부도 요트투어 출발 전에 바닷길 열림·닫힘 시간을 날짜별로 확인하세요.</p>
+        <p class="post-description">마이요트 예약 전에 바닷길 열림·닫힘 시간을 날짜별로 확인하세요.</p>
     </header>
 
     <section class="tide-board" aria-label="제부도 바닷길 일정 조회">
@@ -31,27 +31,30 @@
 
         <div class="tide-list-wrap">
             <p class="tide-list-title">열림 예상 시간</p>
-            <ul class="tide-open-list" id="tide-open-list">
-                <li>데이터를 불러오는 중입니다.</li>
-            </ul>
+            <p class="tide-open-inline" id="tide-open-inline">데이터를 불러오는 중입니다.</p>
         </div>
 
         <section class="tide-weather" id="tide-weather" aria-label="출항 참고 날씨">
             <p class="tide-weather-title">출항 참고 날씨</p>
             <div class="tide-weather-grid">
-                <div class="tide-weather-item"><span class="label">상태</span><strong id="weather-summary">-</strong></div>
-                <div class="tide-weather-item"><span class="label">기온</span><strong id="weather-temp">-</strong></div>
-                <div class="tide-weather-item"><span class="label">바람</span><strong id="weather-wind">-</strong></div>
-                <div class="tide-weather-item"><span class="label">일출/일몰</span><strong id="weather-sun">-</strong></div>
+                <div class="tide-weather-item">
+                    <span class="tide-weather-icon" id="weather-summary-icon" aria-hidden="true">⛅</span>
+                    <div class="tide-weather-copy"><span class="label">상태</span><strong id="weather-summary">-</strong></div>
+                </div>
+                <div class="tide-weather-item">
+                    <span class="tide-weather-icon" aria-hidden="true">🌡</span>
+                    <div class="tide-weather-copy"><span class="label">기온</span><strong id="weather-temp">-</strong></div>
+                </div>
+                <div class="tide-weather-item">
+                    <span class="tide-weather-icon" aria-hidden="true">🌬</span>
+                    <div class="tide-weather-copy"><span class="label">바람</span><strong id="weather-wind">-</strong></div>
+                </div>
+                <div class="tide-weather-item">
+                    <span class="tide-weather-icon" aria-hidden="true">🌅</span>
+                    <div class="tide-weather-copy"><span class="label">일출/일몰</span><strong id="weather-sun">-</strong></div>
+                </div>
             </div>
         </section>
-
-        <details class="tide-app-panel">
-            <summary>원본 앱 그래프 그대로 보기</summary>
-            <iframe id="tide-app-embed" class="tide-app-embed" title="제부도 바닷길 원본 앱 그래프"
-                src="https://jebu-marina.vercel.app/public/tide?utm_source=myyacht_tide_page&utm_medium=embed&utm_campaign=sea_road_live"
-                loading="lazy"></iframe>
-        </details>
 
         <p id="tide-footnote" class="tide-footnote">데이터 제공: Jebu Marina 공개 API</p>
 
@@ -272,12 +275,14 @@
         font-size: 0.86rem;
     }
 
-    .tide-open-list {
+    .tide-open-inline {
         margin: 0;
-        padding-left: 18px;
         color: rgba(230, 237, 248, 0.92);
         font-size: 0.9rem;
-        line-height: 1.6;
+        line-height: 1.45;
+        white-space: nowrap;
+        overflow-x: auto;
+        scrollbar-width: thin;
     }
 
     .tide-weather {
@@ -296,7 +301,7 @@
     .tide-weather-grid {
         display: grid;
         gap: 8px;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-columns: repeat(4, minmax(0, 1fr));
     }
 
     .tide-weather-item {
@@ -304,44 +309,44 @@
         background: rgba(255, 255, 255, 0.03);
         border-radius: 10px;
         padding: 9px 10px;
-        display: grid;
-        gap: 4px;
+        display: flex;
+        align-items: center;
+        gap: 9px;
+        min-height: 56px;
     }
 
-    .tide-weather-item .label {
+    .tide-weather-icon {
+        width: 28px;
+        height: 28px;
+        border-radius: 999px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.95rem;
+        background: rgba(212, 175, 55, 0.16);
+        color: rgba(245, 232, 191, 0.98);
+        flex: 0 0 auto;
+    }
+
+    .tide-weather-copy {
+        display: grid;
+        gap: 4px;
+        min-width: 0;
+    }
+
+    .tide-weather-copy .label {
         color: rgba(230, 237, 248, 0.6);
         font-size: 0.72rem;
     }
 
-    .tide-weather-item strong {
+    .tide-weather-copy strong {
         color: rgba(236, 242, 252, 0.95);
         font-size: 0.88rem;
         line-height: 1.35;
         font-weight: 600;
-    }
-
-    .tide-app-panel {
-        border-top: 1px solid rgba(255, 255, 255, 0.1);
-        padding-top: 10px;
-    }
-
-    .tide-app-panel summary {
-        cursor: pointer;
-        color: rgba(230, 237, 248, 0.86);
-        font-size: 0.86rem;
-    }
-
-    .tide-app-panel summary:hover {
-        color: rgba(245, 232, 191, 0.95);
-    }
-
-    .tide-app-embed {
-        width: 100%;
-        min-height: 560px;
-        border: 1px solid rgba(255, 255, 255, 0.12);
-        border-radius: 14px;
-        margin-top: 10px;
-        background: rgba(8, 20, 39, 0.55);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
     .tide-footnote {
@@ -397,6 +402,12 @@
         margin: 0 auto;
     }
 
+    @media (max-width: 900px) {
+        .tide-weather-grid {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+    }
+
     @media (max-width: 640px) {
         .tide-page {
             padding-top: 84px;
@@ -425,14 +436,6 @@
             font-size: 0.68rem;
         }
 
-        .tide-weather-grid {
-            grid-template-columns: 1fr;
-        }
-
-        .tide-app-embed {
-            min-height: 480px;
-        }
-
         #main-header .nav-list {
             gap: 10px;
         }
@@ -451,13 +454,13 @@
         const statusBadge = document.getElementById('tide-status-badge');
         const summaryEl = document.getElementById('tide-summary');
         const timelineTrackEl = document.getElementById('tide-timeline-track');
-        const openListEl = document.getElementById('tide-open-list');
+        const openInlineEl = document.getElementById('tide-open-inline');
         const footnoteEl = document.getElementById('tide-footnote');
+        const weatherSummaryIconEl = document.getElementById('weather-summary-icon');
         const weatherSummaryEl = document.getElementById('weather-summary');
         const weatherTempEl = document.getElementById('weather-temp');
         const weatherWindEl = document.getElementById('weather-wind');
         const weatherSunEl = document.getElementById('weather-sun');
-        const appEmbedEl = document.getElementById('tide-app-embed');
 
         const pad = (n) => String(n).padStart(2, '0');
 
@@ -571,23 +574,27 @@
         };
 
         const renderOpenList = (openWindows) => {
-            openListEl.innerHTML = '';
             if (!Array.isArray(openWindows) || openWindows.length === 0) {
-                const li = document.createElement('li');
-                li.textContent = '열림 구간 데이터가 없습니다.';
-                openListEl.appendChild(li);
+                openInlineEl.textContent = '열림 구간 데이터가 없습니다.';
                 return;
             }
 
-            openWindows.forEach((range) => {
-                const li = document.createElement('li');
-                li.textContent = `${range.start} ~ ${range.end}`;
-                openListEl.appendChild(li);
-            });
+            const ranges = openWindows.map((range) => `${range.start}~${range.end}`);
+            openInlineEl.textContent = ranges.join('  |  ');
+        };
+
+        const pickWeatherIcon = (summary) => {
+            const text = String(summary || '');
+            if (text.includes('비')) return '🌧';
+            if (text.includes('눈')) return '❄';
+            if (text.includes('흐')) return '☁';
+            if (text.includes('맑') || text.includes('양호')) return '☀';
+            return '⛅';
         };
 
         const renderWeather = (weather) => {
             if (!weather || typeof weather !== 'object') {
+                weatherSummaryIconEl.textContent = '⛅';
                 weatherSummaryEl.textContent = '-';
                 weatherTempEl.textContent = '-';
                 weatherWindEl.textContent = '-';
@@ -595,6 +602,7 @@
                 return;
             }
 
+            weatherSummaryIconEl.textContent = pickWeatherIcon(weather.summary);
             weatherSummaryEl.textContent = weather.summary || '정보 없음';
             weatherTempEl.textContent = Number.isFinite(weather.tempC) ? `${weather.tempC}°C` : '정보 없음';
             weatherWindEl.textContent = Number.isFinite(weather.windMs) ? `${weather.windMs} m/s` : '정보 없음';
@@ -605,22 +613,11 @@
             }
         };
 
-        const syncEmbedDate = (dateYmd) => {
-            if (!appEmbedEl) return;
-            const embedUrl = new URL('https://jebu-marina.vercel.app/public/tide');
-            embedUrl.searchParams.set('date', dateYmd);
-            embedUrl.searchParams.set('utm_source', 'myyacht_tide_page');
-            embedUrl.searchParams.set('utm_medium', 'embed');
-            embedUrl.searchParams.set('utm_campaign', 'sea_road_live');
-            appEmbedEl.src = embedUrl.toString();
-        };
-
         const loadTide = async (dateYmd) => {
             const isLocalPreview = ['127.0.0.1', 'localhost'].includes(window.location.hostname);
             setStatus('불러오는 중', null);
             summaryEl.textContent = `${formatDateLabel(dateYmd)} 기준 데이터를 불러오는 중입니다.`;
             footnoteEl.textContent = '데이터 제공: Jebu Marina 공개 API';
-            syncEmbedDate(dateYmd);
 
             try {
                 const response = await fetch(`${apiBase}?date=${dateYmd}`, { method: 'GET' });
@@ -644,7 +641,7 @@
             } catch (error) {
                 setStatus('데이터 지연', 'closed');
                 timelineTrackEl.innerHTML = '';
-                openListEl.innerHTML = '<li>잠시 후 다시 조회해 주세요.</li>';
+                openInlineEl.textContent = '잠시 후 다시 조회해 주세요.';
                 renderWeather(null);
 
                 if (isLocalPreview) {

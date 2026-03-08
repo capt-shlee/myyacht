@@ -1,9 +1,16 @@
 baseURL = 'https://myyacht.kr/'
 enableRobotsTXT = false
 cleanDestinationDir = true
-languageCode = 'ko-kr'
+languageCode = 'ko-KR'
+defaultContentLanguage = 'ko'
+defaultContentLanguageInSubdir = false
 title = '제부도 프리미엄 요트 투어 | 마이요트 (MyYacht)'
 theme = 'PaperMod'
+
+[languages]
+  [languages.ko]
+    languageName = 'Korean'
+    weight = 1
 
 [taxonomies]
   category = "categories"

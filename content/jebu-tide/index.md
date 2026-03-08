@@ -1,4 +1,4 @@
----
+﻿---
 title: "제부도 바닷길 일정 보기"
 description: "제부도 바닷길 열림·닫힘 시간을 날짜별로 확인하고, 마이요트 예약 전 안전하게 일정을 계획하세요."
 summary: "제부도 바닷길/물때 정보를 날짜별로 확인하는 마이요트 공개 안내 페이지입니다."
@@ -11,6 +11,8 @@ keywords:
 type: "jebu-tide"
 layout: "single"
 url: "/jebu-tide/"
+date: 2026-03-08T11:00:00+09:00
+lastmod: 2026-03-08T11:00:00+09:00
 draft: false
 ---
 

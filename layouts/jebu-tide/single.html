@@ -38,19 +38,43 @@
             <p class="tide-weather-title">출항 참고 날씨</p>
             <div class="tide-weather-grid">
                 <div class="tide-weather-item">
-                    <span class="tide-weather-icon" aria-hidden="true">상</span>
+                    <span class="tide-weather-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M7 16a4 4 0 1 1 .5-7.97A5 5 0 1 1 17 15H7Z"></path>
+                            <path d="M6 19h12"></path>
+                        </svg>
+                    </span>
                     <div class="tide-weather-copy"><span class="label">상태</span><strong id="weather-summary">-</strong></div>
                 </div>
                 <div class="tide-weather-item">
-                    <span class="tide-weather-icon" aria-hidden="true">온</span>
+                    <span class="tide-weather-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12 4v10"></path>
+                            <path d="M9 8h3"></path>
+                            <path d="M8 16a4 4 0 1 0 8 0V8a4 4 0 1 0-8 0v8Z"></path>
+                        </svg>
+                    </span>
                     <div class="tide-weather-copy"><span class="label">기온</span><strong id="weather-temp">-</strong></div>
                 </div>
                 <div class="tide-weather-item">
-                    <span class="tide-weather-icon" aria-hidden="true">풍</span>
+                    <span class="tide-weather-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M4 12h11"></path>
+                            <path d="M12 8l3 4-3 4"></path>
+                            <path d="M5 7h6M3 17h7"></path>
+                        </svg>
+                    </span>
                     <div class="tide-weather-copy"><span class="label">바람</span><strong id="weather-wind">-</strong></div>
                 </div>
                 <div class="tide-weather-item">
-                    <span class="tide-weather-icon" aria-hidden="true">일</span>
+                    <span class="tide-weather-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M4 15h16"></path>
+                            <path d="M7 15a5 5 0 0 1 10 0"></path>
+                            <path d="M12 5v3"></path>
+                            <path d="M12 19v-3"></path>
+                        </svg>
+                    </span>
                     <div class="tide-weather-copy"><span class="label">일출/일몰</span><strong id="weather-sun">-</strong></div>
                 </div>
             </div>
@@ -178,7 +202,7 @@
 
     .tide-timeline-track {
         position: relative;
-        height: 18px;
+        height: 28px;
         border-radius: 999px;
         overflow: hidden;
         background:
@@ -197,8 +221,10 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 0.66rem;
+        font-size: 0.74rem;
         font-weight: 700;
+        line-height: 1;
+        padding: 0 6px;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -216,9 +242,9 @@
 
     .tide-timeline-now {
         position: absolute;
-        top: -3px;
-        width: 2px;
-        height: 24px;
+        top: -4px;
+        width: 3px;
+        height: 36px;
         border-radius: 1px;
         background: rgba(240, 223, 182, 0.95);
     }
@@ -322,13 +348,20 @@
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        font-size: 0.74rem;
-        font-weight: 700;
-        letter-spacing: -0.01em;
         border: 1px solid rgba(212, 175, 55, 0.35);
         background: rgba(212, 175, 55, 0.08);
         color: rgba(236, 224, 188, 0.95);
         flex: 0 0 auto;
+    }
+
+    .tide-weather-icon svg {
+        width: 14px;
+        height: 14px;
+        fill: none;
+        stroke: currentColor;
+        stroke-width: 1.8;
+        stroke-linecap: round;
+        stroke-linejoin: round;
     }
 
     .tide-weather-copy {
@@ -430,8 +463,17 @@
             width: 100%;
         }
 
-        .tide-timeline-open {
-            font-size: 0.58rem;
+        .tide-timeline-track {
+            height: 24px;
+        }
+
+        .tide-timeline-segment {
+            font-size: 0.62rem;
+            padding: 0 4px;
+        }
+
+        .tide-timeline-scale {
+            font-size: 0.66rem;
         }
 
         .tide-timeline-legend {
@@ -463,6 +505,9 @@
         const weatherTempEl = document.getElementById('weather-temp');
         const weatherWindEl = document.getElementById('weather-wind');
         const weatherSunEl = document.getElementById('weather-sun');
+        let lastTimelineOpenWindows = [];
+        let lastTimelineDate = '';
+        let resizeTimer = null;
 
         const pad = (n) => String(n).padStart(2, '0');
 
@@ -536,6 +581,10 @@
         const renderTimeline = (openWindows, dateYmd) => {
             timelineTrackEl.innerHTML = '';
             const mergedOpen = normalizeOpenWindows(openWindows);
+            const trackWidth = timelineTrackEl.clientWidth || 0;
+            const isMobileView = window.matchMedia('(max-width: 640px)').matches;
+            const fullLabelMinPx = isMobileView ? 125 : 150;
+            const timeOnlyMinPx = isMobileView ? 85 : 105;
 
             const segments = [];
             let cursor = 0;
@@ -556,12 +605,20 @@
             segments.forEach((segmentData) => {
                 const segment = document.createElement('span');
                 const widthPercent = ((segmentData.end - segmentData.start) / 1440) * 100;
+                const widthPx = (widthPercent / 100) * trackWidth;
+                const startText = minutesToHhmm(segmentData.start);
+                const endText = minutesToHhmm(segmentData.end);
+                const statusText = segmentData.kind === 'open' ? '열림' : '닫힘';
+                const fullLabel = `${statusText} ${startText}~${endText}`;
                 segment.className = `tide-timeline-segment ${segmentData.kind === 'open' ? 'tide-timeline-open' : 'tide-timeline-closed'}`;
                 segment.style.left = `${(segmentData.start / 1440) * 100}%`;
                 segment.style.width = `${widthPercent}%`;
-                if (widthPercent >= 12) {
-                    const label = segmentData.kind === 'open' ? '열림' : '닫힘';
-                    segment.textContent = `${label} ${minutesToHhmm(segmentData.start)}~${minutesToHhmm(segmentData.end)}`;
+                segment.title = fullLabel;
+
+                if (widthPx >= fullLabelMinPx) {
+                    segment.textContent = fullLabel;
+                } else if (widthPx >= timeOnlyMinPx) {
+                    segment.textContent = `${startText}~${endText}`;
                 }
                 timelineTrackEl.appendChild(segment);
             });
@@ -626,12 +683,16 @@
                     : '다음 변경 시각 확인 중';
 
                 summaryEl.textContent = `${formatDateLabel(dateYmd)} 기준 ${isOpenNow ? '바닷길 열림' : '바닷길 닫힘'} · ${nextText}`;
+                lastTimelineOpenWindows = seaRoad.openWindows || [];
+                lastTimelineDate = dateYmd;
                 renderTimeline(seaRoad.openWindows, dateYmd);
                 renderOpenList(seaRoad.openWindows);
                 renderWeather(payload.weather);
             } catch (error) {
                 setStatus('데이터 지연', 'closed');
                 timelineTrackEl.innerHTML = '';
+                lastTimelineOpenWindows = [];
+                lastTimelineDate = dateYmd;
                 openInlineEl.textContent = '잠시 후 다시 조회해 주세요.';
                 renderWeather(null);
 
@@ -666,6 +727,14 @@
             history.replaceState(null, '', `${window.location.pathname}?${query.toString()}`);
             loadTide(dateInput.value);
         });
+
+        window.addEventListener('resize', () => {
+            if (!lastTimelineDate) return;
+            if (resizeTimer) clearTimeout(resizeTimer);
+            resizeTimer = setTimeout(() => {
+                renderTimeline(lastTimelineOpenWindows, lastTimelineDate);
+            }, 120);
+        }, { passive: true });
     })();
 </script>
 {{- end }}

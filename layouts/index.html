@@ -32,20 +32,103 @@
             box-shadow: 0 10px 26px rgba(212, 175, 55, 0.22);
         }
 
-        .hero-call-alt {
-            margin-top: 12px;
-            font-size: 0.9rem;
-            opacity: 0.85;
-        }
-
-        .hero-call-alt a {
-            color: var(--color-accent);
-            text-decoration: underline;
-            text-underline-offset: 2px;
-        }
-
         .hero-description {
             margin: 0;
+        }
+
+        .tide-strip {
+            padding: 6px 0 2px;
+        }
+
+        .tide-strip-inner {
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .tide-strip-panel {
+            display: grid;
+            gap: 6px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 14px;
+            padding: 10px 12px;
+            background: linear-gradient(180deg, rgba(10, 25, 47, 0.28) 0%, rgba(10, 25, 47, 0.4) 100%);
+            box-shadow: none;
+        }
+
+        .tide-strip-summary {
+            margin: 0;
+            color: #eef3fc;
+            font-size: 0.95rem;
+            line-height: 1.38;
+            letter-spacing: 0.01em;
+        }
+
+        .tide-strip-actions {
+            display: flex;
+            gap: 6px;
+            margin-top: 0;
+        }
+
+        .tide-mini {
+            display: grid;
+            gap: 4px;
+            margin-top: 1px;
+        }
+
+        .tide-mini-track {
+            position: relative;
+            height: 8px;
+            border-radius: 999px;
+            background: rgba(255, 255, 255, 0.1);
+            overflow: hidden;
+        }
+
+        .tide-mini-open {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            background: rgba(123, 211, 255, 0.72);
+        }
+
+        .tide-mini-now {
+            position: absolute;
+            top: -2px;
+            width: 2px;
+            height: 12px;
+            border-radius: 1px;
+            background: rgba(240, 223, 182, 0.92);
+            box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.18);
+        }
+
+        .tide-mini-scale {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.64rem;
+            color: rgba(230, 237, 248, 0.54);
+            letter-spacing: 0.03em;
+            line-height: 1;
+        }
+
+        .tide-strip-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 8px 11px;
+            border-radius: 999px;
+            font-size: 0.74rem;
+            letter-spacing: 0.03em;
+            border: 1px solid rgba(255, 255, 255, 0.16);
+            color: #e2eaf7;
+            background: rgba(255, 255, 255, 0.03);
+            text-decoration: none;
+            transition: border-color 0.2s ease, background-color 0.2s ease, transform 0.2s ease;
+        }
+
+        .tide-strip-btn:hover {
+            border-color: rgba(255, 255, 255, 0.3);
+            background: rgba(255, 255, 255, 0.07);
+            transform: translateY(-1px);
         }
 
         .hero-mobile-break {
@@ -99,10 +182,6 @@
 
         .split-content .fare-chip .fare-chip-note+.fare-chip-note {
             margin-top: 2px;
-        }
-
-        .floating-btn span {
-            white-space: nowrap;
         }
 
         .review-track {
@@ -415,6 +494,33 @@
                 display: block;
             }
 
+            .tide-strip {
+                padding: 6px 0 6px;
+            }
+
+            .tide-strip-inner {
+                gap: 0;
+            }
+
+            .tide-strip-panel {
+                gap: 6px;
+                padding: 9px 10px;
+                border-radius: 14px;
+            }
+
+            .tide-strip-summary {
+                font-size: 0.88rem;
+            }
+
+            .tide-mini-scale {
+                font-size: 0.62rem;
+            }
+
+            .tide-strip-btn {
+                width: 100%;
+                font-size: 0.72rem;
+            }
+
             .cred-grid {
                 grid-template-columns: repeat(2, minmax(0, 1fr));
             }
@@ -448,14 +554,6 @@
 </head>
 
 <body>
-    <!-- Floating Reservation Button (Home Only) -->
-    <div class="floating-btn-wrapper reveal active">
-        <a href="https://m.place.naver.com/place/1673800591/home" target="_blank" rel="noopener noreferrer"
-            class="floating-btn">
-            <span>오늘 잔여타임 확인</span>
-        </a>
-    </div>
-
     <!-- Header -->
     <header id="main-header">
         <div class="container nav-container">
@@ -488,9 +586,6 @@
                 <!-- Primary CTA -->
                 <a href="https://m.place.naver.com/place/1673800591/home" target="_blank" rel="noopener noreferrer"
                     class="btn-primary">요금·예약 확인</a>
-                <p class="hero-call-alt">
-                    또는 <a href="tel:050714507890">전화 예약 0507-1450-7890</a>
-                </p>
             </div>
         </section>
 
@@ -505,6 +600,22 @@
                     <div class="cred-pill">NAUI SCUBA 강사</div>
                     <div class="cred-pill">(사)한국해양구조협회</div>
                     <div class="cred-pill">한국해양대 졸업</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="tide-strip reveal" aria-label="제부도 바닷길 실시간 안내">
+            <div class="tide-strip-inner">
+                <div class="tide-strip-panel">
+                    <p class="tide-strip-summary" id="tide-strip-summary">오늘 제부도 바닷길 정보를 불러오는 중입니다.</p>
+                    <div class="tide-mini" aria-hidden="true">
+                        <div class="tide-mini-track" id="tide-mini-track"></div>
+                        <div class="tide-mini-scale"><span>00</span><span>12</span><span>24</span></div>
+                    </div>
+                    <div class="tide-strip-actions">
+                        <a class="tide-strip-btn"
+                            href="/jebu-tide/?utm_source=myyacht_home&utm_medium=tide_strip&utm_campaign=sea_road_live">날짜별 바닷길 일정 보기</a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -933,38 +1044,92 @@
             reviewTrack.addEventListener('touchcancel', resumeReviewTrack, { passive: true });
         }
 
-        // Auto-Hide Floating Button near Hero and Footer
-        const floatBtn = document.querySelector('.floating-btn-wrapper');
-        const heroSection = document.getElementById('home');
-        const footer = document.querySelector('footer');
+        const tideSummaryEl = document.getElementById('tide-strip-summary');
+        const tideMiniTrackEl = document.getElementById('tide-mini-track');
+        const tideApiBase = 'https://jebu-marina.vercel.app/api/public/tide';
 
-        if (floatBtn && footer && heroSection) {
-            const setFloatingButtonState = () => {
-                const footerRect = footer.getBoundingClientRect();
-                const heroRect = heroSection.getBoundingClientRect();
-                const windowHeight = window.innerHeight;
+        const getKstDate = () => {
+            const kstNow = new Date(new Date().toLocaleString('en-US', { timeZone: 'Asia/Seoul' }));
+            const y = kstNow.getFullYear();
+            const m = String(kstNow.getMonth() + 1).padStart(2, '0');
+            const d = String(kstNow.getDate()).padStart(2, '0');
+            return `${y}-${m}-${d}`;
+        };
 
-                // Hide while hero is on screen.
-                const heroVisible = heroRect.top < windowHeight && heroRect.bottom > 120;
-                // Hide near footer to avoid overlap.
-                const footerNear = footerRect.top < windowHeight + 50;
-                const shouldHide = heroVisible || footerNear;
+        const hhmmToMinutes = (hhmm) => {
+            if (!hhmm || typeof hhmm !== 'string') return null;
+            const [hRaw, mRaw] = hhmm.split(':');
+            const h = Number(hRaw);
+            const m = Number(mRaw);
+            if (!Number.isFinite(h) || !Number.isFinite(m)) return null;
+            if (h === 24 && m === 0) return 1440;
+            if (h < 0 || h > 23 || m < 0 || m > 59) return null;
+            return h * 60 + m;
+        };
 
-                if (shouldHide) {
-                    floatBtn.style.opacity = '0';
-                    floatBtn.style.pointerEvents = 'none';
-                    floatBtn.style.transform = 'translateY(20px)';
-                } else {
-                    floatBtn.style.opacity = '1';
-                    floatBtn.style.pointerEvents = 'auto';
-                    floatBtn.style.transform = 'translateY(0)';
+        const renderTideMiniTrack = (openWindows) => {
+            if (!tideMiniTrackEl) return;
+            tideMiniTrackEl.innerHTML = '';
+
+            if (!Array.isArray(openWindows) || openWindows.length === 0) return;
+
+            openWindows.forEach((windowRange) => {
+                const startMin = hhmmToMinutes(windowRange.start);
+                const endMin = hhmmToMinutes(windowRange.end);
+                if (startMin === null || endMin === null || endMin <= startMin) return;
+
+                const block = document.createElement('span');
+                block.className = 'tide-mini-open';
+                block.style.left = `${(startMin / 1440) * 100}%`;
+                block.style.width = `${((endMin - startMin) / 1440) * 100}%`;
+                tideMiniTrackEl.appendChild(block);
+            });
+
+            const nowKst = new Date(new Date().toLocaleString('en-US', { timeZone: 'Asia/Seoul' }));
+            const nowMin = nowKst.getHours() * 60 + nowKst.getMinutes();
+            const marker = document.createElement('span');
+            marker.className = 'tide-mini-now';
+            marker.style.left = `${(nowMin / 1440) * 100}%`;
+            tideMiniTrackEl.appendChild(marker);
+        };
+
+        const updateTideStrip = async () => {
+            if (!tideSummaryEl) return;
+            const date = getKstDate();
+            const isLocalPreview = ['127.0.0.1', 'localhost'].includes(window.location.hostname);
+
+            try {
+                const response = await fetch(`${tideApiBase}?date=${date}`, { method: 'GET' });
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}`);
                 }
-            };
 
-            setFloatingButtonState();
-            window.addEventListener('scroll', setFloatingButtonState, { passive: true });
-            window.addEventListener('resize', setFloatingButtonState);
-        }
+                const payload = await response.json();
+                if (!payload?.success || !payload?.seaRoad) {
+                    throw new Error('Invalid payload');
+                }
+
+                const isOpenNow = payload.seaRoad.isOpenNow === true;
+                const statusText = isOpenNow ? '현재 바닷길 열림' : '현재 바닷길 닫힘';
+                const changeText = payload.seaRoad.nextChangeAt
+                    ? `${isOpenNow ? '다음 닫힘' : '다음 열림'} ${payload.seaRoad.nextChangeAt}`
+                    : '다음 변경 시각 확인 중';
+
+                tideSummaryEl.textContent = `오늘 ${statusText} · ${changeText}`;
+                renderTideMiniTrack(payload.seaRoad.openWindows);
+            } catch (error) {
+                if (isLocalPreview) {
+                    tideSummaryEl.textContent = '로컬 미리보기 모드입니다. 실시간 데이터는 운영 도메인에서 표시됩니다.';
+                    if (tideMiniTrackEl) tideMiniTrackEl.innerHTML = '';
+                    return;
+                }
+
+                tideSummaryEl.textContent = '현재 데이터 지연 중입니다. 상세 페이지에서 최신 바닷길 시간을 확인하세요.';
+                if (tideMiniTrackEl) tideMiniTrackEl.innerHTML = '';
+            }
+        };
+
+        updateTideStrip();
     </script>
 </body>
 

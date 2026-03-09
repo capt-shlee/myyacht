@@ -5,6 +5,10 @@
         <p class="post-description">마이요트 예약 전에 바닷길 열림·닫힘 시간을 날짜별로 확인하세요.</p>
     </header>
 
+    <section class="tide-intro" aria-label="페이지 안내">
+        <p>이 페이지는 제부도 바닷길 열림·닫힘 시간을 날짜별로 확인하는 안내 페이지입니다. 요트 예약 전에 통행 가능 시간을 미리 확인해 여유 있게 일정을 준비해 보세요. 실제 운영 시간은 기상과 현장 상황에 따라 최대 30분 내외 오차가 발생할 수 있으며, 자세한 일정은 아래에서 확인하실 수 있습니다.</p>
+    </section>
+
     <section class="tide-board" aria-label="제부도 바닷길 일정 조회">
         <form class="tide-form" id="tide-form">
             <label for="tide-date">조회 날짜</label>
@@ -15,8 +19,8 @@
         </form>
 
         <div class="tide-status-row">
-            <span id="tide-status-badge" class="tide-status-badge">불러오는 중</span>
-            <p id="tide-summary" class="tide-summary">제부도 바닷길 정보를 불러오는 중입니다.</p>
+            <span id="tide-status-badge" class="tide-status-badge">안내</span>
+            <p id="tide-summary" class="tide-summary">조회 날짜를 선택하면 제부도 바닷길 열림·닫힘 시간을 확인할 수 있습니다.</p>
         </div>
 
         <div class="tide-timeline" aria-hidden="true">
@@ -31,7 +35,7 @@
 
         <div class="tide-list-wrap">
             <p class="tide-list-title">열림 예상 시간</p>
-            <p class="tide-open-inline" id="tide-open-inline">데이터를 불러오는 중입니다.</p>
+            <p class="tide-open-inline" id="tide-open-inline">조회 후 열림 시간대가 표시됩니다.</p>
         </div>
 
         <section class="tide-weather" id="tide-weather" aria-label="출항 참고 날씨">
@@ -99,6 +103,21 @@
 
     .tide-page-header {
         margin-bottom: 14px;
+    }
+
+    .tide-intro {
+        margin: 0 0 12px;
+        padding: 12px 14px;
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        border-radius: 14px;
+        background: rgba(255, 255, 255, 0.03);
+    }
+
+    .tide-intro p {
+        margin: 0;
+        color: rgba(230, 237, 248, 0.88);
+        font-size: 0.92rem;
+        line-height: 1.55;
     }
 
     #main-header .nav-container {
@@ -447,6 +466,16 @@
     @media (max-width: 640px) {
         .tide-page {
             padding-top: 84px;
+        }
+
+        .tide-intro {
+            margin-bottom: 10px;
+            padding: 10px 12px;
+        }
+
+        .tide-intro p {
+            font-size: 0.86rem;
+            line-height: 1.5;
         }
 
         .tide-board {

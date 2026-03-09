@@ -37,7 +37,7 @@
         }
 
         .tide-strip {
-            padding: 30px 0 34px;
+            padding: 34px 0 38px;
         }
 
         .tide-strip-inner {
@@ -48,10 +48,10 @@
 
         .tide-strip-panel {
             display: grid;
-            gap: 6px;
+            gap: 8px;
             border: 1px solid rgba(255, 255, 255, 0.08);
             border-radius: 14px;
-            padding: 10px 12px;
+            padding: 12px 14px;
             background: linear-gradient(180deg, rgba(10, 25, 47, 0.28) 0%, rgba(10, 25, 47, 0.4) 100%);
             box-shadow: none;
         }
@@ -67,57 +67,25 @@
         .tide-strip-actions {
             display: flex;
             gap: 6px;
-            margin-top: 0;
-        }
-
-        .tide-mini {
-            display: grid;
-            gap: 4px;
-            margin-top: 1px;
-        }
-
-        .tide-mini-track {
-            position: relative;
-            height: 8px;
-            border-radius: 999px;
-            background: rgba(255, 255, 255, 0.1);
-            overflow: hidden;
-        }
-
-        .tide-mini-open {
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            background: rgba(123, 211, 255, 0.72);
-        }
-
-        .tide-mini-now {
-            position: absolute;
-            top: -2px;
-            width: 2px;
-            height: 12px;
-            border-radius: 1px;
-            background: rgba(240, 223, 182, 0.92);
-            box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.18);
-        }
-
-        .tide-mini-scale {
-            display: flex;
-            justify-content: space-between;
-            font-size: 0.64rem;
-            color: rgba(230, 237, 248, 0.54);
-            letter-spacing: 0.03em;
-            line-height: 1;
+            margin-top: 2px;
+            justify-content: center;
+            flex-wrap: nowrap;
         }
 
         .tide-strip-btn {
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            padding: 8px 11px;
+            padding: 9px 12px;
             border-radius: 999px;
             font-size: 0.74rem;
+            line-height: 1.3;
             letter-spacing: 0.03em;
+            width: fit-content;
+            flex: 0 0 auto;
+            white-space: nowrap !important;
+            word-break: keep-all;
+            overflow-wrap: normal;
             border: 1px solid rgba(255, 255, 255, 0.16);
             color: #e2eaf7;
             background: rgba(255, 255, 255, 0.03);
@@ -453,6 +421,19 @@
             text-underline-offset: 2px;
         }
 
+        .floating-btn-wrapper {
+            opacity: 0;
+            pointer-events: none;
+            transform: translateY(10px);
+            transition: opacity 0.24s ease, transform 0.24s ease;
+        }
+
+        .floating-btn-wrapper.is-visible {
+            opacity: 1;
+            pointer-events: auto;
+            transform: translateY(0);
+        }
+
         @media (max-width: 1024px) {
             .cred-grid {
                 grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -495,7 +476,7 @@
             }
 
             .tide-strip {
-                padding: 18px 0 20px;
+                padding: 20px 0 24px;
             }
 
             .tide-strip-inner {
@@ -503,8 +484,8 @@
             }
 
             .tide-strip-panel {
-                gap: 6px;
-                padding: 9px 10px;
+                gap: 7px;
+                padding: 10px 11px;
                 border-radius: 14px;
             }
 
@@ -512,13 +493,11 @@
                 font-size: 0.88rem;
             }
 
-            .tide-mini-scale {
-                font-size: 0.62rem;
-            }
-
             .tide-strip-btn {
-                width: 100%;
-                font-size: 0.72rem;
+                width: auto;
+                max-width: 100%;
+                font-size: 0.69rem;
+                padding: 8px 10px;
             }
 
             .cred-grid {
@@ -549,11 +528,22 @@
                 font-size: 0.78rem;
                 line-height: 1.48;
             }
+
+            .floating-btn {
+                letter-spacing: 0.03em;
+                font-size: 0.72rem;
+                padding: 10px 16px;
+            }
         }
     </style>
 </head>
 
 <body>
+    <div class="floating-btn-wrapper" id="floating-reserve-btn">
+        <a href="https://m.place.naver.com/place/1673800591/home" target="_blank" rel="noopener noreferrer"
+            class="floating-btn" aria-label="예약 문의">예약 문의</a>
+    </div>
+
     <!-- Header -->
     <header id="main-header">
         <div class="container nav-container">
@@ -607,14 +597,10 @@
         <section class="tide-strip reveal" aria-label="제부도 바닷길 실시간 안내">
             <div class="tide-strip-inner">
                 <div class="tide-strip-panel">
-                    <p class="tide-strip-summary" id="tide-strip-summary">오늘 제부도 바닷길 정보를 불러오는 중입니다.</p>
-                    <div class="tide-mini" aria-hidden="true">
-                        <div class="tide-mini-track" id="tide-mini-track"></div>
-                        <div class="tide-mini-scale"><span>00</span><span>12</span><span>24</span></div>
-                    </div>
+                    <p class="tide-strip-summary" id="tide-strip-summary">현재 통항 상태를 확인하고 있습니다.</p>
                     <div class="tide-strip-actions">
                         <a class="tide-strip-btn"
-                            href="/jebu-tide/?utm_source=myyacht_home&utm_medium=tide_strip&utm_campaign=sea_road_live">날짜별 바닷길 일정 보기</a>
+                            href="/jebu-tide/?utm_source=myyacht_home&utm_medium=tide_strip&utm_campaign=sea_road_live">날짜별 제부도 바닷길 일정 보기</a>
                     </div>
                 </div>
             </div>
@@ -978,7 +964,7 @@
                     </svg>
                 </a>
                 <!-- Blog Icon (Pen / Edit) -->
-                <a href="https://blog.naver.com/capt_lima" target="_blank" aria-label="Blog">
+                <a href="/posts/" aria-label="Blog">
                     <svg viewBox="0 0 24 24">
                         <path
                             d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z" />
@@ -1045,15 +1031,29 @@
         }
 
         const tideSummaryEl = document.getElementById('tide-strip-summary');
-        const tideMiniTrackEl = document.getElementById('tide-mini-track');
         const tideApiBase = 'https://jebu-marina.vercel.app/api/public/tide';
+        const floatingReserveBtn = document.getElementById('floating-reserve-btn');
+        const heroSection = document.getElementById('home');
+        const footerSection = document.querySelector('footer');
+
+        const getKstNow = () => new Date(new Date().toLocaleString('en-US', { timeZone: 'Asia/Seoul' }));
+
+        const formatDateYmd = (dateObj) => {
+            const y = dateObj.getFullYear();
+            const m = String(dateObj.getMonth() + 1).padStart(2, '0');
+            const d = String(dateObj.getDate()).padStart(2, '0');
+            return `${y}-${m}-${d}`;
+        };
 
         const getKstDate = () => {
-            const kstNow = new Date(new Date().toLocaleString('en-US', { timeZone: 'Asia/Seoul' }));
-            const y = kstNow.getFullYear();
-            const m = String(kstNow.getMonth() + 1).padStart(2, '0');
-            const d = String(kstNow.getDate()).padStart(2, '0');
-            return `${y}-${m}-${d}`;
+            const kstNow = getKstNow();
+            return formatDateYmd(kstNow);
+        };
+
+        const getNextKstDate = () => {
+            const kstNow = getKstNow();
+            kstNow.setDate(kstNow.getDate() + 1);
+            return formatDateYmd(kstNow);
         };
 
         const hhmmToMinutes = (hhmm) => {
@@ -1067,69 +1067,143 @@
             return h * 60 + m;
         };
 
-        const renderTideMiniTrack = (openWindows) => {
-            if (!tideMiniTrackEl) return;
-            tideMiniTrackEl.innerHTML = '';
+        const minutesToHhmm = (minutes) => {
+            if (!Number.isFinite(minutes)) return '--:--';
+            const normalized = ((minutes % 1440) + 1440) % 1440;
+            const h = Math.floor(normalized / 60);
+            const m = normalized % 60;
+            return `${String(h).padStart(2, '0')}:${String(m).padStart(2, '0')}`;
+        };
 
-            if (!Array.isArray(openWindows) || openWindows.length === 0) return;
+        const normalizeOpenWindows = (openWindows) => {
+            if (!Array.isArray(openWindows) || openWindows.length === 0) return [];
 
-            openWindows.forEach((windowRange) => {
-                const startMin = hhmmToMinutes(windowRange.start);
-                const endMin = hhmmToMinutes(windowRange.end);
-                if (startMin === null || endMin === null || endMin <= startMin) return;
+            const valid = openWindows
+                .map((range) => {
+                    const start = hhmmToMinutes(range.start);
+                    const end = hhmmToMinutes(range.end);
+                    if (start === null || end === null || end <= start) return null;
+                    return { start: Math.max(0, start), end: Math.min(1440, end) };
+                })
+                .filter(Boolean)
+                .sort((a, b) => a.start - b.start);
 
-                const block = document.createElement('span');
-                block.className = 'tide-mini-open';
-                block.style.left = `${(startMin / 1440) * 100}%`;
-                block.style.width = `${((endMin - startMin) / 1440) * 100}%`;
-                tideMiniTrackEl.appendChild(block);
+            if (valid.length === 0) return [];
+
+            const merged = [valid[0]];
+            for (let i = 1; i < valid.length; i += 1) {
+                const current = valid[i];
+                const last = merged[merged.length - 1];
+                if (current.start <= last.end) {
+                    last.end = Math.max(last.end, current.end);
+                } else {
+                    merged.push(current);
+                }
+            }
+            return merged;
+        };
+
+        const extractOpenWindows = (payload) => {
+            if (!payload?.success || !payload?.seaRoad) return null;
+            return normalizeOpenWindows(payload.seaRoad.openWindows);
+        };
+
+        const getNextChangeEvent = (todayWindows, tomorrowWindows, nowMin) => {
+            const events = [];
+
+            todayWindows.forEach((range) => {
+                events.push({ at: range.start, type: 'open', isTomorrow: false });
+                events.push({ at: range.end, type: 'closed', isTomorrow: false });
             });
 
-            const nowKst = new Date(new Date().toLocaleString('en-US', { timeZone: 'Asia/Seoul' }));
-            const nowMin = nowKst.getHours() * 60 + nowKst.getMinutes();
-            const marker = document.createElement('span');
-            marker.className = 'tide-mini-now';
-            marker.style.left = `${(nowMin / 1440) * 100}%`;
-            tideMiniTrackEl.appendChild(marker);
+            tomorrowWindows.forEach((range) => {
+                events.push({ at: 1440 + range.start, type: 'open', isTomorrow: true });
+                events.push({ at: 1440 + range.end, type: 'closed', isTomorrow: true });
+            });
+
+            events.sort((a, b) => a.at - b.at);
+            return events.find((event) => event.at > nowMin) || null;
         };
 
         const updateTideStrip = async () => {
             if (!tideSummaryEl) return;
-            const date = getKstDate();
+            const today = getKstDate();
+            const tomorrow = getNextKstDate();
             const isLocalPreview = ['127.0.0.1', 'localhost'].includes(window.location.hostname);
 
             try {
-                const response = await fetch(`${tideApiBase}?date=${date}`, { method: 'GET' });
-                if (!response.ok) {
-                    throw new Error(`HTTP ${response.status}`);
+                const [todayResponse, tomorrowResponse] = await Promise.all([
+                    fetch(`${tideApiBase}?date=${today}`, { method: 'GET' }),
+                    fetch(`${tideApiBase}?date=${tomorrow}`, { method: 'GET' })
+                ]);
+
+                if (!todayResponse.ok) {
+                    throw new Error(`HTTP ${todayResponse.status}`);
                 }
 
-                const payload = await response.json();
-                if (!payload?.success || !payload?.seaRoad) {
-                    throw new Error('Invalid payload');
+                const todayPayload = await todayResponse.json();
+                const todayWindows = extractOpenWindows(todayPayload);
+                if (todayWindows === null) {
+                    throw new Error('Invalid today payload');
                 }
 
-                const isOpenNow = payload.seaRoad.isOpenNow === true;
-                const statusText = isOpenNow ? '현재 바닷길 열림' : '현재 바닷길 닫힘';
-                const changeText = payload.seaRoad.nextChangeAt
-                    ? `${isOpenNow ? '다음 닫힘' : '다음 열림'} ${payload.seaRoad.nextChangeAt}`
-                    : '다음 변경 시각 확인 중';
+                let tomorrowWindows = [];
+                if (tomorrowResponse.ok) {
+                    const tomorrowPayload = await tomorrowResponse.json();
+                    const parsedTomorrow = extractOpenWindows(tomorrowPayload);
+                    if (parsedTomorrow !== null) {
+                        tomorrowWindows = parsedTomorrow;
+                    }
+                }
 
-                tideSummaryEl.textContent = `오늘 ${statusText} · ${changeText}`;
-                renderTideMiniTrack(payload.seaRoad.openWindows);
+                const nowKst = getKstNow();
+                const nowMin = nowKst.getHours() * 60 + nowKst.getMinutes();
+                const isOpenNow = todayWindows.some((range) => nowMin >= range.start && nowMin < range.end);
+                const nextEvent = getNextChangeEvent(todayWindows, tomorrowWindows, nowMin);
+                const statusText = isOpenNow ? '현재 통항가능' : '현재 통항불가';
+
+                let nextText = '다음 변동 없음';
+                if (nextEvent) {
+                    const verb = nextEvent.type === 'closed' ? '닫힘' : '열림';
+                    const dayPrefix = nextEvent.isTomorrow ? '내일 ' : '';
+                    nextText = `다음 ${dayPrefix}${minutesToHhmm(nextEvent.at)} ${verb}`;
+                }
+
+                tideSummaryEl.textContent = `${statusText} (${nextText})`;
             } catch (error) {
                 if (isLocalPreview) {
                     tideSummaryEl.textContent = '로컬 미리보기 모드입니다. 실시간 데이터는 운영 도메인에서 표시됩니다.';
-                    if (tideMiniTrackEl) tideMiniTrackEl.innerHTML = '';
                     return;
                 }
 
                 tideSummaryEl.textContent = '현재 데이터 지연 중입니다. 상세 페이지에서 최신 바닷길 시간을 확인하세요.';
-                if (tideMiniTrackEl) tideMiniTrackEl.innerHTML = '';
             }
         };
 
+        const updateFloatingReserveVisibility = () => {
+            if (!floatingReserveBtn || !heroSection || !footerSection) return;
+            const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+            const heroRect = heroSection.getBoundingClientRect();
+            const footerRect = footerSection.getBoundingClientRect();
+            const isPastHero = heroRect.bottom <= 90;
+            const isNearFooter = footerRect.top <= viewportHeight - 40;
+            floatingReserveBtn.classList.toggle('is-visible', isPastHero && !isNearFooter);
+        };
+
+        let floatingTicking = false;
+        window.addEventListener('scroll', () => {
+            if (floatingTicking) return;
+            floatingTicking = true;
+            window.requestAnimationFrame(() => {
+                updateFloatingReserveVisibility();
+                floatingTicking = false;
+            });
+        }, { passive: true });
+
+        window.addEventListener('resize', updateFloatingReserveVisibility, { passive: true });
+
         updateTideStrip();
+        updateFloatingReserveVisibility();
     </script>
 </body>
 

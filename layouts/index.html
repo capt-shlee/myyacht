@@ -1124,6 +1124,7 @@
 
         const findNextMeaningfulChange = (windowsByDay, nowAbsoluteMinute) => {
             const events = [];
+            const horizonEnd = windowsByDay.length * 1440;
 
             windowsByDay.forEach((windows, dayIndex) => {
                 windows.forEach((range) => {
@@ -1137,6 +1138,8 @@
 
             for (const event of events) {
                 if (event.at <= nowAbsoluteMinute) continue;
+                // Do not infer a state change at the edge beyond loaded forecast range.
+                if (event.at >= horizonEnd) continue;
                 const before = isOpenAtAbsoluteMinute(windowsByDay, event.at - 0.5);
                 const after = isOpenAtAbsoluteMinute(windowsByDay, event.at + 0.5);
                 if (before === after) continue;
@@ -1189,13 +1192,14 @@
                 if (nextEvent) {
                     const verb = nextEvent.toOpen ? '열림' : '닫힘';
                     const clock = minutesToHhmm(nextEvent.at);
+                    const eventDayIndex = Math.floor(nextEvent.at / 1440);
 
-                    if (nextEvent.dayIndex === 0) {
+                    if (eventDayIndex === 0) {
                         nextText = `다음 ${clock} ${verb}`;
-                    } else if (nextEvent.dayIndex === 1) {
+                    } else if (eventDayIndex === 1) {
                         nextText = `다음 내일 ${clock} ${verb}`;
                     } else {
-                        const eventDate = addDaysToYmd(today, nextEvent.dayIndex);
+                        const eventDate = addDaysToYmd(today, eventDayIndex);
                         nextText = `다음 ${formatMonthDay(eventDate)} ${clock} ${verb}`;
                     }
                 }

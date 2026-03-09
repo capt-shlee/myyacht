@@ -545,6 +545,13 @@
             return `${nowKst.getFullYear()}-${pad(nowKst.getMonth() + 1)}-${pad(nowKst.getDate())}`;
         };
 
+        const addDaysToYmd = (baseYmd, offsetDays) => {
+            const [year, month, day] = baseYmd.split('-').map(Number);
+            const date = new Date(year, month - 1, day);
+            date.setDate(date.getDate() + offsetDays);
+            return `${date.getFullYear()}-${pad(date.getMonth() + 1)}-${pad(date.getDate())}`;
+        };
+
         const isYmd = (value) => /^\d{4}-\d{2}-\d{2}$/.test(value);
 
         const hhmmToMinutes = (hhmm) => {
@@ -595,10 +602,21 @@
             return merged;
         };
 
+        const extractOpenWindows = (payload) => {
+            if (!payload?.success || !payload?.seaRoad) return null;
+            return normalizeOpenWindows(payload.seaRoad.openWindows);
+        };
+
         const formatDateLabel = (dateYmd) => {
             if (!isYmd(dateYmd)) return dateYmd;
             const [y, m, d] = dateYmd.split('-').map(Number);
             return `${y}년 ${m}월 ${d}일`;
+        };
+
+        const formatMonthDay = (dateYmd) => {
+            if (!isYmd(dateYmd)) return dateYmd;
+            const [, m, d] = dateYmd.split('-').map(Number);
+            return `${m}월 ${d}일`;
         };
 
         const formatDuration = (minutes) => {
@@ -610,11 +628,43 @@
             return `${m}분`;
         };
 
-        const buildTideStatus = (dateYmd, openWindows) => {
+        const isOpenAtAbsoluteMinute = (windowsByDay, absoluteMinute) => {
+            const dayIndex = Math.floor(absoluteMinute / 1440);
+            if (dayIndex < 0 || dayIndex >= windowsByDay.length) return false;
+            const minuteOfDay = absoluteMinute - dayIndex * 1440;
+            return windowsByDay[dayIndex].some((range) => minuteOfDay >= range.start && minuteOfDay < range.end);
+        };
+
+        const findNextMeaningfulChange = (windowsByDay, nowAbsoluteMinute) => {
+            const events = [];
+
+            windowsByDay.forEach((windows, dayIndex) => {
+                windows.forEach((range) => {
+                    const dayOffset = dayIndex * 1440;
+                    events.push({ at: dayOffset + range.start, dayIndex });
+                    events.push({ at: dayOffset + range.end, dayIndex });
+                });
+            });
+
+            events.sort((a, b) => a.at - b.at);
+
+            for (const event of events) {
+                if (event.at <= nowAbsoluteMinute) continue;
+                const before = isOpenAtAbsoluteMinute(windowsByDay, event.at - 0.5);
+                const after = isOpenAtAbsoluteMinute(windowsByDay, event.at + 0.5);
+                if (before === after) continue;
+                return { at: event.at, dayIndex: event.dayIndex, toOpen: after };
+            }
+
+            return null;
+        };
+
+        const buildTideStatus = (dateYmd, openWindows, options = {}) => {
             const mergedOpen = normalizeOpenWindows(openWindows);
             const labelDate = formatDateLabel(dateYmd);
             const totalOpenMin = mergedOpen.reduce((sum, r) => sum + (r.end - r.start), 0);
             const isToday = dateYmd === getKstDate();
+            const forecastDays = Number.isFinite(options.forecastDays) ? options.forecastDays : 1;
 
             if (!isToday) {
                 if (totalOpenMin >= 1440) {
@@ -645,17 +695,24 @@
             const nowKst = new Date(new Date().toLocaleString('en-US', { timeZone: 'Asia/Seoul' }));
             const nowMin = nowKst.getHours() * 60 + nowKst.getMinutes();
             const isOpenNow = mergedOpen.some((r) => nowMin >= r.start && nowMin < r.end);
+            const windowsByDay = Array.isArray(options.windowsByDay) && options.windowsByDay.length > 0
+                ? options.windowsByDay
+                : [mergedOpen];
+            const nextEvent = findNextMeaningfulChange(windowsByDay, nowMin);
+            let nextText = forecastDays > 1 ? `향후 ${forecastDays}일간 변동 없음` : '다음 변경 없음';
 
-            const nextEvents = [];
-            mergedOpen.forEach((r) => {
-                if (r.start > nowMin) nextEvents.push({ at: r.start, type: 'open' });
-                if (r.end > nowMin) nextEvents.push({ at: r.end, type: 'closed' });
-            });
-            nextEvents.sort((a, b) => a.at - b.at);
-
-            const nextText = nextEvents.length > 0
-                ? `다음 ${nextEvents[0].type === 'closed' ? '닫힘' : '열림'} ${minutesToHhmm(nextEvents[0].at)}`
-                : '다음 변경 없음';
+            if (nextEvent) {
+                const verb = nextEvent.toOpen ? '열림' : '닫힘';
+                const clock = minutesToHhmm(nextEvent.at % 1440);
+                if (nextEvent.dayIndex === 0) {
+                    nextText = `다음 ${clock} ${verb}`;
+                } else if (nextEvent.dayIndex === 1) {
+                    nextText = `다음 내일 ${clock} ${verb}`;
+                } else {
+                    const eventDate = addDaysToYmd(dateYmd, nextEvent.dayIndex);
+                    nextText = `다음 ${formatMonthDay(eventDate)} ${clock} ${verb}`;
+                }
+            }
 
             return {
                 state: isOpenNow ? 'open' : 'closed',
@@ -769,7 +826,33 @@
                 if (!payload?.success || !payload?.seaRoad) throw new Error('Invalid payload');
 
                 const seaRoad = payload.seaRoad;
-                const dailyStatus = buildTideStatus(dateYmd, seaRoad.openWindows);
+                const forecastDays = 5;
+                const windowsByDay = [normalizeOpenWindows(seaRoad.openWindows)];
+
+                if (dateYmd === getKstDate()) {
+                    const targetDates = Array.from({ length: forecastDays - 1 }, (_, i) => addDaysToYmd(dateYmd, i + 1));
+                    const futureResponses = await Promise.all(
+                        targetDates.map(async (targetDate) => {
+                            try {
+                                const nextResponse = await fetch(`${apiBase}?date=${targetDate}`, { method: 'GET' });
+                                if (!nextResponse.ok) return null;
+                                return nextResponse.json();
+                            } catch (e) {
+                                return null;
+                            }
+                        })
+                    );
+
+                    futureResponses.forEach((futurePayload) => {
+                        const windows = extractOpenWindows(futurePayload);
+                        windowsByDay.push(windows ?? []);
+                    });
+                }
+
+                const dailyStatus = buildTideStatus(dateYmd, seaRoad.openWindows, {
+                    windowsByDay,
+                    forecastDays: dateYmd === getKstDate() ? forecastDays : 1
+                });
                 setStatus(dailyStatus.badgeLabel, dailyStatus.state);
                 summaryEl.textContent = dailyStatus.summary;
                 lastTimelineOpenWindows = seaRoad.openWindows || [];

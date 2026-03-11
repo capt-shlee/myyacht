@@ -23,3 +23,8 @@
 ## Draft Handling
 - `draft` 값은 사용자가 발행 지시하기 전까지 유지
 - 사용자가 발행/배포를 요청하면 `draft: false` 전환 여부를 먼저 확인하고 진행
+
+## Publish Time Guardrail
+- 사용자가 "배포"를 요청하면 대상 글의 `date`가 현재 시각(기본 `Asia/Seoul`)보다 미래인지 반드시 점검한다.
+- `date`가 미래이면 배포 전에 현재 시각 이전으로 조정하거나, 사용자에게 확인 후 진행한다.
+- 배포 직전 최종 체크: `draft: false` + `date <= now(Asia/Seoul)`.

@@ -36,69 +36,6 @@
             margin: 0;
         }
 
-        .tide-strip {
-            padding: 34px 0 38px;
-        }
-
-        .tide-strip-inner {
-            max-width: 760px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        .tide-strip-panel {
-            display: grid;
-            gap: 8px;
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            border-radius: 14px;
-            padding: 12px 14px;
-            background: linear-gradient(180deg, rgba(10, 25, 47, 0.28) 0%, rgba(10, 25, 47, 0.4) 100%);
-            box-shadow: none;
-        }
-
-        .tide-strip-summary {
-            margin: 0;
-            color: #eef3fc;
-            font-size: 0.95rem;
-            line-height: 1.38;
-            letter-spacing: 0.01em;
-        }
-
-        .tide-strip-actions {
-            display: flex;
-            gap: 6px;
-            margin-top: 2px;
-            justify-content: center;
-            flex-wrap: nowrap;
-        }
-
-        .tide-strip-btn {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            padding: 9px 12px;
-            border-radius: 999px;
-            font-size: 0.74rem;
-            line-height: 1.3;
-            letter-spacing: 0.03em;
-            width: fit-content;
-            flex: 0 0 auto;
-            white-space: nowrap !important;
-            word-break: keep-all;
-            overflow-wrap: normal;
-            border: 1px solid rgba(255, 255, 255, 0.16);
-            color: #e2eaf7;
-            background: rgba(255, 255, 255, 0.03);
-            text-decoration: none;
-            transition: border-color 0.2s ease, background-color 0.2s ease, transform 0.2s ease;
-        }
-
-        .tide-strip-btn:hover {
-            border-color: rgba(255, 255, 255, 0.3);
-            background: rgba(255, 255, 255, 0.07);
-            transform: translateY(-1px);
-        }
-
         .hero-mobile-break {
             display: none;
         }
@@ -152,68 +89,48 @@
             margin-top: 2px;
         }
 
+        .nav-list {
+            gap: 26px;
+        }
+
+        .review-wrapper {
+            overflow-x: auto;
+            overflow-y: hidden;
+            mask-image: none;
+            -webkit-mask-image: none;
+            border: 0;
+            background: transparent;
+            padding: 0 0 6px;
+            scroll-snap-type: none;
+            overscroll-behavior-x: contain;
+            -webkit-overflow-scrolling: touch;
+            scroll-behavior: smooth;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        .review-wrapper::-webkit-scrollbar {
+            display: none;
+        }
+
         .review-track {
             display: flex;
-            gap: 30px;
-            animation: scroll 35s linear infinite;
-            -webkit-animation: scroll 35s linear infinite;
+            gap: 24px;
             width: max-content;
-            will-change: transform;
-            transform: translate3d(0, 0, 0);
-            -webkit-transform: translate3d(0, 0, 0);
-        }
-
-        @media (prefers-reduced-motion: reduce) {
-            .review-track {
-                animation: none;
-                -webkit-animation: none;
-            }
-        }
-
-        .review-track:hover {
-            animation-play-state: running;
-            -webkit-animation-play-state: running;
-        }
-
-        .review-track:active {
-            animation-play-state: paused;
-            -webkit-animation-play-state: paused;
-        }
-
-        @keyframes scroll {
-            0% {
-                transform: translateX(0);
-                -webkit-transform: translateX(0);
-            }
-
-            100% {
-                transform: translateX(-50%);
-                -webkit-transform: translateX(-50%);
-            }
-        }
-
-        @-webkit-keyframes scroll {
-            0% {
-                -webkit-transform: translateX(0);
-            }
-
-            100% {
-                -webkit-transform: translateX(-50%);
-            }
+            padding-right: 4px;
         }
 
         .review-item {
             background: rgba(255, 255, 255, 0.03);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.1);
             padding: 0 !important;
             border-radius: 20px;
             overflow: hidden;
             display: flex;
             flex-direction: column;
-            width: 350px;
-            /* 고정 너비로 정합성 유지 */
+            width: clamp(280px, 26vw, 360px);
+            flex: 0 0 auto;
+            scroll-snap-align: start;
             transition: transform 0.3s ease, border-color 0.3s ease;
             backface-visibility: hidden;
             -webkit-backface-visibility: hidden;
@@ -222,6 +139,13 @@
         .review-item:hover {
             transform: translateY(-10px);
             border-color: var(--color-accent);
+        }
+
+        @media (hover: none) {
+            .review-item:hover {
+                transform: none;
+                border-color: rgba(255, 255, 255, 0.1);
+            }
         }
 
         .review-image {
@@ -307,27 +231,9 @@
             letter-spacing: 0.2px;
         }
 
-        .review-wrapper:hover .review-track {
-            animation-play-state: running;
-        }
-
-        @media (hover: hover) and (pointer: fine) {
-            .review-track:hover,
-            .review-wrapper:hover .review-track {
-                animation-play-state: paused;
-                -webkit-animation-play-state: paused;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .review-track {
-                animation-duration: 50s;
-                -webkit-animation-duration: 50s;
-                gap: 20px;
-            }
-
-            .review-item {
-                width: 320px;
+        @media (max-width: 1100px) {
+            .nav-list {
+                gap: 18px;
             }
         }
 
@@ -421,6 +327,51 @@
             text-underline-offset: 2px;
         }
 
+        .visit-tide-card {
+            margin-top: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 14px;
+            padding: 18px 18px 16px;
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.01) 100%);
+            text-align: left;
+        }
+
+        .visit-tide-title {
+            margin: 0 0 8px;
+            font-size: 1.05rem;
+            line-height: 1.4;
+            color: #f4f7ff;
+            font-family: var(--font-head);
+        }
+
+        .visit-tide-desc {
+            margin: 0 0 14px;
+            color: rgba(230, 237, 248, 0.8);
+            font-size: 0.92rem;
+            line-height: 1.55;
+        }
+
+        .visit-tide-cta {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 14px;
+            border-radius: 999px;
+            border: 1px solid rgba(192, 169, 126, 0.55);
+            color: var(--color-accent);
+            background: rgba(255, 255, 255, 0.02);
+            font-size: 0.82rem;
+            letter-spacing: 0.02em;
+            text-decoration: none;
+            transition: transform 0.2s ease, border-color 0.2s ease, background-color 0.2s ease;
+        }
+
+        .visit-tide-cta:hover {
+            border-color: rgba(192, 169, 126, 0.9);
+            background: rgba(192, 169, 126, 0.12);
+            transform: translateY(-1px);
+        }
+
         .floating-btn-wrapper {
             opacity: 0;
             pointer-events: none;
@@ -475,31 +426,6 @@
                 display: block;
             }
 
-            .tide-strip {
-                padding: 20px 0 24px;
-            }
-
-            .tide-strip-inner {
-                gap: 0;
-            }
-
-            .tide-strip-panel {
-                gap: 7px;
-                padding: 10px 11px;
-                border-radius: 14px;
-            }
-
-            .tide-strip-summary {
-                font-size: 0.88rem;
-            }
-
-            .tide-strip-btn {
-                width: auto;
-                max-width: 100%;
-                font-size: 0.69rem;
-                padding: 8px 10px;
-            }
-
             .cred-grid {
                 grid-template-columns: repeat(2, minmax(0, 1fr));
             }
@@ -534,6 +460,36 @@
                 font-size: 0.72rem;
                 padding: 10px 16px;
             }
+
+            .review-wrapper {
+                overflow-x: auto;
+                overflow-y: hidden;
+                padding-bottom: 6px;
+                scroll-snap-type: x proximity;
+            }
+
+            .review-track {
+                display: flex;
+                width: max-content;
+                gap: 14px;
+            }
+
+            .review-item {
+                width: min(82vw, 320px);
+                flex: 0 0 auto;
+                scroll-snap-align: start;
+            }
+
+            .visit-tide-card {
+                margin-top: 24px;
+                padding: 16px 14px;
+            }
+
+            .visit-tide-title,
+            .visit-tide-desc,
+            .visit-tide-cta {
+                text-align: left;
+            }
         }
     </style>
 </head>
@@ -541,7 +497,7 @@
 <body>
     <div class="floating-btn-wrapper" id="floating-reserve-btn">
         <a href="https://m.place.naver.com/place/1673800591/home" target="_blank" rel="noopener noreferrer"
-            class="floating-btn" aria-label="예약 문의">예약 문의</a>
+            class="floating-btn" aria-label="요금 예약확인">요금 예약확인</a>
     </div>
 
     <!-- Header -->
@@ -555,6 +511,7 @@
                     <li><a href="#community" class="nav-link">Reviews</a></li>
                     <li><a href="#club" class="nav-link">Sailing Club</a></li>
                     <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li><a href="/jebu-tide/" class="nav-link">제부도 바닷길</a></li>
                     <li><a href="/posts/" class="nav-link" style="color:var(--color-accent)">Captain's Log</a></li>
                 </ul>
             </nav>
@@ -590,18 +547,6 @@
                     <div class="cred-pill">NAUI SCUBA 강사</div>
                     <div class="cred-pill">(사)한국해양구조협회</div>
                     <div class="cred-pill">한국해양대 졸업</div>
-                </div>
-            </div>
-        </section>
-
-        <section class="tide-strip reveal" aria-label="제부도 바닷길 실시간 안내">
-            <div class="tide-strip-inner">
-                <div class="tide-strip-panel">
-                    <p class="tide-strip-summary" id="tide-strip-summary">현재 통항 상태를 확인하고 있습니다.</p>
-                    <div class="tide-strip-actions">
-                        <a class="tide-strip-btn"
-                            href="/jebu-tide/?utm_source=myyacht_home&utm_medium=tide_strip&utm_campaign=sea_road_live">날짜별 제부도 바닷길 일정 보기</a>
-                    </div>
                 </div>
             </div>
         </section>
@@ -668,7 +613,7 @@
 
         <!-- Reviews -->
         <section id="community" class="spacer-y text-center">
-            <div class="container" style="overflow:hidden">
+            <div class="container" style="overflow:visible">
                 <span class="section-tag">마이요트 후기</span>
                 <h2 class="mb-2">1급 해기사 선장의 제부도 요트 운항 기록</h2>
                 <p class="review-source">
@@ -766,92 +711,6 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- Clones (Hidden from Search Bots) -->
-                        <div class="review-item" aria-hidden="true" tabindex="-1">
-                            <div class="review-image"><img src="/images/reviews/r1.jpg" alt="Family Trip"
-                                    loading="lazy" decoding="async"></div>
-                            <div class="review-content">
-                                <div class="review-stars">★★★★★</div>
-                                <p class="review-text">"1급 해기사 선장님의 전문적인 항해 실력 덕분에 가족 모두 편안한 시간을 보냈습니다."</p>
-                                <div class="review-meta-container">
-                                    <span class="verified-badge">Master Mariner Verified</span>
-                                    <span class="review-category">Family Trip</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="review-item" aria-hidden="true" tabindex="-1">
-                            <div class="review-image"><img src="/images/reviews/pet.jpg" alt="Pet Friendly"
-                                    loading="lazy" decoding="async"></div>
-                            <div class="review-content">
-                                <div class="review-stars">★★★★★</div>
-                                <p class="review-text">"우리 댕댕이가 너무 행복해 합니다. 애견 동반 요트 투어 중 최고예요!"</p>
-                                <div class="review-meta-container">
-                                    <span class="verified-badge">Master Mariner Verified</span>
-                                    <span class="review-category">Pet Friendly</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="review-item" aria-hidden="true" tabindex="-1">
-                            <div class="review-image"><img src="/images/reviews/proposal.jpg" alt="Sunset Proposal"
-                                    loading="lazy" decoding="async">
-                            </div>
-                            <div class="review-content">
-                                <div class="review-stars">★★★★★</div>
-                                <p class="review-text">"최고의 낙조 스팟! 프로포즈 성공의 일등공신이셨습니다."</p>
-                                <div class="review-meta-container">
-                                    <span class="verified-badge">Master Mariner Verified</span>
-                                    <span class="review-category">Sunset Proposal</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="review-item" aria-hidden="true" tabindex="-1">
-                            <div class="review-image"><img src="/images/reviews/r3.jpg" alt="Sailing Class"
-                                    loading="lazy" decoding="async"></div>
-                            <div class="review-content">
-                                <div class="review-stars">★★★★★</div>
-                                <p class="review-text">"바다에 대해 깊이 있는 설명을 들을 수 있어 좋았습니다."</p>
-                                <div class="review-meta-container">
-                                    <span class="verified-badge">Master Mariner Verified</span>
-                                    <span class="review-category">Sailing Class</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="review-item" aria-hidden="true" tabindex="-1">
-                            <div class="review-image"><img src="/images/reviews/workshop.jpg" alt="Corporate Workshop"
-                                    loading="lazy" decoding="async"></div>
-                            <div class="review-content">
-                                <div class="review-stars">★★★★★</div>
-                                <p class="review-text">"회사 워크샵으로 방문했는데 직원들 만족도가 최상입니다."</p>
-                                <div class="review-meta-container">
-                                    <span class="verified-badge">Master Mariner Verified</span>
-                                    <span class="review-category">Corporate Workshop</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="review-item" aria-hidden="true" tabindex="-1">
-                            <div class="review-image"><img src="/images/reviews/r5.jpg" alt="Private Party"
-                                    loading="lazy" decoding="async"></div>
-                            <div class="review-content">
-                                <div class="review-stars">★★★★★</div>
-                                <p class="review-text">"선장님의 카리스마와 친절함이 인상적이었습니다."</p>
-                                <div class="review-meta-container">
-                                    <span class="verified-badge">Master Mariner Verified</span>
-                                    <span class="review-category">Private Party</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="review-item" aria-hidden="true" tabindex="-1">
-                            <div class="review-image"><img src="/images/reviews/cabin.jpg" alt="Guest Review Cabin"
-                                    loading="lazy" decoding="async"></div>
-                            <div class="review-content">
-                                <div class="review-stars">★★★★★</div>
-                                <p class="review-text">"깨끗한 실내가 사진과 같아요. 냉난방도 돼서 쾌적했어요."</p>
-                                <div class="review-meta-container">
-                                    <span class="verified-badge">Master Mariner Verified</span>
-                                    <span class="review-category">Guest Review</span>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -929,6 +788,12 @@
                             Business License: 350-14-02104<br>
                             Rep: Lee Sung Hee
                         </p>
+
+                        <div class="visit-tide-card" aria-label="방문 전 확인 정보">
+                            <h3 class="visit-tide-title">제부도 바닷길 일정</h3>
+                            <p class="visit-tide-desc">제부도 방문 전 바닷길 열림·닫힘 시간을 먼저 확인하세요.</p>
+                            <a class="visit-tide-cta" href="/jebu-tide/">제부도 바닷길 일정 확인</a>
+                        </div>
                     </div>
                 </div>
                 <div class="map-wrapper" style="flex:1; min-height:500px;">
@@ -1014,206 +879,9 @@
             });
         });
 
-        const reviewTrack = document.querySelector('.review-track');
-        if (reviewTrack) {
-            reviewTrack.addEventListener('touchstart', () => {
-                reviewTrack.style.animationPlayState = 'paused';
-                reviewTrack.style.webkitAnimationPlayState = 'paused';
-            }, { passive: true });
-
-            const resumeReviewTrack = () => {
-                reviewTrack.style.animationPlayState = 'running';
-                reviewTrack.style.webkitAnimationPlayState = 'running';
-            };
-
-            reviewTrack.addEventListener('touchend', resumeReviewTrack, { passive: true });
-            reviewTrack.addEventListener('touchcancel', resumeReviewTrack, { passive: true });
-        }
-
-        const tideSummaryEl = document.getElementById('tide-strip-summary');
-        const tideApiBase = 'https://jebu-marina.vercel.app/api/public/tide';
         const floatingReserveBtn = document.getElementById('floating-reserve-btn');
         const heroSection = document.getElementById('home');
         const footerSection = document.querySelector('footer');
-
-        const getKstNow = () => new Date(new Date().toLocaleString('en-US', { timeZone: 'Asia/Seoul' }));
-
-        const formatDateYmd = (dateObj) => {
-            const y = dateObj.getFullYear();
-            const m = String(dateObj.getMonth() + 1).padStart(2, '0');
-            const d = String(dateObj.getDate()).padStart(2, '0');
-            return `${y}-${m}-${d}`;
-        };
-
-        const getKstDate = () => {
-            const kstNow = getKstNow();
-            return formatDateYmd(kstNow);
-        };
-
-        const addDaysToYmd = (baseYmd, offsetDays) => {
-            const [year, month, day] = baseYmd.split('-').map(Number);
-            const date = new Date(year, month - 1, day);
-            date.setDate(date.getDate() + offsetDays);
-            return formatDateYmd(date);
-        };
-
-        const hhmmToMinutes = (hhmm) => {
-            if (!hhmm || typeof hhmm !== 'string') return null;
-            const [hRaw, mRaw] = hhmm.split(':');
-            const h = Number(hRaw);
-            const m = Number(mRaw);
-            if (!Number.isFinite(h) || !Number.isFinite(m)) return null;
-            if (h === 24 && m === 0) return 1440;
-            if (h < 0 || h > 23 || m < 0 || m > 59) return null;
-            return h * 60 + m;
-        };
-
-        const minutesToHhmm = (minutes) => {
-            if (!Number.isFinite(minutes)) return '--:--';
-            const normalized = ((minutes % 1440) + 1440) % 1440;
-            const h = Math.floor(normalized / 60);
-            const m = normalized % 60;
-            return `${String(h).padStart(2, '0')}:${String(m).padStart(2, '0')}`;
-        };
-
-        const formatMonthDay = (dateYmd) => {
-            if (!/^\d{4}-\d{2}-\d{2}$/.test(dateYmd)) return dateYmd;
-            const [, month, day] = dateYmd.split('-').map(Number);
-            return `${month}월 ${day}일`;
-        };
-
-        const normalizeOpenWindows = (openWindows) => {
-            if (!Array.isArray(openWindows) || openWindows.length === 0) return [];
-
-            const valid = openWindows
-                .map((range) => {
-                    const start = hhmmToMinutes(range.start);
-                    const end = hhmmToMinutes(range.end);
-                    if (start === null || end === null || end <= start) return null;
-                    return { start: Math.max(0, start), end: Math.min(1440, end) };
-                })
-                .filter(Boolean)
-                .sort((a, b) => a.start - b.start);
-
-            if (valid.length === 0) return [];
-
-            const merged = [valid[0]];
-            for (let i = 1; i < valid.length; i += 1) {
-                const current = valid[i];
-                const last = merged[merged.length - 1];
-                if (current.start <= last.end) {
-                    last.end = Math.max(last.end, current.end);
-                } else {
-                    merged.push(current);
-                }
-            }
-            return merged;
-        };
-
-        const extractOpenWindows = (payload) => {
-            if (!payload?.success || !payload?.seaRoad) return null;
-            return normalizeOpenWindows(payload.seaRoad.openWindows);
-        };
-
-        const isOpenAtAbsoluteMinute = (windowsByDay, absoluteMinute) => {
-            const dayIndex = Math.floor(absoluteMinute / 1440);
-            if (dayIndex < 0 || dayIndex >= windowsByDay.length) return false;
-            const minuteOfDay = absoluteMinute - dayIndex * 1440;
-            return windowsByDay[dayIndex].some((range) => minuteOfDay >= range.start && minuteOfDay < range.end);
-        };
-
-        const findNextMeaningfulChange = (windowsByDay, nowAbsoluteMinute) => {
-            const events = [];
-            const horizonEnd = windowsByDay.length * 1440;
-
-            windowsByDay.forEach((windows, dayIndex) => {
-                windows.forEach((range) => {
-                    const dayOffset = dayIndex * 1440;
-                    events.push({ at: dayOffset + range.start, dayIndex });
-                    events.push({ at: dayOffset + range.end, dayIndex });
-                });
-            });
-
-            events.sort((a, b) => a.at - b.at);
-
-            for (const event of events) {
-                if (event.at <= nowAbsoluteMinute) continue;
-                // Do not infer a state change at the edge beyond loaded forecast range.
-                if (event.at >= horizonEnd) continue;
-                const before = isOpenAtAbsoluteMinute(windowsByDay, event.at - 0.5);
-                const after = isOpenAtAbsoluteMinute(windowsByDay, event.at + 0.5);
-                if (before === after) continue;
-                return { at: event.at, dayIndex: event.dayIndex, toOpen: after };
-            }
-
-            return null;
-        };
-
-        const updateTideStrip = async () => {
-            if (!tideSummaryEl) return;
-            const today = getKstDate();
-            const forecastDays = 5;
-            const isLocalPreview = ['127.0.0.1', 'localhost'].includes(window.location.hostname);
-
-            try {
-                const targetDates = Array.from({ length: forecastDays }, (_, i) => addDaysToYmd(today, i));
-                const responses = await Promise.all(
-                    targetDates.map((dateYmd) => fetch(`${tideApiBase}?date=${dateYmd}`, { method: 'GET' }))
-                );
-
-                if (!responses[0].ok) {
-                    throw new Error(`HTTP ${responses[0].status}`);
-                }
-
-                const windowsByDay = [];
-                for (let i = 0; i < responses.length; i += 1) {
-                    const response = responses[i];
-                    if (!response.ok) {
-                        windowsByDay.push([]);
-                        continue;
-                    }
-                    const payload = await response.json();
-                    const windows = extractOpenWindows(payload);
-                    windowsByDay.push(windows ?? []);
-                }
-
-                const todayWindows = windowsByDay[0];
-                if (!Array.isArray(todayWindows)) {
-                    throw new Error('Invalid today payload');
-                }
-
-                const nowKst = getKstNow();
-                const nowMin = nowKst.getHours() * 60 + nowKst.getMinutes();
-                const isOpenNow = todayWindows.some((range) => nowMin >= range.start && nowMin < range.end);
-                const nextEvent = findNextMeaningfulChange(windowsByDay, nowMin);
-                const statusText = isOpenNow ? '현재 통항가능' : '현재 통항불가';
-
-                let nextText = `향후 ${forecastDays}일간 변동 없음`;
-                if (nextEvent) {
-                    const verb = nextEvent.toOpen ? '열림' : '닫힘';
-                    const clock = minutesToHhmm(nextEvent.at);
-                    const eventDayIndex = Math.floor(nextEvent.at / 1440);
-
-                    if (eventDayIndex === 0) {
-                        nextText = `다음 ${clock} ${verb}`;
-                    } else if (eventDayIndex === 1) {
-                        nextText = `다음 내일 ${clock} ${verb}`;
-                    } else {
-                        const eventDate = addDaysToYmd(today, eventDayIndex);
-                        nextText = `다음 ${formatMonthDay(eventDate)} ${clock} ${verb}`;
-                    }
-                }
-
-                tideSummaryEl.textContent = `${statusText} (${nextText})`;
-            } catch (error) {
-                if (isLocalPreview) {
-                    tideSummaryEl.textContent = '로컬 미리보기 모드입니다. 실시간 데이터는 운영 도메인에서 표시됩니다.';
-                    return;
-                }
-
-                tideSummaryEl.textContent = '현재 데이터 지연 중입니다. 상세 페이지에서 최신 바닷길 시간을 확인하세요.';
-            }
-        };
 
         const updateFloatingReserveVisibility = () => {
             if (!floatingReserveBtn || !heroSection || !footerSection) return;
@@ -1237,7 +905,6 @@
 
         window.addEventListener('resize', updateFloatingReserveVisibility, { passive: true });
 
-        updateTideStrip();
         updateFloatingReserveVisibility();
     </script>
 </body>

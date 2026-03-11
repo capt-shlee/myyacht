@@ -35,16 +35,6 @@
     }
 }
 
-@keyframes scroll {
-    0% {
-        transform: translateX(0);
-    }
-
-    100% {
-        transform: translateX(-50%);
-    }
-}
-
 @keyframes shimmer {
     0% {
         background-position: -200% center;
@@ -367,54 +357,6 @@ p {
     color: var(--color-accent);
     font-size: 0.8rem;
     flex-shrink: 0;
-}
-
-.review-wrapper {
-    background: var(--color-primary);
-    border-top: 1px solid var(--color-border);
-    border-bottom: 1px solid var(--color-border);
-    padding: 3rem 0;
-    overflow: hidden;
-    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
-    -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
-}
-
-.review-track {
-    display: flex;
-    gap: 30px;
-    width: max-content;
-    animation: scroll 60s linear infinite;
-}
-
-.review-track:hover {
-    animation-play-state: paused;
-}
-
-.review-item {
-    width: 400px;
-    flex-shrink: 0;
-    background: var(--color-primary);
-    border: 1px solid var(--color-border);
-    padding: 40px;
-    border-radius: var(--border-radius);
-    text-align: left;
-}
-
-.review-text {
-    font-family: var(--font-body);
-    font-size: 1.05rem;
-    line-height: 1.7;
-    color: #ccd6f6;
-    margin-bottom: 20px;
-    font-style: italic;
-}
-
-.review-meta {
-    font-size: 0.9rem;
-    color: var(--color-accent);
-    letter-spacing: 0.05em;
-    font-weight: 600;
-    text-transform: uppercase;
 }
 
 .club-cards {

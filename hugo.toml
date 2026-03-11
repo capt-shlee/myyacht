@@ -68,6 +68,11 @@ theme = 'PaperMod'
     name = "Captain's Log"
     url = "/posts/"
     weight = 20
+  [[menu.main]]
+    identifier = "jebu_tide"
+    name = "제부도 바닷길"
+    url = "/jebu-tide/"
+    weight = 15
 
 [sitemap]
   changefreq = "weekly"

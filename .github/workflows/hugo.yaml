@@ -62,7 +62,20 @@ jobs:
             --gc \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
-            
+
+      - name: Verify legacy tags are absent
+        run: |
+          if [ -d public/tags ]; then
+            echo "ERROR: public/tags must not be generated."
+            find public/tags -maxdepth 3 -type f | head -n 50
+            exit 1
+          fi
+
+          if grep -n "/tags/" public/sitemap.xml; then
+            echo "ERROR: sitemap.xml contains /tags/ URLs."
+            exit 1
+          fi
+             
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

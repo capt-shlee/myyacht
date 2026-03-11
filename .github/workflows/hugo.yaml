@@ -40,12 +40,6 @@ jobs:
           submodules: recursive
           fetch-depth: 0
 
-      - name: Setup Pages
-        id: pages
-        uses: actions/configure-pages@v5
-        with:
-          enablement: true
-      
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
@@ -63,7 +57,7 @@ jobs:
           hugo \
             --gc \
             --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}/"
+            --baseURL "https://myyacht.kr/"
 
       - name: Verify legacy tags are absent
         run: |

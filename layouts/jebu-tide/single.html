@@ -1,22 +1,20 @@
 {{- define "main" }}
 {{- $snapshot := .Params.snapshot -}}
-{{- $snapshotSummary := default "오늘 바닷길은 날짜와 조위에 따라 열림·닫힘 시간이 달라질 수 있습니다." $snapshot.summary -}}
-{{- $snapshotCore := default "오늘·가까운 날짜 통행 시간은 아래 날짜 조회에서 확인할 수 있습니다." $snapshot.coreTraffic -}}
+{{- $snapshotSummary := default "날짜 조회 시 최신 공개 데이터를 반영합니다." $snapshot.summary -}}
+{{- $snapshotCore := default "날짜를 조회하면 열림 예상 시간이 표시됩니다." $snapshot.coreTraffic -}}
 {{- $snapshotWeather := default "기상 변동 가능" $snapshot.weather -}}
-{{- $snapshotUpdatedAt := .Lastmod.Format "2006-01-02 15:04" -}}
 <article class="post-single tide-page">
     <header class="post-header tide-page-header">
         <h1 class="post-title">제부도 바닷길 일정 보기</h1>
-        <p class="post-description">마이요트 예약 전에 바닷길 열림·닫힘 시간을 날짜별로 확인하세요.</p>
+        <p class="post-description">날짜를 선택하면 제부도 바닷길 열림 예상 시간과 다음 변경 시각을 확인할 수 있습니다.</p>
     </header>
 
     <section class="tide-intro" aria-label="페이지 안내">
-        <p>이 페이지에서는 제부도 바닷길 열림·닫힘 시간을 날짜별로 확인할 수 있습니다. 요트 예약 전에 통행 가능 시간을 먼저 확인해 일정을 준비해 보세요. 실제 운영 시간은 기상과 현장 상황에 따라 달라질 수 있습니다.</p>
+        <p>제부도 입출입 전에는 조회 날짜 기준 열림 구간을 먼저 확인하세요. 실제 통행 여부는 기상과 현장 통제에 따라 달라질 수 있습니다.</p>
         <div class="tide-server-snapshot" id="tide-server-snapshot">
             <p class="tide-server-summary" id="tide-server-summary">{{ $snapshotSummary }}</p>
             <ul class="tide-server-list">
-                <li><span>안내 기준 시각</span><strong id="tide-server-updated">{{ $snapshotUpdatedAt }}</strong></li>
-                <li><span>오늘 안내</span><strong id="tide-server-core">{{ $snapshotCore }}</strong></li>
+                <li><span>조회 결과 안내</span><strong id="tide-server-core">{{ $snapshotCore }}</strong></li>
             </ul>
         </div>
     </section>
@@ -32,7 +30,7 @@
 
         <div class="tide-status-row">
             <span id="tide-status-badge" class="tide-status-badge">기준 안내</span>
-            <p id="tide-summary" class="tide-summary">오늘 기준 실시간 통행 상태를 확인한 뒤 다음 변경 시각을 표시합니다.</p>
+            <p id="tide-summary" class="tide-summary">조회 날짜 기준 통행 상태와 다음 변경 시각을 표시합니다.</p>
         </div>
 
         <div class="tide-timeline" aria-hidden="true">
@@ -96,7 +94,7 @@
             </div>
         </section>
 
-        <p id="tide-footnote" class="tide-footnote">기준 시각: {{ $snapshotUpdatedAt }} · 실시간 데이터는 자동 갱신됩니다.</p>
+        <p id="tide-footnote" class="tide-footnote">실제 통행 여부는 기상과 현장 통제에 따라 달라질 수 있습니다.</p>
 
         <div class="tide-actions">
             <a class="tide-btn" href="/#tour">요트투어 코스·요금 보기</a>

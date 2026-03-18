@@ -94,7 +94,7 @@ cover:
 
 ### 📚 함께 읽으면 좋은 글
 
-* **[4만원으로 요트 전력 관리 시스템 구축하기: KM110F 해킹 & OpenPlotter 연동]({{< ref "/posts/km110f-shunt" >}})**: 오픈플로터의 확장성을 보여주는 생생한 DIY 사례입니다.
+* **[4만원으로 요트 전력 관리 시스템 구축하기: KM110F 데이터 연동 & OpenPlotter]({{< ref "/posts/km110f-shunt" >}})**: 오픈플로터의 확장성을 보여주는 생생한 DIY 사례입니다.
 * **[요트 항해 계획(Passage Planning): 1급 해기사의 A-P-E-M 원칙]({{< ref "/posts/passage-planning" >}})**: 완벽한 시스템과 철저한 계획이 만나면 항해가 즐거워집니다.
 
 **Bon Voyage!**

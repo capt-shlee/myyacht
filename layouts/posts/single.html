@@ -1,5 +1,6 @@
 {{ define "main" }}
-<div style="padding-top: 150px; min-height: 100vh;">
+<div class="ads-eligible-page ads-eligible-page--post" data-ad-scope="posts-only"
+    style="padding-top: 150px; min-height: 100vh;">
     <div class="container" style="max-width: 800px;">
         <article class="post-single">
             <header class="post-header" style="text-align: center; margin-bottom: 60px;">
@@ -20,9 +21,12 @@
                 <div style="width: 50px; height: 1px; background: var(--color-accent); margin: 30px auto;"></div>
             </header>
 
-            <div class="post-content" style="color: var(--color-white); line-height: 1.8; font-size: 1.1rem;">
+            <div class="post-content ads-eligible-content"
+                style="color: var(--color-white); line-height: 1.8; font-size: 1.1rem;">
                 {{ .Content }}
             </div>
+
+            {{ partial "post_adsense_slot.html" (dict "placement" "after-content" "slotID" (site.Params.adsense.afterContentSlot | default "")) }}
 
             <footer class="post-footer"
                 style="margin-top: 80px; padding-top: 40px; border-top: 1px solid var(--color-border); text-align: center;">

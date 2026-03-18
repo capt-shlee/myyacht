@@ -240,7 +240,7 @@ OpenPlotter 공식 `First steps` 기준, Headless 이미지는 아래 기본값�
 ### 📚 함께 읽으면 좋은 글
 
 - **[상용 플로터를 넘어서: OpenPlotter와 MacArthur HAT으로 나만의 통합 항해 시스템 만들기]({{< ref "/posts/openplotter-macarthur-hat" >}})**: OpenPlotter 확장 관점에서 전체 그림을 잡기 좋습니다.
-- **[4만원으로 요트 전력 관리 시스템 구축하기: KM110F 해킹 & OpenPlotter 연동]({{< ref "/posts/km110f-shunt" >}})**: 저비용 센서 통합 사례를 함께 보면 이해가 빨라집니다.
+- **[4만원으로 요트 전력 관리 시스템 구축하기: KM110F 데이터 연동 & OpenPlotter]({{< ref "/posts/km110f-shunt" >}})**: 저비용 센서 통합 사례를 함께 보면 이해가 빨라집니다.
 
 ### 참고한 공식 문서
 

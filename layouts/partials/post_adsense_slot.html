@@ -1,0 +1,21 @@
+{{- $ads := site.Params.adsense -}}
+{{- $postsEnabled := $ads.postsEnabled | default false -}}
+{{- $showPlaceholder := $ads.showPlaceholder | default false -}}
+{{- $client := $ads.client | default "" -}}
+{{- $slotID := .slotID | default "" -}}
+{{- $placement := .placement | default "after-content" -}}
+{{- $renderLiveAd := and $postsEnabled (ne $client "") (ne $slotID "") -}}
+{{- if or $renderLiveAd $showPlaceholder -}}
+<section class="adsense-slot adsense-slot--{{ $placement }} ads-eligible-slot" data-ad-scope="posts-only"
+    data-ad-placement="{{ $placement }}">
+    {{- if $renderLiveAd -}}
+    <ins class="adsbygoogle" style="display:block" data-ad-client="{{ $client }}" data-ad-slot="{{ $slotID }}"
+        data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    {{- else -}}
+    <div class="adsense-slot-placeholder" aria-hidden="true">Post-only ad slot reserved.</div>
+    {{- end -}}
+</section>
+{{- end -}}

@@ -1,0 +1,6 @@
+{{- $adsense := partial "adsense_settings.html" . -}}
+{{- if and $adsense.adsTxtEnabled $adsense.publisher -}}
+google.com, {{ $adsense.publisher }}, DIRECT, f08c47fec0942fa0
+{{- else -}}
+# ads.txt is intentionally disabled until a valid AdSense publisher ID is configured.
+{{- end -}}

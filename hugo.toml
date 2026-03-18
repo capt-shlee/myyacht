@@ -34,10 +34,17 @@ theme = 'PaperMod'
     apple_touch_icon = "/favicon.png"
 
   [params.adsense]
+    account = ""
     postsEnabled = false
     client = ""
     showPlaceholder = false
     afterContentSlot = ""
+
+    [params.adsense.siteReview]
+      enabled = false
+
+    [params.adsense.adsTxt]
+      enabled = false
 
   [params.commentsConfig]
     [params.commentsConfig.utterances]
@@ -83,6 +90,15 @@ theme = 'PaperMod'
 [sitemap]
   changefreq = "weekly"
   priority = 0.5
+
+[outputs]
+  home = ["HTML", "RSS", "ADS"]
+
+[outputFormats.ADS]
+  mediaType = "text/plain"
+  baseName = "ads"
+  isPlainText = true
+  notAlternative = true
 
 [markup]
   [markup.goldmark]

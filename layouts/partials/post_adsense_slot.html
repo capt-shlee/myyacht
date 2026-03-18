@@ -1,7 +1,7 @@
-{{- $ads := site.Params.adsense -}}
-{{- $postsEnabled := $ads.postsEnabled | default false -}}
-{{- $showPlaceholder := $ads.showPlaceholder | default false -}}
-{{- $client := $ads.client | default "" -}}
+{{- $ads := partial "adsense_settings.html" . -}}
+{{- $postsEnabled := $ads.postsEnabled -}}
+{{- $showPlaceholder := $ads.showPlaceholder -}}
+{{- $client := $ads.client -}}
 {{- $slotID := .slotID | default "" -}}
 {{- $placement := .placement | default "after-content" -}}
 {{- $renderLiveAd := and $postsEnabled (ne $client "") (ne $slotID "") -}}

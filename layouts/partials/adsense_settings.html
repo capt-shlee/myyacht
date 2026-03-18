@@ -1,0 +1,47 @@
+{{- $config := site.Params.adsense | default dict -}}
+{{- $siteReviewConfig := index $config "siteReview" | default dict -}}
+{{- $adsTxtConfig := index $config "adsTxt" | default dict -}}
+{{- $invalidValues := slice "" "ca-pub-XXXXXXXXXXXXXXXX" "pub-XXXXXXXXXXXXXXXX" "ca-pub-0000000000000000" "pub-0000000000000000" -}}
+
+{{- $rawAccount := trim (or (getenv "HUGO_ADSENSE_ACCOUNT") (index $config "account") "") " " -}}
+{{- $accountMatches := findRE `ca-pub-[0-9]+|pub-[0-9]+` $rawAccount 1 -}}
+{{- $account := "" -}}
+{{- with $accountMatches -}}
+  {{- $account = index . 0 -}}
+{{- end -}}
+{{- if in $invalidValues $account -}}
+  {{- $account = "" -}}
+{{- end -}}
+
+{{- $rawClient := trim (or (getenv "HUGO_ADSENSE_CLIENT") (index $config "client") $account) " " -}}
+{{- $clientMatches := findRE `ca-pub-[0-9]+` $rawClient 1 -}}
+{{- $client := "" -}}
+{{- with $clientMatches -}}
+  {{- $client = index . 0 -}}
+{{- end -}}
+{{- if in $invalidValues $client -}}
+  {{- $client = "" -}}
+{{- end -}}
+
+{{- $publisher := "" -}}
+{{- if $account -}}
+  {{- $publisher = replace $account "ca-" "" 1 -}}
+{{- end -}}
+{{- if in $invalidValues $publisher -}}
+  {{- $publisher = "" -}}
+{{- end -}}
+
+{{- $postsEnabled := or (eq (lower (trim (getenv "HUGO_ADSENSE_POSTS_ENABLED") " ")) "true") ((index $config "postsEnabled") | default false) -}}
+{{- $siteReviewEnabled := or (eq (lower (trim (getenv "HUGO_ADSENSE_SITE_REVIEW_ENABLED") " ")) "true") ((index $siteReviewConfig "enabled") | default false) -}}
+{{- $adsTxtEnabled := or (eq (lower (trim (getenv "HUGO_ADSENSE_ADS_TXT_ENABLED") " ")) "true") ((index $adsTxtConfig "enabled") | default false) -}}
+
+{{- return (dict
+  "account" $account
+  "client" $client
+  "publisher" $publisher
+  "postsEnabled" $postsEnabled
+  "siteReviewEnabled" $siteReviewEnabled
+  "adsTxtEnabled" $adsTxtEnabled
+  "showPlaceholder" ((index $config "showPlaceholder") | default false)
+  "afterContentSlot" ((index $config "afterContentSlot") | default "")
+) -}}

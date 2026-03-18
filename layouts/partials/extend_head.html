@@ -9,11 +9,14 @@
 
 <!-- Open Graph tags are fully handled by themes/PaperMod/layouts/partials/templates/opengraph.html -->
 
-{{- with site.Params.adsense }}
-{{- if and $.IsPage (eq $.Type "posts") (.postsEnabled | default false) .client }}
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ .client }}"
-    crossorigin="anonymous"></script>
+{{- $adsense := partial "adsense_settings.html" . -}}
+{{- if and $adsense.siteReviewEnabled $adsense.account }}
+<meta name="google-adsense-account" content="{{ $adsense.account }}">
 {{- end }}
+
+{{- if and $.IsPage (eq $.Type "posts") $adsense.postsEnabled $adsense.client }}
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ $adsense.client }}"
+    crossorigin="anonymous"></script>
 {{- end }}
 
 <!-- Busuanzi Visitor Counter -->

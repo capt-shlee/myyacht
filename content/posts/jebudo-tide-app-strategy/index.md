@@ -59,5 +59,5 @@ cover:
 ### 📚 함께 읽으면 좋은 글
 
 * **[상용 플로터를 넘어서: OpenPlotter와 MacArthur HAT으로 나만의 통합 항해 시스템 만들기]({{< ref "/posts/openplotter-macarthur-hat" >}})**: 라즈베리 파이와 오픈소스로 완성하는 나만의 항해 도구.
-* **[볼보 펜타 D2-55 EVC 엔진 데이터 읽기: CAN bus 데이터를 받아 보기]({{< ref "/posts/volvo-penta-d2-55-evc-hacking" >}})**: 기성 제품의 한계를 넘어 직접 데이터를 추출하고 연동하는 즐거움.
+* **[볼보펜타 D2-55 EVC 시스템 해킹: CAN bus 데이터를 PC로 읽다]({{< ref "/posts/volvo-penta-d2-55-evc-hacking" >}})**: 기성 제품의 한계를 넘어 직접 데이터를 추출하고 연동하는 즐거움.
 

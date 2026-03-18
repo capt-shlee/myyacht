@@ -85,8 +85,8 @@ cover:
 ### 📚 함께 읽으면 좋은 글
 
 * **[볼보펜타 D2 엔진오일 가이드: API CK-4 오일 사용과 세일드라이브 매칭]({{< ref "/posts/volvo-penta-d2-engine-oil-api-ck4" >}})**: 선장이 알려주는 실전 엔진 관리법.
-* **[볼보 펜타 D2-55 EVC 엔진 데이터 읽기: Wi-Fi 모니터링 준비]({{< ref "/posts/volvo-penta-d2-55-evc-hacking" >}})**: 내 엔진 상태를 실시간으로 체크하는 데이터 모니터링 가이드.
-* **[4만원으로 요트 전력 관리 시스템 구축하기: KM110F 데이터 연동 & OpenPlotter]({{< ref "/posts/km110f-shunt" >}})**: 배터리 걱정 없는 완벽한 항해를 위한 꿀팁.
+* **[요트 엔진 정보 훔치기: 볼보 펜타 D2-55 EVC 데이터 WiFi 전송]({{< ref "/posts/volvo-penta-d2-55-evc-hacking" >}})**: 내 엔진 상태를 실시간으로 체크하는 요트 해킹 가이드.
+* **[4만원으로 요트 전력 관리 시스템 구축하기: KM110F 해킹 & OpenPlotter 연동]({{< ref "/posts/km110f-shunt" >}})**: 배터리 걱정 없는 완벽한 항해를 위한 꿀팁.
 
 **Bon Voyage!**
 

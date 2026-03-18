@@ -494,14 +494,14 @@
     </style>
 </head>
 
-<body class="ads-excluded-page ads-excluded-page--home" data-ad-scope="disabled">
-    <div class="floating-btn-wrapper ads-excluded-area ads-excluded-area--floating-cta" id="floating-reserve-btn">
+<body>
+    <div class="floating-btn-wrapper" id="floating-reserve-btn">
         <a href="https://m.place.naver.com/place/1673800591/home" target="_blank" rel="noopener noreferrer"
             class="floating-btn" aria-label="요금 예약확인">요금 예약확인</a>
     </div>
 
     <!-- Header -->
-    <header id="main-header" class="ads-excluded-area ads-excluded-area--header">
+    <header id="main-header">
         <div class="container nav-container">
             <a href="#home" class="logo">MY YACHT</a>
 
@@ -522,9 +522,9 @@
         </div>
     </header>
 
-    <main class="ads-excluded-area ads-excluded-area--home-main">
+    <main>
         <!-- Hero -->
-        <section id="home" class="hero ads-excluded-area ads-excluded-area--hero">
+        <section id="home" class="hero">
             <div class="hero-bg"></div>
             <div class="hero-content">
                 <span class="hero-badge">The Master Mariner</span>
@@ -536,7 +536,7 @@
             </div>
         </section>
 
-        <section class="cred-strip ads-excluded-area ads-excluded-area--credentials" aria-label="선장 약력">
+        <section class="cred-strip" aria-label="선장 약력">
             <div class="cred-wrap">
                 <p class="cred-kicker">Captain Credentials</p>
                 <h2 class="cred-headline">20년 무사고 운항을 증명하는 선장 이력</h2>
@@ -552,7 +552,7 @@
         </section>
 
         <!-- Service Split -->
-        <section id="tour" class="ads-excluded-area ads-excluded-area--tour">
+        <section id="tour">
             <div class="text-center spacer-y reveal">
                 <span class="section-tag">Premium Collection</span>
                 <h2>제부도 요트 투어 프로그램 안내 (데이타임 & 선셋)</h2>
@@ -612,7 +612,7 @@
         </section>
 
         <!-- Reviews -->
-        <section id="community" class="spacer-y text-center ads-excluded-area ads-excluded-area--reviews">
+        <section id="community" class="spacer-y text-center">
             <div class="container" style="overflow:visible">
                 <span class="section-tag">마이요트 후기</span>
                 <h2 class="mb-2">1급 해기사 선장의 제부도 요트 운항 기록</h2>
@@ -718,8 +718,7 @@
         </section>
 
         <!-- Club -->
-        <section id="club" class="spacer-y ads-excluded-area ads-excluded-area--club"
-            style="position:relative; overflow:hidden;">
+        <section id="club" class="spacer-y" style="position:relative; overflow:hidden;">
             <div
                 style="position:absolute; inset:0; opacity:0.1; background:url('/images/IMG_0753.jpg') center/cover no-repeat; filter: grayscale(100%);">
             </div>
@@ -767,7 +766,7 @@
         </section>
 
         <!-- Contact -->
-        <section id="contact" class="ads-excluded-area ads-excluded-area--contact" style="background:#0A192F;">
+        <section id="contact" style="background:#0A192F;">
             <div class="contact-section reveal" style="display:flex; flex-wrap:wrap;">
                 <div class="contact-body" style="flex:1; padding:80px 40px; min-width:300px;">
                     <span class="section-tag">Visit & Contact</span>
@@ -807,8 +806,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="ads-excluded-area ads-excluded-area--footer"
-        style="background:#0A192F; border-top:1px solid rgba(255,255,255,0.05); padding:30px 0; text-align:center;">
+    <footer style="background:#0A192F; border-top:1px solid rgba(255,255,255,0.05); padding:30px 0; text-align:center;">
         <div class="container">
             <span class="logo" style="font-size:1.2rem;">MY YACHT</span>
             <p style="font-size:0.8rem; opacity:0.5; margin-top:20px;">
@@ -838,7 +836,6 @@
                     </svg>
                 </a>
             </div>
-            {{ partial "site_trust_links.html" . }}
         </div>
     </footer>
 

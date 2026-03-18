@@ -464,39 +464,6 @@ iframe {
     transform: scale(1.1);
 }
 
-.footer-trust-links {
-    margin-top: 18px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 14px;
-    font-size: 0.85rem;
-}
-
-.footer-trust-links a {
-    color: rgba(230, 237, 248, 0.78);
-}
-
-.footer-trust-links a:hover {
-    color: var(--color-accent);
-}
-
-.ads-excluded-page,
-.ads-excluded-area,
-.ads-eligible-page,
-.ads-eligible-content {
-    position: relative;
-}
-
-.adsense-slot {
-    margin: 48px 0;
-}
-
-.adsense-slot-placeholder {
-    min-height: 1px;
-    color: transparent;
-}
-
 @media (max-width: 1024px) {
     h1 {
         font-size: 2.5rem;
@@ -582,15 +549,6 @@ iframe {
         height: 400px;
         /* Fixed height for mobile map */
         min-height: auto;
-    }
-
-    .footer-trust-links {
-        gap: 10px;
-        font-size: 0.8rem;
-    }
-
-    .adsense-slot {
-        margin: 36px 0;
     }
 }
 

@@ -1,6 +1,6 @@
 {{- define "main" }}
 
-<article class="post-single ads-excluded-page ads-excluded-page--site-info" data-ad-scope="disabled">
+<article class="post-single">
     <header class="post-header">
         {{ partial "breadcrumbs.html" . }}
         <h1 class="post-title entry-hint-parent">
@@ -25,6 +25,10 @@
             {{- partial "translation_list.html" . -}}
             {{- partial "edit_post.html" . -}}
             {{- partial "post_canonical.html" . -}}
+            <span id="busuanzi_container_page_pv"
+                style="margin-left: 10px; color: red !important; background: yellow !important; font-weight: bold;">
+                [DEBUG] <span id="busuanzi_value_page_pv">0</span> Views
+            </span>
         </div>
         {{- end }}
     </header>
@@ -45,13 +49,11 @@
 
     <footer class="post-footer">
         {{- $tags := .Language.Params.Taxonomies.tag | default "tags" }}
-        {{- with ($.GetTerms $tags) }}
         <ul class="post-tags">
-            {{- range . }}
+            {{- range ($.GetTerms $tags) }}
             <li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
             {{- end }}
         </ul>
-        {{- end }}
         {{- if (.Param "ShowPostNavLinks") }}
         {{- partial "post_nav_links.html" . }}
         {{- end }}

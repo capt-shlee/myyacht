@@ -3,13 +3,13 @@
 {{- $snapshotSummary := default "날짜 조회 시 최신 공개 데이터를 반영합니다." $snapshot.summary -}}
 {{- $snapshotCore := default "날짜를 조회하면 열림 예상 시간이 표시됩니다." $snapshot.coreTraffic -}}
 {{- $snapshotWeather := default "기상 변동 가능" $snapshot.weather -}}
-<article class="post-single tide-page ads-excluded-page ads-excluded-page--jebu-tide" data-ad-scope="disabled">
+<article class="post-single tide-page">
     <header class="post-header tide-page-header">
         <h1 class="post-title">제부도 바닷길 일정 보기</h1>
         <p class="post-description">날짜를 선택하면 제부도 바닷길 열림 예상 시간과 다음 변경 시각을 확인할 수 있습니다.</p>
     </header>
 
-    <section class="tide-intro ads-excluded-area ads-excluded-area--tide-intro" aria-label="페이지 안내">
+    <section class="tide-intro" aria-label="페이지 안내">
         <p>제부도 입출입 전에는 조회 날짜 기준 열림 구간을 먼저 확인하세요. 실제 통행 여부는 기상과 현장 통제에 따라 달라질 수 있습니다.</p>
         <div class="tide-server-snapshot" id="tide-server-snapshot">
             <p class="tide-server-summary" id="tide-server-summary">{{ $snapshotSummary }}</p>
@@ -19,7 +19,7 @@
         </div>
     </section>
 
-    <section class="tide-board ads-excluded-area ads-excluded-area--tide-core" aria-label="제부도 바닷길 일정 조회">
+    <section class="tide-board" aria-label="제부도 바닷길 일정 조회">
         <form class="tide-form" id="tide-form">
             <label for="tide-date">조회 날짜</label>
             <div class="tide-form-controls">
@@ -96,7 +96,7 @@
 
         <p id="tide-footnote" class="tide-footnote">실제 통행 여부는 기상과 현장 통제에 따라 달라질 수 있습니다.</p>
 
-        <div class="tide-actions ads-excluded-area ads-excluded-area--tide-actions">
+        <div class="tide-actions">
             <a class="tide-btn" href="/#tour">요트투어 코스·요금 보기</a>
             <a class="tide-btn tide-btn-accent" href="https://m.place.naver.com/place/1673800591/home" target="_blank"
                 rel="noopener noreferrer">요트투어 예약 문의</a>

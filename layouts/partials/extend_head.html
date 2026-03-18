@@ -9,12 +9,5 @@
 
 <!-- Open Graph tags are fully handled by themes/PaperMod/layouts/partials/templates/opengraph.html -->
 
-{{- with site.Params.adsense }}
-{{- if and $.IsPage (eq $.Type "posts") (.postsEnabled | default false) .client }}
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ .client }}"
-    crossorigin="anonymous"></script>
-{{- end }}
-{{- end }}
-
 <!-- Busuanzi Visitor Counter -->
 <script defer src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>

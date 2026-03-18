@@ -94,7 +94,7 @@ DVR(녹화기) 없이 태블릿으로 바로 보는 방법입니다.
 
 ### 📚 함께 읽으면 좋은 글
 
-* **[4만원으로 요트 전력 관리 시스템 구축하기: KM110F 데이터 연동 & OpenPlotter]({{< ref "/posts/km110f-shunt" >}})**: 또 다른 가성비 DIY, 배터리 모니터링 시스템도 만나보세요.
+* **[4만원으로 요트 전력 관리 시스템 구축하기: KM110F 해킹 & OpenPlotter 연동]({{< ref "/posts/km110f-shunt" >}})**: 또 다른 가성비 DIY, 배터리 모니터링 시스템도 만나보세요.
 * **[상용 플로터를 넘어서: OpenPlotter와 MacArthur HAT으로 나만의 통합 항해 시스템 만들기]({{< ref "/posts/openplotter-macarthur-hat" >}})**: DIY 항해 장비의 끝판왕, 오픈플로터 구축기입니다.
 
 **Bon Voyage!**

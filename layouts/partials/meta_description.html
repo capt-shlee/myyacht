@@ -1,0 +1,44 @@
+{{- $description := "" -}}
+{{- $summary := .Summary | plainify | htmlUnescape | replaceRE `\s+` ` ` | strings.TrimSpace -}}
+{{- $plainContent := .Plain | plainify | htmlUnescape | replaceRE `\s+` ` ` | strings.TrimSpace -}}
+
+{{- if .Description -}}
+  {{- $description = .Description -}}
+{{- else if .IsHome -}}
+  {{- $description = "마이요트 제부도 프리미엄 요트 투어 예약 전에 가격, 운항 일정, 선장 경력을 한눈에 확인하세요. 1급 해기사 선장이 직접 운항하는 프라이빗 세일링 안내입니다." -}}
+{{- else if eq .RelPermalink "/posts/" -}}
+  {{- $description = printf "마이요트 Captain's Log 아카이브입니다. 요트 운항, 정비, 전자장비, 제부도 현장 기록 %d편을 한곳에서 살펴보세요." (len .RegularPages) -}}
+{{- else if eq .RelPermalink "/jebu-tide/" -}}
+  {{- $description = "제부도 바닷길 열림·닫힘 시간을 날짜별로 확인하고, 마이요트 예약 전에 통행 가능 시간을 안전하게 계획하세요." -}}
+{{- else if eq .RelPermalink "/about/" -}}
+  {{- $description = "마이요트와 Captain Lima의 운항 이력, 요트 운영 기준, 서비스 배경을 소개하는 안내 페이지입니다." -}}
+{{- else if eq .RelPermalink "/contact/" -}}
+  {{- $description = "마이요트 예약 문의, 연락처, 위치 안내를 한곳에서 확인하는 공식 문의 페이지입니다." -}}
+{{- else if eq .RelPermalink "/privacy-policy/" -}}
+  {{- $description = "마이요트 개인정보 처리방침 페이지입니다. 수집 항목, 보관 기간, 이용자 권리와 문의처를 확인하세요." -}}
+{{- else if or (eq .Kind "404") (eq .Layout "404") -}}
+  {{- $description = "요청하신 페이지를 찾을 수 없습니다. 마이요트 홈, Captain's Log, 제부도 바닷길 페이지에서 필요한 정보를 다시 확인하세요." -}}
+{{- else if and (eq .Kind "taxonomy") (eq .Data.Plural "categories") -}}
+  {{- $description = printf "Captain's Log 카테고리 아카이브입니다. %d개 주제로 나뉜 요트 운항, 정비, 전자장비, 제부도 현장 기록을 탐색하세요." (len .Pages) -}}
+{{- else if and (eq .Kind "term") (eq .Data.Plural "categories") -}}
+  {{- $description = printf "%s 카테고리의 Captain's Log 글 %d편 모음입니다. 마이요트 선장의 실전 기록과 관련 가이드를 한곳에서 확인하세요." .Title (len .Pages) -}}
+{{- else if .IsPage -}}
+  {{- if $summary -}}
+    {{- $description = $summary -}}
+  {{- else if $plainContent -}}
+    {{- $description = $plainContent -}}
+  {{- else -}}
+    {{- $description = printf "%s 페이지입니다. 마이요트에서 필요한 안내를 확인하세요." .Title -}}
+  {{- end -}}
+{{- else if .IsSection -}}
+  {{- $description = printf "%s 목록 페이지입니다. 마이요트 관련 글과 안내 %d건을 모아 확인하세요." .Title (len .RegularPages) -}}
+{{- else if eq .Kind "term" -}}
+  {{- $description = printf "%s 주제의 아카이브 페이지입니다. 관련 글 %d건을 한곳에서 살펴보세요." .Title (len .Pages) -}}
+{{- else if eq .Kind "taxonomy" -}}
+  {{- $description = printf "%s 아카이브 페이지입니다. 분류된 글 %d건을 주제별로 탐색하세요." .Title (len .Pages) -}}
+{{- else -}}
+  {{- $description = printf "%s 안내 페이지입니다." .Title -}}
+{{- end -}}
+
+{{- $description = $description | plainify | htmlUnescape | replaceRE `\s+` ` ` | strings.TrimSpace | truncate 160 -}}
+{{- return $description -}}

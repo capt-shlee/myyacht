@@ -37,7 +37,7 @@
     "opens": "09:00",
     "closes": "23:00"
   },
-  "description": "Premium yacht tours in Jebudo operated directly by a licensed master mariner."
+  "description": {{ partial "meta_description.html" . | jsonify }}
 }
 </script>
 {{ else if (or .IsPage .IsSection) }}
@@ -82,7 +82,7 @@
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": {{ .Title | plainify | jsonify }},
-  "description": {{ .Description | default .Summary | plainify | jsonify }},
+  "description": {{ partial "meta_description.html" . | jsonify }},
   {{- $images := .Resources.ByType "image" -}}
   {{- $cover := .Params.cover.image -}}
   {{- $hasImages := or (gt (len $images) 0) $cover -}}

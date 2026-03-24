@@ -7,7 +7,7 @@
 {{- else if .IsHome -}}
   {{- $description = "마이요트 제부도 프리미엄 요트 투어 예약 전에 가격, 운항 일정, 선장 경력을 한눈에 확인하세요. 1급 해기사 선장이 직접 운항하는 프라이빗 세일링 안내입니다." -}}
 {{- else if eq .RelPermalink "/posts/" -}}
-  {{- $description = printf "마이요트 Captain's Log 아카이브입니다. 요트 운항, 정비, 전자장비, 제부도 현장 기록 %d편을 한곳에서 살펴보세요." (len .RegularPages) -}}
+  {{- $description = printf "Captain's Log 아카이브입니다. 항해 기록, 장비 연동, 정비 메모, 요트 운영 경험 %d편을 한곳에서 살펴보세요." (len .RegularPages) -}}
 {{- else if eq .RelPermalink "/jebu-tide/" -}}
   {{- $description = "제부도 바닷길 열림·닫힘 시간을 날짜별로 확인하고, 마이요트 예약 전에 통행 가능 시간을 안전하게 계획하세요." -}}
 {{- else if eq .RelPermalink "/about/" -}}
@@ -19,9 +19,9 @@
 {{- else if or (eq .Kind "404") (eq .Layout "404") -}}
   {{- $description = "요청하신 페이지를 찾을 수 없습니다. 마이요트 홈, Captain's Log, 제부도 바닷길 페이지에서 필요한 정보를 다시 확인하세요." -}}
 {{- else if and (eq .Kind "taxonomy") (eq .Data.Plural "categories") -}}
-  {{- $description = printf "Captain's Log 카테고리 아카이브입니다. %d개 주제로 나뉜 요트 운항, 정비, 전자장비, 제부도 현장 기록을 탐색하세요." (len .Pages) -}}
+  {{- $description = printf "Captain's Log 카테고리 아카이브입니다. %d개 주제로 나뉜 항해 기록, 장비 연동, 정비 메모, 요트 운영 경험을 탐색하세요." (len .Pages) -}}
 {{- else if and (eq .Kind "term") (eq .Data.Plural "categories") -}}
-  {{- $description = printf "%s 카테고리의 Captain's Log 글 %d편 모음입니다. 마이요트 선장의 실전 기록과 관련 가이드를 한곳에서 확인하세요." .Title (len .Pages) -}}
+  {{- $description = printf "%s 카테고리 아카이브입니다. 항해 기록과 요트 운영 메모 %d편을 주제별로 살펴보세요." .Title (len .Pages) -}}
 {{- else if .IsPage -}}
   {{- if $summary -}}
     {{- $description = $summary -}}

@@ -2,27 +2,26 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 {{- $is404 := or (eq .Kind "404") (eq .Layout "404") -}}
-{{- $shouldIndex := and (or hugo.IsProduction (eq site.Params.env "production")) (not $is404) (ne .Params.robotsNoIndex true) -}}
-{{- if $shouldIndex }}
-<meta name="robots" content="index, follow">
-{{- else }}
-<meta name="robots" content="noindex, nofollow">
-{{- end }}
+{{- $isCategoryArchive := and (eq .Data.Plural "categories") (or (eq .Kind "taxonomy") (eq .Kind "term")) -}}
+{{- $isPostsArchive := eq .RelPermalink "/posts/" -}}
+{{- $isArchiveNoIndex := or $isPostsArchive $isCategoryArchive -}}
+{{- $isProdEnv := or hugo.IsProduction (eq site.Params.env "production") -}}
+{{- $robots := "noindex, nofollow" -}}
+{{- if $isProdEnv -}}
+  {{- if $is404 -}}
+    {{- $robots = "noindex, nofollow" -}}
+  {{- else if $isArchiveNoIndex -}}
+    {{- $robots = "noindex, follow" -}}
+  {{- else if eq .Params.robotsNoIndex true -}}
+    {{- $robots = "noindex, nofollow" -}}
+  {{- else -}}
+    {{- $robots = "index, follow" -}}
+  {{- end -}}
+{{- end -}}
+<meta name="robots" content="{{ $robots }}">
 
 {{- /* Title */}}
-{{- $pageTitle := site.Title -}}
-{{- if not .IsHome -}}
-{{- $preferredTitle := .Param "seoTitle" | default .Title -}}
-{{- if .IsPage -}}
-{{- if $preferredTitle -}}
-{{- $pageTitle = $preferredTitle -}}
-{{- end -}}
-{{- else -}}
-{{- if $preferredTitle -}}
-{{- $pageTitle = printf "%s | %s" $preferredTitle site.Title -}}
-{{- end -}}
-{{- end -}}
-{{- end -}}
+{{- $pageTitle := partial "meta_title.html" . -}}
 <title>{{ $pageTitle }}</title>
 
 {{- /* Meta */}}

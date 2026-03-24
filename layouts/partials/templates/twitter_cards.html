@@ -1,8 +1,5 @@
 {{- $siteURL := strings.TrimSuffix "/" (site.Params.siteURL | default site.BaseURL) -}}
-{{- $title := .Title -}}
-{{- if .IsHome -}}
-  {{- $title = site.Title -}}
-{{- end -}}
+{{- $title := partial "meta_title.html" . -}}
 {{- $desc := partial "meta_description.html" . -}}
 {{- $image := printf "%s/images/og-main.jpg" $siteURL -}}
 

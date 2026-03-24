@@ -1,0 +1,25 @@
+{{- $title := site.Title -}}
+
+{{- if .IsHome -}}
+  {{- $title = site.Title -}}
+{{- else if eq .RelPermalink "/posts/" -}}
+  {{- $title = "Captain's Log | 마이요트 항해 기록" -}}
+{{- else if and (eq .Kind "taxonomy") (eq .Data.Plural "categories") -}}
+  {{- $title = "카테고리 아카이브 | Captain's Log" -}}
+{{- else if and (eq .Kind "term") (eq .Data.Plural "categories") -}}
+  {{- $title = printf "%s | Captain's Log" .Title -}}
+{{- else -}}
+  {{- $preferredTitle := .Param "seoTitle" | default .Title -}}
+  {{- if .IsPage -}}
+    {{- if $preferredTitle -}}
+      {{- $title = $preferredTitle -}}
+    {{- end -}}
+  {{- else -}}
+    {{- if $preferredTitle -}}
+      {{- $title = printf "%s | %s" $preferredTitle site.Title -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $title = $title | plainify | htmlUnescape | replaceRE `\s+` ` ` | strings.TrimSpace -}}
+{{- return $title -}}

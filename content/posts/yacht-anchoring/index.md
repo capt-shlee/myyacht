@@ -96,6 +96,7 @@ cover:
 
 ### 📚 함께 읽으면 좋은 글
 
+* **[제부도 요트 투어 안내](/)**: 실제 제부도 항해 코스와 탑승 흐름은 마이요트 홈에서 먼저 확인하실 수 있습니다.
 * **[요트 항해 계획(Passage Planning): 1급 해기사의 A-P-E-M 원칙]({{< ref "/posts/passage-planning" >}})**: 안전한 정박은 성공적인 항해 계획의 마무리입니다.
 * **[상용 플로터를 넘어서: OpenPlotter와 MacArthur HAT으로 나만의 통합 항해 시스템 만들기]({{< ref "/posts/openplotter-macarthur-hat" >}})**: 전자해도와 앵커 감시 기능을 직접 구현해보세요.
 

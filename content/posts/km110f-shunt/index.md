@@ -1,18 +1,18 @@
 ﻿---
-title: "4만원으로 요트 전력 관리 시스템 구축하기: KM110F 해킹 & OpenPlotter 연동"
-seoTitle: "요트 전력 관리 구축: KM110F 해킹·OpenPlotter 연동"
+title: "4만원으로 요트 전력 관리 시스템 구축하기: KM110F 데이터 연동 & OpenPlotter 통합"
+seoTitle: "요트 전력 관리 구축: KM110F 데이터 연동·OpenPlotter 통합"
 date: 2026-02-05T14:30:00+09:00
-summary: "Victron SmartShunt가 부럽지 않다. 전용 앱에 갇힌 KM110F를 제미나이(Gemini)와 함께 해킹하여 와이파이 신호를 가로채고 OpenPlotter로 통합한 삽질과 승리의 기록."
-description: "가성비 배터리 모니터 KM110F를 해킹해 OpenPlotter와 연동하는 법! WiFi 패킷 분석으로 나만의 전력 관리 시스템을 만드세요."
+summary: "Victron SmartShunt가 부럽지 않다. 전용 앱에 갇힌 KM110F 데이터를 제미나이(Gemini)와 함께 분석해 WiFi 신호를 읽고 OpenPlotter로 통합한 실전 기록."
+description: "가성비 배터리 모니터 KM110F 데이터를 분석해 OpenPlotter와 통합하는 법. WiFi 패킷 분석으로 나만의 전력 관리 시스템을 만드세요."
 categories: ["Marine Electronics", "DIY"]
-keywords: ["KM110F 해킹", "요트 배터리 모니터", "OpenPlotter", "Signal K", "DIY 전력 관리", "오픈소스항해", "제부도요트투어", "요트체험"]
+keywords: ["KM110F 데이터 연동", "요트 배터리 모니터", "OpenPlotter", "Signal K", "DIY 전력 관리", "오픈소스항해", "제부도요트투어", "요트체험"]
 draft: false
 cover:
     image: "IMG_9608.jpg"
     alt: "KM110F 션트와 배터리 연결 모습"
 ---
 
-**#와이파이해킹 #제미나이 #파이썬 #오픈플로터 #가성비끝판왕**
+**#와이파이분석 #제미나이 #파이썬 #오픈플로터 #가성비끝판왕**
 
 > **"전용 앱만 써야 한다고? 그런 게 어디 있어!"**
 

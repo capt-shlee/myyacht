@@ -21,7 +21,7 @@ author: "Captain Lima"
 draft: false
 ---
 
-이 글은 이전글 **[볼보 펜타 D2-55 EVC 엔진 정보 훔치기]({{< ref "/posts/volvo-penta-d2-55-evc-hacking" >}})** 에서 이어지는 2편입니다.
+이 글은 이전글 **[볼보 펜타 D2-55 EVC 엔진 데이터 읽기]({{< ref "/posts/volvo-penta-d2-55-evc-hacking" >}})** 에서 이어지는 2편입니다.
 
 1편에서 하드웨어를 만들고 기본 수신까지 확인한 뒤, 실사용 전에 마지막 검증을 진행했습니다. 원래는 바로 마무리할 생각이었는데, 더치 6핀 분기 하네스로 결선을 바꾸는 과정에서 네트워크 충돌 사고를 한 번 크게 겪었습니다.
 
@@ -169,8 +169,8 @@ Volvo Penta 운용 매뉴얼에서도 냉각수온 경고가 뜨면 즉시 엔�
 
 ### 📚 함께 읽으면 좋은 글
 
-- **[볼보 펜타 D2-55 EVC 엔진 정보 훔치기]({{< ref "/posts/volvo-penta-d2-55-evc-hacking" >}})**: 이번 글의 1편으로, 하드웨어 제작과 초기 수신 준비 과정을 다룹니다.
+- **[볼보 펜타 D2-55 EVC 엔진 데이터 읽기]({{< ref "/posts/volvo-penta-d2-55-evc-hacking" >}})**: 이번 글의 1편으로, 하드웨어 제작과 초기 수신 준비 과정을 다룹니다.
 - **[상용 플로터를 넘어서: OpenPlotter와 MacArthur HAT으로 나만의 통합 항해 시스템 만들기]({{< ref "/posts/openplotter-macarthur-hat" >}})**: SignalK 기반 통합 항해 시스템 확장에 도움이 됩니다.
-- **[4만원으로 요트 전력 관리 시스템 구축하기: KM110F 해킹 & OpenPlotter 연동]({{< ref "/posts/km110f-shunt" >}})**: 저비용 센서 데이터 통합 사례를 함께 볼 수 있습니다.
+- **[4만원으로 요트 전력 관리 시스템 구축하기: KM110F 데이터 연동 & OpenPlotter 통합]({{< ref "/posts/km110f-shunt" >}})**: 저비용 센서 데이터 통합 사례를 함께 볼 수 있습니다.
 
 **Bon Voyage!**

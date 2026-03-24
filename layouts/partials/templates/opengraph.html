@@ -2,13 +2,8 @@
 <meta property="og:locale" content="ko_KR" />
 
 {{- /* Title Logic */ -}}
-{{- $title := "" -}}
 {{- $siteURL := strings.TrimSuffix "/" (site.Params.siteURL | default site.BaseURL) -}}
-{{- if .IsHome -}}
-{{- $title = site.Title -}}
-{{- else -}}
-{{- $title = printf "%s | MyYacht" .Title -}}
-{{- end -}}
+{{- $title := partial "meta_title.html" . -}}
 <meta property="og:title" content="{{ $title }}" />
 
 {{- /* Description Logic */ -}}

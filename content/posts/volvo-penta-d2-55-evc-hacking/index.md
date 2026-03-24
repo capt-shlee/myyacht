@@ -1,9 +1,9 @@
 ﻿---
-title: "볼보 펜타 D2-55 EVC 엔진 정보 훔치기"
+title: "볼보 펜타 D2-55 EVC 엔진 데이터 읽기"
 date: 2026-02-14T17:00:00+09:00
 description: "단돈 4만원으로 볼보 펜타 엔진 데이터를 WiFi로 전송하는 방법! ESP32와 CAN 모듈을 이용한 가성비 DIY 가이드입니다."
 categories: ["Marine Electronics", "DIY"]
-keywords: ["볼보 펜타 D2-55", "요트 엔진", "EVC 해킹", "ESP32", "NMEA2000", "오픈소스항해", "저렴한 엔진 계기판", "제부도요트투어", "요트체험"]
+keywords: ["볼보 펜타 D2-55", "요트 엔진", "EVC 데이터 읽기", "ESP32", "NMEA2000", "오픈소스항해", "저렴한 엔진 계기판", "제부도요트투어", "요트체험"]
 draft: false
 author: "Captain Lima"
 cover:
@@ -135,7 +135,7 @@ void loop() {
 ### 📚 함께 읽으면 좋은 글
 
 * **[상용 플로터를 넘어서: OpenPlotter와 MacArthur HAT으로 나만의 통합 항해 시스템 만들기]({{< ref "/posts/openplotter-macarthur-hat" >}})**: 엔진 데이터와 배터리, AIS까지 모든 것을 통합하여 관리하는 법을 소개합니다.
-* **[4만원으로 요트 전력 관리 시스템 구축하기: KM110F 해킹 & OpenPlotter 연동]({{< ref "/posts/km110f-shunt" >}})**: 저렴한 비용으로 구축하는 또 다른 가성비 DIY 프로젝트입니다.
+* **[4만원으로 요트 전력 관리 시스템 구축하기: KM110F 데이터 연동 & OpenPlotter 통합]({{< ref "/posts/km110f-shunt" >}})**: 저렴한 비용으로 구축하는 또 다른 가성비 DIY 프로젝트입니다.
 
 **Bon Voyage!**
 

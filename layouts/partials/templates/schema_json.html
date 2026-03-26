@@ -1,43 +1,107 @@
-﻿{{- $siteURL := strings.TrimSuffix "/" (site.Params.siteURL | default site.BaseURL) -}}
+{{- $siteURL := strings.TrimSuffix "/" (site.Params.siteURL | default site.BaseURL) -}}
+{{- $localBusinessID := printf "%s/#myyacht-localbusiness" $siteURL -}}
+{{- $captainID := printf "%s/#captain-lima" $siteURL -}}
 {{ if .IsHome }}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "MyYacht 제부도 요트 투어",
-  "image": "{{ printf "%s/images/og-main.jpg" $siteURL }}",
-  "@id": "{{ printf "%s%s" $siteURL .RelPermalink }}",
-  "url": "{{ printf "%s%s" $siteURL .RelPermalink }}",
-  "telephone": "0507-1450-7890",
-  "priceRange": "$$",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "경기도 화성시 서신면 해안길 477 (제부 마리나)",
-    "addressLocality": "Hwaseong-si",
-    "addressRegion": "Gyeonggi-do",
-    "postalCode": "18554",
-    "addressCountry": "KR"
-  },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": 37.1759,
-    "longitude": 126.6666
-  },
-  "openingHoursSpecification": {
-    "@type": "OpeningHoursSpecification",
-    "dayOfWeek": [
-      "Monday",
-      "Tuesday",
-      "Wednesday",
-      "Thursday",
-      "Friday",
-      "Saturday",
-      "Sunday"
-    ],
-    "opens": "09:00",
-    "closes": "23:00"
-  },
-  "description": {{ partial "meta_description.html" . | jsonify }}
+  "@graph": [
+    {
+      "@type": "LocalBusiness",
+      "@id": "{{ $localBusinessID }}",
+      "name": "MyYacht 제부도 요트 투어",
+      "alternateName": "마이요트",
+      "url": "{{ printf "%s%s" $siteURL .RelPermalink }}",
+      "image": "{{ printf "%s/images/og-main.jpg" $siteURL }}",
+      "telephone": "0507-1450-7890",
+      "priceRange": "$$",
+      "description": {{ partial "meta_description.html" . | jsonify }},
+      "founder": {
+        "@id": "{{ $captainID }}"
+      },
+      "employee": {
+        "@id": "{{ $captainID }}"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "경기도 화성시 서신면 해안길 477 (제부 마리나)",
+        "addressLocality": "Hwaseong-si",
+        "addressRegion": "Gyeonggi-do",
+        "postalCode": "18554",
+        "addressCountry": "KR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 37.1759,
+        "longitude": 126.6666
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "09:00",
+        "closes": "23:00"
+      },
+      "areaServed": {
+        "@type": "AdministrativeArea",
+        "name": "경기도 화성시 제부도"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "{{ $captainID }}",
+      "name": "Captain Lima",
+      "alternateName": "리마 선장",
+      "url": "{{ $siteURL }}/",
+      "image": "{{ printf "%s/images/og-main.jpg" $siteURL }}",
+      "description": "Master Mariner(1급 해기사) 자격과 총 항해거리 약 58만 해리(nautical miles, 지구 약 27바퀴)에 해당하는 실항해 경력을 바탕으로 운항하는 마이요트 운영자입니다. 해양경찰 대행 안전검사원, 화성시 요트협회 전무이사, NAUI Scuba Instructor로 활동하고 있습니다.",
+      "jobTitle": [
+        "Master Mariner",
+        "1급 해기사",
+        "NAUI Scuba Instructor",
+        "해양경찰 대행 안전검사원",
+        "화성시 요트협회 전무이사"
+      ],
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "해기사 면허",
+          "name": "Master Mariner (1급 해기사)"
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "Scuba Diving Instructor Certification",
+          "name": "NAUI Scuba Instructor"
+        }
+      ],
+      "knowsAbout": [
+        "요트 안전 운항",
+        "해양 안전 점검",
+        "세일링 실무",
+        "항해 계획",
+        "스쿠버 다이빙 안전"
+      ],
+      "worksFor": {
+        "@id": "{{ $localBusinessID }}"
+      },
+      "affiliation": {
+        "@type": "Organization",
+        "name": "화성시 요트협회"
+      },
+      "sameAs": [
+        "https://blog.naver.com/capt_lima",
+        "https://www.instagram.com/my_yacht_kr",
+        "https://www.youtube.com/@my_yacht"
+      ]
+    }
+  ]
 }
 </script>
 {{ else if (or .IsPage .IsSection) }}
@@ -103,7 +167,8 @@
   "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}",
   "author": {
     "@type": "Person",
-    "name": "Captain Lee (Master Mariner)"
+    "@id": "{{ $captainID }}",
+    "name": "Captain Lima"
   },
   {{- $keywords := "" -}}
   {{- if .Params.keywords -}}
@@ -126,4 +191,3 @@
 </script>
 {{- end }}
 {{- end -}}
-

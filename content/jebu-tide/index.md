@@ -16,6 +16,8 @@ snapshot:
   weather: "기상 변동 가능"
 type: "jebu-tide"
 layout: "single"
+ogType: "website"
+schemaType: "WebPage"
 url: "/jebu-tide/"
 date: 2026-03-08T11:00:00+09:00
 lastmod: 2026-03-08T11:00:00+09:00

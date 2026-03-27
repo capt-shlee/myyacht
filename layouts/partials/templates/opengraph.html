@@ -35,5 +35,6 @@
 {{- end -}}
 
 <meta property="og:image" content="{{ $ogImage }}" />
-<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}" />
+{{- $ogType := .Params.ogType | default (cond .IsPage "article" "website") -}}
+<meta property="og:type" content="{{ $ogType }}" />
 

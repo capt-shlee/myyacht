@@ -71,6 +71,16 @@ jobs:
             echo "ERROR: sitemap.xml contains /tags/ URLs."
             exit 1
           fi
+
+          if grep -n "<loc>https://myyacht.kr/posts/</loc>" public/sitemap.xml; then
+            echo "ERROR: posts archive is noindex and must not appear in sitemap.xml."
+            exit 1
+          fi
+
+          if grep -n "<loc>https://myyacht.kr/categories/" public/sitemap.xml; then
+            echo "ERROR: category archives are noindex and must not appear in sitemap.xml."
+            exit 1
+          fi
              
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

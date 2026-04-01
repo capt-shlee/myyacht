@@ -758,6 +758,12 @@ iframe {
     filter: brightness(0.9);
 }
 
+.image-mosaic--16 img {
+    height: 180px;
+    object-fit: contain;
+    background: rgba(255, 255, 255, 0.04);
+}
+
 .image-mosaic img:hover {
     transform: scale(1.03);
     filter: brightness(1.1);
@@ -780,10 +786,18 @@ iframe {
     .image-mosaic--16 {
         grid-template-columns: repeat(3, minmax(0, 1fr));
     }
+
+    .image-mosaic--16 img {
+        height: 160px;
+    }
 }
 
 @media (max-width: 768px) {
     .image-mosaic--16 {
         grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .image-mosaic--16 img {
+        height: 140px;
     }
 }

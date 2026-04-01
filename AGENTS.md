@@ -3,6 +3,11 @@
 ## Default Publishing Rule
 - 모든 `content/posts/**/index.md` 신규 작성/수정 작업은 사용자 요청이 없어도 SEO 기본 점검을 수행한다.
 
+## Image Handling
+- Do not crop photos without explicit user approval.
+- Default to showing the full image.
+- If cropping would improve layout, ask first and explain the tradeoff.
+
 ## SEO Baseline Checklist
 - Front matter 필수 항목 확인: `title`, `summary`, `description`, `categories`, `keywords`, `cover.image`, `cover.alt`
 - 가능하면 `seoTitle` 포함 (검색 의도 키워드 1개 이상 포함)

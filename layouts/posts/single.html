@@ -1,4 +1,5 @@
 {{ define "main" }}
+{{- $headerDescription := .Description | default (.Params.summary | default "") -}}
 <div style="padding-top: 150px; min-height: 100vh;">
     <div class="container" style="max-width: 800px;">
         <article class="post-single">
@@ -11,6 +12,12 @@
                 <h1 class="post-title" style="color: var(--color-white); font-size: 2.5rem; margin-bottom: 20px;">
                     {{ .Title | safeHTML }}
                 </h1>
+                {{ with $headerDescription }}
+                <p class="post-description"
+                    style="max-width: 680px; margin: 0 auto 18px; color: rgba(230, 237, 248, 0.84); font-size: 1rem; line-height: 1.6;">
+                    {{ . | plainify | htmlUnescape }}
+                </p>
+                {{ end }}
                 <div class="post-meta" style="color: var(--color-accent); font-size: 0.9rem;">
                     {{ .Date.Format "January 2, 2006" }}
                     <span id="busuanzi_container_page_pv" style="margin-left: 10px;">

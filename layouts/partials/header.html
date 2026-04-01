@@ -1,3 +1,13 @@
+{{- $isPostsSection := or (eq .Section "posts") (eq .Type "posts") (eq .RelPermalink "/posts/") -}}
+{{- if $isPostsSection }}
+<style>
+    @media (max-width: 768px) {
+        #main-header .mobile-toggle {
+            cursor: pointer;
+        }
+    }
+</style>
+{{- end }}
 <header id="main-header">
     <div class="container nav-container">
         <a href="/" class="logo">MY YACHT</a>
@@ -15,3 +25,68 @@
         </div>
     </div>
 </header>
+{{- if $isPostsSection }}
+<script>
+    (() => {
+        const mobileToggle = document.getElementById('mobile-toggle');
+        const navList = document.getElementById('nav-list');
+
+        if (!mobileToggle || !navList) return;
+
+        const closeMenu = () => {
+            navList.style.display = '';
+            navList.style.flexDirection = '';
+            navList.style.position = '';
+            navList.style.top = '';
+            navList.style.left = '';
+            navList.style.width = '';
+            navList.style.height = '';
+            navList.style.background = '';
+            navList.style.zIndex = '';
+            navList.style.justifyContent = '';
+            navList.style.alignItems = '';
+            navList.style.padding = '';
+            navList.style.gap = '';
+            document.body.style.overflow = '';
+        };
+
+        const openMenu = () => {
+            navList.style.display = 'flex';
+            navList.style.flexDirection = 'column';
+            navList.style.position = 'fixed';
+            navList.style.top = '0';
+            navList.style.left = '0';
+            navList.style.width = '100%';
+            navList.style.height = '100vh';
+            navList.style.padding = '96px 24px 32px';
+            navList.style.background = '#0A192F';
+            navList.style.zIndex = '999';
+            navList.style.justifyContent = 'center';
+            navList.style.alignItems = 'center';
+            navList.style.gap = '28px';
+            document.body.style.overflow = 'hidden';
+        };
+
+        mobileToggle.addEventListener('click', () => {
+            if (window.innerWidth > 768) return;
+
+            const isOpen = navList.style.display === 'flex';
+            if (isOpen) {
+                closeMenu();
+            } else {
+                openMenu();
+            }
+        });
+
+        navList.querySelectorAll('.nav-link').forEach((link) => {
+            link.addEventListener('click', closeMenu);
+        });
+
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 768) {
+                closeMenu();
+            }
+        });
+    })();
+</script>
+{{- end }}

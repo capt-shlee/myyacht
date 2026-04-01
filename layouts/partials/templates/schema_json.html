@@ -149,7 +149,7 @@
   "@id": "{{ printf "%s%s#webpage" $siteURL .RelPermalink }}",
   "url": "{{ printf "%s%s" $siteURL .RelPermalink }}",
   "name": {{ .Title | plainify | jsonify | safeJS }},
-  "description": {{ partial "meta_description.html" . | jsonify | safeJS }},
+  "description": {{ partial "meta_description.html" . | htmlUnescape | replaceRE `&amp;` `&` | jsonify | safeJS }},
   "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}",
   "inLanguage": {{ .Lang | jsonify | safeJS }},
   "isPartOf": {
@@ -165,8 +165,15 @@
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": {{ .Title | plainify | jsonify }},
-  "description": {{ partial "meta_description.html" . | jsonify }},
+  "@id": "{{ printf "%s%s#blogposting" $siteURL .RelPermalink }}",
+  "url": "{{ printf "%s%s" $siteURL .RelPermalink }}",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ printf "%s%s#webpage" $siteURL .RelPermalink }}"
+  },
+  "inLanguage": {{ .Lang | jsonify | safeJS }},
+  "headline": {{ .Title | plainify | jsonify | safeJS }},
+  "description": {{ partial "meta_description.html" . | htmlUnescape | replaceRE `&amp;` `&` | jsonify | safeJS }},
   {{- $images := .Resources.ByType "image" -}}
   {{- $cover := .Params.cover.image -}}
   {{- $hasImages := or (gt (len $images) 0) $cover -}}
@@ -197,7 +204,7 @@
     {{- $keywords = delimit .Params.tags ", " -}}
   {{- end -}}
   {{- if ne $keywords "" }}
-  "keywords": {{ $keywords | jsonify }},
+  "keywords": {{ $keywords | jsonify | safeJS }},
   {{- end }}
   "publisher": {
     "@type": "Organization",

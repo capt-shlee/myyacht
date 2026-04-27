@@ -2,7 +2,6 @@
 title: "볼보 펜타 D2-55 EVC 엔진 데이터 읽기"
 date: 2026-02-14T17:00:00+09:00
 description: "단돈 4만원으로 볼보 펜타 엔진 데이터를 WiFi로 전송하는 방법! ESP32와 CAN 모듈을 이용한 가성비 DIY 가이드입니다."
-categories: ["Marine Electronics", "DIY"]
 keywords: ["볼보 펜타 D2-55", "요트 엔진", "EVC 데이터 읽기", "ESP32", "NMEA2000", "오픈소스항해", "저렴한 엔진 계기판", "제부도요트투어", "요트체험"]
 draft: false
 author: "Captain Lima"

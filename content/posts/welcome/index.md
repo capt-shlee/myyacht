@@ -3,7 +3,6 @@ title: "항해를 시작하며: 제부도 선장 Captain Lima의 요트 다이�
 date: 2026-02-05T12:00:00+09:00
 summary: "2026년, 마이요트의 새로운 항해가 시작됩니다. 1급 해기사 선장의 다이어리."
 description: "마이요트 블로그 시작! 1급 해기사 Captain Lima가 전수하는 요트 항해 지식, 정비 노하우, 제부도 바다 이야기를 만나보세요."
-categories: ["Captain's Log"]
 keywords: ["요트 블로그", "제부도요트투어", "1급해기사", "요트 정비", "항해 기록", "Captain Lima", "마이요트", "요트체험"]
 draft: false
 cover:

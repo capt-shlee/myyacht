@@ -9,8 +9,6 @@ keywords:
   - "국제해상충돌예방규칙"
   - "COLREG"
   - "해상교통안전법"
-categories:
-  - "Sailing Tips"
 cover:
   image: "featured.webp"
   alt: "프리미엄 요트가 방파제를 지나 노을 지는 바다로 나가는 모습"

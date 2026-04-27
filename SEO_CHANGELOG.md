@@ -8,6 +8,7 @@ Source: git_log.txt
 - fix: clarified Suwon Hoejip location as directly in front of Jebu Marina.
 - fix: corrected restaurant name/address wording and added MyYacht referral receipt tip.
 - feat: attached a restaurant food photo as the post cover and added Jebudo side-dish context.
+- fix: removed post categories across Captain's Log content, disabled taxonomy pages, and updated writing guidance to avoid categories/tags.
 
 ## 2026-04-22
 - feat: refreshed landing page trust copy and tour labels to emphasize safety and single-party operation.

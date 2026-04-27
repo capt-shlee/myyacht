@@ -4,9 +4,6 @@ seoTitle: "호르무즈 해협 전쟁을 바라보는 상선 출신 선장의 �
 date: 2026-03-17T10:30:00+09:00
 summary: "Bandar Abbas와 Kharg Island를 오가던 상선 시절의 기억으로, 전쟁 뉴스가 항만 노동자와 선원, 그리고 한국의 국가 이미지를 어떻게 흔드는지 적어봤습니다."
 description: "호르무즈 해협, Bandar Abbas, Kharg Island를 실제로 다녔던 상선 출신 선장의 시선으로 전쟁과 파병, 국가 이미지, 선원의 안전한 귀항을 생각해 본 글입니다."
-categories:
-  - "Captain's Log"
-  - "Sailing Safety"
 keywords:
   - "호르무즈 해협"
   - "Bandar Abbas"

@@ -4,9 +4,6 @@ seoTitle: "OpenPlotter vs BBN OS 비교: 실사용 후기와 Signal K 선택"
 date: 2026-03-13T10:15:00+09:00
 summary: "OpenPlotter에 익숙해진 뒤 BBN OS를 실제로 써보며 느낀 장단점을 정리했습니다. UI, 기본 앱, Signal K 연동 체감, 추천 사용자와 다운로드 링크까지 한 번에 비교합니다."
 description: "OpenPlotter와 BBN OS를 실제 사용 관점에서 비교합니다. 라즈베리파이 차트플로터를 꾸릴 때 UI, 기본 앱, Signal K 연결 난이도, 추천 사용자 차이를 한 번에 정리했습니다."
-categories:
-  - "Marine Electronics"
-  - "DIY"
 keywords:
   - "OpenPlotter"
   - "BBN OS"

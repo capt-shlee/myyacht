@@ -10,9 +10,6 @@ keywords:
   - "SignalK"
   - "OpenPlotter"
   - "J1939"
-categories:
-  - "Marine Electronics"
-  - "DIY"
 cover:
   image: "kip-fullscreen.jpg"
   alt: "볼보 펜타 EVC 엔진 데이터를 SignalK KIP 대시보드로 표시한 실사용 화면"

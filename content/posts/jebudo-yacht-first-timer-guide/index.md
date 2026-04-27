@@ -15,9 +15,6 @@ keywords:
   - "요트 사진 찍는 법"
   - "제부도 바닷길"
   - "제부도 요트 멀미"
-categories:
-  - "Yacht Life"
-  - "Sailing Tips"
 draft: false
 cover:
   image: "cover.jpg"

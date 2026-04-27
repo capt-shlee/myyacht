@@ -3,7 +3,6 @@ title: "상용 플로터를 넘어서: OpenPlotter와 MacArthur HAT으로 나만
 date: 2026-02-05T12:00:00+09:00
 summary: "상용 플로터의 제약에서 벗어나다. 라즈베리 파이와 MacArthur HAT을 이용해 NMEA 2000, AIS, Signal K를 통합한 나만의 통합 항해 시스템 구축 가이드."
 description: "라즈베리 파이 기반 OpenPlotter 구축 가이드. 고가 플로터 대신 AIS 수신, 앵커 감시 등 통합 항해 시스템을 직접 만드세요."
-categories: ["Marine Electronics"]
 keywords: ["OpenPlotter 설치", "MacArthur HAT", "라즈베리파이 요트", "Signal K", "통합 항해 시스템", "DIY 차트 플로터", "AIS 수신", "제부도요트투어", "요트체험"]
 draft: false
 cover:

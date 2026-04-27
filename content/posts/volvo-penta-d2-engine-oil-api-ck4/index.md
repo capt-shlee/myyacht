@@ -3,7 +3,6 @@ title: "볼보펜타 D2 엔진오일 가이드: API CK-4 오일 사용과 세일
 seoTitle: "볼보펜타 D2 엔진오일 선택 가이드 (API CK-4)"
 date: 2026-02-16T00:15:00+09:00
 description: "볼보펜타 D2 엔진에 API CK-4 오일 사용 여부와 15W-40 점도 선택 기준을 1급 해기사 선장이 명확히 정리해 드립니다."
-categories: ["Maintenance"]
 keywords: ["볼보펜타 D2 엔진오일", "API CK-4", "15W-40", "세일드라이브 오일", "요트정비", "선박 엔진오일", "제부도요트투어", "요트체험"]
 draft: false
 author: "Captain Lima"

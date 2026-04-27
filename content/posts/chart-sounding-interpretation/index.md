@@ -4,9 +4,6 @@ seoTitle: "해도의 수심정보 판독법 | CATZOC·SCAMIN·수심 읽는 법"
 summary: "해도에 찍힌 수심 숫자와 등심선 사이를 어떻게 읽어야 하는지, CATZOC·SCAMIN·Single Beam·Multibeam 차이까지 요트 항해 기준으로 다시 정리했습니다."
 date: 2026-04-18T20:50:00+09:00
 description: "해도 수심정보 판독법을 다시 정리했습니다. 표시된 수심 숫자, 빈 구간, CATZOC, SCAMIN, Lead Line, Single Beam, Multibeam 차이를 이해해야 안전한 요트 항해가 가능합니다."
-categories:
-  - "Sailing Knowledge"
-  - "Yachting Tips"
 keywords:
   - "해도의 수심정보 판독법"
   - "해도 수심 읽는 법"

@@ -4,9 +4,6 @@ seoTitle: "오픈플로터 설치 완전입문: KIP 화면, FreeboardSK, Signal 
 date: 2026-03-05T20:30:00+09:00
 summary: "초보자도 따라 할 수 있게 라즈베리파이 4에 OpenPlotter를 설치하고, Signal K 앱 KIP 대시보드까지 띄우는 과정을 단계별로 정리했습니다."
 description: "오픈플로터 설치 입문 가이드. 라즈베리파이 4에서 Signal K, KIP 화면, FreeboardSK를 연결해 10만원대로 통합 항해 화면을 구성하는 방법을 설명합니다."
-categories:
-  - "Marine Electronics"
-  - "DIY"
 keywords:
   - "마이요트"
   - "제부도요트"

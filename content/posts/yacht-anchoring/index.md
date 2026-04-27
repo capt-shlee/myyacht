@@ -2,7 +2,6 @@
 title: "[제부도 요트] 안전한 앵커링(Anchoring): 1급 해기사의 대형선 원리 적용"
 date: 2026-02-05T18:00:00+09:00
 description: "1급 해기사가 전하는 안전한 요트 앵커링 노하우. 상선의 정박 원리를 요트에 적용하는 5단계 절차와 전자해도를 이용한 감시법을 소개합니다."
-categories: ["Yachting Tips"]
 keywords: ["요트 앵커링", "Anchoring", "안전한 정박", "1급해기사", "전자해도 Swing Circle", "묘박", "요트 입문", "제부도요트투어", "요트체험"]
 draft: false
 author: "Captain Lima"

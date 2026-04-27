@@ -1,6 +1,7 @@
 baseURL = 'https://myyacht.kr/'
 enableRobotsTXT = false
 cleanDestinationDir = true
+disableKinds = ['taxonomy', 'term']
 languageCode = 'ko-KR'
 defaultContentLanguage = 'ko'
 defaultContentLanguageInSubdir = false
@@ -11,9 +12,6 @@ theme = 'PaperMod'
   [languages.ko]
     languageName = 'Korean'
     weight = 1
-
-[taxonomies]
-  category = "categories"
 
 [params]
   comments = true

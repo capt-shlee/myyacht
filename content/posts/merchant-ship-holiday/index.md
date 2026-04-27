@@ -2,7 +2,6 @@
 title: "[제부도 요트] 상선 일기: 대양 위 336미터의 고독과 새우 파티"
 date: 2026-02-17T23:33:00+09:00
 description: "가족과 떨어져 대양 위 336미터 원유선에서 보낸 명절의 추억. 인도산 새우 파티와 탁구 대회, 그리고 동료를 향한 배려의 이야기."
-categories: ["Captain's Log"]
 keywords: ["마이요트", "제부도요트", "상선 명절", "설날 풍경", "인도 새우 파티", "Captain Lima", "선장일기"]
 cover:
   image: "featured.png"

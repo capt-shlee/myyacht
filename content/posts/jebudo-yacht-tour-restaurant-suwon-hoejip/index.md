@@ -14,9 +14,6 @@ keywords:
   - "제부도 우럭 맑은탕"
   - "제부도 요트"
   - "마이요트"
-categories:
-  - "Captain's Log"
-  - "Jebudo Guide"
 draft: false
 cover:
   image: "IMG_9621.jpg"

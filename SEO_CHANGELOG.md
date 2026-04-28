@@ -3,6 +3,9 @@
 Project: MyYacht
 Source: git_log.txt
 
+## 2026-04-28
+- fix: moved the cabin/interior review card to the first position on the landing page review carousel.
+
 ## 2026-04-27
 - feat: added draft post for a post-yacht-tour Jebudo restaurant recommendation, targeting Suwon Hoejip/Suwon Hwetjip and wooreok clear soup search intent.
 - fix: clarified Suwon Hoejip location as directly in front of Jebu Marina.

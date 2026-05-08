@@ -3,6 +3,17 @@
 Project: MyYacht
 Source: git_log.txt
 
+## 2026-05-08
+- feat: added a draft post for the 2026 Hwaseong Boat Festival yacht tour Ticketlink booking guide, highlighting MyYacht participation with the Jebudo Yacht Association.
+- feat: refined the Hwaseong Boat Festival draft around MyYacht Parade booking flow and added Ticketlink screenshots as in-post visuals.
+- fix: shortened the Hwaseong Boat Festival draft and shifted the main SEO angle to the Friday-Sunday 20:00 fireworks yacht viewing experience.
+- fix: rewrote the Hwaseong Boat Festival draft end to end for a more natural MyYacht voice while preserving the 20:00 fireworks and Parade booking SEO focus.
+- feat: added the 19:00 sunset tour angle to the Hwaseong Boat Festival draft metadata, body copy, and booking checklist.
+- fix: smoothed awkward summary-style phrasing in the Hwaseong Boat Festival draft introduction and closing copy.
+- fix: standardized Hwaseong Boat Festival draft emphasis to strong tags so bold text renders consistently, including the Parade ticket label.
+- feat: added date and time based pricing guidance for the Hwaseong Boat Festival draft, including Friday discounts and Monday daytime-only operation.
+- feat: published the Hwaseong Boat Festival yacht tour guide after final draft, pricing, and render checks.
+
 ## 2026-04-28
 - fix: moved the cabin/interior review card to the first position on the landing page review carousel.
 

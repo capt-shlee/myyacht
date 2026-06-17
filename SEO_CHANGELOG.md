@@ -3,6 +3,14 @@
 Project: MyYacht
 Source: git_log.txt
 
+## 2026-06-17
+- feat: added a draft post about captain cognitive dissonance and the risk of overtrusting familiar local waters, with SEO metadata and a boarding photo cover.
+- fix: updated the cognitive dissonance draft introduction with recent maintenance context and added a saildrive pot-rope incident photo as an in-post example.
+- fix: sharpened the draft's distinction between helmsman skill and captain-level judgment.
+- fix: added an anonymized marina behavior example to clarify defensive cognitive dissonance in practice.
+- fix: added the cover photo into the draft body and displayed the pot-rope incident photo in a 16:9 body crop while preserving the original image orientation.
+- feat: published the captain cognitive dissonance post after final photo placement, draft status, and render checks.
+
 ## 2026-05-08
 - feat: added a draft post for the 2026 Hwaseong Boat Festival yacht tour Ticketlink booking guide, highlighting MyYacht participation with the Jebudo Yacht Association.
 - feat: refined the Hwaseong Boat Festival draft around MyYacht Parade booking flow and added Ticketlink screenshots as in-post visuals.

@@ -3,6 +3,14 @@
 Project: MyYacht
 Source: git_log.txt
 
+## 2026-07-03
+- feat: added a draft post explaining lighthouse and buoy light characteristics with Jebudo-area chart abbreviation examples, SEO metadata, internal links, and a chart-style SVG cover.
+- fix: revised the lighthouse and buoy draft for a warmer Captain Lima tone, added a real electronic chart/plotter sample image, and connected the topic naturally to Jebudo sunset tour safety.
+- fix: added Jebudo breakwater and Nueseom lighthouse electronic chart examples, clarified lowercase `m` versus uppercase `M`, and explained AIS/RACON chart indicators.
+- fix: refined the lighthouse and buoy draft SEO angle around Jebudo sunset tour night entry, shallow-water risk, and sail-yacht draft while keeping the safety explanation natural.
+- fix: replaced the generic chartplotter sample image with a Jebudo sunset navigation photo to better match the article tone and tour-safety context.
+- feat: published the lighthouse and buoy light characteristics post after draft status, publish time, SEO, image, and Hugo render checks.
+
 ## 2026-06-17
 - feat: added a draft post about captain cognitive dissonance and the risk of overtrusting familiar local waters, with SEO metadata and a boarding photo cover.
 - fix: updated the cognitive dissonance draft introduction with recent maintenance context and added a saildrive pot-rope incident photo as an in-post example.
@@ -10,6 +18,9 @@ Source: git_log.txt
 - fix: added an anonymized marina behavior example to clarify defensive cognitive dissonance in practice.
 - fix: added the cover photo into the draft body and displayed the pot-rope incident photo in a 16:9 body crop while preserving the original image orientation.
 - feat: published the captain cognitive dissonance post after final photo placement, draft status, and render checks.
+
+## 2026-05-15
+- fix: updated LANDING_SEO_AEO_PLAN.md to reflect that commercial generic queries like "제부도 요트" have achieved stable Google first-page ranking, shifting the primary goal from reaching page 1 to maintaining it and improving CTR.
 
 ## 2026-05-08
 - feat: added a draft post for the 2026 Hwaseong Boat Festival yacht tour Ticketlink booking guide, highlighting MyYacht participation with the Jebudo Yacht Association.

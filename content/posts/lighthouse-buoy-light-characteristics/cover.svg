@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Jebudo lighthouse and buoy light characteristics chart illustration</title>
+  <desc id="desc">A simple nautical chart style illustration showing a lighthouse, a red buoy, and the abbreviation Fl R 4s.</desc>
+  <rect width="1200" height="630" fill="#f7faf9"/>
+  <path d="M0 438 C180 386 315 464 492 415 C690 360 830 407 1005 350 C1090 323 1160 326 1200 333 L1200 630 L0 630 Z" fill="#d7ebe8"/>
+  <path d="M0 500 C168 460 330 526 520 480 C720 431 845 476 1028 430 C1110 410 1168 412 1200 420 L1200 630 L0 630 Z" fill="#b8d7d3"/>
+  <g opacity=".35" stroke="#4c6f75" stroke-width="2" fill="none">
+    <path d="M70 120 C220 80 330 165 475 122 C620 80 750 118 900 88 C1012 66 1102 74 1160 90"/>
+    <path d="M65 190 C218 148 342 232 500 188 C645 148 772 185 925 152 C1035 128 1120 135 1168 148"/>
+    <path d="M62 260 C225 222 350 300 505 260 C648 222 778 255 928 226 C1040 204 1122 210 1170 222"/>
+  </g>
+  <g transform="translate(130 105)">
+    <path d="M95 360 L142 115 L197 115 L244 360 Z" fill="#ffffff" stroke="#24343d" stroke-width="8" stroke-linejoin="round"/>
+    <path d="M119 235 L220 235 L233 303 L106 303 Z" fill="#d8463b"/>
+    <path d="M132 170 L207 170 L216 215 L123 215 Z" fill="#d8463b"/>
+    <rect x="125" y="82" width="88" height="42" rx="4" fill="#24343d"/>
+    <path d="M108 82 L230 82 L210 40 L128 40 Z" fill="#ffffff" stroke="#24343d" stroke-width="8" stroke-linejoin="round"/>
+    <rect x="150" y="35" width="38" height="28" fill="#ffe08a" stroke="#24343d" stroke-width="6"/>
+    <path d="M169 35 L169 8" stroke="#24343d" stroke-width="8" stroke-linecap="round"/>
+    <path d="M206 49 C278 26 347 26 418 49" stroke="#f2b84b" stroke-width="10" fill="none" stroke-linecap="round"/>
+    <path d="M206 61 C278 88 347 88 418 61" stroke="#f2b84b" stroke-width="10" fill="none" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(765 252)">
+    <path d="M95 270 L55 270 L72 175 L78 92 L112 92 L118 175 L135 270 Z" fill="#d8463b" stroke="#24343d" stroke-width="7" stroke-linejoin="round"/>
+    <path d="M72 175 L118 175" stroke="#ffffff" stroke-width="18"/>
+    <circle cx="95" cy="62" r="32" fill="#d8463b" stroke="#24343d" stroke-width="7"/>
+    <path d="M55 270 C80 292 110 292 135 270" fill="none" stroke="#24343d" stroke-width="7" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(520 132)">
+    <rect x="0" y="0" width="420" height="145" rx="8" fill="#ffffff" stroke="#24343d" stroke-width="6"/>
+    <text x="28" y="58" font-family="Arial, sans-serif" font-size="44" font-weight="700" fill="#24343d">Fl R 4s</text>
+    <text x="28" y="105" font-family="Arial, sans-serif" font-size="25" fill="#4c5f65">Flashing Red every 4 seconds</text>
+  </g>
+  <text x="72" y="565" font-family="Arial, sans-serif" font-size="36" font-weight="700" fill="#24343d">Lighthouse &amp; Buoy Light Characteristics</text>
+  <text x="72" y="604" font-family="Arial, sans-serif" font-size="24" fill="#4c5f65">MyYacht Captain's Log</text>
+</svg>
